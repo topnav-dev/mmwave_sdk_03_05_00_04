@@ -1,0 +1,3038 @@
+pre script = /home/lte_phy/ti/mcpi_tf/mmwave_sdk_test/mcpitf_scripts/mmwave_sdk/setup.py
+
+
+cmd: python /home/lte_phy/ti/mcpi_tf/mmwave_sdk_test/mcpitf_scripts/mmwave_sdk/setup.py uda0216598a_awr18-AOP
+eth008 Board details:
+IP address: 10.218.113.68
+
+Port: 17494
+
+connecting...
+Relay states 8->1 : 01000101
+7 off
+8 off
+Relay states 8->1 : 00000101
+7 on
+Relay states 8->1 : 01010101
+exit
+Disconnected
+Pre-Script returned: Success
+**************************************************
+Testcase mods & parameters invoked:
+**************************************************
+Two core test case: None (this is not a two core testcase)
+
+**************************************************
+Copying test case files from the Build server
+**************************************************
+Testdata possible location 1: http://gtjenkins.itg.ti.com/nightly_builds/mmwave_sdk-dev/313-2020-09-23_16-37-34/artifacts/mmwave_sdk/packages/ti/datapath/dpc/objectdetection/objdethwa/testdata
+
+
+Testdata directory was not found on Testdata possible location 1
+
+
+Testdata possible location 2: http://gtjenkins.itg.ti.com/nightly_builds/mmwave_sdk-dev/313-2020-09-23_16-37-34/artifacts/test/mmwave_sdk/packages/ti/datapath/dpc/objectdetection/objdethwa/test/testdata
+
+
+Copy-To local testcase data path is: /home/lte_phy/ti/mcpi_tf/mcpi_testframework_1_50_00_01/test/temp/mmWave_SDK___awr18xx-AOP_sdk03.05.00_Test_Plan___mmwave-sdk-03-05-00-2020-09-23-19-04-12_2020_09_23_18_04_12/testdata
+
+Test case data file xwr18xx_stdevm_dss_data_path_test_config.bin found on server for downloading
+Test case data file xwr18xx_aopevm_dss_data_path_test_config.bin found on server for downloading
+Test case data file xwr18xx_stdevm_mss_data_path_test_config.bin found on server for downloading
+Test case data file xwr68xx_stdevm_mss_data_path_test_config.bin found on server for downloading
+Test case data file xwr68xx_stdevm_dss_data_path_test_config.bin found on server for downloading
+Test case data file xwr68xx_aopevm_mss_data_path_test_config.bin found on server for downloading
+Test case data file xwr18xx_aopevm_mss_data_path_test_config.bin found on server for downloading
+Test case data file xwr68xx_aopevm_dss_data_path_test_config.bin found on server for downloading
+Call to copy_testcase_binary:
+TCP: http://gtjenkins.itg.ti.com/nightly_builds/mmwave_sdk-dev/313-2020-09-23_16-37-34/artifacts/test/mmwave_sdk/packages/ti/datapath/dpc/objectdetection/objdethwa/test; /home/lte_phy/ti/mcpi_tf/mcpi_testframework_1_50_00_01/test/temp/mmWave_SDK___awr18xx-AOP_sdk03.05.00_Test_Plan___mmwave-sdk-03-05-00-2020-09-23-19-04-12_2020_09_23_18_04_12
+
+Copying testcase binary file from http://gtjenkins.itg.ti.com/nightly_builds/mmwave_sdk-dev/313-2020-09-23_16-37-34/artifacts/test/mmwave_sdk/packages/ti/datapath/dpc/objectdetection/objdethwa/test/xwr18xxAOP_objectdetection_test_dss.xe674 to /home/lte_phy/ti/mcpi_tf/mcpi_testframework_1_50_00_01/test/temp/mmWave_SDK___awr18xx-AOP_sdk03.05.00_Test_Plan___mmwave-sdk-03-05-00-2020-09-23-19-04-12_2020_09_23_18_04_12 using command: 
+wget -e robots=off --no-proxy -N -T 30 -t 2 -P /home/lte_phy/ti/mcpi_tf/mcpi_testframework_1_50_00_01/test/temp/mmWave_SDK___awr18xx-AOP_sdk03.05.00_Test_Plan___mmwave-sdk-03-05-00-2020-09-23-19-04-12_2020_09_23_18_04_12 http://gtjenkins.itg.ti.com/nightly_builds/mmwave_sdk-dev/313-2020-09-23_16-37-34/artifacts/test/mmwave_sdk/packages/ti/datapath/dpc/objectdetection/objdethwa/test/xwr18xxAOP_objectdetection_test_dss.xe674
+**************************************************
+Executing Testcase:/home/lte_phy/ti/mcpi_tf/mcpi_testframework_1_50_00_01/test/temp/mmWave_SDK___awr18xx-AOP_sdk03.05.00_Test_Plan___mmwave-sdk-03-05-00-2020-09-23-19-04-12_2020_09_23_18_04_12/xwr18xxAOP_objectdetection_test_dss.xe674
+**************************************************
+Checking if Py4J Gateway server has started...
+Py4J Gateway Server is Started
+amk: a path in cpuList is Texas Instruments XDS110 USB Debug Probe_0/DEBUGSSM_0
+amk: a path in cpuList is Texas Instruments XDS110 USB Debug Probe_0/CS_DAP_0
+amk: a path in cpuList is Texas Instruments XDS110 USB Debug Probe_0/Cortex_R4_0
+amk: a path in cpuList is Texas Instruments XDS110 USB Debug Probe_0/CSETB_0
+amk: a path in cpuList is Texas Instruments XDS110 USB Debug Probe_0/IcePick_M_0
+amk: a path in cpuList is Texas Instruments XDS110 USB Debug Probe_0/C674X_0
+DSS test case opening debug session.
+
+cr4ctl = 0x0
+
+Loading binary to the DUT (no binary args updated):/home/lte_phy/ti/mcpi_tf/mcpi_testframework_1_50_00_01/test/temp/mmWave_SDK___awr18xx-AOP_sdk03.05.00_Test_Plan___mmwave-sdk-03-05-00-2020-09-23-19-04-12_2020_09_23_18_04_12/xwr18xxAOP_objectdetection_test_dss.xe674
+binary path = /home/lte_phy/ti/mcpi_tf/mcpi_testframework_1_50_00_01/test/temp/mmWave_SDK___awr18xx-AOP_sdk03.05.00_Test_Plan___mmwave-sdk-03-05-00-2020-09-23-19-04-12_2020_09_23_18_04_12/xwr18xxAOP_objectdetection_test_dss.xe674
+
+total CCS time = 920
+
+
+**************************************************
+CIO Log captured for the testcase
+**************************************************
+Reading configuration from testdata\xwr18xx_aopevm_dss_data_path_test_config.bin ...
+56 Tests to be run
+
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 23296 Bytes, TCM: 24792 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 45824 Bytes, TCM: 24856 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 90880 Bytes, TCM: 24920 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 180992 Bytes, TCM: 25176 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Read Test #1 
+numRxAntennas = 4
+numAdcSamples = 8
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 84
+numTargets = 2
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 499
+    rngPhyBin = 1
+    doppPhyBin = -14
+    azimPhyBin = -12
+    elevPhyBin = 5
+sceneObj[1] = 
+    amplitude = 480
+    rngPhyBin = 3
+    doppPhyBin = 3
+    azimPhyBin = -3
+    elevPhyBin = 1
+Expected number of targets = 2. Detected number of targets = 4.
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  728	   3	   3	  -3	   1
+[ 1]:	  620	  15	   3	  -3	   1
+[ 2]:	  731	   1	 -14	 -12	   5
+[ 3]:	  706	  15	 -14	 -12	   5
+
+Test PASSED!
+Feature: #1:TxA2 TxE1 Rx4 R8 D28 m: Passed
+Test #1 finished!
+
+Read Test #2 
+numRxAntennas = 4
+numAdcSamples = 8
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 168
+numTargets = 2
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 505
+    rngPhyBin = 1
+    doppPhyBin = -15
+    azimPhyBin = 6
+    elevPhyBin = 7
+sceneObj[1] = 
+    amplitude = 506
+    rngPhyBin = 3
+    doppPhyBin = -31
+    azimPhyBin = 16
+    elevPhyBin = 20
+Expected number of targets = 2. Detected number of targets = 4.
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  733	   3	 -31	  16	  20
+[ 1]:	  622	  15	 -31	  16	  20
+[ 2]:	  734	   1	 -15	   6	   7
+[ 3]:	  708	  15	 -15	   6	   7
+
+Test PASSED!
+Feature: #2:TxA2 TxE1 Rx4 R8 D56 m: Passed
+Test #2 finished!
+
+Read Test #3 
+numRxAntennas = 4
+numAdcSamples = 8
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 336
+numTargets = 2
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 482
+    rngPhyBin = 1
+    doppPhyBin = -24
+    azimPhyBin = 8
+    elevPhyBin = 8
+sceneObj[1] = 
+    amplitude = 506
+    rngPhyBin = 3
+    doppPhyBin = -55
+    azimPhyBin = 20
+    elevPhyBin = -14
+Expected number of targets = 2. Detected number of targets = 4.
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  734	   3	 -55	  20	 -14
+[ 1]:	  623	  15	 -55	  20	 -14
+[ 2]:	  730	   1	 -24	   8	   8
+[ 3]:	  704	  15	 -24	   8	   8
+
+Test PASSED!
+Feature: #3:TxA2 TxE1 Rx4 R8 D112 m: Passed
+Test #3 finished!
+
+Read Test #4 
+numRxAntennas = 4
+numAdcSamples = 8
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 672
+numTargets = 2
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 503
+    rngPhyBin = 1
+    doppPhyBin = -62
+    azimPhyBin = -2
+    elevPhyBin = 8
+sceneObj[1] = 
+    amplitude = 506
+    rngPhyBin = 3
+    doppPhyBin = -113
+    azimPhyBin = -14
+    elevPhyBin = -14
+Expected number of targets = 2. Detected number of targets = 4.
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  734	   3	-113	 -14	 -14
+[ 1]:	  621	  15	-113	 -14	 -14
+[ 2]:	  733	   1	 -62	  -2	   8
+[ 3]:	  708	  15	 -62	  -2	   8
+
+Test PASSED!
+Feature: #4:TxA2 TxE1 Rx4 R8 D224 m: Passed
+Test #4 finished!
+
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 23296 Bytes, TCM: 24792 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 45824 Bytes, TCM: 24856 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 90880 Bytes, TCM: 24920 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 180992 Bytes, TCM: 25176 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Read Test #5 
+numRxAntennas = 4
+numAdcSamples = 16
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 84
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 491
+    rngPhyBin = 1
+    doppPhyBin = 6
+    azimPhyBin = 4
+    elevPhyBin = 2
+sceneObj[1] = 
+    amplitude = 501
+    rngPhyBin = 5
+    doppPhyBin = -6
+    azimPhyBin = -6
+    elevPhyBin = 5
+sceneObj[2] = 
+    amplitude = 495
+    rngPhyBin = 9
+    doppPhyBin = -11
+    azimPhyBin = -14
+    elevPhyBin = 18
+sceneObj[3] = 
+    amplitude = 512
+    rngPhyBin = 13
+    doppPhyBin = 15
+    azimPhyBin = -17
+    elevPhyBin = 20
+Expected number of targets = 4. Detected number of targets = 5.
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  780	   1	   6	   4	   2
+[ 1]:	  647	  15	   6	   4	   2
+[ 2]:	  782	  13	  15	 -17	  20
+[ 3]:	  781	   9	 -11	 -14	  18
+[ 4]:	  781	   5	  -6	  -6	   5
+
+Test PASSED!
+Feature: #5:TxA2 TxE1 Rx4 R16 D28 r: Passed
+Test #5 finished!
+
+Read Test #6 
+numRxAntennas = 4
+numAdcSamples = 16
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 168
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 498
+    rngPhyBin = 1
+    doppPhyBin = -3
+    azimPhyBin = -14
+    elevPhyBin = -9
+sceneObj[1] = 
+    amplitude = 485
+    rngPhyBin = 5
+    doppPhyBin = -19
+    azimPhyBin = 8
+    elevPhyBin = -2
+sceneObj[2] = 
+    amplitude = 505
+    rngPhyBin = 9
+    doppPhyBin = 11
+    azimPhyBin = 19
+    elevPhyBin = -5
+sceneObj[3] = 
+    amplitude = 507
+    rngPhyBin = 13
+    doppPhyBin = 1
+    azimPhyBin = -16
+    elevPhyBin = -18
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  784	  13	   1	 -16	 -18
+[ 1]:	  783	   9	  11	  19	  -5
+[ 2]:	  780	   5	 -19	   8	  -2
+[ 3]:	  783	   1	  -3	 -14	  -9
+
+Test PASSED!
+Feature: #6:TxA2 TxE1 Rx4 R16 D56 r: Passed
+Test #6 finished!
+
+Read Test #7 
+numRxAntennas = 4
+numAdcSamples = 16
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 336
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 487
+    rngPhyBin = 1
+    doppPhyBin = -45
+    azimPhyBin = 19
+    elevPhyBin = -13
+sceneObj[1] = 
+    amplitude = 497
+    rngPhyBin = 5
+    doppPhyBin = 57
+    azimPhyBin = -5
+    elevPhyBin = 12
+sceneObj[2] = 
+    amplitude = 506
+    rngPhyBin = 9
+    doppPhyBin = 38
+    azimPhyBin = -17
+    elevPhyBin = 17
+sceneObj[3] = 
+    amplitude = 490
+    rngPhyBin = 13
+    doppPhyBin = -20
+    azimPhyBin = 5
+    elevPhyBin = 8
+Expected number of targets = 4. Detected number of targets = 5.
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  783	   9	  38	 -17	  17
+[ 1]:	  782	   5	  57	  -5	  12
+[ 2]:	  781	   1	 -45	  19	 -13
+[ 3]:	  649	  15	 -45	  19	 -13
+[ 4]:	  781	  13	 -20	   5	   8
+
+Test PASSED!
+Feature: #7:TxA2 TxE1 Rx4 R16 D112 r: Passed
+Test #7 finished!
+
+Read Test #8 
+numRxAntennas = 4
+numAdcSamples = 16
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 672
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 501
+    rngPhyBin = 1
+    doppPhyBin = 33
+    azimPhyBin = -4
+    elevPhyBin = -15
+sceneObj[1] = 
+    amplitude = 512
+    rngPhyBin = 5
+    doppPhyBin = -109
+    azimPhyBin = 14
+    elevPhyBin = -16
+sceneObj[2] = 
+    amplitude = 499
+    rngPhyBin = 9
+    doppPhyBin = 113
+    azimPhyBin = 19
+    elevPhyBin = -16
+sceneObj[3] = 
+    amplitude = 489
+    rngPhyBin = 13
+    doppPhyBin = -8
+    azimPhyBin = -19
+    elevPhyBin = 18
+Expected number of targets = 4. Detected number of targets = 5.
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  783	   1	  33	  -4	 -15
+[ 1]:	  652	  15	  33	  -4	 -15
+[ 2]:	  783	   9	 113	  19	 -16
+[ 3]:	  784	   5	-109	  14	 -16
+[ 4]:	  781	  13	  -8	 -19	  18
+
+Test PASSED!
+Feature: #8:TxA2 TxE1 Rx4 R16 D224 r: Passed
+Test #8 finished!
+
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 46592 Bytes, TCM: 24792 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 91648 Bytes, TCM: 24856 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 181760 Bytes, TCM: 24920 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 411136 Bytes, TCM: 25240 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Read Test #9 
+numRxAntennas = 4
+numAdcSamples = 32
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 84
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 510
+    rngPhyBin = 1
+    doppPhyBin = 6
+    azimPhyBin = 4
+    elevPhyBin = 10
+sceneObj[1] = 
+    amplitude = 503
+    rngPhyBin = 9
+    doppPhyBin = -13
+    azimPhyBin = -2
+    elevPhyBin = 19
+sceneObj[2] = 
+    amplitude = 497
+    rngPhyBin = 17
+    doppPhyBin = -15
+    azimPhyBin = -17
+    elevPhyBin = 0
+sceneObj[3] = 
+    amplitude = 495
+    rngPhyBin = 25
+    doppPhyBin = -6
+    azimPhyBin = -18
+    elevPhyBin = -11
+Expected number of targets = 4. Detected number of targets = 5.
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  829	   1	   6	   4	  10
+[ 1]:	  688	  31	   6	   4	  10
+[ 2]:	  827	  17	 -15	 -17	   0
+[ 3]:	  829	   9	 -13	  -2	  19
+[ 4]:	  828	  25	  -6	 -18	 -11
+
+Test PASSED!
+Feature: #9:TxA2 TxE1 Rx4 R32 D28 r: Passed
+Test #9 finished!
+
+Read Test #10 
+numRxAntennas = 4
+numAdcSamples = 32
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 168
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 503
+    rngPhyBin = 1
+    doppPhyBin = -13
+    azimPhyBin = -4
+    elevPhyBin = 14
+sceneObj[1] = 
+    amplitude = 486
+    rngPhyBin = 9
+    doppPhyBin = 16
+    azimPhyBin = -18
+    elevPhyBin = 17
+sceneObj[2] = 
+    amplitude = 503
+    rngPhyBin = 17
+    doppPhyBin = 5
+    azimPhyBin = 9
+    elevPhyBin = -19
+sceneObj[3] = 
+    amplitude = 500
+    rngPhyBin = 25
+    doppPhyBin = 22
+    azimPhyBin = 0
+    elevPhyBin = -4
+Expected number of targets = 4. Detected number of targets = 5.
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  830	  17	   5	   9	 -19
+[ 1]:	  828	   9	  16	 -18	  17
+[ 2]:	  829	  25	  22	   0	  -4
+[ 3]:	  830	   1	 -13	  -4	  14
+[ 4]:	  689	  31	 -13	  -4	  14
+
+Test PASSED!
+Feature: #10:TxA2 TxE1 Rx4 R32 D56 r: Passed
+Test #10 finished!
+
+Read Test #11 
+numRxAntennas = 4
+numAdcSamples = 32
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 336
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 491
+    rngPhyBin = 1
+    doppPhyBin = -59
+    azimPhyBin = -1
+    elevPhyBin = 12
+sceneObj[1] = 
+    amplitude = 501
+    rngPhyBin = 9
+    doppPhyBin = 6
+    azimPhyBin = -9
+    elevPhyBin = -7
+sceneObj[2] = 
+    amplitude = 508
+    rngPhyBin = 17
+    doppPhyBin = 22
+    azimPhyBin = 12
+    elevPhyBin = 0
+sceneObj[3] = 
+    amplitude = 508
+    rngPhyBin = 25
+    doppPhyBin = -45
+    azimPhyBin = -5
+    elevPhyBin = 6
+Expected number of targets = 4. Detected number of targets = 5.
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  830	   9	   6	  -9	  -7
+[ 1]:	  830	  17	  22	  12	   0
+[ 2]:	  829	   1	 -59	  -1	  12
+[ 3]:	  688	  31	 -59	  -1	  12
+[ 4]:	  830	  25	 -45	  -5	   6
+
+Test PASSED!
+Feature: #11:TxA2 TxE1 Rx4 R32 D112 r: Passed
+Test #11 finished!
+
+Read Test #12 
+numRxAntennas = 4
+numAdcSamples = 32
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 768
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 507
+    rngPhyBin = 1
+    doppPhyBin = -121
+    azimPhyBin = 8
+    elevPhyBin = 19
+sceneObj[1] = 
+    amplitude = 496
+    rngPhyBin = 9
+    doppPhyBin = 99
+    azimPhyBin = -8
+    elevPhyBin = -15
+sceneObj[2] = 
+    amplitude = 482
+    rngPhyBin = 17
+    doppPhyBin = -79
+    azimPhyBin = -7
+    elevPhyBin = 1
+sceneObj[3] = 
+    amplitude = 515
+    rngPhyBin = 25
+    doppPhyBin = 2
+    azimPhyBin = -1
+    elevPhyBin = 10
+Expected number of targets = 4. Detected number of targets = 5.
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  840	  25	   2	  -1	  10
+[ 1]:	  838	   9	  99	  -8	 -15
+[ 2]:	  840	   1	-121	   8	  19
+[ 3]:	  697	  31	-121	   8	  19
+[ 4]:	  837	  17	 -79	  -7	   1
+
+Test PASSED!
+Feature: #12:TxA2 TxE1 Rx4 R32 D256 r: Passed
+Test #12 finished!
+
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 48128 Bytes, TCM: 24728 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 93184 Bytes, TCM: 24792 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 183296 Bytes, TCM: 24856 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 412672 Bytes, TCM: 24984 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Read Test #13 
+numRxAntennas = 4
+numAdcSamples = 64
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 42
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 501
+    rngPhyBin = 20
+    doppPhyBin = 2
+    azimPhyBin = -13
+    elevPhyBin = 5
+sceneObj[1] = 
+    amplitude = 507
+    rngPhyBin = 40
+    doppPhyBin = -2
+    azimPhyBin = -18
+    elevPhyBin = 13
+sceneObj[2] = 
+    amplitude = 511
+    rngPhyBin = 2
+    doppPhyBin = -2
+    azimPhyBin = 2
+    elevPhyBin = 2
+sceneObj[3] = 
+    amplitude = 505
+    rngPhyBin = 13
+    doppPhyBin = -7
+    azimPhyBin = 12
+    elevPhyBin = 9
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  872	  20	   2	 -13	   5
+[ 1]:	  873	  13	  -7	  12	   9
+[ 2]:	  873	   2	  -2	   2	   2
+[ 3]:	  872	  40	  -2	 -18	  13
+
+Test PASSED!
+Feature: #13:TxA2 TxE1 Rx4 R64 D14 r: Passed
+Test #13 finished!
+
+Read Test #14 
+numRxAntennas = 4
+numAdcSamples = 64
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 84
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 492
+    rngPhyBin = 47
+    doppPhyBin = -11
+    azimPhyBin = -5
+    elevPhyBin = 1
+sceneObj[1] = 
+    amplitude = 498
+    rngPhyBin = 4
+    doppPhyBin = -5
+    azimPhyBin = -18
+    elevPhyBin = 8
+sceneObj[2] = 
+    amplitude = 500
+    rngPhyBin = 40
+    doppPhyBin = 7
+    azimPhyBin = -12
+    elevPhyBin = -17
+sceneObj[3] = 
+    amplitude = 491
+    rngPhyBin = 19
+    doppPhyBin = -13
+    azimPhyBin = 1
+    elevPhyBin = -4
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  874	  40	   7	 -12	 -17
+[ 1]:	  873	  19	 -13	   1	  -4
+[ 2]:	  873	  47	 -11	  -5	   1
+[ 3]:	  874	   4	  -5	 -18	   8
+
+Test PASSED!
+Feature: #14:TxA2 TxE1 Rx4 R64 D28 r: Passed
+Test #14 finished!
+
+Read Test #15 
+numRxAntennas = 4
+numAdcSamples = 64
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 168
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 510
+    rngPhyBin = 36
+    doppPhyBin = -8
+    azimPhyBin = -9
+    elevPhyBin = -3
+sceneObj[1] = 
+    amplitude = 503
+    rngPhyBin = 1
+    doppPhyBin = 8
+    azimPhyBin = 20
+    elevPhyBin = 7
+sceneObj[2] = 
+    amplitude = 516
+    rngPhyBin = 15
+    doppPhyBin = 18
+    azimPhyBin = -14
+    elevPhyBin = -4
+sceneObj[3] = 
+    amplitude = 492
+    rngPhyBin = 16
+    doppPhyBin = -9
+    azimPhyBin = 1
+    elevPhyBin = 10
+Expected number of targets = 4. Detected number of targets = 5.
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  876	   1	   8	  20	   7
+[ 1]:	  729	  63	   8	  20	   7
+[ 2]:	  877	  15	  18	 -14	  -4
+[ 3]:	  874	  16	  -9	   1	  10
+[ 4]:	  876	  36	  -8	  -9	  -3
+
+Test PASSED!
+Feature: #15:TxA2 TxE1 Rx4 R64 D56 r: Passed
+Test #15 finished!
+
+Read Test #16 
+numRxAntennas = 4
+numAdcSamples = 64
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 384
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 491
+    rngPhyBin = 20
+    doppPhyBin = 36
+    azimPhyBin = 9
+    elevPhyBin = 9
+sceneObj[1] = 
+    amplitude = 500
+    rngPhyBin = 25
+    doppPhyBin = 57
+    azimPhyBin = -14
+    elevPhyBin = 17
+sceneObj[2] = 
+    amplitude = 504
+    rngPhyBin = 27
+    doppPhyBin = 1
+    azimPhyBin = 16
+    elevPhyBin = 18
+sceneObj[3] = 
+    amplitude = 494
+    rngPhyBin = 11
+    doppPhyBin = 19
+    azimPhyBin = -17
+    elevPhyBin = -20
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  886	  27	   1	  16	  18
+[ 1]:	  884	  11	  19	 -17	 -20
+[ 2]:	  884	  20	  36	   9	   9
+[ 3]:	  885	  25	  57	 -14	  17
+
+Test PASSED!
+Feature: #16:TxA2 TxE1 Rx4 R64 D128 r: Passed
+Test #16 finished!
+
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 822272 Bytes, TCM: 25240 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 96256 Bytes, TCM: 24728 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 186368 Bytes, TCM: 24792 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 415744 Bytes, TCM: 24856 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Read Test #17 
+numRxAntennas = 4
+numAdcSamples = 64
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 768
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 492
+    rngPhyBin = 9
+    doppPhyBin = 120
+    azimPhyBin = 17
+    elevPhyBin = 2
+sceneObj[1] = 
+    amplitude = 481
+    rngPhyBin = 49
+    doppPhyBin = 13
+    azimPhyBin = 1
+    elevPhyBin = 1
+sceneObj[2] = 
+    amplitude = 505
+    rngPhyBin = 22
+    doppPhyBin = -11
+    azimPhyBin = 12
+    elevPhyBin = 4
+sceneObj[3] = 
+    amplitude = 503
+    rngPhyBin = 19
+    doppPhyBin = -114
+    azimPhyBin = -19
+    elevPhyBin = 20
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  882	  49	  13	   1	   1
+[ 1]:	  884	   9	 120	  17	   2
+[ 2]:	  886	  19	-114	 -19	  20
+[ 3]:	  885	  22	 -11	  12	   4
+
+Test PASSED!
+Feature: #17:TxA2 TxE1 Rx4 R64 D256 r: Passed
+Test #17 finished!
+
+Read Test #18 
+numRxAntennas = 4
+numAdcSamples = 112
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 42
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 495
+    rngPhyBin = 35
+    doppPhyBin = -8
+    azimPhyBin = 18
+    elevPhyBin = -13
+sceneObj[1] = 
+    amplitude = 496
+    rngPhyBin = 5
+    doppPhyBin = 2
+    azimPhyBin = 13
+    elevPhyBin = 5
+sceneObj[2] = 
+    amplitude = 528
+    rngPhyBin = 63
+    doppPhyBin = -5
+    azimPhyBin = -15
+    elevPhyBin = 12
+sceneObj[3] = 
+    amplitude = 492
+    rngPhyBin = 87
+    doppPhyBin = -1
+    azimPhyBin = -13
+    elevPhyBin = 8
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  908	   5	   2	  13	   5
+[ 1]:	  908	  35	  -8	  18	 -13
+[ 2]:	  912	  63	  -5	 -15	  12
+[ 3]:	  908	  87	  -1	 -13	   8
+
+Test PASSED!
+Feature: #18:TxA2 TxE1 Rx4 R112 D14 r: Passed
+Test #18 finished!
+
+Read Test #19 
+numRxAntennas = 4
+numAdcSamples = 112
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 84
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 497
+    rngPhyBin = 28
+    doppPhyBin = -9
+    azimPhyBin = -18
+    elevPhyBin = 19
+sceneObj[1] = 
+    amplitude = 485
+    rngPhyBin = 99
+    doppPhyBin = 12
+    azimPhyBin = -3
+    elevPhyBin = -14
+sceneObj[2] = 
+    amplitude = 496
+    rngPhyBin = 1
+    doppPhyBin = -11
+    azimPhyBin = 13
+    elevPhyBin = -8
+sceneObj[3] = 
+    amplitude = 512
+    rngPhyBin = 5
+    doppPhyBin = 13
+    azimPhyBin = 13
+    elevPhyBin = -2
+Expected number of targets = 4. Detected number of targets = 5.
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  909	  99	  12	  -3	 -14
+[ 1]:	  912	   5	  13	  13	  -2
+[ 2]:	  910	   1	 -11	  13	  -8
+[ 3]:	  801	 127	 -11	  13	  -8
+[ 4]:	  911	  28	  -9	 -18	  19
+
+Test PASSED!
+Feature: #19:TxA2 TxE1 Rx4 R112 D28 r: Passed
+Test #19 finished!
+
+Read Test #20 
+numRxAntennas = 4
+numAdcSamples = 112
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 192
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 512
+    rngPhyBin = 49
+    doppPhyBin = 22
+    azimPhyBin = -12
+    elevPhyBin = -2
+sceneObj[1] = 
+    amplitude = 529
+    rngPhyBin = 60
+    doppPhyBin = -24
+    azimPhyBin = -15
+    elevPhyBin = -7
+sceneObj[2] = 
+    amplitude = 501
+    rngPhyBin = 84
+    doppPhyBin = -16
+    azimPhyBin = 7
+    elevPhyBin = -6
+sceneObj[3] = 
+    amplitude = 514
+    rngPhyBin = 15
+    doppPhyBin = -20
+    azimPhyBin = -4
+    elevPhyBin = -15
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  923	  49	  22	 -12	  -2
+[ 1]:	  925	  60	 -24	 -15	  -7
+[ 2]:	  923	  15	 -20	  -4	 -15
+[ 3]:	  921	  84	 -16	   7	  -6
+
+Test PASSED!
+Feature: #20:TxA2 TxE1 Rx4 R112 D64 r: Passed
+Test #20 finished!
+
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 825344 Bytes, TCM: 24984 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 192512 Bytes, TCM: 24728 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 421888 Bytes, TCM: 24792 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 831488 Bytes, TCM: 24856 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Read Test #21 
+numRxAntennas = 4
+numAdcSamples = 112
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 384
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 505
+    rngPhyBin = 19
+    doppPhyBin = -63
+    azimPhyBin = 9
+    elevPhyBin = -19
+sceneObj[1] = 
+    amplitude = 499
+    rngPhyBin = 1
+    doppPhyBin = 31
+    azimPhyBin = -4
+    elevPhyBin = 1
+sceneObj[2] = 
+    amplitude = 489
+    rngPhyBin = 36
+    doppPhyBin = 6
+    azimPhyBin = -11
+    elevPhyBin = 0
+sceneObj[3] = 
+    amplitude = 506
+    rngPhyBin = 85
+    doppPhyBin = -15
+    azimPhyBin = -16
+    elevPhyBin = 0
+Expected number of targets = 4. Detected number of targets = 5.
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  920	  36	   6	 -11	   0
+[ 1]:	  922	   1	  31	  -4	   1
+[ 2]:	  812	 127	  31	  -4	   1
+[ 3]:	  923	  19	 -63	   9	 -19
+[ 4]:	  922	  85	 -15	 -16	   0
+
+Test PASSED!
+Feature: #21:TxA2 TxE1 Rx4 R112 D128 r: Passed
+Test #21 finished!
+
+Read Test #22 
+numRxAntennas = 4
+numAdcSamples = 224
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 42
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 509
+    rngPhyBin = 128
+    doppPhyBin = -2
+    azimPhyBin = -3
+    elevPhyBin = -19
+sceneObj[1] = 
+    amplitude = 489
+    rngPhyBin = 61
+    doppPhyBin = 3
+    azimPhyBin = 6
+    elevPhyBin = -4
+sceneObj[2] = 
+    amplitude = 480
+    rngPhyBin = 195
+    doppPhyBin = -8
+    azimPhyBin = -13
+    elevPhyBin = 17
+sceneObj[3] = 
+    amplitude = 503
+    rngPhyBin = 12
+    doppPhyBin = 2
+    azimPhyBin = 15
+    elevPhyBin = -2
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  954	  12	   2	  15	  -2
+[ 1]:	  952	  61	   3	   6	  -4
+[ 2]:	  951	 195	  -8	 -13	  17
+[ 3]:	  955	 128	  -2	  -3	 -19
+
+Test PASSED!
+Feature: #22:TxA2 TxE1 Rx4 R224 D14 r: Passed
+Test #22 finished!
+
+Read Test #23 
+numRxAntennas = 4
+numAdcSamples = 224
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 96
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 507
+    rngPhyBin = 64
+    doppPhyBin = -10
+    azimPhyBin = 8
+    elevPhyBin = 14
+sceneObj[1] = 
+    amplitude = 508
+    rngPhyBin = 160
+    doppPhyBin = 3
+    azimPhyBin = -12
+    elevPhyBin = 13
+sceneObj[2] = 
+    amplitude = 514
+    rngPhyBin = 104
+    doppPhyBin = 14
+    azimPhyBin = 0
+    elevPhyBin = -6
+sceneObj[3] = 
+    amplitude = 504
+    rngPhyBin = 8
+    doppPhyBin = 10
+    azimPhyBin = -1
+    elevPhyBin = -7
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  966	 160	   3	 -12	  13
+[ 1]:	  966	   8	  10	  -1	  -7
+[ 2]:	  967	 104	  14	   0	  -6
+[ 3]:	  966	  64	 -10	   8	  14
+
+Test PASSED!
+Feature: #23:TxA2 TxE1 Rx4 R224 D32 r: Passed
+Test #23 finished!
+
+Read Test #24 
+numRxAntennas = 4
+numAdcSamples = 224
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 192
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 492
+    rngPhyBin = 123
+    doppPhyBin = 11
+    azimPhyBin = 1
+    elevPhyBin = 0
+sceneObj[1] = 
+    amplitude = 516
+    rngPhyBin = 79
+    doppPhyBin = -30
+    azimPhyBin = 6
+    elevPhyBin = 19
+sceneObj[2] = 
+    amplitude = 504
+    rngPhyBin = 182
+    doppPhyBin = -26
+    azimPhyBin = 12
+    elevPhyBin = -9
+sceneObj[3] = 
+    amplitude = 485
+    rngPhyBin = 10
+    doppPhyBin = 7
+    azimPhyBin = 19
+    elevPhyBin = -14
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  964	  10	   7	  19	 -14
+[ 1]:	  965	 123	  11	   1	   0
+[ 2]:	  968	  79	 -30	   6	  19
+[ 3]:	  967	 182	 -26	  12	  -9
+
+Test PASSED!
+Feature: #24:TxA2 TxE1 Rx4 R224 D64 r: Passed
+Test #24 finished!
+
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 434176 Bytes, TCM: 24728 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 843776 Bytes, TCM: 24792 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 817600 Bytes, TCM: 24728 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 23296 Bytes, TCM: 24792 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Expected number of targets = 2. Detected number of targets = 3.
+Expected number of targets = 2. Detected number of targets = 3.
+Expected number of targets = 2. Detected number of targets = 3.
+Expected number of targets = 2. Detected number of targets = 3.
+Expected number of targets = 2. Detected number of targets = 3.
+Expected number of targets = 2. Detected number of targets = 3.
+Expected number of targets = 2. Detected number of targets = 3.
+Expected number of targets = 2. Detected number of targets = 3.
+Expected number of targets = 2. Detected number of targets = 3.
+Read Test #25 
+numRxAntennas = 4
+numAdcSamples = 448
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 48
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 523
+    rngPhyBin = 381
+    doppPhyBin = -2
+    azimPhyBin = 11
+    elevPhyBin = -10
+sceneObj[1] = 
+    amplitude = 502
+    rngPhyBin = 135
+    doppPhyBin = 1
+    azimPhyBin = 7
+    elevPhyBin = 9
+sceneObj[2] = 
+    amplitude = 504
+    rngPhyBin = 224
+    doppPhyBin = -4
+    azimPhyBin = -10
+    elevPhyBin = 16
+sceneObj[3] = 
+    amplitude = 502
+    rngPhyBin = 12
+    doppPhyBin = -1
+    azimPhyBin = 13
+    elevPhyBin = -15
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1008	 135	   1	   7	   9
+[ 1]:	 1009	 224	  -4	 -10	  16
+[ 2]:	 1011	 381	  -2	  11	 -10
+[ 3]:	 1009	  12	  -1	  13	 -15
+
+Test PASSED!
+Feature: #25:TxA2 TxE1 Rx4 R448 D16 r: Passed
+Test #25 finished!
+
+Read Test #26 
+numRxAntennas = 4
+numAdcSamples = 448
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 96
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 509
+    rngPhyBin = 332
+    doppPhyBin = -2
+    azimPhyBin = 10
+    elevPhyBin = 6
+sceneObj[1] = 
+    amplitude = 502
+    rngPhyBin = 237
+    doppPhyBin = -16
+    azimPhyBin = 12
+    elevPhyBin = 18
+sceneObj[2] = 
+    amplitude = 499
+    rngPhyBin = 35
+    doppPhyBin = 12
+    azimPhyBin = 0
+    elevPhyBin = -16
+sceneObj[3] = 
+    amplitude = 479
+    rngPhyBin = 123
+    doppPhyBin = 10
+    azimPhyBin = 16
+    elevPhyBin = 5
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1007	 123	  10	  16	   5
+[ 1]:	 1009	  35	  12	   0	 -16
+[ 2]:	 1011	 237	 -16	  12	  18
+[ 3]:	 1012	 332	  -2	  10	   6
+
+Test PASSED!
+Feature: #26:TxA2 TxE1 Rx4 R448 D32 r: Passed
+Test #26 finished!
+
+Read Test #27 
+numRxAntennas = 4
+numAdcSamples = 896
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 48
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 492
+    rngPhyBin = 547
+    doppPhyBin = 4
+    azimPhyBin = -16
+    elevPhyBin = -20
+sceneObj[1] = 
+    amplitude = 503
+    rngPhyBin = 36
+    doppPhyBin = -8
+    azimPhyBin = 1
+    elevPhyBin = 6
+sceneObj[2] = 
+    amplitude = 483
+    rngPhyBin = 321
+    doppPhyBin = 4
+    azimPhyBin = -1
+    elevPhyBin = 4
+sceneObj[3] = 
+    amplitude = 511
+    rngPhyBin = 762
+    doppPhyBin = 1
+    azimPhyBin = 14
+    elevPhyBin = -13
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1037	 762	   1	  14	 -13
+[ 1]:	 1044	 321	   4	  -1	   4
+[ 2]:	 1042	 547	   4	 -16	 -20
+[ 3]:	 1033	  36	  -8	   1	   6
+
+Test PASSED!
+Feature: #27:TxA2 TxE1 Rx4 R896 D16 r: Passed
+Test #27 finished!
+
+Read Test #28 
+numRxAntennas = 4
+numAdcSamples = 8
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 84
+numTargets = 2
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 502
+    rngPhyBin = 1
+    doppPhyBin = 3
+    azimPhyBin = -19
+    elevPhyBin = -20
+sceneObj[1] = 
+    amplitude = 514
+    rngPhyBin = 3
+    doppPhyBin = -3
+    azimPhyBin = -3
+    elevPhyBin = -3
+Expected number of targets = 2. Detected number of targets = 3.
+Frame processing Done!! num obj: 3
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  732	   1	   3	 -19	 -20
+[ 1]:	  707	  15	   3	 -19	 -20
+[ 2]:	  733	   3	  -3	  -3	  -3
+
+Test PASSED!
+Feature: #28:TxA2 TxE1 Rx4 R8 D28 m: Passed
+Test #28 finished!
+
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 45824 Bytes, TCM: 24856 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 90880 Bytes, TCM: 24920 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 180992 Bytes, TCM: 25176 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 23296 Bytes, TCM: 24792 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Expected number of targets = 2. Detected number of targets = 3.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 2. Detected number of targets = 3.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 2. Detected number of targets = 3.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 2. Detected number of targets = 3.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 2. Detected number of targets = 3.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 2. Detected number of targets = 3.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 2. Detected number of targets = 3.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 2. Detected number of targets = 3.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 2. Detected number of targets = 3.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 4. Detected number of targets = 5.
+Read Test #29 
+numRxAntennas = 4
+numAdcSamples = 8
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 168
+numTargets = 2
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 511
+    rngPhyBin = 1
+    doppPhyBin = -29
+    azimPhyBin = 5
+    elevPhyBin = -4
+sceneObj[1] = 
+    amplitude = 488
+    rngPhyBin = 3
+    doppPhyBin = 29
+    azimPhyBin = 20
+    elevPhyBin = -1
+Expected number of targets = 2. Detected number of targets = 3.
+Frame processing Done!! num obj: 3
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  731	   3	  29	  20	  -1
+[ 1]:	  734	   1	 -29	   5	  -4
+[ 2]:	  709	  15	 -29	   5	  -4
+
+Test PASSED!
+Feature: #29:TxA2 TxE1 Rx4 R8 D56 m: Passed
+Test #29 finished!
+
+Read Test #30 
+numRxAntennas = 4
+numAdcSamples = 8
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 336
+numTargets = 2
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 491
+    rngPhyBin = 1
+    doppPhyBin = -30
+    azimPhyBin = 8
+    elevPhyBin = 8
+sceneObj[1] = 
+    amplitude = 501
+    rngPhyBin = 3
+    doppPhyBin = -51
+    azimPhyBin = 20
+    elevPhyBin = 3
+Expected number of targets = 2. Detected number of targets = 4.
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  733	   3	 -51	  20	   3
+[ 1]:	  622	  15	 -51	  20	   3
+[ 2]:	  732	   1	 -30	   8	   8
+[ 3]:	  707	  15	 -30	   8	   8
+
+Test PASSED!
+Feature: #30:TxA2 TxE1 Rx4 R8 D112 m: Passed
+Test #30 finished!
+
+Read Test #31 
+numRxAntennas = 4
+numAdcSamples = 8
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 672
+numTargets = 2
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 505
+    rngPhyBin = 1
+    doppPhyBin = 119
+    azimPhyBin = 12
+    elevPhyBin = 5
+sceneObj[1] = 
+    amplitude = 499
+    rngPhyBin = 3
+    doppPhyBin = 31
+    azimPhyBin = 5
+    elevPhyBin = 2
+Expected number of targets = 2. Detected number of targets = 4.
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  733	   3	  31	   5	   2
+[ 1]:	  622	  15	  31	   5	   2
+[ 2]:	  734	   1	 119	  12	   5
+[ 3]:	  708	  15	 119	  12	   5
+
+Test PASSED!
+Feature: #31:TxA2 TxE1 Rx4 R8 D224 m: Passed
+Test #31 finished!
+
+Read Test #32 
+numRxAntennas = 4
+numAdcSamples = 16
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 84
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 508
+    rngPhyBin = 1
+    doppPhyBin = 9
+    azimPhyBin = -7
+    elevPhyBin = -18
+sceneObj[1] = 
+    amplitude = 509
+    rngPhyBin = 5
+    doppPhyBin = 3
+    azimPhyBin = 6
+    elevPhyBin = 13
+sceneObj[2] = 
+    amplitude = 495
+    rngPhyBin = 9
+    doppPhyBin = 12
+    azimPhyBin = -20
+    elevPhyBin = 19
+sceneObj[3] = 
+    amplitude = 482
+    rngPhyBin = 13
+    doppPhyBin = -8
+    azimPhyBin = 2
+    elevPhyBin = 19
+Expected number of targets = 4. Detected number of targets = 5.
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  782	   5	   3	   6	  13
+[ 1]:	  782	   1	   9	  -7	 -18
+[ 2]:	  649	  15	   9	  -8	 -20
+[ 3]:	  781	   9	  12	 -20	  19
+[ 4]:	  778	  13	  -8	   2	  19
+
+Test PASSED!
+Feature: #32:TxA2 TxE1 Rx4 R16 D28 r: Passed
+Test #32 finished!
+
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 45824 Bytes, TCM: 24856 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 90880 Bytes, TCM: 24920 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 180992 Bytes, TCM: 25176 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 46592 Bytes, TCM: 24792 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Read Test #33 
+numRxAntennas = 4
+numAdcSamples = 16
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 168
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 482
+    rngPhyBin = 1
+    doppPhyBin = 13
+    azimPhyBin = -8
+    elevPhyBin = -16
+sceneObj[1] = 
+    amplitude = 498
+    rngPhyBin = 5
+    doppPhyBin = -22
+    azimPhyBin = -14
+    elevPhyBin = 1
+sceneObj[2] = 
+    amplitude = 480
+    rngPhyBin = 9
+    doppPhyBin = -14
+    azimPhyBin = 15
+    elevPhyBin = -16
+sceneObj[3] = 
+    amplitude = 489
+    rngPhyBin = 13
+    doppPhyBin = 7
+    azimPhyBin = 8
+    elevPhyBin = -14
+Expected number of targets = 4. Detected number of targets = 5.
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  780	  13	   7	   8	 -14
+[ 1]:	  779	   1	  13	  -8	 -16
+[ 2]:	  650	  15	  13	  -8	 -16
+[ 3]:	  781	   5	 -22	 -14	   1
+[ 4]:	  780	   9	 -14	  15	 -16
+
+Test PASSED!
+Feature: #33:TxA2 TxE1 Rx4 R16 D56 r: Passed
+Test #33 finished!
+
+Read Test #34 
+numRxAntennas = 4
+numAdcSamples = 16
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 336
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 487
+    rngPhyBin = 1
+    doppPhyBin = 55
+    azimPhyBin = -2
+    elevPhyBin = -20
+sceneObj[1] = 
+    amplitude = 502
+    rngPhyBin = 5
+    doppPhyBin = 32
+    azimPhyBin = 3
+    elevPhyBin = 14
+sceneObj[2] = 
+    amplitude = 515
+    rngPhyBin = 9
+    doppPhyBin = -25
+    azimPhyBin = -2
+    elevPhyBin = 3
+sceneObj[3] = 
+    amplitude = 498
+    rngPhyBin = 13
+    doppPhyBin = -1
+    azimPhyBin = 8
+    elevPhyBin = 9
+Expected number of targets = 4. Detected number of targets = 5.
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  783	   5	  32	   3	  14
+[ 1]:	  781	   1	  55	  -2	 -20
+[ 2]:	  650	  15	  55	  -2	 -20
+[ 3]:	  785	   9	 -25	  -2	   3
+[ 4]:	  782	  13	  -1	   8	   9
+
+Test PASSED!
+Feature: #34:TxA2 TxE1 Rx4 R16 D112 r: Passed
+Test #34 finished!
+
+Read Test #35 
+numRxAntennas = 4
+numAdcSamples = 16
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 672
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 495
+    rngPhyBin = 1
+    doppPhyBin = 17
+    azimPhyBin = -18
+    elevPhyBin = 16
+sceneObj[1] = 
+    amplitude = 518
+    rngPhyBin = 5
+    doppPhyBin = 91
+    azimPhyBin = 8
+    elevPhyBin = 2
+sceneObj[2] = 
+    amplitude = 510
+    rngPhyBin = 9
+    doppPhyBin = -46
+    azimPhyBin = 9
+    elevPhyBin = -6
+sceneObj[3] = 
+    amplitude = 505
+    rngPhyBin = 13
+    doppPhyBin = -82
+    azimPhyBin = 5
+    elevPhyBin = -14
+Expected number of targets = 4. Detected number of targets = 5.
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  782	   1	  17	 -18	  16
+[ 1]:	  652	  15	  17	 -18	  16
+[ 2]:	  785	   5	  91	   8	   2
+[ 3]:	  784	  13	 -82	   5	 -14
+[ 4]:	  784	   9	 -46	   9	  -6
+
+Test PASSED!
+Feature: #35:TxA2 TxE1 Rx4 R16 D224 r: Passed
+Test #35 finished!
+
+Read Test #36 
+numRxAntennas = 4
+numAdcSamples = 32
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 84
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 474
+    rngPhyBin = 1
+    doppPhyBin = 0
+    azimPhyBin = 11
+    elevPhyBin = -20
+sceneObj[1] = 
+    amplitude = 495
+    rngPhyBin = 9
+    doppPhyBin = -7
+    azimPhyBin = -12
+    elevPhyBin = 5
+sceneObj[2] = 
+    amplitude = 503
+    rngPhyBin = 17
+    doppPhyBin = -16
+    azimPhyBin = -1
+    elevPhyBin = -18
+sceneObj[3] = 
+    amplitude = 499
+    rngPhyBin = 25
+    doppPhyBin = -11
+    azimPhyBin = -3
+    elevPhyBin = 9
+Expected number of targets = 4. Detected number of targets = 5.
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  824	   1	   0	  11	 -20
+[ 1]:	  682	  31	   0	  11	 -20
+[ 2]:	  829	  17	 -16	  -1	 -18
+[ 3]:	  828	  25	 -11	  -3	   9
+[ 4]:	  828	   9	  -7	 -12	   5
+
+Test PASSED!
+Feature: #36:TxA2 TxE1 Rx4 R32 D28 r: Passed
+Test #36 finished!
+
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 91648 Bytes, TCM: 24856 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 181760 Bytes, TCM: 24920 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 411136 Bytes, TCM: 25240 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 48128 Bytes, TCM: 24728 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Read Test #37 
+numRxAntennas = 4
+numAdcSamples = 32
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 168
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 488
+    rngPhyBin = 1
+    doppPhyBin = -5
+    azimPhyBin = -19
+    elevPhyBin = 5
+sceneObj[1] = 
+    amplitude = 503
+    rngPhyBin = 9
+    doppPhyBin = 21
+    azimPhyBin = 9
+    elevPhyBin = -13
+sceneObj[2] = 
+    amplitude = 514
+    rngPhyBin = 17
+    doppPhyBin = -25
+    azimPhyBin = 19
+    elevPhyBin = 12
+sceneObj[3] = 
+    amplitude = 508
+    rngPhyBin = 25
+    doppPhyBin = 8
+    azimPhyBin = -13
+    elevPhyBin = 19
+Expected number of targets = 4. Detected number of targets = 5.
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  831	  25	   8	 -13	  19
+[ 1]:	  830	   9	  21	   9	 -13
+[ 2]:	  831	  17	 -25	  19	  12
+[ 3]:	  828	   1	  -5	 -19	   5
+[ 4]:	  687	  31	  -5	 -19	   5
+
+Test PASSED!
+Feature: #37:TxA2 TxE1 Rx4 R32 D56 r: Passed
+Test #37 finished!
+
+Read Test #38 
+numRxAntennas = 4
+numAdcSamples = 32
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 336
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 505
+    rngPhyBin = 1
+    doppPhyBin = -7
+    azimPhyBin = -12
+    elevPhyBin = -1
+sceneObj[1] = 
+    amplitude = 499
+    rngPhyBin = 9
+    doppPhyBin = 63
+    azimPhyBin = 5
+    elevPhyBin = 1
+sceneObj[2] = 
+    amplitude = 510
+    rngPhyBin = 17
+    doppPhyBin = -33
+    azimPhyBin = -20
+    elevPhyBin = -5
+sceneObj[3] = 
+    amplitude = 499
+    rngPhyBin = 25
+    doppPhyBin = 8
+    azimPhyBin = -20
+    elevPhyBin = 12
+Expected number of targets = 4. Detected number of targets = 5.
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  830	  25	   8	 -20	  12
+[ 1]:	  829	   9	  63	   5	   1
+[ 2]:	  831	  17	 -33	 -20	  -5
+[ 3]:	  831	   1	  -7	 -12	  -1
+[ 4]:	  688	  31	  -7	 -12	  -1
+
+Test PASSED!
+Feature: #38:TxA2 TxE1 Rx4 R32 D112 r: Passed
+Test #38 finished!
+
+Read Test #39 
+numRxAntennas = 4
+numAdcSamples = 32
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 768
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 507
+    rngPhyBin = 1
+    doppPhyBin = 76
+    azimPhyBin = 2
+    elevPhyBin = 18
+sceneObj[1] = 
+    amplitude = 500
+    rngPhyBin = 9
+    doppPhyBin = -74
+    azimPhyBin = 0
+    elevPhyBin = 12
+sceneObj[2] = 
+    amplitude = 507
+    rngPhyBin = 17
+    doppPhyBin = -24
+    azimPhyBin = 18
+    elevPhyBin = 17
+sceneObj[3] = 
+    amplitude = 504
+    rngPhyBin = 25
+    doppPhyBin = 39
+    azimPhyBin = -14
+    elevPhyBin = 11
+Expected number of targets = 4. Detected number of targets = 5.
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  839	  25	  39	 -14	  11
+[ 1]:	  840	   1	  76	   2	  18
+[ 2]:	  697	  31	  76	   2	  18
+[ 3]:	  838	   9	 -74	   0	  12
+[ 4]:	  840	  17	 -24	  18	  17
+
+Test PASSED!
+Feature: #39:TxA2 TxE1 Rx4 R32 D256 r: Passed
+Test #39 finished!
+
+Read Test #40 
+numRxAntennas = 4
+numAdcSamples = 64
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 42
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 500
+    rngPhyBin = 38
+    doppPhyBin = -4
+    azimPhyBin = -12
+    elevPhyBin = 14
+sceneObj[1] = 
+    amplitude = 501
+    rngPhyBin = 3
+    doppPhyBin = 3
+    azimPhyBin = 15
+    elevPhyBin = -14
+sceneObj[2] = 
+    amplitude = 486
+    rngPhyBin = 27
+    doppPhyBin = -5
+    azimPhyBin = 7
+    elevPhyBin = 11
+sceneObj[3] = 
+    amplitude = 500
+    rngPhyBin = 17
+    doppPhyBin = 0
+    azimPhyBin = -19
+    elevPhyBin = -17
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  871	  17	   0	 -19	 -17
+[ 1]:	  872	   3	   3	  15	 -14
+[ 2]:	  869	  27	  -5	   7	  11
+[ 3]:	  872	  38	  -4	 -12	  14
+
+Test PASSED!
+Feature: #40:TxA2 TxE1 Rx4 R64 D14 r: Passed
+Test #40 finished!
+
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 93184 Bytes, TCM: 24792 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 183296 Bytes, TCM: 24856 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 412672 Bytes, TCM: 24984 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 822272 Bytes, TCM: 25240 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Read Test #41 
+numRxAntennas = 4
+numAdcSamples = 64
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 84
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 501
+    rngPhyBin = 33
+    doppPhyBin = -10
+    azimPhyBin = 4
+    elevPhyBin = 2
+sceneObj[1] = 
+    amplitude = 494
+    rngPhyBin = 39
+    doppPhyBin = 5
+    azimPhyBin = 11
+    elevPhyBin = -16
+sceneObj[2] = 
+    amplitude = 498
+    rngPhyBin = 44
+    doppPhyBin = -16
+    azimPhyBin = -13
+    elevPhyBin = -7
+sceneObj[3] = 
+    amplitude = 492
+    rngPhyBin = 49
+    doppPhyBin = -2
+    azimPhyBin = 16
+    elevPhyBin = -12
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  874	  39	   5	  11	 -16
+[ 1]:	  874	  44	 -16	 -13	  -7
+[ 2]:	  874	  33	 -10	   4	   2
+[ 3]:	  872	  49	  -2	  16	 -12
+
+Test PASSED!
+Feature: #41:TxA2 TxE1 Rx4 R64 D28 r: Passed
+Test #41 finished!
+
+Read Test #42 
+numRxAntennas = 4
+numAdcSamples = 64
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 168
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 490
+    rngPhyBin = 31
+    doppPhyBin = 10
+    azimPhyBin = 5
+    elevPhyBin = -8
+sceneObj[1] = 
+    amplitude = 501
+    rngPhyBin = 33
+    doppPhyBin = -23
+    azimPhyBin = 8
+    elevPhyBin = 15
+sceneObj[2] = 
+    amplitude = 502
+    rngPhyBin = 1
+    doppPhyBin = 6
+    azimPhyBin = -1
+    elevPhyBin = -15
+sceneObj[3] = 
+    amplitude = 493
+    rngPhyBin = 8
+    doppPhyBin = -14
+    azimPhyBin = -15
+    elevPhyBin = 19
+Expected number of targets = 4. Detected number of targets = 5.
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  875	   1	   6	  -1	 -15
+[ 1]:	  729	  63	   6	  -1	 -15
+[ 2]:	  874	  31	  10	   5	  -8
+[ 3]:	  875	  33	 -23	   8	  15
+[ 4]:	  874	   8	 -14	 -15	  19
+
+Test PASSED!
+Feature: #42:TxA2 TxE1 Rx4 R64 D56 r: Passed
+Test #42 finished!
+
+Read Test #43 
+numRxAntennas = 4
+numAdcSamples = 64
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 384
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 493
+    rngPhyBin = 5
+    doppPhyBin = 52
+    azimPhyBin = 16
+    elevPhyBin = 13
+sceneObj[1] = 
+    amplitude = 494
+    rngPhyBin = 3
+    doppPhyBin = 18
+    azimPhyBin = -11
+    elevPhyBin = 15
+sceneObj[2] = 
+    amplitude = 502
+    rngPhyBin = 40
+    doppPhyBin = 47
+    azimPhyBin = -13
+    elevPhyBin = 18
+sceneObj[3] = 
+    amplitude = 499
+    rngPhyBin = 7
+    doppPhyBin = -36
+    azimPhyBin = 0
+    elevPhyBin = -5
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  884	   3	  18	 -11	  15
+[ 1]:	  885	  40	  47	 -13	  18
+[ 2]:	  884	   5	  52	  16	  13
+[ 3]:	  885	   7	 -36	   0	  -5
+
+Test PASSED!
+Feature: #43:TxA2 TxE1 Rx4 R64 D128 r: Passed
+Test #43 finished!
+
+Read Test #44 
+numRxAntennas = 4
+numAdcSamples = 64
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 768
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 501
+    rngPhyBin = 14
+    doppPhyBin = -56
+    azimPhyBin = 11
+    elevPhyBin = 11
+sceneObj[1] = 
+    amplitude = 481
+    rngPhyBin = 44
+    doppPhyBin = 5
+    azimPhyBin = 2
+    elevPhyBin = 9
+sceneObj[2] = 
+    amplitude = 508
+    rngPhyBin = 1
+    doppPhyBin = 106
+    azimPhyBin = -18
+    elevPhyBin = -8
+sceneObj[3] = 
+    amplitude = 513
+    rngPhyBin = 29
+    doppPhyBin = 79
+    azimPhyBin = 3
+    elevPhyBin = 4
+Expected number of targets = 4. Detected number of targets = 5.
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  882	  44	   5	   2	   9
+[ 1]:	  886	  29	  79	   3	   4
+[ 2]:	  886	   1	 106	 -18	  -8
+[ 3]:	  739	  63	 106	 -18	  -8
+[ 4]:	  885	  14	 -56	  11	  11
+
+Test PASSED!
+Feature: #44:TxA2 TxE1 Rx4 R64 D256 r: Passed
+Test #44 finished!
+
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 96256 Bytes, TCM: 24728 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 186368 Bytes, TCM: 24792 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 415744 Bytes, TCM: 24856 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 825344 Bytes, TCM: 24984 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Read Test #45 
+numRxAntennas = 4
+numAdcSamples = 112
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 42
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 497
+    rngPhyBin = 67
+    doppPhyBin = 1
+    azimPhyBin = -8
+    elevPhyBin = 5
+sceneObj[1] = 
+    amplitude = 504
+    rngPhyBin = 14
+    doppPhyBin = -1
+    azimPhyBin = -3
+    elevPhyBin = -3
+sceneObj[2] = 
+    amplitude = 519
+    rngPhyBin = 100
+    doppPhyBin = -7
+    azimPhyBin = 15
+    elevPhyBin = -16
+sceneObj[3] = 
+    amplitude = 501
+    rngPhyBin = 37
+    doppPhyBin = -7
+    azimPhyBin = -16
+    elevPhyBin = -18
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  908	  67	   1	  -8	   5
+[ 1]:	  909	  37	  -7	 -16	 -18
+[ 2]:	  911	 100	  -7	  15	 -16
+[ 3]:	  909	  14	  -1	  -3	  -3
+
+Test PASSED!
+Feature: #45:TxA2 TxE1 Rx4 R112 D14 r: Passed
+Test #45 finished!
+
+Read Test #46 
+numRxAntennas = 4
+numAdcSamples = 112
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 84
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 498
+    rngPhyBin = 59
+    doppPhyBin = 9
+    azimPhyBin = -8
+    elevPhyBin = 17
+sceneObj[1] = 
+    amplitude = 486
+    rngPhyBin = 11
+    doppPhyBin = 15
+    azimPhyBin = -17
+    elevPhyBin = 4
+sceneObj[2] = 
+    amplitude = 511
+    rngPhyBin = 52
+    doppPhyBin = -15
+    azimPhyBin = -18
+    elevPhyBin = -8
+sceneObj[3] = 
+    amplitude = 497
+    rngPhyBin = 100
+    doppPhyBin = 8
+    azimPhyBin = 3
+    elevPhyBin = -11
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  911	 100	   8	   3	 -11
+[ 1]:	  911	  59	   9	  -8	  17
+[ 2]:	  909	  11	  15	 -17	   4
+[ 3]:	  913	  52	 -15	 -18	  -8
+
+Test PASSED!
+Feature: #46:TxA2 TxE1 Rx4 R112 D28 r: Passed
+Test #46 finished!
+
+Read Test #47 
+numRxAntennas = 4
+numAdcSamples = 112
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 192
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 514
+    rngPhyBin = 19
+    doppPhyBin = -24
+    azimPhyBin = 4
+    elevPhyBin = 5
+sceneObj[1] = 
+    amplitude = 486
+    rngPhyBin = 85
+    doppPhyBin = 28
+    azimPhyBin = -1
+    elevPhyBin = -2
+sceneObj[2] = 
+    amplitude = 508
+    rngPhyBin = 78
+    doppPhyBin = -10
+    azimPhyBin = -3
+    elevPhyBin = 0
+sceneObj[3] = 
+    amplitude = 496
+    rngPhyBin = 57
+    doppPhyBin = -23
+    azimPhyBin = -6
+    elevPhyBin = 13
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  919	  85	  28	  -1	  -2
+[ 1]:	  922	  19	 -24	   4	   5
+[ 2]:	  920	  57	 -23	  -6	  13
+[ 3]:	  922	  78	 -10	  -3	   0
+
+Test PASSED!
+Feature: #47:TxA2 TxE1 Rx4 R112 D64 r: Passed
+Test #47 finished!
+
+Read Test #48 
+numRxAntennas = 4
+numAdcSamples = 112
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 384
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 485
+    rngPhyBin = 32
+    doppPhyBin = 8
+    azimPhyBin = -4
+    elevPhyBin = 0
+sceneObj[1] = 
+    amplitude = 509
+    rngPhyBin = 65
+    doppPhyBin = -47
+    azimPhyBin = 13
+    elevPhyBin = 19
+sceneObj[2] = 
+    amplitude = 501
+    rngPhyBin = 63
+    doppPhyBin = 56
+    azimPhyBin = 6
+    elevPhyBin = 10
+sceneObj[3] = 
+    amplitude = 504
+    rngPhyBin = 70
+    doppPhyBin = -11
+    azimPhyBin = 11
+    elevPhyBin = 6
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  919	  32	   8	  -4	   0
+[ 1]:	  922	  63	  56	   6	  10
+[ 2]:	  923	  65	 -47	  13	  19
+[ 3]:	  922	  70	 -11	  11	   6
+
+Test PASSED!
+Feature: #48:TxA2 TxE1 Rx4 R112 D128 r: Passed
+Test #48 finished!
+
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 192512 Bytes, TCM: 24728 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 421888 Bytes, TCM: 24792 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 831488 Bytes, TCM: 24856 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 434176 Bytes, TCM: 24728 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 4. Detected number of targets = 5.
+Read Test #49 
+numRxAntennas = 4
+numAdcSamples = 224
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 42
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 504
+    rngPhyBin = 101
+    doppPhyBin = 1
+    azimPhyBin = -19
+    elevPhyBin = 12
+sceneObj[1] = 
+    amplitude = 490
+    rngPhyBin = 16
+    doppPhyBin = -2
+    azimPhyBin = -5
+    elevPhyBin = -13
+sceneObj[2] = 
+    amplitude = 507
+    rngPhyBin = 58
+    doppPhyBin = 6
+    azimPhyBin = 3
+    elevPhyBin = 18
+sceneObj[3] = 
+    amplitude = 516
+    rngPhyBin = 170
+    doppPhyBin = -7
+    azimPhyBin = 16
+    elevPhyBin = -14
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  954	 101	   1	 -19	  12
+[ 1]:	  955	  58	   6	   3	  18
+[ 2]:	  955	 170	  -7	  16	 -14
+[ 3]:	  952	  16	  -2	  -5	 -13
+
+Test PASSED!
+Feature: #49:TxA2 TxE1 Rx4 R224 D14 r: Passed
+Test #49 finished!
+
+Read Test #50 
+numRxAntennas = 4
+numAdcSamples = 224
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 96
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 500
+    rngPhyBin = 134
+    doppPhyBin = -13
+    azimPhyBin = -13
+    elevPhyBin = 9
+sceneObj[1] = 
+    amplitude = 487
+    rngPhyBin = 179
+    doppPhyBin = -12
+    azimPhyBin = 4
+    elevPhyBin = 20
+sceneObj[2] = 
+    amplitude = 483
+    rngPhyBin = 95
+    doppPhyBin = 15
+    azimPhyBin = -4
+    elevPhyBin = -13
+sceneObj[3] = 
+    amplitude = 475
+    rngPhyBin = 25
+    doppPhyBin = -4
+    azimPhyBin = 14
+    elevPhyBin = -1
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  962	  95	  15	  -4	 -13
+[ 1]:	  966	 134	 -13	 -13	   9
+[ 2]:	  963	 179	 -12	   4	  20
+[ 3]:	  961	  25	  -4	  14	  -1
+
+Test PASSED!
+Feature: #50:TxA2 TxE1 Rx4 R224 D32 r: Passed
+Test #50 finished!
+
+Read Test #51 
+numRxAntennas = 4
+numAdcSamples = 224
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 192
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 485
+    rngPhyBin = 154
+    doppPhyBin = 6
+    azimPhyBin = -19
+    elevPhyBin = 9
+sceneObj[1] = 
+    amplitude = 494
+    rngPhyBin = 47
+    doppPhyBin = -31
+    azimPhyBin = -19
+    elevPhyBin = 7
+sceneObj[2] = 
+    amplitude = 482
+    rngPhyBin = 99
+    doppPhyBin = 13
+    azimPhyBin = -19
+    elevPhyBin = -2
+sceneObj[3] = 
+    amplitude = 507
+    rngPhyBin = 1
+    doppPhyBin = 24
+    azimPhyBin = -16
+    elevPhyBin = 9
+Expected number of targets = 4. Detected number of targets = 5.
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  965	 154	   6	 -19	   9
+[ 1]:	  963	  99	  13	 -19	  -2
+[ 2]:	  967	   1	  24	 -16	   9
+[ 3]:	  855	 255	  24	 -16	   9
+[ 4]:	  965	  47	 -31	 -19	   7
+
+Test PASSED!
+Feature: #51:TxA2 TxE1 Rx4 R224 D64 r: Passed
+Test #51 finished!
+
+Read Test #52 
+numRxAntennas = 4
+numAdcSamples = 448
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 48
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 484
+    rngPhyBin = 14
+    doppPhyBin = 4
+    azimPhyBin = -6
+    elevPhyBin = -7
+sceneObj[1] = 
+    amplitude = 489
+    rngPhyBin = 100
+    doppPhyBin = 6
+    azimPhyBin = 5
+    elevPhyBin = -17
+sceneObj[2] = 
+    amplitude = 488
+    rngPhyBin = 408
+    doppPhyBin = -3
+    azimPhyBin = -20
+    elevPhyBin = -1
+sceneObj[3] = 
+    amplitude = 505
+    rngPhyBin = 304
+    doppPhyBin = 2
+    azimPhyBin = 15
+    elevPhyBin = 5
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1008	 304	   2	  15	   5
+[ 1]:	 1006	  14	   4	  -6	  -7
+[ 2]:	 1006	 100	   6	   5	 -17
+[ 3]:	 1007	 408	  -3	 -20	  -1
+
+Test PASSED!
+Feature: #52:TxA2 TxE1 Rx4 R448 D16 r: Passed
+Test #52 finished!
+
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 843776 Bytes, TCM: 24792 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 817600 Bytes, TCM: 24728 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 23296 Bytes, TCM: 24792 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 23296 Bytes, TCM: 24792 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 4. Detected number of targets = 5.
+Expected number of targets = 2. Detected number of targets = 4.
+Expected number of targets = 2. Detected number of targets = 4.
+Read Test #53 
+numRxAntennas = 4
+numAdcSamples = 448
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 96
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 493
+    rngPhyBin = 342
+    doppPhyBin = -10
+    azimPhyBin = 8
+    elevPhyBin = 4
+sceneObj[1] = 
+    amplitude = 506
+    rngPhyBin = 116
+    doppPhyBin = 11
+    azimPhyBin = 5
+    elevPhyBin = 15
+sceneObj[2] = 
+    amplitude = 505
+    rngPhyBin = 209
+    doppPhyBin = 10
+    azimPhyBin = -10
+    elevPhyBin = -2
+sceneObj[3] = 
+    amplitude = 518
+    rngPhyBin = 5
+    doppPhyBin = -6
+    azimPhyBin = 12
+    elevPhyBin = -16
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1011	 209	  10	 -10	  -2
+[ 1]:	 1011	 116	  11	   5	  15
+[ 2]:	 1009	 342	 -10	   8	   4
+[ 3]:	 1012	   5	  -6	  12	 -16
+
+Test PASSED!
+Feature: #53:TxA2 TxE1 Rx4 R448 D32 r: Passed
+Test #53 finished!
+
+Read Test #54 
+numRxAntennas = 4
+numAdcSamples = 896
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 48
+numTargets = 4
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 504
+    rngPhyBin = 445
+    doppPhyBin = -5
+    azimPhyBin = -7
+    elevPhyBin = -17
+sceneObj[1] = 
+    amplitude = 501
+    rngPhyBin = 662
+    doppPhyBin = -5
+    azimPhyBin = -1
+    elevPhyBin = 12
+sceneObj[2] = 
+    amplitude = 494
+    rngPhyBin = 269
+    doppPhyBin = -6
+    azimPhyBin = -14
+    elevPhyBin = 12
+sceneObj[3] = 
+    amplitude = 506
+    rngPhyBin = 24
+    doppPhyBin = 4
+    azimPhyBin = -17
+    elevPhyBin = -13
+Expected number of targets = 4. Detected number of targets = 5.
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  894	 269	   2	 -23	   5
+[ 1]:	 1042	  24	   4	 -17	 -13
+[ 2]:	 1038	 269	  -6	 -14	  12
+[ 3]:	 1037	 445	  -5	  -7	 -17
+[ 4]:	 1036	 662	  -5	  -1	  12
+
+Test PASSED!
+Feature: #54:TxA2 TxE1 Rx4 R896 D16 r: Passed
+Test #54 finished!
+
+Read Test #55 
+numRxAntennas = 4
+numAdcSamples = 8
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 84
+numTargets = 2
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 499
+    rngPhyBin = 1
+    doppPhyBin = -14
+    azimPhyBin = -12
+    elevPhyBin = 5
+sceneObj[1] = 
+    amplitude = 480
+    rngPhyBin = 3
+    doppPhyBin = 3
+    azimPhyBin = -3
+    elevPhyBin = 1
+Expected number of targets = 2. Detected number of targets = 4.
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  729	   3	   3	  -3	   1
+[ 1]:	  617	  15	   3	  -3	   1
+[ 2]:	  731	   1	 -14	 -12	   5
+[ 3]:	  706	  15	 -14	 -12	   5
+
+Test PASSED!
+Feature: #55:TxA2 TxE1 Rx4 R8 D28 m: Passed
+Test #55 finished!
+
+Read Test #56 
+numRxAntennas = 4
+numAdcSamples = 8
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 84
+numTargets = 2
+snrdB = 15
+sceneObj[0] = 
+    amplitude = 499
+    rngPhyBin = 1
+    doppPhyBin = -14
+    azimPhyBin = -12
+    elevPhyBin = 5
+sceneObj[1] = 
+    amplitude = 480
+    rngPhyBin = 3
+    doppPhyBin = 3
+    azimPhyBin = -3
+    elevPhyBin = 1
+Expected number of targets = 2. Detected number of targets = 4.
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  729	   3	   3	  -3	   1
+[ 1]:	  615	  15	   3	  -3	   1
+[ 2]:	  732	   1	 -14	 -12	   5
+[ 3]:	  706	  15	 -14	 -12	   5
+
+Test PASSED!
+Feature: #56:TxA2 TxE1 Rx4 R8 D28 m: Passed
+Test #56 finished!
+
+DPC ObjDet Maximum Memory usage: L3: 843776 Bytes (Test #25), TCM: 25240 Bytes (Test #9)
+All 56 Tests finished!
+
+All tests PASSED
+
+Value read from Global variable (MCPI_Result): 0
+Test Failure Signature: 0
+Test Log Messages: 
+Feature tested: #1:TxA2 TxE1 Rx4 R8 D28 m: Passed
+Feature tested: #2:TxA2 TxE1 Rx4 R8 D56 m: Passed
+Feature tested: #3:TxA2 TxE1 Rx4 R8 D112 m: Passed
+Feature tested: #4:TxA2 TxE1 Rx4 R8 D224 m: Passed
+Feature tested: #5:TxA2 TxE1 Rx4 R16 D28 r: Passed
+Feature tested: #6:TxA2 TxE1 Rx4 R16 D56 r: Passed
+Feature tested: #7:TxA2 TxE1 Rx4 R16 D112 r: Passed
+Feature tested: #8:TxA2 TxE1 Rx4 R16 D224 r: Passed
+Feature tested: #9:TxA2 TxE1 Rx4 R32 D28 r: Passed
+Feature tested: #10:TxA2 TxE1 Rx4 R32 D56 r: Passed
+Feature tested: #11:TxA2 TxE1 Rx4 R32 D112 r: Passed
+Feature tested: #12:TxA2 TxE1 Rx4 R32 D256 r: Passed
+Feature tested: #13:TxA2 TxE1 Rx4 R64 D14 r: Passed
+Feature tested: #14:TxA2 TxE1 Rx4 R64 D28 r: Passed
+Feature tested: #15:TxA2 TxE1 Rx4 R64 D56 r: Passed
+Feature tested: #16:TxA2 TxE1 Rx4 R64 D128 r: Passed
+Feature tested: #17:TxA2 TxE1 Rx4 R64 D256 r: Passed
+Feature tested: #18:TxA2 TxE1 Rx4 R112 D14 r: Passed
+Feature tested: #19:TxA2 TxE1 Rx4 R112 D28 r: Passed
+Feature tested: #20:TxA2 TxE1 Rx4 R112 D64 r: Passed
+Feature tested: #21:TxA2 TxE1 Rx4 R112 D128 r: Passed
+Feature tested: #22:TxA2 TxE1 Rx4 R224 D14 r: Passed
+Feature tested: #23:TxA2 TxE1 Rx4 R224 D32 r: Passed
+Feature tested: #24:TxA2 TxE1 Rx4 R224 D64 r: Passed
+Feature tested: #25:TxA2 TxE1 Rx4 R448 D16 r: Passed
+Feature tested: #26:TxA2 TxE1 Rx4 R448 D32 r: Passed
+Feature tested: #27:TxA2 TxE1 Rx4 R896 D16 r: Passed
+Feature tested: #28:TxA2 TxE1 Rx4 R8 D28 m: Passed
+Feature tested: #29:TxA2 TxE1 Rx4 R8 D56 m: Passed
+Feature tested: #30:TxA2 TxE1 Rx4 R8 D112 m: Passed
+Feature tested: #31:TxA2 TxE1 Rx4 R8 D224 m: Passed
+Feature tested: #32:TxA2 TxE1 Rx4 R16 D28 r: Passed
+Feature tested: #33:TxA2 TxE1 Rx4 R16 D56 r: Passed
+Feature tested: #34:TxA2 TxE1 Rx4 R16 D112 r: Passed
+Feature tested: #35:TxA2 TxE1 Rx4 R16 D224 r: Passed
+Feature tested: #36:TxA2 TxE1 Rx4 R32 D28 r: Passed
+Feature tested: #37:TxA2 TxE1 Rx4 R32 D56 r: Passed
+Feature tested: #38:TxA2 TxE1 Rx4 R32 D112 r: Passed
+Feature tested: #39:TxA2 TxE1 Rx4 R32 D256 r: Passed
+Feature tested: #40:TxA2 TxE1 Rx4 R64 D14 r: Passed
+Feature tested: #41:TxA2 TxE1 Rx4 R64 D28 r: Passed
+Feature tested: #42:TxA2 TxE1 Rx4 R64 D56 r: Passed
+Feature tested: #43:TxA2 TxE1 Rx4 R64 D128 r: Passed
+Feature tested: #44:TxA2 TxE1 Rx4 R64 D256 r: Passed
+Feature tested: #45:TxA2 TxE1 Rx4 R112 D14 r: Passed
+Feature tested: #46:TxA2 TxE1 Rx4 R112 D28 r: Passed
+Feature tested: #47:TxA2 TxE1 Rx4 R112 D64 r: Passed
+Feature tested: #48:TxA2 TxE1 Rx4 R112 D128 r: Passed
+Feature tested: #49:TxA2 TxE1 Rx4 R224 D14 r: Passed
+Feature tested: #50:TxA2 TxE1 Rx4 R224 D32 r: Passed
+Feature tested: #51:TxA2 TxE1 Rx4 R224 D64 r: Passed
+Feature tested: #52:TxA2 TxE1 Rx4 R448 D16 r: Passed
+Feature tested: #53:TxA2 TxE1 Rx4 R448 D32 r: Passed
+Feature tested: #54:TxA2 TxE1 Rx4 R896 D16 r: Passed
+Feature tested: #55:TxA2 TxE1 Rx4 R8 D28 m: Passed
+Feature tested: #56:TxA2 TxE1 Rx4 R8 D28 m: Passed
+
+
+shutting down py4j gw server.
+
+
+**************************************************
+Terminating the debug session and Shutting down gateway.
+**************************************************
+
+**************************************************
+Test case execution completed
+**************************************************
+
+**************************************************
+Testcase Result : PASS
+**************************************************

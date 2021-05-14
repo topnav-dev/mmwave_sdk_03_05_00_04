@@ -1,0 +1,27 @@
+                                   OVERVIEW                                    
+Memory                              Used               Total        Percent Used
+--------------------------------------------------------------------------------
+PAGE 0:
+DATA_RAM                           58964              196608              29.99%
+HS_RAM                                 0               32768               0.00%
+HWA_RAM                                0               65536               0.00%
+L3_RAM                                 0             1048576               0.00%
+PROG_RAM                          125198              524032              23.89%
+VECTORS                               60                 256              23.44%
+PAGE 1:
+L3_RAM                                 0             1048576               0.00%
+
+
+                            Type           DATA_RAM       HS_RAM      HWA_RAM       L3_RAM     PROG_RAM      VECTORS
+--------------------------------------------------------------------------------
+(.common:gMmwDemoFlash)     code                 12            0            0            0            0            0
+APP                         code              17512            0            0            0        45862           60
+APP                         heap              34816            0            0            0            0            0
+BIOS                        code                  4            0            0            0        22443            0
+COMPONENTS_CORE             code               1680            0            0            0        29172            0
+COMPONENTS_OPTIONAL         code               2852            0            0            0        22898            0
+libqspi_xwr18xx.aer4f       code                 20            0            0            0          795            0
+libqspiflash_xwr18xx.aer4f  code                 20            0            0            0         2168            0
+linker-generated            linker             2048            0            0            0          317            0
+linker-generated            unknown               0            0            0            0         1231            0
+mmwdemo_flash.oer4f         code                  0            0            0            0          312            0

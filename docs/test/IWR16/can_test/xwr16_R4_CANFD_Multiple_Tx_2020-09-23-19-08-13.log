@@ -1,0 +1,117 @@
+mss in binary >>> xwr16xx_canfd_mss.xer4f
+eth008 Board details:
+IP address: 10.218.113.66
+Port: 17494
+
+connecting...
+Relay states 8->1 : 00010101
+1 off
+2 off
+3 off
+4 off
+5 off
+6 off
+7 off
+8 off
+Relay states 8->1 : 00000000
+1 on
+Relay states 8->1 : 00000001
+exit
+Disconnected
+Pre-Script returned: Success
+**************************************************
+Copying test case files from the Build server
+**************************************************Call to copy_testcase_binary:
+TCP: http://gtjenkins.itg.ti.com/nightly_builds/mmwave_sdk-dev/313-2020-09-23_16-37-34/artifacts/test/mmwave_sdk/packages/ti/drivers/canfd/test/xwr16xx; /home/lte_phy/ti/mcpi_tf/mcpi_testframework_1_50_00_01/test/temp/mmWave_SDK___xwr16xx_sdk03.05.00_CAN/CANFD_Test_Plan___mmwave-sdk-03-05-00-2020-09-23-19-02-18_2020_09_23_18_02_18
+
+Copying testcase binary file from http://gtjenkins.itg.ti.com/nightly_builds/mmwave_sdk-dev/313-2020-09-23_16-37-34/artifacts/test/mmwave_sdk/packages/ti/drivers/canfd/test/xwr16xx/xwr16xx_canfd_mss.xer4f to /home/lte_phy/ti/mcpi_tf/mcpi_testframework_1_50_00_01/test/temp/mmWave_SDK___xwr16xx_sdk03.05.00_CAN/CANFD_Test_Plan___mmwave-sdk-03-05-00-2020-09-23-19-02-18_2020_09_23_18_02_18 using command: 
+wget -e robots=off --no-proxy -N -T 30 -t 2 -P /home/lte_phy/ti/mcpi_tf/mcpi_testframework_1_50_00_01/test/temp/mmWave_SDK___xwr16xx_sdk03.05.00_CAN/CANFD_Test_Plan___mmwave-sdk-03-05-00-2020-09-23-19-02-18_2020_09_23_18_02_18 http://gtjenkins.itg.ti.com/nightly_builds/mmwave_sdk-dev/313-2020-09-23_16-37-34/artifacts/test/mmwave_sdk/packages/ti/drivers/canfd/test/xwr16xx/xwr16xx_canfd_mss.xer4f
+**************************************************
+Executing Testcase:/home/lte_phy/ti/mcpi_tf/mcpi_testframework_1_50_00_01/test/temp/mmWave_SDK___xwr16xx_sdk03.05.00_CAN/CANFD_Test_Plan___mmwave-sdk-03-05-00-2020-09-23-19-02-18_2020_09_23_18_02_18/xwr16xx_canfd_mss.xer4f
+**************************************************
+pcan test. 
+Loading R4, load params, run async.
+
+/home/lte_phy/ti/mcpi_tf/mcpi_testframework_1_50_00_01/config/iwr16_v9.ccxml
+Checking if Py4J Gateway server has started...
+Py4J Gateway Server is Started
+a path in cpuList is Texas Instruments XDS110 USB Debug Probe_0/DEBUGSSM_0
+a path in cpuList is Texas Instruments XDS110 USB Debug Probe_0/CS_DAP_0
+a path in cpuList is Texas Instruments XDS110 USB Debug Probe_0/Cortex_R4_0
+Loading binary to the DUT:/home/lte_phy/ti/mcpi_tf/mcpi_testframework_1_50_00_01/test/temp/mmWave_SDK___xwr16xx_sdk03.05.00_CAN/CANFD_Test_Plan___mmwave-sdk-03-05-00-2020-09-23-19-02-18_2020_09_23_18_02_18/xwr16xx_canfd_mss.xer4f
+
+**************************************************
+ Parameters found in the Binary arguments : 
+{'testSelection(32)': '3'}
+**************************************************
+Reading address of symbol: testSelection
+Address of symbol obtained: 0x80078f8
+Write value 3 to address 0x80078f8 
+Value updated successfully
+Done Loading R4, load params, run async.
+
+PCAN is /dev/pcan33
+
+PCAN Log File is ~/ti/mcpi_tf/mmwave_sdk_test/mcpitf_scripts/mmwave_sdk/pcan33.log
+
+cmd = ~/peak-linux-driver-8.10.0/test/pcanfdtst rx -n 2 -c 40M -b             1M -d 5M /dev/pcan33  |             tee ~/ti/mcpi_tf/mmwave_sdk_test/mcpitf_scripts/mmwave_sdk/pcan33.log
+
+1600902520~420860 /dev/pcan33 > BUS_STATE=ACTIVE   [Rx:0 Tx:0]   - 
+1600902542.130281 /dev/pcan33 > 000000c1 .e...  8 - a1 1a ff ff c1 1c b1 1b 
+1600902542.130942 /dev/pcan33 > 000000c2 .e...  8 - a1 1a ff ff c1 1c b1 1b 
+/dev/pcan33 > [packets=2 calls=3 bytes=16 seq_err=0 drv_ovr=0 ctr_ovr=0]
+received frames: 21600902542~156891 /dev/pcan33 > BUS_STATE=ACTIVE   [Rx:0 Tx:0]   - 
+1600902542~156892 /dev/pcan33 > 000000c3 .e...  8 - a1 1a ff ff c1 1c b1 1b 
+1600902542~158891 /dev/pcan33 > 000000c4 .e...  8 - a1 1a ff ff c1 1c b1 1b 
+/dev/pcan33 > [packets=2 calls=3 bytes=16 seq_err=0 drv_ovr=0 ctr_ovr=0]
+received frames: 21600902542~192757 /dev/pcan33 > BUS_STATE=ACTIVE   [Rx:0 Tx:0]   - 
+1600902542~193900 /dev/pcan33 > 000000c4 .e...  8 - a1 1a ff ff c1 1c b1 1b 
+1600902542~193900 /dev/pcan33 > 000000c5 .e...  8 - a1 1a ff ff c1 1c b1 1b 
+/dev/pcan33 > [packets=2 calls=3 bytes=16 seq_err=0 drv_ovr=0 ctr_ovr=0]
+received frames: 21600902542~228765 /dev/pcan33 > BUS_STATE=ACTIVE   [Rx:0 Tx:0]   - 
+1600902542~229895 /dev/pcan33 > 000000c5 .e...  8 - a1 1a ff ff c1 1c b1 1b 
+1600902542~230914 /dev/pcan33 > 000000c1 .e...  8 - a1 1a ff ff c1 1c b1 1b 
+/dev/pcan33 > [packets=2 calls=3 bytes=16 seq_err=0 drv_ovr=0 ctr_ovr=0]
+received frames: 21600902542~264762 /dev/pcan33 > BUS_STATE=ACTIVE   [Rx:0 Tx:0]   - 
+1600902542~265886 /dev/pcan33 > 000000c1 .e...  8 - a1 1a ff ff c1 1c b1 1b 
+1600902542~265887 /dev/pcan33 > 000000c2 .e...  8 - a1 1a ff ff c1 1c b1 1b 
+/dev/pcan33 > [packets=2 calls=3 bytes=16 seq_err=0 drv_ovr=0 ctr_ovr=0]
+received frames: 21600902542~300765 /dev/pcan33 > BUS_STATE=ACTIVE   [Rx:0 Tx:0]   - 
+1600902542~301914 /dev/pcan33 > 000000c2 .e...  8 - a1 1a ff ff c1 1c b1 1b 
+1600902542~301915 /dev/pcan33 > 000000c3 .e...  8 - a1 1a ff ff c1 1c b1 1b 
+/dev/pcan33 > [packets=2 calls=3 bytes=16 seq_err=0 drv_ovr=0 ctr_ovr=0]
+received frames: 21600902542~336763 /dev/pcan33 > BUS_STATE=ACTIVE   [Rx:0 Tx:0]   - 
+1600902542~337883 /dev/pcan33 > 000000c3 .e...  8 - a1 1a ff ff c1 1c b1 1b 
+1600902542~338893 /dev/pcan33 > 000000c4 .e...  8 - a1 1a ff ff c1 1c b1 1b 
+/dev/pcan33 > [packets=2 calls=3 bytes=16 seq_err=0 drv_ovr=0 ctr_ovr=0]
+received frames: 21600902542~372752 /dev/pcan33 > BUS_STATE=ACTIVE   [Rx:0 Tx:0]   - 
+1600902542~373901 /dev/pcan33 > 000000c4 .e...  8 - a1 1a ff ff c1 1c b1 1b 
+1600902542~374900 /dev/pcan33 > 000000c5 .e...  8 - a1 1a ff ff c1 1c b1 1b 
+/dev/pcan33 > [packets=2 calls=3 bytes=16 seq_err=0 drv_ovr=0 ctr_ovr=0]
+received frames: 21600902542~408764 /dev/pcan33 > BUS_STATE=ACTIVE   [Rx:0 Tx:0]   - 
+1600902542~409893 /dev/pcan33 > 000000c5 .e...  8 - a1 1a ff ff c1 1c b1 1b 
+1600902542~410888 /dev/pcan33 > 000000c1 .e...  8 - a1 1a ff ff c1 1c b1 1b 
+/dev/pcan33 > [packets=2 calls=3 bytes=16 seq_err=0 drv_ovr=0 ctr_ovr=0]
+received frames: 21600902542~444764 /dev/pcan33 > BUS_STATE=ACTIVE   [Rx:0 Tx:0]   - 
+1600902542~445886 /dev/pcan33 > 000000c1 .e...  8 - a1 1a ff ff c1 1c b1 1b 
+1600902542~445887 /dev/pcan33 > 000000c2 .e...  8 - a1 1a ff ff c1 1c b1 1b 
+/dev/pcan33 > [packets=2 calls=3 bytes=16 seq_err=0 drv_ovr=0 ctr_ovr=0]
+received frames: 2
+**************************************************
+a1 1a ff ff c1 1c b1 1b was successfully read 10 times
+
+**************************************************
+shutting down py4j gw server.
+
+
+**************************************************
+Terminating the debug session and Shutting down gateway.
+**************************************************
+
+**************************************************
+Test case execution completed
+**************************************************
+
+**************************************************
+Testcase Result : PASS
+**************************************************

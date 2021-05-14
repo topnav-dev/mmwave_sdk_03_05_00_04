@@ -1,0 +1,2560 @@
+mss in binary >>> xwr68xx_dopplerprochwa_mss.xer4f
+pre script = /home/lte_phy/ti/mcpi_tf/mmwave_sdk_test/mcpitf_scripts/mmwave_sdk/setup.py
+
+
+cmd: python /home/lte_phy/ti/mcpi_tf/mmwave_sdk_test/mcpitf_scripts/mmwave_sdk/setup.py uda0227080_awr68
+eth008 Board details:
+IP address: 10.218.113.74
+
+Port: 17494
+
+connecting...
+Relay states 8->1 : 01010101
+1 off
+2 off
+Relay states 8->1 : 01010100
+1 on
+Relay states 8->1 : 01010101
+exit
+Disconnected
+Pre-Script returned: Success
+**************************************************
+Testcase mods & parameters invoked:
+**************************************************
+Two core test case: None (this is not a two core testcase)
+
+**************************************************
+Copying test case files from the Build server
+**************************************************
+Testdata possible location 1: http://gtjenkins.itg.ti.com/nightly_builds/mmwave_sdk-dev/313-2020-09-23_16-37-34/artifacts/mmwave_sdk/packages/ti/datapath/dpc/dpu/dopplerproc/testdata
+
+
+Testdata directory was not found on Testdata possible location 1
+
+
+Testdata possible location 2: http://gtjenkins.itg.ti.com/nightly_builds/mmwave_sdk-dev/313-2020-09-23_16-37-34/artifacts/test/mmwave_sdk/packages/ti/datapath/dpc/dpu/dopplerproc/test/testdata
+
+
+Testdata directory was not found on Testdata possible location 2
+
+Call to copy_testcase_binary:
+TCP: http://gtjenkins.itg.ti.com/nightly_builds/mmwave_sdk-dev/313-2020-09-23_16-37-34/artifacts/test/mmwave_sdk/packages/ti/datapath/dpc/dpu/dopplerproc/test; /home/lte_phy/ti/mcpi_tf/mcpi_testframework_1_50_00_01/test/temp/mmWave_SDK___awr68xx_sdk03.05.00_Test_Plan___mmwave-sdk-03-05-00-2020-09-23-19-04-16_2020_09_23_18_04_16
+
+Copying testcase binary file from http://gtjenkins.itg.ti.com/nightly_builds/mmwave_sdk-dev/313-2020-09-23_16-37-34/artifacts/test/mmwave_sdk/packages/ti/datapath/dpc/dpu/dopplerproc/test/xwr68xx_dopplerprochwa_mss.xer4f to /home/lte_phy/ti/mcpi_tf/mcpi_testframework_1_50_00_01/test/temp/mmWave_SDK___awr68xx_sdk03.05.00_Test_Plan___mmwave-sdk-03-05-00-2020-09-23-19-04-16_2020_09_23_18_04_16 using command: 
+wget -e robots=off --no-proxy -N -T 30 -t 2 -P /home/lte_phy/ti/mcpi_tf/mcpi_testframework_1_50_00_01/test/temp/mmWave_SDK___awr68xx_sdk03.05.00_Test_Plan___mmwave-sdk-03-05-00-2020-09-23-19-04-16_2020_09_23_18_04_16 http://gtjenkins.itg.ti.com/nightly_builds/mmwave_sdk-dev/313-2020-09-23_16-37-34/artifacts/test/mmwave_sdk/packages/ti/datapath/dpc/dpu/dopplerproc/test/xwr68xx_dopplerprochwa_mss.xer4f
+**************************************************
+Executing Testcase:/home/lte_phy/ti/mcpi_tf/mcpi_testframework_1_50_00_01/test/temp/mmWave_SDK___awr68xx_sdk03.05.00_Test_Plan___mmwave-sdk-03-05-00-2020-09-23-19-04-16_2020_09_23_18_04_16/xwr68xx_dopplerprochwa_mss.xer4f
+**************************************************
+Checking if Py4J Gateway server has started...
+Py4J Gateway Server is Started
+amk: a path in cpuList is Texas Instruments XDS110 USB Debug Probe_0/DEBUGSSM_0
+amk: a path in cpuList is Texas Instruments XDS110 USB Debug Probe_0/CS_DAP_0
+amk: a path in cpuList is Texas Instruments XDS110 USB Debug Probe_0/Cortex_R4_0
+DSS test case opening debug session.
+
+cr4ctl = 0xadad00
+
+Loading binary to the DUT (no binary args updated):/home/lte_phy/ti/mcpi_tf/mcpi_testframework_1_50_00_01/test/temp/mmWave_SDK___awr68xx_sdk03.05.00_Test_Plan___mmwave-sdk-03-05-00-2020-09-23-19-04-16_2020_09_23_18_04_16/xwr68xx_dopplerprochwa_mss.xer4f
+binary path = /home/lte_phy/ti/mcpi_tf/mcpi_testframework_1_50_00_01/test/temp/mmWave_SDK___awr68xx_sdk03.05.00_Test_Plan___mmwave-sdk-03-05-00-2020-09-23-19-04-16_2020_09_23_18_04_16/xwr68xx_dopplerprochwa_mss.xer4f
+
+total CCS time = 933
+
+
+**************************************************
+CIO Log captured for the testcase
+**************************************************
+...... Initialization ...... 
+Doppler Proc DPU Test start ...... 
+
+...... 308 Tests to be run .......
+
+
+Test #0  start
+Test feature : :Tx1 Rx1 Chirp2 R16 D2 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 18590
+Doppler DPU Process. Cycles = 6777. 
+Test Pass
+
+Test #0 finished!
+
+Test #1  start
+Test feature : :Tx1 Rx1 Chirp2 R32 D2 WinSym1 1stFftScale1
+Doppler DPU configured. Cycles = 18618
+Doppler DPU Process. Cycles = 8643. 
+Test Pass
+
+Test #1 finished!
+
+Test #2  start
+Test feature : :Tx1 Rx1 Chirp2 R64 D2 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 18651
+Doppler DPU Process. Cycles = 11456. 
+Test Pass
+
+Test #2 finished!
+
+Test #3  start
+Test feature : :Tx1 Rx1 Chirp2 R128 D2 WinSym1 1stFftScale1
+Doppler DPU configured. Cycles = 18490
+Doppler DPU Process. Cycles = 18556. 
+Test Pass
+
+Test #3 finished!
+
+Test #4  start
+Test feature : :Tx1 Rx1 Chirp2 R256 D2 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 18530
+Doppler DPU Process. Cycles = 32253. 
+Test Pass
+
+Test #4 finished!
+
+Test #5  start
+Test feature : :Tx1 Rx1 Chirp2 R512 D2 WinSym1 1stFftScale1
+Doppler DPU configured. Cycles = 18543
+Doppler DPU Process. Cycles = 55220. 
+Test Pass
+
+Test #5 finished!
+
+Test #6  start
+Test feature : :Tx1 Rx1 Chirp2 R1024 D2 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 18653
+Doppler DPU Process. Cycles = 105336. 
+Test Pass
+
+Test #6 finished!
+
+Test #7  start
+Test feature : :Tx1 Rx1 Chirp3 R16 D4 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18603
+Doppler DPU Process. Cycles = 6737. 
+Test Pass
+
+Test #7 finished!
+
+Test #8  start
+Test feature : :Tx1 Rx1 Chirp4 R32 D4 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 18576
+Doppler DPU Process. Cycles = 8321. 
+Test Pass
+
+Test #8 finished!
+
+Test #9  start
+Test feature : :Tx1 Rx1 Chirp3 R64 D4 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18620
+Doppler DPU Process. Cycles = 11434. 
+Test Pass
+
+Test #9 finished!
+
+Test #10  start
+Test feature : :Tx1 Rx1 Chirp4 R128 D4 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 18609
+Doppler DPU Process. Cycles = 17711. 
+Test Pass
+
+Test #10 finished!
+
+Test #11  start
+Test feature : :Tx1 Rx1 Chirp3 R256 D4 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 19480
+Doppler DPU Process. Cycles = 30163. 
+Test Pass
+
+Test #11 finished!
+
+Test #12  start
+Test feature : :Tx1 Rx1 Chirp4 R512 D4 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 18637
+Doppler DPU Process. Cycles = 55149. 
+Test Pass
+
+Test #12 finished!
+
+Test #13  start
+Test feature : :Tx1 Rx1 Chirp3 R1024 D4 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18495
+Doppler DPU Process. Cycles = 105030. 
+Test Pass
+
+Test #13 finished!
+
+Test #14  start
+Test feature : :Tx1 Rx1 Chirp5 R16 D8 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 18549
+Doppler DPU Process. Cycles = 6922. 
+Test Pass
+
+Test #14 finished!
+
+Test #15  start
+Test feature : :Tx1 Rx1 Chirp6 R32 D8 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18654
+Doppler DPU Process. Cycles = 8684. 
+Test Pass
+
+Test #15 finished!
+
+Test #16  start
+Test feature : :Tx1 Rx1 Chirp7 R64 D8 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 18548
+Doppler DPU Process. Cycles = 12058. 
+Test Pass
+
+Test #16 finished!
+
+Test #17  start
+Test feature : :Tx1 Rx1 Chirp4 R128 D8 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18567
+Doppler DPU Process. Cycles = 18741. 
+Test Pass
+
+Test #17 finished!
+
+Test #18  start
+Test feature : :Tx1 Rx1 Chirp2 R256 D8 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 18667
+Doppler DPU Process. Cycles = 32277. 
+Test Pass
+
+Test #18 finished!
+
+Test #19  start
+Test feature : :Tx1 Rx1 Chirp6 R512 D8 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18548
+Doppler DPU Process. Cycles = 60640. 
+Test Pass
+
+Test #19 finished!
+
+Test #20  start
+Test feature : :Tx1 Rx1 Chirp7 R1024 D8 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 18634
+Doppler DPU Process. Cycles = 116144. 
+Test Pass
+
+Test #20 finished!
+
+Test #21  start
+Test feature : :Tx1 Rx1 Chirp9 R16 D16 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18640
+Doppler DPU Process. Cycles = 7249. 
+Test Pass
+
+Test #21 finished!
+
+Test #22  start
+Test feature : :Tx1 Rx1 Chirp10 R32 D16 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 18679
+Doppler DPU Process. Cycles = 9335. 
+Test Pass
+
+Test #22 finished!
+
+Test #23  start
+Test feature : :Tx1 Rx1 Chirp11 R64 D16 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18667
+Doppler DPU Process. Cycles = 13493. 
+Test Pass
+
+Test #23 finished!
+
+Test #24  start
+Test feature : :Tx1 Rx1 Chirp12 R128 D16 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 18728
+Doppler DPU Process. Cycles = 21803. 
+Test Pass
+
+Test #24 finished!
+
+Test #25  start
+Test feature : :Tx1 Rx1 Chirp8 R256 D16 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18670
+Doppler DPU Process. Cycles = 38383. 
+Test Pass
+
+Test #25 finished!
+
+Test #26  start
+Test feature : :Tx1 Rx1 Chirp4 R512 D16 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 18582
+Doppler DPU Process. Cycles = 71723. 
+Test Pass
+
+Test #26 finished!
+
+Test #27  start
+Test feature : :Tx1 Rx1 Chirp15 R1024 D16 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18579
+Doppler DPU Process. Cycles = 138327. 
+Test Pass
+
+Test #27 finished!
+
+Test #28  start
+Test feature : :Tx1 Rx1 Chirp32 R16 D32 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 18895
+Doppler DPU Process. Cycles = 8129. 
+Test Pass
+
+Test #28 finished!
+
+Test #29  start
+Test feature : :Tx1 Rx1 Chirp12 R32 D32 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18600
+Doppler DPU Process. Cycles = 10338. 
+Test Pass
+
+Test #29 finished!
+
+Test #30  start
+Test feature : :Tx1 Rx1 Chirp10 R64 D32 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 18649
+Doppler DPU Process. Cycles = 15608. 
+Test Pass
+
+Test #30 finished!
+
+Test #31  start
+Test feature : :Tx1 Rx1 Chirp11 R128 D32 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18583
+Doppler DPU Process. Cycles = 26037. 
+Test Pass
+
+Test #31 finished!
+
+Test #32  start
+Test feature : :Tx1 Rx1 Chirp32 R256 D32 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 18922
+Doppler DPU Process. Cycles = 52369. 
+Test Pass
+
+Test #32 finished!
+
+Test #33  start
+Test feature : :Tx1 Rx1 Chirp16 R512 D32 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18583
+Doppler DPU Process. Cycles = 88334. 
+Test Pass
+
+Test #33 finished!
+
+Test #34  start
+Test feature : :Tx1 Rx1 Chirp8 R1024 D32 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 18734
+Doppler DPU Process. Cycles = 166067. 
+Test Pass
+
+Test #34 finished!
+
+Test #35  start
+Test feature : :Tx1 Rx1 Chirp64 R16 D64 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18867
+Doppler DPU Process. Cycles = 9274. 
+Test Pass
+
+Test #35 finished!
+
+Test #36  start
+Test feature : :Tx1 Rx1 Chirp40 R32 D64 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 19028
+Doppler DPU Process. Cycles = 13033. 
+Test Pass
+
+Test #36 finished!
+
+Test #37  start
+Test feature : :Tx1 Rx1 Chirp38 R64 D64 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18792
+Doppler DPU Process. Cycles = 20736. 
+Test Pass
+
+Test #37 finished!
+
+Test #38  start
+Test feature : :Tx1 Rx1 Chirp39 R128 D64 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 19284
+Doppler DPU Process. Cycles = 36257. 
+Test Pass
+
+Test #38 finished!
+
+Test #39  start
+Test feature : :Tx1 Rx1 Chirp64 R256 D64 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18941
+Doppler DPU Process. Cycles = 68492. 
+Test Pass
+
+Test #39 finished!
+
+Test #40  start
+Test feature : :Tx1 Rx1 Chirp36 R512 D64 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 19016
+Doppler DPU Process. Cycles = 129179. 
+Test Pass
+
+Test #40 finished!
+
+Test #41  start
+Test feature : :Tx1 Rx1 Chirp64 R16 D128 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 19249
+Doppler DPU Process. Cycles = 12265. 
+Test Pass
+
+Test #41 finished!
+
+Test #42  start
+Test feature : :Tx1 Rx1 Chirp32 R32 D128 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18625
+Doppler DPU Process. Cycles = 19255. 
+Test Pass
+
+Test #42 finished!
+
+Test #43  start
+Test feature : :Tx1 Rx1 Chirp98 R64 D128 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 20020
+Doppler DPU Process. Cycles = 33417. 
+Test Pass
+
+Test #43 finished!
+
+Test #44  start
+Test feature : :Tx1 Rx1 Chirp99 R128 D128 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 19309
+Doppler DPU Process. Cycles = 61382. 
+Test Pass
+
+Test #44 finished!
+
+Test #45  start
+Test feature : :Tx1 Rx1 Chirp128 R256 D128 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 19828
+Doppler DPU Process. Cycles = 117370. 
+Test Pass
+
+Test #45 finished!
+
+Test #46  start
+Test feature : :Tx1 Rx1 Chirp64 R16 D256 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18871
+Doppler DPU Process. Cycles = 18395. 
+Test Pass
+
+Test #46 finished!
+
+Test #47  start
+Test feature : :Tx1 Rx1 Chirp224 R32 D256 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 20999
+Doppler DPU Process. Cycles = 31929. 
+Test Pass
+
+Test #47 finished!
+
+Test #48  start
+Test feature : :Tx1 Rx1 Chirp222 R64 D256 WinSym1 1stFftScale1
+Doppler DPU configured. Cycles = 20143
+Doppler DPU Process. Cycles = 58271. 
+Test Pass
+
+Test #48 finished!
+
+Test #49  start
+Test feature : :Tx1 Rx1 Chirp128 R128 D256 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 19887
+Doppler DPU Process. Cycles = 110690. 
+Test Pass
+
+Test #49 finished!
+
+Test #50  start
+Test feature : :Tx1 Rx1 Chirp128 R16 D512 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 19933
+Doppler DPU Process. Cycles = 30963. 
+Test Pass
+
+Test #50 finished!
+
+Test #51  start
+Test feature : :Tx1 Rx1 Chirp476 R32 D512 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 20981
+Doppler DPU Process. Cycles = 57229. 
+Test Pass
+
+Test #51 finished!
+
+Test #52  start
+Test feature : :Tx1 Rx1 Chirp474 R64 D512 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 25150
+Doppler DPU Process. Cycles = 108182. 
+Test Pass
+
+Test #52 finished!
+
+Test #53  start
+Test feature : :Tx1 Rx2 Chirp2 R16 D2 WinSym1 1stFftScale1
+Doppler DPU configured. Cycles = 18431
+Doppler DPU Process. Cycles = 6770. 
+Test Pass
+
+Test #53 finished!
+
+Test #54  start
+Test feature : :Tx1 Rx2 Chirp2 R32 D2 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 18530
+Doppler DPU Process. Cycles = 8380. 
+Test Pass
+
+Test #54 finished!
+
+Test #55  start
+Test feature : :Tx1 Rx2 Chirp2 R64 D2 WinSym1 1stFftScale1
+Doppler DPU configured. Cycles = 18506
+Doppler DPU Process. Cycles = 11549. 
+Test Pass
+
+Test #55 finished!
+
+Test #56  start
+Test feature : :Tx1 Rx2 Chirp2 R128 D2 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 18634
+Doppler DPU Process. Cycles = 17804. 
+Test Pass
+
+Test #56 finished!
+
+Test #57  start
+Test feature : :Tx1 Rx2 Chirp2 R256 D2 WinSym1 1stFftScale1
+Doppler DPU configured. Cycles = 18456
+Doppler DPU Process. Cycles = 30308. 
+Test Pass
+
+Test #57 finished!
+
+Test #58  start
+Test feature : :Tx1 Rx2 Chirp2 R512 D2 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 18591
+Doppler DPU Process. Cycles = 55422. 
+Test Pass
+
+Test #58 finished!
+
+Test #59  start
+Test feature : :Tx1 Rx2 Chirp2 R1024 D2 WinSym1 1stFftScale1
+Doppler DPU configured. Cycles = 18457
+Doppler DPU Process. Cycles = 105560. 
+Test Pass
+
+Test #59 finished!
+
+Test #60  start
+Test feature : :Tx1 Rx2 Chirp3 R16 D4 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 18598
+Doppler DPU Process. Cycles = 6812. 
+Test Pass
+
+Test #60 finished!
+
+Test #61  start
+Test feature : :Tx1 Rx2 Chirp4 R32 D4 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18392
+Doppler DPU Process. Cycles = 8567. 
+Test Pass
+
+Test #61 finished!
+
+Test #62  start
+Test feature : :Tx1 Rx2 Chirp3 R64 D4 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 18665
+Doppler DPU Process. Cycles = 11843. 
+Test Pass
+
+Test #62 finished!
+
+Test #63  start
+Test feature : :Tx1 Rx2 Chirp4 R128 D4 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18431
+Doppler DPU Process. Cycles = 18717. 
+Test Pass
+
+Test #63 finished!
+
+Test #64  start
+Test feature : :Tx1 Rx2 Chirp3 R256 D4 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 18541
+Doppler DPU Process. Cycles = 31770. 
+Test Pass
+
+Test #64 finished!
+
+Test #65  start
+Test feature : :Tx1 Rx2 Chirp4 R512 D4 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 19380
+Doppler DPU Process. Cycles = 59231. 
+Test Pass
+
+Test #65 finished!
+
+Test #66  start
+Test feature : :Tx1 Rx2 Chirp3 R1024 D4 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 18551
+Doppler DPU Process. Cycles = 112470. 
+Test Pass
+
+Test #66 finished!
+
+Test #67  start
+Test feature : :Tx1 Rx2 Chirp5 R16 D8 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18570
+Doppler DPU Process. Cycles = 7141. 
+Test Pass
+
+Test #67 finished!
+
+Test #68  start
+Test feature : :Tx1 Rx2 Chirp6 R32 D8 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 18632
+Doppler DPU Process. Cycles = 9082. 
+Test Pass
+
+Test #68 finished!
+
+Test #69  start
+Test feature : :Tx1 Rx2 Chirp7 R64 D8 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18483
+Doppler DPU Process. Cycles = 12972. 
+Test Pass
+
+Test #69 finished!
+
+Test #70  start
+Test feature : :Tx1 Rx2 Chirp8 R128 D8 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 18554
+Doppler DPU Process. Cycles = 20846. 
+Test Pass
+
+Test #70 finished!
+
+Test #71  start
+Test feature : :Tx1 Rx2 Chirp5 R256 D8 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18507
+Doppler DPU Process. Cycles = 35742. 
+Test Pass
+
+Test #71 finished!
+
+Test #72  start
+Test feature : :Tx1 Rx2 Chirp4 R512 D8 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 19367
+Doppler DPU Process. Cycles = 66204. 
+Test Pass
+
+Test #72 finished!
+
+Test #73  start
+Test feature : :Tx1 Rx2 Chirp2 R1024 D8 WinSym1 1stFftScale1
+Doppler DPU configured. Cycles = 18506
+Doppler DPU Process. Cycles = 125835. 
+Test Pass
+
+Test #73 finished!
+
+Test #74  start
+Test feature : :Tx1 Rx2 Chirp9 R16 D16 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 18589
+Doppler DPU Process. Cycles = 7572. 
+Test Pass
+
+Test #74 finished!
+
+Test #75  start
+Test feature : :Tx1 Rx2 Chirp10 R32 D16 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18529
+Doppler DPU Process. Cycles = 9946. 
+Test Pass
+
+Test #75 finished!
+
+Test #76  start
+Test feature : :Tx1 Rx2 Chirp11 R64 D16 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 18659
+Doppler DPU Process. Cycles = 14925. 
+Test Pass
+
+Test #76 finished!
+
+Test #77  start
+Test feature : :Tx1 Rx2 Chirp12 R128 D16 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18599
+Doppler DPU Process. Cycles = 24614. 
+Test Pass
+
+Test #77 finished!
+
+Test #78  start
+Test feature : :Tx1 Rx2 Chirp13 R256 D16 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 18620
+Doppler DPU Process. Cycles = 46711. 
+Test Pass
+
+Test #78 finished!
+
+Test #79  start
+Test feature : :Tx1 Rx2 Chirp14 R512 D16 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 19461
+Doppler DPU Process. Cycles = 88331. 
+Test Pass
+
+Test #79 finished!
+
+Test #80  start
+Test feature : :Tx1 Rx2 Chirp8 R1024 D16 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 18512
+Doppler DPU Process. Cycles = 155562. 
+Test Pass
+
+Test #80 finished!
+
+Test #81  start
+Test feature : :Tx1 Rx2 Chirp8 R16 D32 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18464
+Doppler DPU Process. Cycles = 8592. 
+Test Pass
+
+Test #81 finished!
+
+Test #82  start
+Test feature : :Tx1 Rx2 Chirp12 R32 D32 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 18638
+Doppler DPU Process. Cycles = 11941. 
+Test Pass
+
+Test #82 finished!
+
+Test #83  start
+Test feature : :Tx1 Rx2 Chirp10 R64 D32 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18532
+Doppler DPU Process. Cycles = 18677. 
+Test Pass
+
+Test #83 finished!
+
+Test #84  start
+Test feature : :Tx1 Rx2 Chirp11 R128 D32 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 18736
+Doppler DPU Process. Cycles = 32134. 
+Test Pass
+
+Test #84 finished!
+
+Test #85  start
+Test feature : :Tx1 Rx2 Chirp32 R256 D32 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18625
+Doppler DPU Process. Cycles = 62112. 
+Test Pass
+
+Test #85 finished!
+
+Test #86  start
+Test feature : :Tx1 Rx2 Chirp8 R512 D32 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 18456
+Doppler DPU Process. Cycles = 112736. 
+Test Pass
+
+Test #86 finished!
+
+Test #87  start
+Test feature : :Tx1 Rx2 Chirp6 R1024 D32 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18527
+Doppler DPU Process. Cycles = 220267. 
+Test Pass
+
+Test #87 finished!
+
+Test #88  start
+Test feature : :Tx1 Rx2 Chirp32 R16 D64 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 18883
+Doppler DPU Process. Cycles = 11214. 
+Test Pass
+
+Test #88 finished!
+
+Test #89  start
+Test feature : :Tx1 Rx2 Chirp16 R32 D64 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18537
+Doppler DPU Process. Cycles = 17090. 
+Test Pass
+
+Test #89 finished!
+
+Test #90  start
+Test feature : :Tx1 Rx2 Chirp38 R64 D64 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 18978
+Doppler DPU Process. Cycles = 29101. 
+Test Pass
+
+Test #90 finished!
+
+Test #91  start
+Test feature : :Tx1 Rx2 Chirp39 R128 D64 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18681
+Doppler DPU Process. Cycles = 52801. 
+Test Pass
+
+Test #91 finished!
+
+Test #92  start
+Test feature : :Tx1 Rx2 Chirp64 R256 D64 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 19101
+Doppler DPU Process. Cycles = 100452. 
+Test Pass
+
+Test #92 finished!
+
+Test #93  start
+Test feature : :Tx1 Rx2 Chirp36 R512 D64 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 19638
+Doppler DPU Process. Cycles = 195231. 
+Test Pass
+
+Test #93 finished!
+
+Test #94  start
+Test feature : :Tx1 Rx2 Chirp128 R16 D128 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 19102
+Doppler DPU Process. Cycles = 16860. 
+Test Pass
+
+Test #94 finished!
+
+Test #95  start
+Test feature : :Tx1 Rx2 Chirp100 R32 D128 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 19599
+Doppler DPU Process. Cycles = 27844. 
+Test Pass
+
+Test #95 finished!
+
+Test #96  start
+Test feature : :Tx1 Rx2 Chirp64 R64 D128 WinSym1 1stFftScale1
+Doppler DPU configured. Cycles = 18738
+Doppler DPU Process. Cycles = 49930. 
+Test Pass
+
+Test #96 finished!
+
+Test #97  start
+Test feature : :Tx1 Rx2 Chirp32 R128 D128 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 18838
+Doppler DPU Process. Cycles = 94106. 
+Test Pass
+
+Test #97 finished!
+
+Test #98  start
+Test feature : :Tx1 Rx2 Chirp128 R256 D128 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 19084
+Doppler DPU Process. Cycles = 183409. 
+Test Pass
+
+Test #98 finished!
+
+Test #99  start
+Test feature : :Tx1 Rx2 Chirp256 R16 D256 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 21049
+Doppler DPU Process. Cycles = 27691. 
+Test Pass
+
+Test #99 finished!
+
+Test #100  start
+Test feature : :Tx1 Rx2 Chirp128 R32 D256 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 20039
+Doppler DPU Process. Cycles = 48457. 
+Test Pass
+
+Test #100 finished!
+
+Test #101  start
+Test feature : :Tx1 Rx2 Chirp64 R64 D256 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 20080
+Doppler DPU Process. Cycles = 90877. 
+Test Pass
+
+Test #101 finished!
+
+Test #102  start
+Test feature : :Tx1 Rx2 Chirp222 R128 D256 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 20933
+Doppler DPU Process. Cycles = 177063. 
+Test Pass
+
+Test #102 finished!
+
+Test #103  start
+Test feature : :Tx1 Rx2 Chirp512 R16 D512 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 21126
+Doppler DPU Process. Cycles = 49409. 
+Test Pass
+
+Test #103 finished!
+
+Test #104  start
+Test feature : :Tx1 Rx2 Chirp256 R32 D512 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 21985
+Doppler DPU Process. Cycles = 90075. 
+Test Pass
+
+Test #104 finished!
+
+Test #105  start
+Test feature : :Tx1 Rx2 Chirp128 R64 D512 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 19122
+Doppler DPU Process. Cycles = 173273. 
+Test Pass
+
+Test #105 finished!
+
+Test #106  start
+Test feature : :Tx1 Rx4 Chirp2 R16 D2 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 18579
+Doppler DPU Process. Cycles = 6956. 
+Test Pass
+
+Test #106 finished!
+
+Test #107  start
+Test feature : :Tx1 Rx4 Chirp2 R32 D2 WinSym1 1stFftScale1
+Doppler DPU configured. Cycles = 18500
+Doppler DPU Process. Cycles = 9226. 
+Test Pass
+
+Test #107 finished!
+
+Test #108  start
+Test feature : :Tx1 Rx4 Chirp2 R64 D2 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 18564
+Doppler DPU Process. Cycles = 12019. 
+Test Pass
+
+Test #108 finished!
+
+Test #109  start
+Test feature : :Tx1 Rx4 Chirp2 R128 D2 WinSym1 1stFftScale1
+Doppler DPU configured. Cycles = 18451
+Doppler DPU Process. Cycles = 18739. 
+Test Pass
+
+Test #109 finished!
+
+Test #110  start
+Test feature : :Tx1 Rx4 Chirp2 R256 D2 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 19497
+Doppler DPU Process. Cycles = 32319. 
+Test Pass
+
+Test #110 finished!
+
+Test #111  start
+Test feature : :Tx1 Rx4 Chirp2 R512 D2 WinSym1 1stFftScale1
+Doppler DPU configured. Cycles = 18440
+Doppler DPU Process. Cycles = 59372. 
+Test Pass
+
+Test #111 finished!
+
+Test #112  start
+Test feature : :Tx1 Rx4 Chirp2 R1024 D2 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 19444
+Doppler DPU Process. Cycles = 113593. 
+Test Pass
+
+Test #112 finished!
+
+Test #113  start
+Test feature : :Tx1 Rx4 Chirp3 R16 D4 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18524
+Doppler DPU Process. Cycles = 7042. 
+Test Pass
+
+Test #113 finished!
+
+Test #114  start
+Test feature : :Tx1 Rx4 Chirp4 R32 D4 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 18457
+Doppler DPU Process. Cycles = 9023. 
+Test Pass
+
+Test #114 finished!
+
+Test #115  start
+Test feature : :Tx1 Rx4 Chirp3 R64 D4 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18477
+Doppler DPU Process. Cycles = 12658. 
+Test Pass
+
+Test #115 finished!
+
+Test #116  start
+Test feature : :Tx1 Rx4 Chirp4 R128 D4 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 18496
+Doppler DPU Process. Cycles = 20405. 
+Test Pass
+
+Test #116 finished!
+
+Test #117  start
+Test feature : :Tx1 Rx4 Chirp3 R256 D4 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18576
+Doppler DPU Process. Cycles = 35125. 
+Test Pass
+
+Test #117 finished!
+
+Test #118  start
+Test feature : :Tx1 Rx4 Chirp4 R512 D4 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 18476
+Doppler DPU Process. Cycles = 66175. 
+Test Pass
+
+Test #118 finished!
+
+Test #119  start
+Test feature : :Tx1 Rx4 Chirp3 R1024 D4 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18455
+Doppler DPU Process. Cycles = 124991. 
+Test Pass
+
+Test #119 finished!
+
+Test #120  start
+Test feature : :Tx1 Rx4 Chirp2 R16 D8 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 19449
+Doppler DPU Process. Cycles = 7399. 
+Test Pass
+
+Test #120 finished!
+
+Test #121  start
+Test feature : :Tx1 Rx4 Chirp6 R32 D8 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18459
+Doppler DPU Process. Cycles = 9806. 
+Test Pass
+
+Test #121 finished!
+
+Test #122  start
+Test feature : :Tx1 Rx4 Chirp7 R64 D8 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 18625
+Doppler DPU Process. Cycles = 15001. 
+Test Pass
+
+Test #122 finished!
+
+Test #123  start
+Test feature : :Tx1 Rx4 Chirp8 R128 D8 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18450
+Doppler DPU Process. Cycles = 24806. 
+Test Pass
+
+Test #123 finished!
+
+Test #124  start
+Test feature : :Tx1 Rx4 Chirp5 R256 D8 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 18460
+Doppler DPU Process. Cycles = 41592. 
+Test Pass
+
+Test #124 finished!
+
+Test #125  start
+Test feature : :Tx1 Rx4 Chirp6 R512 D8 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 19339
+Doppler DPU Process. Cycles = 79959. 
+Test Pass
+
+Test #125 finished!
+
+Test #126  start
+Test feature : :Tx1 Rx4 Chirp7 R1024 D8 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 18640
+Doppler DPU Process. Cycles = 156506. 
+Test Pass
+
+Test #126 finished!
+
+Test #127  start
+Test feature : :Tx1 Rx4 Chirp8 R16 D16 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18451
+Doppler DPU Process. Cycles = 8321. 
+Test Pass
+
+Test #127 finished!
+
+Test #128  start
+Test feature : :Tx1 Rx4 Chirp4 R32 D16 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 18394
+Doppler DPU Process. Cycles = 11404. 
+Test Pass
+
+Test #128 finished!
+
+Test #129  start
+Test feature : :Tx1 Rx4 Chirp11 R64 D16 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18620
+Doppler DPU Process. Cycles = 17797. 
+Test Pass
+
+Test #129 finished!
+
+Test #130  start
+Test feature : :Tx1 Rx4 Chirp12 R128 D16 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 18552
+Doppler DPU Process. Cycles = 30251. 
+Test Pass
+
+Test #130 finished!
+
+Test #131  start
+Test feature : :Tx1 Rx4 Chirp13 R256 D16 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18570
+Doppler DPU Process. Cycles = 55916. 
+Test Pass
+
+Test #131 finished!
+
+Test #132  start
+Test feature : :Tx1 Rx4 Chirp14 R512 D16 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 18645
+Doppler DPU Process. Cycles = 107894. 
+Test Pass
+
+Test #132 finished!
+
+Test #133  start
+Test feature : :Tx1 Rx4 Chirp15 R1024 D16 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18620
+Doppler DPU Process. Cycles = 213269. 
+Test Pass
+
+Test #133 finished!
+
+Test #134  start
+Test feature : :Tx1 Rx4 Chirp32 R16 D32 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 18851
+Doppler DPU Process. Cycles = 10926. 
+Test Pass
+
+Test #134 finished!
+
+Test #135  start
+Test feature : :Tx1 Rx4 Chirp16 R32 D32 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18518
+Doppler DPU Process. Cycles = 16181. 
+Test Pass
+
+Test #135 finished!
+
+Test #136  start
+Test feature : :Tx1 Rx4 Chirp8 R64 D32 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 18552
+Doppler DPU Process. Cycles = 27089. 
+Test Pass
+
+Test #136 finished!
+
+Test #137  start
+Test feature : :Tx1 Rx4 Chirp10 R128 D32 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18476
+Doppler DPU Process. Cycles = 48888. 
+Test Pass
+
+Test #137 finished!
+
+Test #138  start
+Test feature : :Tx1 Rx4 Chirp32 R256 D32 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 18775
+Doppler DPU Process. Cycles = 92736. 
+Test Pass
+
+Test #138 finished!
+
+Test #139  start
+Test feature : :Tx1 Rx4 Chirp8 R512 D32 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18479
+Doppler DPU Process. Cycles = 179868. 
+Test Pass
+
+Test #139 finished!
+
+Test #140  start
+Test feature : :Tx1 Rx4 Chirp6 R1024 D32 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 18564
+Doppler DPU Process. Cycles = 354391. 
+Test Pass
+
+Test #140 finished!
+
+Test #141  start
+Test feature : :Tx1 Rx4 Chirp64 R16 D64 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18832
+Doppler DPU Process. Cycles = 15842. 
+Test Pass
+
+Test #141 finished!
+
+Test #142  start
+Test feature : :Tx1 Rx4 Chirp40 R32 D64 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 18881
+Doppler DPU Process. Cycles = 26632. 
+Test Pass
+
+Test #142 finished!
+
+Test #143  start
+Test feature : :Tx1 Rx4 Chirp32 R64 D64 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 19478
+Doppler DPU Process. Cycles = 45746. 
+Test Pass
+
+Test #143 finished!
+
+Test #144  start
+Test feature : :Tx1 Rx4 Chirp16 R128 D64 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 18665
+Doppler DPU Process. Cycles = 85908. 
+Test Pass
+
+Test #144 finished!
+
+Test #145  start
+Test feature : :Tx1 Rx4 Chirp64 R256 D64 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 18796
+Doppler DPU Process. Cycles = 167033. 
+Test Pass
+
+Test #145 finished!
+
+Test #146  start
+Test feature : :Tx1 Rx4 Chirp36 R512 D64 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 18767
+Doppler DPU Process. Cycles = 328068. 
+Test Pass
+
+Test #146 finished!
+
+Test #147  start
+Test feature : :Tx1 Rx4 Chirp128 R16 D128 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 19772
+Doppler DPU Process. Cycles = 25697. 
+Test Pass
+
+Test #147 finished!
+
+Test #148  start
+Test feature : :Tx1 Rx4 Chirp100 R32 D128 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 19031
+Doppler DPU Process. Cycles = 44788. 
+Test Pass
+
+Test #148 finished!
+
+Test #149  start
+Test feature : :Tx1 Rx4 Chirp98 R64 D128 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 19918
+Doppler DPU Process. Cycles = 83454. 
+Test Pass
+
+Test #149 finished!
+
+Test #150  start
+Test feature : :Tx1 Rx4 Chirp99 R128 D128 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 19150
+Doppler DPU Process. Cycles = 160803. 
+Test Pass
+
+Test #150 finished!
+
+Test #151  start
+Test feature : :Tx1 Rx4 Chirp64 R256 D128 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 19202
+Doppler DPU Process. Cycles = 316119. 
+Test Pass
+
+Test #151 finished!
+
+Test #152  start
+Test feature : :Tx1 Rx4 Chirp64 R16 D256 WinSym1 1stFftScale1
+Doppler DPU configured. Cycles = 18902
+Doppler DPU Process. Cycles = 43550. 
+Test Pass
+
+Test #152 finished!
+
+Test #153  start
+Test feature : :Tx1 Rx4 Chirp224 R32 D256 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 20821
+Doppler DPU Process. Cycles = 82795. 
+Test Pass
+
+Test #153 finished!
+
+Test #154  start
+Test feature : :Tx1 Rx4 Chirp222 R64 D256 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 21076
+Doppler DPU Process. Cycles = 158333. 
+Test Pass
+
+Test #154 finished!
+
+Test #155  start
+Test feature : :Tx1 Rx4 Chirp128 R128 D256 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 19835
+Doppler DPU Process. Cycles = 308658. 
+Test Pass
+
+Test #155 finished!
+
+Test #156  start
+Test feature : :Tx1 Rx4 Chirp128 R16 D512 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 19827
+Doppler DPU Process. Cycles = 81014. 
+Test Pass
+
+Test #156 finished!
+
+Test #157  start
+Test feature : :Tx1 Rx4 Chirp476 R32 D512 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 21010
+Doppler DPU Process. Cycles = 158864. 
+Test Pass
+
+Test #157 finished!
+
+Test #158  start
+Test feature : :Tx1 Rx4 Chirp474 R64 D512 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 25816
+Doppler DPU Process. Cycles = 308244. 
+Test Pass
+
+Test #158 finished!
+
+Test #159  start
+Test feature : :Tx2 Rx2 Chirp2 R16 D2 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 21124
+Doppler DPU Process. Cycles = 7100. 
+Test Pass
+
+Test #159 finished!
+
+Test #160  start
+Test feature : :Tx2 Rx2 Chirp2 R32 D2 WinSym1 1stFftScale1
+Doppler DPU configured. Cycles = 21065
+Doppler DPU Process. Cycles = 8997. 
+Test Pass
+
+Test #160 finished!
+
+Test #161  start
+Test feature : :Tx2 Rx2 Chirp2 R64 D2 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 22068
+Doppler DPU Process. Cycles = 12794. 
+Test Pass
+
+Test #161 finished!
+
+Test #162  start
+Test feature : :Tx2 Rx2 Chirp2 R128 D2 WinSym1 1stFftScale1
+Doppler DPU configured. Cycles = 21090
+Doppler DPU Process. Cycles = 20410. 
+Test Pass
+
+Test #162 finished!
+
+Test #163  start
+Test feature : :Tx2 Rx2 Chirp2 R256 D2 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 21253
+Doppler DPU Process. Cycles = 35592. 
+Test Pass
+
+Test #163 finished!
+
+Test #164  start
+Test feature : :Tx2 Rx2 Chirp2 R512 D2 WinSym1 1stFftScale1
+Doppler DPU configured. Cycles = 21189
+Doppler DPU Process. Cycles = 66009. 
+Test Pass
+
+Test #164 finished!
+
+Test #165  start
+Test feature : :Tx2 Rx2 Chirp2 R1024 D2 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 21151
+Doppler DPU Process. Cycles = 126298. 
+Test Pass
+
+Test #165 finished!
+
+Test #166  start
+Test feature : :Tx2 Rx2 Chirp3 R16 D4 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 21064
+Doppler DPU Process. Cycles = 7277. 
+Test Pass
+
+Test #166 finished!
+
+Test #167  start
+Test feature : :Tx2 Rx2 Chirp4 R32 D4 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 21113
+Doppler DPU Process. Cycles = 9487. 
+Test Pass
+
+Test #167 finished!
+
+Test #168  start
+Test feature : :Tx2 Rx2 Chirp3 R64 D4 WinSym1 1stFftScale1
+Doppler DPU configured. Cycles = 21131
+Doppler DPU Process. Cycles = 13550. 
+Test Pass
+
+Test #168 finished!
+
+Test #169  start
+Test feature : :Tx2 Rx2 Chirp4 R128 D4 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 21078
+Doppler DPU Process. Cycles = 22187. 
+Test Pass
+
+Test #169 finished!
+
+Test #170  start
+Test feature : :Tx2 Rx2 Chirp3 R256 D4 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 21082
+Doppler DPU Process. Cycles = 38471. 
+Test Pass
+
+Test #170 finished!
+
+Test #171  start
+Test feature : :Tx2 Rx2 Chirp4 R512 D4 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 22011
+Doppler DPU Process. Cycles = 73116. 
+Test Pass
+
+Test #171 finished!
+
+Test #172  start
+Test feature : :Tx2 Rx2 Chirp3 R1024 D4 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 21051
+Doppler DPU Process. Cycles = 138334. 
+Test Pass
+
+Test #172 finished!
+
+Test #173  start
+Test feature : :Tx2 Rx2 Chirp5 R16 D8 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 21106
+Doppler DPU Process. Cycles = 7769. 
+Test Pass
+
+Test #173 finished!
+
+Test #174  start
+Test feature : :Tx2 Rx2 Chirp4 R32 D8 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 21056
+Doppler DPU Process. Cycles = 10215. 
+Test Pass
+
+Test #174 finished!
+
+Test #175  start
+Test feature : :Tx2 Rx2 Chirp2 R64 D8 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 21292
+Doppler DPU Process. Cycles = 15125. 
+Test Pass
+
+Test #175 finished!
+
+Test #176  start
+Test feature : :Tx2 Rx2 Chirp8 R128 D8 WinSym1 1stFftScale1
+Doppler DPU configured. Cycles = 21067
+Doppler DPU Process. Cycles = 26416. 
+Test Pass
+
+Test #176 finished!
+
+Test #177  start
+Test feature : :Tx2 Rx2 Chirp5 R256 D8 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 21200
+Doppler DPU Process. Cycles = 45628. 
+Test Pass
+
+Test #177 finished!
+
+Test #178  start
+Test feature : :Tx2 Rx2 Chirp6 R512 D8 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 21150
+Doppler DPU Process. Cycles = 88360. 
+Test Pass
+
+Test #178 finished!
+
+Test #179  start
+Test feature : :Tx2 Rx2 Chirp7 R1024 D8 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 21222
+Doppler DPU Process. Cycles = 171637. 
+Test Pass
+
+Test #179 finished!
+
+Test #180  start
+Test feature : :Tx2 Rx2 Chirp9 R16 D16 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 21115
+Doppler DPU Process. Cycles = 8982. 
+Test Pass
+
+Test #180 finished!
+
+Test #181  start
+Test feature : :Tx2 Rx2 Chirp10 R32 D16 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 22054
+Doppler DPU Process. Cycles = 12808. 
+Test Pass
+
+Test #181 finished!
+
+Test #182  start
+Test feature : :Tx2 Rx2 Chirp8 R64 D16 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 21087
+Doppler DPU Process. Cycles = 20342. 
+Test Pass
+
+Test #182 finished!
+
+Test #183  start
+Test feature : :Tx2 Rx2 Chirp4 R128 D16 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 21109
+Doppler DPU Process. Cycles = 35291. 
+Test Pass
+
+Test #183 finished!
+
+Test #184  start
+Test feature : :Tx2 Rx2 Chirp13 R256 D16 WinSym1 1stFftScale1
+Doppler DPU configured. Cycles = 21233
+Doppler DPU Process. Cycles = 65414. 
+Test Pass
+
+Test #184 finished!
+
+Test #185  start
+Test feature : :Tx2 Rx2 Chirp14 R512 D16 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 21343
+Doppler DPU Process. Cycles = 125659. 
+Test Pass
+
+Test #185 finished!
+
+Test #186  start
+Test feature : :Tx2 Rx2 Chirp15 R1024 D16 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 21165
+Doppler DPU Process. Cycles = 245927. 
+Test Pass
+
+Test #186 finished!
+
+Test #187  start
+Test feature : :Tx2 Rx2 Chirp32 R16 D32 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 21435
+Doppler DPU Process. Cycles = 11899. 
+Test Pass
+
+Test #187 finished!
+
+Test #188  start
+Test feature : :Tx2 Rx2 Chirp12 R32 D32 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 21158
+Doppler DPU Process. Cycles = 18095. 
+Test Pass
+
+Test #188 finished!
+
+Test #189  start
+Test feature : :Tx2 Rx2 Chirp10 R64 D32 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 21178
+Doppler DPU Process. Cycles = 31075. 
+Test Pass
+
+Test #189 finished!
+
+Test #190  start
+Test feature : :Tx2 Rx2 Chirp16 R128 D32 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 21956
+Doppler DPU Process. Cycles = 56644. 
+Test Pass
+
+Test #190 finished!
+
+Test #191  start
+Test feature : :Tx2 Rx2 Chirp8 R256 D32 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 21094
+Doppler DPU Process. Cycles = 107905. 
+Test Pass
+
+Test #191 finished!
+
+Test #192  start
+Test feature : :Tx2 Rx2 Chirp9 R512 D32 WinSym1 1stFftScale1
+Doppler DPU configured. Cycles = 21131
+Doppler DPU Process. Cycles = 210558. 
+Test Pass
+
+Test #192 finished!
+
+Test #193  start
+Test feature : :Tx2 Rx2 Chirp6 R1024 D32 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 21132
+Doppler DPU Process. Cycles = 415821. 
+Test Pass
+
+Test #193 finished!
+
+Test #194  start
+Test feature : :Tx2 Rx2 Chirp64 R16 D64 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 21329
+Doppler DPU Process. Cycles = 17319. 
+Test Pass
+
+Test #194 finished!
+
+Test #195  start
+Test feature : :Tx2 Rx2 Chirp40 R32 D64 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 21521
+Doppler DPU Process. Cycles = 28684. 
+Test Pass
+
+Test #195 finished!
+
+Test #196  start
+Test feature : :Tx2 Rx2 Chirp38 R64 D64 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 21376
+Doppler DPU Process. Cycles = 51760. 
+Test Pass
+
+Test #196 finished!
+
+Test #197  start
+Test feature : :Tx2 Rx2 Chirp39 R128 D64 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 21670
+Doppler DPU Process. Cycles = 98064. 
+Test Pass
+
+Test #197 finished!
+
+Test #198  start
+Test feature : :Tx2 Rx2 Chirp32 R256 D64 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 21117
+Doppler DPU Process. Cycles = 190578. 
+Test Pass
+
+Test #198 finished!
+
+Test #199  start
+Test feature : :Tx2 Rx2 Chirp16 R512 D64 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 21244
+Doppler DPU Process. Cycles = 375437. 
+Test Pass
+
+Test #199 finished!
+
+Test #200  start
+Test feature : :Tx2 Rx2 Chirp128 R16 D128 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 22420
+Doppler DPU Process. Cycles = 28271. 
+Test Pass
+
+Test #200 finished!
+
+Test #201  start
+Test feature : :Tx2 Rx2 Chirp100 R32 D128 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 21705
+Doppler DPU Process. Cycles = 49876. 
+Test Pass
+
+Test #201 finished!
+
+Test #202  start
+Test feature : :Tx2 Rx2 Chirp98 R64 D128 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 22491
+Doppler DPU Process. Cycles = 93679. 
+Test Pass
+
+Test #202 finished!
+
+Test #203  start
+Test feature : :Tx2 Rx2 Chirp99 R128 D128 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 21745
+Doppler DPU Process. Cycles = 181303. 
+Test Pass
+
+Test #203 finished!
+
+Test #204  start
+Test feature : :Tx2 Rx2 Chirp128 R256 D128 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 22376
+Doppler DPU Process. Cycles = 356774. 
+Test Pass
+
+Test #204 finished!
+
+Test #205  start
+Test feature : :Tx2 Rx2 Chirp256 R16 D256 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 22393
+Doppler DPU Process. Cycles = 49926. 
+Test Pass
+
+Test #205 finished!
+
+Test #206  start
+Test feature : :Tx2 Rx2 Chirp128 R32 D256 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 22499
+Doppler DPU Process. Cycles = 91169. 
+Test Pass
+
+Test #206 finished!
+
+Test #207  start
+Test feature : :Tx2 Rx2 Chirp64 R64 D256 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 21239
+Doppler DPU Process. Cycles = 176178. 
+Test Pass
+
+Test #207 finished!
+
+Test #208  start
+Test feature : :Tx2 Rx2 Chirp222 R128 D256 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 25074
+Doppler DPU Process. Cycles = 346498. 
+Test Pass
+
+Test #208 finished!
+
+Test #209  start
+Test feature : :Tx2 Rx2 Chirp512 R16 D512 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 26276
+Doppler DPU Process. Cycles = 93291. 
+Test Pass
+
+Test #209 finished!
+
+Test #210  start
+Test feature : :Tx2 Rx2 Chirp256 R32 D512 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 22402
+Doppler DPU Process. Cycles = 174435. 
+Test Pass
+
+Test #210 finished!
+
+Test #211  start
+Test feature : :Tx2 Rx2 Chirp128 R64 D512 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 22435
+Doppler DPU Process. Cycles = 340226. 
+Test Pass
+
+Test #211 finished!
+
+Test #212  start
+Test feature : :Tx2 Rx4 Chirp2 R16 D2 WinSym1 1stFftScale1
+Doppler DPU configured. Cycles = 20994
+Doppler DPU Process. Cycles = 7399. 
+Test Pass
+
+Test #212 finished!
+
+Test #213  start
+Test feature : :Tx2 Rx4 Chirp2 R32 D2 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 21069
+Doppler DPU Process. Cycles = 9621. 
+Test Pass
+
+Test #213 finished!
+
+Test #214  start
+Test feature : :Tx2 Rx4 Chirp2 R64 D2 WinSym1 1stFftScale1
+Doppler DPU configured. Cycles = 21089
+Doppler DPU Process. Cycles = 14016. 
+Test Pass
+
+Test #214 finished!
+
+Test #215  start
+Test feature : :Tx2 Rx4 Chirp2 R128 D2 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 21118
+Doppler DPU Process. Cycles = 22766. 
+Test Pass
+
+Test #215 finished!
+
+Test #216  start
+Test feature : :Tx2 Rx4 Chirp2 R256 D2 WinSym1 1stFftScale1
+Doppler DPU configured. Cycles = 21150
+Doppler DPU Process. Cycles = 40247. 
+Test Pass
+
+Test #216 finished!
+
+Test #217  start
+Test feature : :Tx2 Rx4 Chirp2 R512 D2 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 21228
+Doppler DPU Process. Cycles = 75317. 
+Test Pass
+
+Test #217 finished!
+
+Test #218  start
+Test feature : :Tx2 Rx4 Chirp2 R1024 D2 WinSym1 1stFftScale1
+Doppler DPU configured. Cycles = 21112
+Doppler DPU Process. Cycles = 145413. 
+Test Pass
+
+Test #218 finished!
+
+Test #219  start
+Test feature : :Tx2 Rx4 Chirp3 R16 D4 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 22137
+Doppler DPU Process. Cycles = 7761. 
+Test Pass
+
+Test #219 finished!
+
+Test #220  start
+Test feature : :Tx2 Rx4 Chirp4 R32 D4 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 21091
+Doppler DPU Process. Cycles = 10443. 
+Test Pass
+
+Test #220 finished!
+
+Test #221  start
+Test feature : :Tx2 Rx4 Chirp3 R64 D4 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 21129
+Doppler DPU Process. Cycles = 15233. 
+Test Pass
+
+Test #221 finished!
+
+Test #222  start
+Test feature : :Tx2 Rx4 Chirp4 R128 D4 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 21018
+Doppler DPU Process. Cycles = 26021. 
+Test Pass
+
+Test #222 finished!
+
+Test #223  start
+Test feature : :Tx2 Rx4 Chirp3 R256 D4 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 21251
+Doppler DPU Process. Cycles = 45175. 
+Test Pass
+
+Test #223 finished!
+
+Test #224  start
+Test feature : :Tx2 Rx4 Chirp4 R512 D4 WinSym1 1stFftScale1
+Doppler DPU configured. Cycles = 21043
+Doppler DPU Process. Cycles = 88408. 
+Test Pass
+
+Test #224 finished!
+
+Test #225  start
+Test feature : :Tx2 Rx4 Chirp3 R1024 D4 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 22139
+Doppler DPU Process. Cycles = 164918. 
+Test Pass
+
+Test #225 finished!
+
+Test #226  start
+Test feature : :Tx2 Rx4 Chirp5 R16 D8 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 21112
+Doppler DPU Process. Cycles = 8838. 
+Test Pass
+
+Test #226 finished!
+
+Test #227  start
+Test feature : :Tx2 Rx4 Chirp6 R32 D8 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 21265
+Doppler DPU Process. Cycles = 12486. 
+Test Pass
+
+Test #227 finished!
+
+Test #228  start
+Test feature : :Tx2 Rx4 Chirp7 R64 D8 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 21077
+Doppler DPU Process. Cycles = 19603. 
+Test Pass
+
+Test #228 finished!
+
+Test #229  start
+Test feature : :Tx2 Rx4 Chirp4 R128 D8 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 21017
+Doppler DPU Process. Cycles = 33916. 
+Test Pass
+
+Test #229 finished!
+
+Test #230  start
+Test feature : :Tx2 Rx4 Chirp2 R256 D8 WinSym1 1stFftScale1
+Doppler DPU configured. Cycles = 21187
+Doppler DPU Process. Cycles = 63460. 
+Test Pass
+
+Test #230 finished!
+
+Test #231  start
+Test feature : :Tx2 Rx4 Chirp6 R512 D8 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 21089
+Doppler DPU Process. Cycles = 119952. 
+Test Pass
+
+Test #231 finished!
+
+Test #232  start
+Test feature : :Tx2 Rx4 Chirp7 R1024 D8 WinSym1 1stFftScale1
+Doppler DPU configured. Cycles = 21032
+Doppler DPU Process. Cycles = 234686. 
+Test Pass
+
+Test #232 finished!
+
+Test #233  start
+Test feature : :Tx2 Rx4 Chirp9 R16 D16 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 21195
+Doppler DPU Process. Cycles = 11201. 
+Test Pass
+
+Test #233 finished!
+
+Test #234  start
+Test feature : :Tx2 Rx4 Chirp10 R32 D16 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 22000
+Doppler DPU Process. Cycles = 17266. 
+Test Pass
+
+Test #234 finished!
+
+Test #235  start
+Test feature : :Tx2 Rx4 Chirp11 R64 D16 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 21317
+Doppler DPU Process. Cycles = 29077. 
+Test Pass
+
+Test #235 finished!
+
+Test #236  start
+Test feature : :Tx2 Rx4 Chirp12 R128 D16 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 21208
+Doppler DPU Process. Cycles = 52813. 
+Test Pass
+
+Test #236 finished!
+
+Test #237  start
+Test feature : :Tx2 Rx4 Chirp8 R256 D16 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 21174
+Doppler DPU Process. Cycles = 99995. 
+Test Pass
+
+Test #237 finished!
+
+Test #238  start
+Test feature : :Tx2 Rx4 Chirp4 R512 D16 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 21105
+Doppler DPU Process. Cycles = 194692. 
+Test Pass
+
+Test #238 finished!
+
+Test #239  start
+Test feature : :Tx2 Rx4 Chirp15 R1024 D16 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 21383
+Doppler DPU Process. Cycles = 384314. 
+Test Pass
+
+Test #239 finished!
+
+Test #240  start
+Test feature : :Tx2 Rx4 Chirp32 R16 D32 WinSym1 1stFftScale1
+Doppler DPU configured. Cycles = 21234
+Doppler DPU Process. Cycles = 16404. 
+Test Pass
+
+Test #240 finished!
+
+Test #241  start
+Test feature : :Tx2 Rx4 Chirp12 R32 D32 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 21240
+Doppler DPU Process. Cycles = 26695. 
+Test Pass
+
+Test #241 finished!
+
+Test #242  start
+Test feature : :Tx2 Rx4 Chirp10 R64 D32 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 21137
+Doppler DPU Process. Cycles = 47926. 
+Test Pass
+
+Test #242 finished!
+
+Test #243  start
+Test feature : :Tx2 Rx4 Chirp11 R128 D32 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 21111
+Doppler DPU Process. Cycles = 90393. 
+Test Pass
+
+Test #243 finished!
+
+Test #244  start
+Test feature : :Tx2 Rx4 Chirp32 R256 D32 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 21208
+Doppler DPU Process. Cycles = 175779. 
+Test Pass
+
+Test #244 finished!
+
+Test #245  start
+Test feature : :Tx2 Rx4 Chirp16 R512 D32 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 21190
+Doppler DPU Process. Cycles = 345452. 
+Test Pass
+
+Test #245 finished!
+
+Test #246  start
+Test feature : :Tx2 Rx4 Chirp16 R16 D64 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 21091
+Doppler DPU Process. Cycles = 25424. 
+Test Pass
+
+Test #246 finished!
+
+Test #247  start
+Test feature : :Tx2 Rx4 Chirp40 R32 D64 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 21179
+Doppler DPU Process. Cycles = 45633. 
+Test Pass
+
+Test #247 finished!
+
+Test #248  start
+Test feature : :Tx2 Rx4 Chirp38 R64 D64 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 21674
+Doppler DPU Process. Cycles = 85346. 
+Test Pass
+
+Test #248 finished!
+
+Test #249  start
+Test feature : :Tx2 Rx4 Chirp39 R128 D64 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 21371
+Doppler DPU Process. Cycles = 164857. 
+Test Pass
+
+Test #249 finished!
+
+Test #250  start
+Test feature : :Tx2 Rx4 Chirp64 R256 D64 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 21834
+Doppler DPU Process. Cycles = 324276. 
+Test Pass
+
+Test #250 finished!
+
+Test #251  start
+Test feature : :Tx2 Rx4 Chirp128 R16 D128 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 21727
+Doppler DPU Process. Cycles = 45954. 
+Test Pass
+
+Test #251 finished!
+
+Test #252  start
+Test feature : :Tx2 Rx4 Chirp100 R32 D128 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 22180
+Doppler DPU Process. Cycles = 83767. 
+Test Pass
+
+Test #252 finished!
+
+Test #253  start
+Test feature : :Tx2 Rx4 Chirp64 R64 D128 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 21478
+Doppler DPU Process. Cycles = 159959. 
+Test Pass
+
+Test #253 finished!
+
+Test #254  start
+Test feature : :Tx2 Rx4 Chirp32 R128 D128 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 21366
+Doppler DPU Process. Cycles = 312923. 
+Test Pass
+
+Test #254 finished!
+
+Test #255  start
+Test feature : :Tx2 Rx4 Chirp256 R16 D256 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 23800
+Doppler DPU Process. Cycles = 85088. 
+Test Pass
+
+Test #255 finished!
+
+Test #256  start
+Test feature : :Tx2 Rx4 Chirp224 R32 D256 WinSym1 1stFftScale1
+Doppler DPU configured. Cycles = 22171
+Doppler DPU Process. Cycles = 159811. 
+Test Pass
+
+Test #256 finished!
+
+Test #257  start
+Test feature : :Tx2 Rx4 Chirp128 R64 D256 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 23279
+Doppler DPU Process. Cycles = 308636. 
+Test Pass
+
+Test #257 finished!
+
+Test #258  start
+Test feature : :Tx2 Rx4 Chirp128 R16 D512 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 21768
+Doppler DPU Process. Cycles = 156582. 
+Test Pass
+
+Test #258 finished!
+
+Test #259  start
+Test feature : :Tx2 Rx4 Chirp477 R32 D512 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 27737
+Doppler DPU Process. Cycles = 312006. 
+Test Pass
+
+Test #259 finished!
+
+Test #260  start
+Test feature : :Tx3 Rx4 Chirp2 R16 D2 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 23265
+Doppler DPU Process. Cycles = 7904. 
+Test Pass
+
+Test #260 finished!
+
+Test #261  start
+Test feature : :Tx3 Rx4 Chirp2 R32 D2 WinSym1 1stFftScale1
+Doppler DPU configured. Cycles = 23195
+Doppler DPU Process. Cycles = 10552. 
+Test Pass
+
+Test #261 finished!
+
+Test #262  start
+Test feature : :Tx3 Rx4 Chirp2 R64 D2 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 23216
+Doppler DPU Process. Cycles = 15837. 
+Test Pass
+
+Test #262 finished!
+
+Test #263  start
+Test feature : :Tx3 Rx4 Chirp2 R128 D2 WinSym1 1stFftScale1
+Doppler DPU configured. Cycles = 23211
+Doppler DPU Process. Cycles = 26470. 
+Test Pass
+
+Test #263 finished!
+
+Test #264  start
+Test feature : :Tx3 Rx4 Chirp2 R256 D2 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 23198
+Doppler DPU Process. Cycles = 47721. 
+Test Pass
+
+Test #264 finished!
+
+Test #265  start
+Test feature : :Tx3 Rx4 Chirp2 R512 D2 WinSym1 1stFftScale1
+Doppler DPU configured. Cycles = 23094
+Doppler DPU Process. Cycles = 90253. 
+Test Pass
+
+Test #265 finished!
+
+Test #266  start
+Test feature : :Tx3 Rx4 Chirp2 R1024 D2 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 23290
+Doppler DPU Process. Cycles = 175227. 
+Test Pass
+
+Test #266 finished!
+
+Test #267  start
+Test feature : :Tx3 Rx4 Chirp3 R16 D4 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 23161
+Doppler DPU Process. Cycles = 8960. 
+Test Pass
+
+Test #267 finished!
+
+Test #268  start
+Test feature : :Tx3 Rx4 Chirp4 R32 D4 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 23231
+Doppler DPU Process. Cycles = 12534. 
+Test Pass
+
+Test #268 finished!
+
+Test #269  start
+Test feature : :Tx3 Rx4 Chirp3 R64 D4 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 23161
+Doppler DPU Process. Cycles = 19800. 
+Test Pass
+
+Test #269 finished!
+
+Test #270  start
+Test feature : :Tx3 Rx4 Chirp4 R128 D4 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 23138
+Doppler DPU Process. Cycles = 34468. 
+Test Pass
+
+Test #270 finished!
+
+Test #271  start
+Test feature : :Tx3 Rx4 Chirp3 R256 D4 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 24211
+Doppler DPU Process. Cycles = 63626. 
+Test Pass
+
+Test #271 finished!
+
+Test #272  start
+Test feature : :Tx3 Rx4 Chirp4 R512 D4 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 23079
+Doppler DPU Process. Cycles = 121995. 
+Test Pass
+
+Test #272 finished!
+
+Test #273  start
+Test feature : :Tx3 Rx4 Chirp3 R1024 D4 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 23108
+Doppler DPU Process. Cycles = 238680. 
+Test Pass
+
+Test #273 finished!
+
+Test #274  start
+Test feature : :Tx3 Rx4 Chirp5 R16 D8 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 23171
+Doppler DPU Process. Cycles = 11045. 
+Test Pass
+
+Test #274 finished!
+
+Test #275  start
+Test feature : :Tx3 Rx4 Chirp6 R32 D8 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 23191
+Doppler DPU Process. Cycles = 16854. 
+Test Pass
+
+Test #275 finished!
+
+Test #276  start
+Test feature : :Tx3 Rx4 Chirp4 R64 D8 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 23135
+Doppler DPU Process. Cycles = 28322. 
+Test Pass
+
+Test #276 finished!
+
+Test #277  start
+Test feature : :Tx3 Rx4 Chirp2 R128 D8 WinSym1 1stFftScale1
+Doppler DPU configured. Cycles = 23190
+Doppler DPU Process. Cycles = 51465. 
+Test Pass
+
+Test #277 finished!
+
+Test #278  start
+Test feature : :Tx3 Rx4 Chirp5 R256 D8 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 24161
+Doppler DPU Process. Cycles = 97703. 
+Test Pass
+
+Test #278 finished!
+
+Test #279  start
+Test feature : :Tx3 Rx4 Chirp6 R512 D8 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 23196
+Doppler DPU Process. Cycles = 190149. 
+Test Pass
+
+Test #279 finished!
+
+Test #280  start
+Test feature : :Tx3 Rx4 Chirp7 R1024 D8 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 23288
+Doppler DPU Process. Cycles = 375059. 
+Test Pass
+
+Test #280 finished!
+
+Test #281  start
+Test feature : :Tx3 Rx4 Chirp9 R16 D16 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 23157
+Doppler DPU Process. Cycles = 15243. 
+Test Pass
+
+Test #281 finished!
+
+Test #282  start
+Test feature : :Tx3 Rx4 Chirp10 R32 D16 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 23407
+Doppler DPU Process. Cycles = 25021. 
+Test Pass
+
+Test #282 finished!
+
+Test #283  start
+Test feature : :Tx3 Rx4 Chirp11 R64 D16 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 23202
+Doppler DPU Process. Cycles = 44626. 
+Test Pass
+
+Test #283 finished!
+
+Test #284  start
+Test feature : :Tx3 Rx4 Chirp8 R128 D16 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 24046
+Doppler DPU Process. Cycles = 83742. 
+Test Pass
+
+Test #284 finished!
+
+Test #285  start
+Test feature : :Tx3 Rx4 Chirp4 R256 D16 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 23070
+Doppler DPU Process. Cycles = 161909. 
+Test Pass
+
+Test #285 finished!
+
+Test #286  start
+Test feature : :Tx3 Rx4 Chirp14 R512 D16 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 23410
+Doppler DPU Process. Cycles = 318911. 
+Test Pass
+
+Test #286 finished!
+
+Test #287  start
+Test feature : :Tx3 Rx4 Chirp15 R1024 D16 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 23250
+Doppler DPU Process. Cycles = 632268. 
+Test Pass
+
+Test #287 finished!
+
+Test #288  start
+Test feature : :Tx3 Rx4 Chirp32 R16 D32 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 23522
+Doppler DPU Process. Cycles = 23932. 
+Test Pass
+
+Test #288 finished!
+
+Test #289  start
+Test feature : :Tx3 Rx4 Chirp12 R32 D32 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 23277
+Doppler DPU Process. Cycles = 41254. 
+Test Pass
+
+Test #289 finished!
+
+Test #290  start
+Test feature : :Tx3 Rx4 Chirp10 R64 D32 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 24242
+Doppler DPU Process. Cycles = 76929. 
+Test Pass
+
+Test #290 finished!
+
+Test #291  start
+Test feature : :Tx3 Rx4 Chirp11 R128 D32 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 23192
+Doppler DPU Process. Cycles = 148441. 
+Test Pass
+
+Test #291 finished!
+
+Test #292  start
+Test feature : :Tx3 Rx4 Chirp16 R256 D32 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 23318
+Doppler DPU Process. Cycles = 291556. 
+Test Pass
+
+Test #292 finished!
+
+Test #293  start
+Test feature : :Tx3 Rx4 Chirp8 R512 D32 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 23034
+Doppler DPU Process. Cycles = 577250. 
+Test Pass
+
+Test #293 finished!
+
+Test #294  start
+Test feature : :Tx3 Rx4 Chirp64 R16 D64 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 23469
+Doppler DPU Process. Cycles = 40690. 
+Test Pass
+
+Test #294 finished!
+
+Test #295  start
+Test feature : :Tx3 Rx4 Chirp40 R32 D64 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 23755
+Doppler DPU Process. Cycles = 73878. 
+Test Pass
+
+Test #295 finished!
+
+Test #296  start
+Test feature : :Tx3 Rx4 Chirp38 R64 D64 WinSym1 1stFftScale1
+Doppler DPU configured. Cycles = 23439
+Doppler DPU Process. Cycles = 141401. 
+Test Pass
+
+Test #296 finished!
+
+Test #297  start
+Test feature : :Tx3 Rx4 Chirp39 R128 D64 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 23849
+Doppler DPU Process. Cycles = 276581. 
+Test Pass
+
+Test #297 finished!
+
+Test #298  start
+Test feature : :Tx3 Rx4 Chirp64 R256 D64 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 23469
+Doppler DPU Process. Cycles = 547568. 
+Test Pass
+
+Test #298 finished!
+
+Test #299  start
+Test feature : :Tx3 Rx4 Chirp128 R16 D128 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 24522
+Doppler DPU Process. Cycles = 74323. 
+Test Pass
+
+Test #299 finished!
+
+Test #300  start
+Test feature : :Tx3 Rx4 Chirp64 R32 D128 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 23493
+Doppler DPU Process. Cycles = 138296. 
+Test Pass
+
+Test #300 finished!
+
+Test #301  start
+Test feature : :Tx3 Rx4 Chirp32 R64 D128 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 24333
+Doppler DPU Process. Cycles = 268749. 
+Test Pass
+
+Test #301 finished!
+
+Test #302  start
+Test feature : :Tx3 Rx4 Chirp98 R128 D128 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 23890
+Doppler DPU Process. Cycles = 533248. 
+Test Pass
+
+Test #302 finished!
+
+Test #303  start
+Test feature : :Tx3 Rx4 Chirp256 R16 D256 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 24476
+Doppler DPU Process. Cycles = 141272. 
+Test Pass
+
+Test #303 finished!
+
+Test #304  start
+Test feature : :Tx3 Rx4 Chirp128 R32 D256 WinSym0 1stFftScale1
+Doppler DPU configured. Cycles = 24443
+Doppler DPU Process. Cycles = 267060. 
+Test Pass
+
+Test #304 finished!
+
+Test #305  start
+Test feature : :Tx3 Rx4 Chirp64 R64 D256 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 23487
+Doppler DPU Process. Cycles = 523731. 
+Test Pass
+
+Test #305 finished!
+
+Test #306  start
+Test feature : :Tx3 Rx4 Chirp341 R16 D512 WinSym0 1stFftScale0
+Doppler DPU configured. Cycles = 27869
+Doppler DPU Process. Cycles = 270739. 
+Test Pass
+
+Test #306 finished!
+
+Test #307  start
+Test feature : :Tx3 Rx4 Chirp305 R32 D512 WinSym1 1stFftScale0
+Doppler DPU configured. Cycles = 25317
+Doppler DPU Process. Cycles = 526088. 
+Test Pass
+
+Test #307 finished!
+
+----------------------------
+
+All Tests PASSED!
+Feature: doppler_DPU: Passed
+Test Finished
+Value read from Global variable (MCPI_Result): 0
+Test Failure Signature: 0
+Test Log Messages: 
+Feature tested: doppler_DPU: Passed
+
+
+shutting down py4j gw server.
+
+
+**************************************************
+Terminating the debug session and Shutting down gateway.
+**************************************************
+
+**************************************************
+Test case execution completed
+**************************************************
+
+**************************************************
+Testcase Result : PASS
+**************************************************

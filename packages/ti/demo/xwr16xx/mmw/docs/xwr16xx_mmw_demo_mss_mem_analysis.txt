@@ -1,0 +1,23 @@
+                                   OVERVIEW                                    
+Memory                              Used               Total        Percent Used
+--------------------------------------------------------------------------------
+DATA_RAM                           58540              196608              29.77%
+HS_RAM                                 0               32768               0.00%
+L3_RAM                                 0              786432               0.00%
+PROG_RAM                          125382              261888              47.88%
+VECTORS                               60                 256              23.44%
+
+
+                            Type           DATA_RAM       HS_RAM       L3_RAM     PROG_RAM      VECTORS
+--------------------------------------------------------------------------------
+(.common:gMmwDemoFlash)     code                 12            0            0            0            0
+APP                         code              17704            0            0        52270           60
+APP                         heap              34816            0            0            0            0
+BIOS                        code                  4            0            0        22443            0
+COMPONENTS_CORE             code               1680            0            0        30582            0
+COMPONENTS_OPTIONAL         code               2236            0            0        15248            0
+libqspi_xwr16xx.aer4f       code                 20            0            0          795            0
+libqspiflash_xwr16xx.aer4f  code                 20            0            0         2168            0
+linker-generated            linker             2048            0            0          342            0
+linker-generated            unknown               0            0            0         1222            0
+mmwdemo_flash.oer4f         code                  0            0            0          312            0

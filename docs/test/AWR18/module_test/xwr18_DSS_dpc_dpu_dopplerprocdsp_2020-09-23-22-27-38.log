@@ -1,0 +1,4576 @@
+pre script = /home/lte_phy/ti/mcpi_tf/mmwave_sdk_test/mcpitf_scripts/mmwave_sdk/setup.py
+
+
+cmd: python /home/lte_phy/ti/mcpi_tf/mmwave_sdk_test/mcpitf_scripts/mmwave_sdk/setup.py uda0216598a_awr18
+eth008 Board details:
+IP address: 10.218.113.62
+
+Port: 17494
+
+connecting...
+Relay states 8->1 : 00010101
+5 off
+6 off
+Relay states 8->1 : 00000101
+5 on
+Relay states 8->1 : 00010101
+exit
+Disconnected
+Pre-Script returned: Success
+**************************************************
+Testcase mods & parameters invoked:
+**************************************************
+Two core test case: None (this is not a two core testcase)
+
+**************************************************
+Copying test case files from the Build server
+**************************************************
+Testdata possible location 1: http://gtjenkins.itg.ti.com/nightly_builds/mmwave_sdk-dev/313-2020-09-23_16-37-34/artifacts/mmwave_sdk/packages/ti/datapath/dpc/dpu/dopplerproc/testdata
+
+
+Testdata directory was not found on Testdata possible location 1
+
+
+Testdata possible location 2: http://gtjenkins.itg.ti.com/nightly_builds/mmwave_sdk-dev/313-2020-09-23_16-37-34/artifacts/test/mmwave_sdk/packages/ti/datapath/dpc/dpu/dopplerproc/test/testdata
+
+
+Testdata directory was not found on Testdata possible location 2
+
+Call to copy_testcase_binary:
+TCP: http://gtjenkins.itg.ti.com/nightly_builds/mmwave_sdk-dev/313-2020-09-23_16-37-34/artifacts/test/mmwave_sdk/packages/ti/datapath/dpc/dpu/dopplerproc/test; /home/lte_phy/ti/mcpi_tf/mcpi_testframework_1_50_00_01/test/temp/mmWave_SDK___awr18xx_sdk03.05.00_Test_Plan___mmwave-sdk-03-05-00-2020-09-23-19-26-51_2020_09_23_18_26_51
+
+Copying testcase binary file from http://gtjenkins.itg.ti.com/nightly_builds/mmwave_sdk-dev/313-2020-09-23_16-37-34/artifacts/test/mmwave_sdk/packages/ti/datapath/dpc/dpu/dopplerproc/test/xwr18xx_dopplerprocdsp_dss.xe674 to /home/lte_phy/ti/mcpi_tf/mcpi_testframework_1_50_00_01/test/temp/mmWave_SDK___awr18xx_sdk03.05.00_Test_Plan___mmwave-sdk-03-05-00-2020-09-23-19-26-51_2020_09_23_18_26_51 using command: 
+wget -e robots=off --no-proxy -N -T 30 -t 2 -P /home/lte_phy/ti/mcpi_tf/mcpi_testframework_1_50_00_01/test/temp/mmWave_SDK___awr18xx_sdk03.05.00_Test_Plan___mmwave-sdk-03-05-00-2020-09-23-19-26-51_2020_09_23_18_26_51 http://gtjenkins.itg.ti.com/nightly_builds/mmwave_sdk-dev/313-2020-09-23_16-37-34/artifacts/test/mmwave_sdk/packages/ti/datapath/dpc/dpu/dopplerproc/test/xwr18xx_dopplerprocdsp_dss.xe674
+**************************************************
+Executing Testcase:/home/lte_phy/ti/mcpi_tf/mcpi_testframework_1_50_00_01/test/temp/mmWave_SDK___awr18xx_sdk03.05.00_Test_Plan___mmwave-sdk-03-05-00-2020-09-23-19-26-51_2020_09_23_18_26_51/xwr18xx_dopplerprocdsp_dss.xe674
+**************************************************
+Checking if Py4J Gateway server has started...
+Py4J Gateway Server is Started
+amk: a path in cpuList is Texas Instruments XDS110 USB Debug Probe_0/DEBUGSSM_0
+amk: a path in cpuList is Texas Instruments XDS110 USB Debug Probe_0/CS_DAP_0
+amk: a path in cpuList is Texas Instruments XDS110 USB Debug Probe_0/Cortex_R4_0
+amk: a path in cpuList is Texas Instruments XDS110 USB Debug Probe_0/CSETB_0
+amk: a path in cpuList is Texas Instruments XDS110 USB Debug Probe_0/IcePick_M_0
+amk: a path in cpuList is Texas Instruments XDS110 USB Debug Probe_0/C674X_0
+DSS test case opening debug session.
+
+cr4ctl = 0x0
+
+Loading binary to the DUT (no binary args updated):/home/lte_phy/ti/mcpi_tf/mcpi_testframework_1_50_00_01/test/temp/mmWave_SDK___awr18xx_sdk03.05.00_Test_Plan___mmwave-sdk-03-05-00-2020-09-23-19-26-51_2020_09_23_18_26_51/xwr18xx_dopplerprocdsp_dss.xe674
+binary path = /home/lte_phy/ti/mcpi_tf/mcpi_testframework_1_50_00_01/test/temp/mmWave_SDK___awr18xx_sdk03.05.00_Test_Plan___mmwave-sdk-03-05-00-2020-09-23-19-26-51_2020_09_23_18_26_51/xwr18xx_dopplerprocdsp_dss.xe674
+
+total CCS time = 1016
+
+
+**************************************************
+CIO Log captured for the testcase
+**************************************************
+...... Initialization ...... 
+doppler DPU handle 0x802250.
+Test #0  start
+scratch: sizeUsed=416 total size=16384
+Test feature: Tx1 Rx1 Chirp16 R16 D16 BPM_0
+Doppler DPU Process. Cycles = 23832. 
+Test Pass maxError = 5 RefVal = 4123 DpuVal = 4118 percentage = 0.1 ratio = 0.99879
+
+Test #1  start
+scratch: sizeUsed=384 total size=16384
+Test feature: Tx1 Rx1 Chirp12 R16 D16 BPM_0
+Doppler DPU Process. Cycles = 24433. 
+Test Pass maxError = 5 RefVal = 3856 DpuVal = 3851 percentage = 0.1 ratio = 0.99870
+
+Test #2  start
+scratch: sizeUsed=352 total size=16384
+Test feature: Tx1 Rx1 Chirp8 R16 D16 BPM_0
+Doppler DPU Process. Cycles = 24337. 
+Test Pass maxError = 5 RefVal = 3862 DpuVal = 3857 percentage = 0.1 ratio = 0.99871
+
+Test #3  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx1 Rx1 Chirp4 R32 D16 BPM_0
+Doppler DPU Process. Cycles = 48055. 
+Test Pass maxError = 5 RefVal = 3077 DpuVal = 3072 percentage = 0.2 ratio = 0.99838
+
+Test #4  start
+scratch: sizeUsed=384 total size=16384
+Test feature: Tx1 Rx1 Chirp12 R32 D16 BPM_0
+Doppler DPU Process. Cycles = 48241. 
+Test Pass maxError = 5 RefVal = 3867 DpuVal = 3862 percentage = 0.1 ratio = 0.99871
+
+Test #5  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx1 Rx1 Chirp4 R32 D16 BPM_0
+Doppler DPU Process. Cycles = 48055. 
+Test Pass maxError = 5 RefVal = 3600 DpuVal = 3595 percentage = 0.1 ratio = 0.99861
+
+Test #6  start
+scratch: sizeUsed=352 total size=16384
+Test feature: Tx1 Rx1 Chirp8 R64 D16 BPM_0
+Doppler DPU Process. Cycles = 95473. 
+Test Pass maxError = 5 RefVal = 3606 DpuVal = 3601 percentage = 0.1 ratio = 0.99861
+
+Test #7  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx1 Rx1 Chirp4 R64 D16 BPM_0
+Doppler DPU Process. Cycles = 95479. 
+Test Pass maxError = 5 RefVal = 2628 DpuVal = 2623 percentage = 0.2 ratio = 0.99810
+
+Test #8  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx1 Rx1 Chirp4 R64 D16 BPM_0
+Doppler DPU Process. Cycles = 95479. 
+Test Pass maxError = 7 RefVal = 1829 DpuVal = 1836 percentage = 0.4 ratio = 1.00383
+
+Test #9  start
+scratch: sizeUsed=416 total size=16384
+Test feature: Tx1 Rx1 Chirp16 R128 D16 BPM_0
+Doppler DPU Process. Cycles = 186066. 
+Test Pass maxError = 6 RefVal = 2931 DpuVal = 2925 percentage = 0.2 ratio = 0.99795
+
+Test #10  start
+scratch: sizeUsed=352 total size=16384
+Test feature: Tx1 Rx1 Chirp8 R128 D16 BPM_0
+Doppler DPU Process. Cycles = 190873. 
+Test Pass maxError = 5 RefVal = 3845 DpuVal = 3840 percentage = 0.1 ratio = 0.99870
+
+Test #11  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx1 Rx1 Chirp4 R128 D16 BPM_0
+Doppler DPU Process. Cycles = 190327. 
+Test Pass maxError = 6 RefVal = 2332 DpuVal = 2326 percentage = 0.3 ratio = 0.99743
+
+Test #12  start
+scratch: sizeUsed=416 total size=16384
+Test feature: Tx1 Rx1 Chirp16 R256 D16 BPM_0
+Doppler DPU Process. Cycles = 372108. 
+Test Pass maxError = 5 RefVal = 3867 DpuVal = 3862 percentage = 0.1 ratio = 0.99871
+
+Test #13  start
+scratch: sizeUsed=384 total size=16384
+Test feature: Tx1 Rx1 Chirp12 R256 D16 BPM_0
+Doppler DPU Process. Cycles = 382105. 
+Test Pass maxError = 8 RefVal = 2129 DpuVal = 2121 percentage = 0.4 ratio = 0.99624
+
+Test #14  start
+scratch: sizeUsed=352 total size=16384
+Test feature: Tx1 Rx1 Chirp8 R256 D16 BPM_0
+Doppler DPU Process. Cycles = 380569. 
+Test Pass maxError = 5 RefVal = 3851 DpuVal = 3846 percentage = 0.1 ratio = 0.99870
+
+Test #15  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx1 Rx1 Chirp4 R512 D16 BPM_0
+Doppler DPU Process. Cycles = 759973. 
+Test Pass maxError = 7 RefVal = 1908 DpuVal = 1901 percentage = 0.4 ratio = 0.99633
+
+Test #16  start
+scratch: sizeUsed=384 total size=16384
+Test feature: Tx1 Rx1 Chirp12 R512 D16 BPM_0
+Doppler DPU Process. Cycles = 763033. 
+Test Pass maxError = 6 RefVal = 2629 DpuVal = 2623 percentage = 0.2 ratio = 0.99772
+
+Test #17  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx1 Rx1 Chirp4 R512 D16 BPM_0
+Doppler DPU Process. Cycles = 760417. 
+Test Pass maxError = 19 RefVal = 1417 DpuVal = 1398 percentage = 1.3 ratio = 0.98659
+
+Test #18  start
+scratch: sizeUsed=352 total size=16384
+Test feature: Tx1 Rx1 Chirp8 R1024 D16 BPM_0
+Doppler DPU Process. Cycles = 1519645. 
+Test Pass maxError = 23 RefVal = 1809 DpuVal = 1786 percentage = 1.3 ratio = 0.98729
+
+Test #19  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx1 Rx1 Chirp4 R1024 D16 BPM_0
+Doppler DPU Process. Cycles = 1519675. 
+Test Pass maxError = 14 RefVal = 1092 DpuVal = 1106 percentage = 1.3 ratio = 1.01282
+
+Test #20  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx1 Rx1 Chirp4 R1024 D16 BPM_0
+Doppler DPU Process. Cycles = 1519225. 
+Test Pass maxError = 6 RefVal = 2310 DpuVal = 2304 percentage = 0.3 ratio = 0.99740
+
+Test #21  start
+scratch: sizeUsed=832 total size=16384
+Test feature: Tx1 Rx1 Chirp32 R16 D32 BPM_0
+Doppler DPU Process. Cycles = 29034. 
+Test Pass maxError = 5 RefVal = 3845 DpuVal = 3840 percentage = 0.1 ratio = 0.99870
+
+Test #22  start
+scratch: sizeUsed=800 total size=16384
+Test feature: Tx1 Rx1 Chirp28 R16 D32 BPM_0
+Doppler DPU Process. Cycles = 29521. 
+Test Pass maxError = 5 RefVal = 3396 DpuVal = 3391 percentage = 0.1 ratio = 0.99853
+
+Test #23  start
+scratch: sizeUsed=704 total size=16384
+Test feature: Tx1 Rx1 Chirp16 R16 D32 BPM_0
+Doppler DPU Process. Cycles = 29419. 
+Test Pass maxError = 5 RefVal = 3845 DpuVal = 3840 percentage = 0.1 ratio = 0.99870
+
+Test #24  start
+scratch: sizeUsed=640 total size=16384
+Test feature: Tx1 Rx1 Chirp8 R32 D32 BPM_0
+Doppler DPU Process. Cycles = 58027. 
+Test Pass maxError = 5 RefVal = 4101 DpuVal = 4096 percentage = 0.1 ratio = 0.99878
+
+Test #25  start
+scratch: sizeUsed=800 total size=16384
+Test feature: Tx1 Rx1 Chirp28 R32 D32 BPM_0
+Doppler DPU Process. Cycles = 58999. 
+Test Pass maxError = 5 RefVal = 4107 DpuVal = 4102 percentage = 0.1 ratio = 0.99878
+
+Test #26  start
+scratch: sizeUsed=736 total size=16384
+Test feature: Tx1 Rx1 Chirp20 R32 D32 BPM_0
+Doppler DPU Process. Cycles = 58309. 
+Test Pass maxError = 5 RefVal = 3652 DpuVal = 3647 percentage = 0.1 ratio = 0.99863
+
+Test #27  start
+scratch: sizeUsed=704 total size=16384
+Test feature: Tx1 Rx1 Chirp16 R64 D32 BPM_0
+Doppler DPU Process. Cycles = 115819. 
+Test Pass maxError = 5 RefVal = 3606 DpuVal = 3601 percentage = 0.1 ratio = 0.99861
+
+Test #28  start
+scratch: sizeUsed=640 total size=16384
+Test feature: Tx1 Rx1 Chirp8 R64 D32 BPM_0
+Doppler DPU Process. Cycles = 115435. 
+Test Pass maxError = 9 RefVal = 2125 DpuVal = 2116 percentage = 0.4 ratio = 0.99576
+
+Test #29  start
+scratch: sizeUsed=736 total size=16384
+Test feature: Tx1 Rx1 Chirp20 R64 D32 BPM_0
+Doppler DPU Process. Cycles = 116005. 
+Test Pass maxError = 6 RefVal = 2822 DpuVal = 2816 percentage = 0.2 ratio = 0.99787
+
+Test #30  start
+scratch: sizeUsed=832 total size=16384
+Test feature: Tx1 Rx1 Chirp32 R128 D32 BPM_0
+Doppler DPU Process. Cycles = 227910. 
+Test Pass maxError = 7 RefVal = 2573 DpuVal = 2566 percentage = 0.3 ratio = 0.99728
+
+Test #31  start
+scratch: sizeUsed=704 total size=16384
+Test feature: Tx1 Rx1 Chirp16 R128 D32 BPM_0
+Doppler DPU Process. Cycles = 231577. 
+Test Pass maxError = 5 RefVal = 3600 DpuVal = 3595 percentage = 0.1 ratio = 0.99861
+
+Test #32  start
+scratch: sizeUsed=640 total size=16384
+Test feature: Tx1 Rx1 Chirp8 R128 D32 BPM_0
+Doppler DPU Process. Cycles = 230815. 
+Test Pass maxError = 8 RefVal = 1744 DpuVal = 1752 percentage = 0.5 ratio = 1.00459
+
+Test #33  start
+scratch: sizeUsed=832 total size=16384
+Test feature: Tx1 Rx1 Chirp32 R256 D32 BPM_0
+Doppler DPU Process. Cycles = 455796. 
+Test Pass maxError = 5 RefVal = 3856 DpuVal = 3851 percentage = 0.1 ratio = 0.99870
+
+Test #34  start
+scratch: sizeUsed=800 total size=16384
+Test feature: Tx1 Rx1 Chirp28 R256 D32 BPM_0
+Doppler DPU Process. Cycles = 463525. 
+Test Pass maxError = 7 RefVal = 2886 DpuVal = 2879 percentage = 0.2 ratio = 0.99757
+
+Test #35  start
+scratch: sizeUsed=704 total size=16384
+Test feature: Tx1 Rx1 Chirp16 R256 D32 BPM_0
+Doppler DPU Process. Cycles = 461971. 
+Test Pass maxError = 5 RefVal = 3595 DpuVal = 3590 percentage = 0.1 ratio = 0.99861
+
+Test #36  start
+scratch: sizeUsed=640 total size=16384
+Test feature: Tx1 Rx1 Chirp8 R512 D32 BPM_0
+Doppler DPU Process. Cycles = 919723. 
+Test Pass maxError = 12 RefVal = 1853 DpuVal = 1841 percentage = 0.6 ratio = 0.99352
+
+Test #37  start
+scratch: sizeUsed=800 total size=16384
+Test feature: Tx1 Rx1 Chirp28 R512 D32 BPM_0
+Doppler DPU Process. Cycles = 926299. 
+Test Pass maxError = 6 RefVal = 2828 DpuVal = 2822 percentage = 0.2 ratio = 0.99788
+
+Test #38  start
+scratch: sizeUsed=736 total size=16384
+Test feature: Tx1 Rx1 Chirp20 R512 D32 BPM_0
+Doppler DPU Process. Cycles = 924763. 
+Test Pass maxError = 6 RefVal = 3356 DpuVal = 3350 percentage = 0.2 ratio = 0.99821
+
+Test #39  start
+scratch: sizeUsed=704 total size=16384
+Test feature: Tx1 Rx1 Chirp16 R1024 D32 BPM_0
+Doppler DPU Process. Cycles = 1845271. 
+Test Pass maxError = 9 RefVal = 2001 DpuVal = 1992 percentage = 0.4 ratio = 0.99550
+
+Test #40  start
+scratch: sizeUsed=640 total size=16384
+Test feature: Tx1 Rx1 Chirp8 R1024 D32 BPM_0
+Doppler DPU Process. Cycles = 1839157. 
+Test Pass maxError = 8 RefVal = 2044 DpuVal = 2036 percentage = 0.4 ratio = 0.99609
+
+Test #41  start
+scratch: sizeUsed=736 total size=16384
+Test feature: Tx1 Rx1 Chirp20 R1024 D32 BPM_0
+Doppler DPU Process. Cycles = 1848343. 
+Test Pass maxError = 11 RefVal = 2415 DpuVal = 2404 percentage = 0.5 ratio = 0.99545
+
+Test #42  start
+scratch: sizeUsed=1664 total size=16384
+Test feature: Tx1 Rx1 Chirp64 R16 D64 BPM_0
+Doppler DPU Process. Cycles = 37674. 
+Test Pass maxError = 5 RefVal = 4139 DpuVal = 4134 percentage = 0.1 ratio = 0.99879
+
+Test #43  start
+scratch: sizeUsed=1632 total size=16384
+Test feature: Tx1 Rx1 Chirp60 R16 D64 BPM_0
+Doppler DPU Process. Cycles = 38173. 
+Test Pass maxError = 5 RefVal = 3878 DpuVal = 3873 percentage = 0.1 ratio = 0.99871
+
+Test #44  start
+scratch: sizeUsed=1408 total size=16384
+Test feature: Tx1 Rx1 Chirp32 R16 D64 BPM_0
+Doppler DPU Process. Cycles = 37687. 
+Test Pass maxError = 5 RefVal = 3908 DpuVal = 3903 percentage = 0.1 ratio = 0.99872
+
+Test #45  start
+scratch: sizeUsed=1280 total size=16384
+Test feature: Tx1 Rx1 Chirp16 R32 D64 BPM_0
+Doppler DPU Process. Cycles = 74347. 
+Test Pass maxError = 6 RefVal = 2850 DpuVal = 2844 percentage = 0.2 ratio = 0.99789
+
+Test #46  start
+scratch: sizeUsed=1632 total size=16384
+Test feature: Tx1 Rx1 Chirp60 R32 D64 BPM_0
+Doppler DPU Process. Cycles = 75577. 
+Test Pass maxError = 5 RefVal = 4112 DpuVal = 4107 percentage = 0.1 ratio = 0.99878
+
+Test #47  start
+scratch: sizeUsed=1568 total size=16384
+Test feature: Tx1 Rx1 Chirp52 R32 D64 BPM_0
+Doppler DPU Process. Cycles = 75937. 
+Test Pass maxError = 5 RefVal = 4118 DpuVal = 4113 percentage = 0.1 ratio = 0.99879
+
+Test #48  start
+scratch: sizeUsed=1408 total size=16384
+Test feature: Tx1 Rx1 Chirp32 R64 D64 BPM_0
+Doppler DPU Process. Cycles = 149443. 
+Test Pass maxError = 5 RefVal = 4101 DpuVal = 4096 percentage = 0.1 ratio = 0.99878
+
+Test #49  start
+scratch: sizeUsed=1280 total size=16384
+Test feature: Tx1 Rx1 Chirp16 R64 D64 BPM_0
+Doppler DPU Process. Cycles = 148075. 
+Test Pass maxError = 5 RefVal = 3851 DpuVal = 3846 percentage = 0.1 ratio = 0.99870
+
+Test #50  start
+scratch: sizeUsed=1568 total size=16384
+Test feature: Tx1 Rx1 Chirp52 R64 D64 BPM_0
+Doppler DPU Process. Cycles = 149977. 
+Test Pass maxError = 5 RefVal = 4139 DpuVal = 4134 percentage = 0.1 ratio = 0.99879
+
+Test #51  start
+scratch: sizeUsed=1664 total size=16384
+Test feature: Tx1 Rx1 Chirp64 R128 D64 BPM_0
+Doppler DPU Process. Cycles = 295662. 
+Test Pass maxError = 6 RefVal = 3356 DpuVal = 3350 percentage = 0.2 ratio = 0.99821
+
+Test #52  start
+scratch: sizeUsed=1408 total size=16384
+Test feature: Tx1 Rx1 Chirp32 R128 D64 BPM_0
+Doppler DPU Process. Cycles = 297079. 
+Test Pass maxError = 6 RefVal = 3857 DpuVal = 3851 percentage = 0.2 ratio = 0.99844
+
+Test #53  start
+scratch: sizeUsed=1280 total size=16384
+Test feature: Tx1 Rx1 Chirp16 R128 D64 BPM_0
+Doppler DPU Process. Cycles = 295531. 
+Test Pass maxError = 7 RefVal = 2514 DpuVal = 2507 percentage = 0.3 ratio = 0.99722
+
+Test #54  start
+scratch: sizeUsed=1664 total size=16384
+Test feature: Tx1 Rx1 Chirp64 R256 D64 BPM_0
+Doppler DPU Process. Cycles = 591144. 
+Test Pass maxError = 7 RefVal = 2258 DpuVal = 2251 percentage = 0.3 ratio = 0.99690
+
+Test #55  start
+scratch: sizeUsed=1632 total size=16384
+Test feature: Tx1 Rx1 Chirp60 R256 D64 BPM_0
+Doppler DPU Process. Cycles = 599623. 
+Test Pass maxError = 5 RefVal = 3878 DpuVal = 3873 percentage = 0.1 ratio = 0.99871
+
+Test #56  start
+scratch: sizeUsed=1408 total size=16384
+Test feature: Tx1 Rx1 Chirp32 R256 D64 BPM_0
+Doppler DPU Process. Cycles = 594085. 
+Test Pass maxError = 14 RefVal = 2234 DpuVal = 2220 percentage = 0.6 ratio = 0.99373
+
+Test #57  start
+scratch: sizeUsed=1280 total size=16384
+Test feature: Tx1 Rx1 Chirp16 R512 D64 BPM_0
+Doppler DPU Process. Cycles = 1181299. 
+Test Pass maxError = 8 RefVal = 2601 DpuVal = 2593 percentage = 0.3 ratio = 0.99692
+
+Test #58  start
+scratch: sizeUsed=1632 total size=16384
+Test feature: Tx1 Rx1 Chirp60 R512 D64 BPM_0
+Doppler DPU Process. Cycles = 1198339. 
+Test Pass maxError = 16 RefVal = 2320 DpuVal = 2304 percentage = 0.7 ratio = 0.99310
+
+Test #59  start
+scratch: sizeUsed=1568 total size=16384
+Test feature: Tx1 Rx1 Chirp52 R512 D64 BPM_0
+Doppler DPU Process. Cycles = 1195243. 
+Test Pass maxError = 6 RefVal = 2991 DpuVal = 2985 percentage = 0.2 ratio = 0.99799
+
+Test #60  start
+scratch: sizeUsed=1408 total size=16384
+Test feature: Tx1 Rx1 Chirp32 R1024 D64 BPM_0
+Doppler DPU Process. Cycles = 2374153. 
+Test Pass maxError = 32 RefVal = 1515 DpuVal = 1547 percentage = 2.1 ratio = 1.02112
+
+Test #61  start
+scratch: sizeUsed=1280 total size=16384
+Test feature: Tx1 Rx1 Chirp16 R1024 D64 BPM_0
+Doppler DPU Process. Cycles = 2361871. 
+Test Pass maxError = 10 RefVal = 2320 DpuVal = 2310 percentage = 0.4 ratio = 0.99569
+
+Test #62  start
+scratch: sizeUsed=1568 total size=16384
+Test feature: Tx1 Rx1 Chirp52 R1024 D64 BPM_0
+Doppler DPU Process. Cycles = 2389657. 
+Test Pass maxError = 12 RefVal = 2706 DpuVal = 2694 percentage = 0.4 ratio = 0.99557
+
+Test #63  start
+scratch: sizeUsed=3328 total size=16384
+Test feature: Tx1 Rx1 Chirp128 R16 D128 BPM_0
+Doppler DPU Process. Cycles = 58651. 
+Test Pass maxError = 6 RefVal = 3078 DpuVal = 3072 percentage = 0.2 ratio = 0.99805
+
+Test #64  start
+scratch: sizeUsed=3296 total size=16384
+Test feature: Tx1 Rx1 Chirp124 R16 D128 BPM_0
+Doppler DPU Process. Cycles = 59157. 
+Test Pass maxError = 5 RefVal = 3401 DpuVal = 3396 percentage = 0.1 ratio = 0.99853
+
+Test #65  start
+scratch: sizeUsed=2816 total size=16384
+Test feature: Tx1 Rx1 Chirp64 R16 D128 BPM_0
+Doppler DPU Process. Cycles = 58213. 
+Test Pass maxError = 5 RefVal = 3589 DpuVal = 3584 percentage = 0.1 ratio = 0.99861
+
+Test #66  start
+scratch: sizeUsed=2560 total size=16384
+Test feature: Tx1 Rx1 Chirp32 R32 D128 BPM_0
+Doppler DPU Process. Cycles = 114667. 
+Test Pass maxError = 16 RefVal = 1759 DpuVal = 1743 percentage = 0.9 ratio = 0.99090
+
+Test #67  start
+scratch: sizeUsed=3296 total size=16384
+Test feature: Tx1 Rx1 Chirp124 R32 D128 BPM_0
+Doppler DPU Process. Cycles = 117345. 
+Test Pass maxError = 5 RefVal = 3862 DpuVal = 3857 percentage = 0.1 ratio = 0.99871
+
+Test #68  start
+scratch: sizeUsed=3232 total size=16384
+Test feature: Tx1 Rx1 Chirp116 R32 D128 BPM_0
+Doppler DPU Process. Cycles = 117693. 
+Test Pass maxError = 6 RefVal = 3857 DpuVal = 3851 percentage = 0.2 ratio = 0.99844
+
+Test #69  start
+scratch: sizeUsed=2816 total size=16384
+Test feature: Tx1 Rx1 Chirp64 R64 D128 BPM_0
+Doppler DPU Process. Cycles = 231025. 
+Test Pass maxError = 13 RefVal = 2005 DpuVal = 2018 percentage = 0.6 ratio = 1.00648
+
+Test #70  start
+scratch: sizeUsed=2560 total size=16384
+Test feature: Tx1 Rx1 Chirp32 R64 D128 BPM_0
+Doppler DPU Process. Cycles = 229267. 
+Test Pass maxError = 6 RefVal = 3345 DpuVal = 3339 percentage = 0.2 ratio = 0.99821
+
+Test #71  start
+scratch: sizeUsed=3232 total size=16384
+Test feature: Tx1 Rx1 Chirp116 R64 D128 BPM_0
+Doppler DPU Process. Cycles = 233901. 
+Test Pass maxError = 5 RefVal = 4112 DpuVal = 4107 percentage = 0.1 ratio = 0.99878
+
+Test #72  start
+scratch: sizeUsed=3328 total size=16384
+Test feature: Tx1 Rx1 Chirp128 R128 D128 BPM_0
+Doppler DPU Process. Cycles = 461755. 
+Test Pass maxError = 6 RefVal = 3868 DpuVal = 3862 percentage = 0.2 ratio = 0.99845
+
+Test #73  start
+scratch: sizeUsed=2816 total size=16384
+Test feature: Tx1 Rx1 Chirp64 R128 D128 BPM_0
+Doppler DPU Process. Cycles = 460645. 
+Test Pass maxError = 9 RefVal = 2354 DpuVal = 2363 percentage = 0.4 ratio = 1.00382
+
+Test #74  start
+scratch: sizeUsed=2560 total size=16384
+Test feature: Tx1 Rx1 Chirp32 R128 D128 BPM_0
+Doppler DPU Process. Cycles = 456811. 
+Test Pass maxError = 9 RefVal = 2467 DpuVal = 2476 percentage = 0.4 ratio = 1.00365
+
+Test #75  start
+scratch: sizeUsed=3328 total size=16384
+Test feature: Tx1 Rx1 Chirp128 R256 D128 BPM_0
+Doppler DPU Process. Cycles = 923599. 
+Test Pass maxError = 11 RefVal = 3056 DpuVal = 3045 percentage = 0.4 ratio = 0.99640
+
+Test #76  start
+scratch: sizeUsed=3296 total size=16384
+Test feature: Tx1 Rx1 Chirp124 R256 D128 BPM_0
+Doppler DPU Process. Cycles = 932829. 
+Test Pass maxError = 19 RefVal = 2250 DpuVal = 2231 percentage = 0.8 ratio = 0.99156
+
+Test #77  start
+scratch: sizeUsed=2816 total size=16384
+Test feature: Tx1 Rx1 Chirp64 R256 D128 BPM_0
+Doppler DPU Process. Cycles = 919873. 
+Test Pass maxError = 9 RefVal = 2869 DpuVal = 2860 percentage = 0.3 ratio = 0.99686
+
+Test #78  start
+scratch: sizeUsed=2560 total size=16384
+Test feature: Tx1 Rx1 Chirp32 R512 D128 BPM_0
+Doppler DPU Process. Cycles = 1826845. 
+Test Pass maxError = 14 RefVal = 1928 DpuVal = 1942 percentage = 0.7 ratio = 1.00726
+
+Test #79  start
+scratch: sizeUsed=3296 total size=16384
+Test feature: Tx1 Rx1 Chirp124 R512 D128 BPM_0
+Doppler DPU Process. Cycles = 1864101. 
+Test Pass maxError = 9 RefVal = 2591 DpuVal = 2582 percentage = 0.3 ratio = 0.99653
+
+Test #80  start
+scratch: sizeUsed=3232 total size=16384
+Test feature: Tx1 Rx1 Chirp116 R512 D128 BPM_0
+Doppler DPU Process. Cycles = 1861035. 
+Test Pass maxError = 25 RefVal = 2667 DpuVal = 2642 percentage = 0.9 ratio = 0.99063
+
+Test #81  start
+scratch: sizeUsed=6656 total size=16384
+Test feature: Tx1 Rx1 Chirp256 R16 D256 BPM_0
+Doppler DPU Process. Cycles = 96529. 
+Test Pass maxError = 5 RefVal = 4164 DpuVal = 4159 percentage = 0.1 ratio = 0.99880
+
+Test #82  start
+scratch: sizeUsed=6624 total size=16384
+Test feature: Tx1 Rx1 Chirp252 R16 D256 BPM_0
+Doppler DPU Process. Cycles = 96951. 
+Test Pass maxError = 5 RefVal = 4357 DpuVal = 4352 percentage = 0.1 ratio = 0.99885
+
+Test #83  start
+scratch: sizeUsed=5632 total size=16384
+Test feature: Tx1 Rx1 Chirp128 R16 D256 BPM_0
+Doppler DPU Process. Cycles = 95001. 
+Test Pass maxError = 8 RefVal = 2194 DpuVal = 2202 percentage = 0.4 ratio = 1.00365
+
+Test #84  start
+scratch: sizeUsed=5120 total size=16384
+Test feature: Tx1 Rx1 Chirp64 R32 D256 BPM_0
+Doppler DPU Process. Cycles = 186781. 
+Test Pass maxError = 7 RefVal = 2104 DpuVal = 2097 percentage = 0.3 ratio = 0.99667
+
+Test #85  start
+scratch: sizeUsed=6624 total size=16384
+Test feature: Tx1 Rx1 Chirp252 R32 D256 BPM_0
+Doppler DPU Process. Cycles = 192483. 
+Test Pass maxError = 7 RefVal = 2490 DpuVal = 2483 percentage = 0.3 ratio = 0.99719
+
+Test #86  start
+scratch: sizeUsed=6560 total size=16384
+Test feature: Tx1 Rx1 Chirp244 R32 D256 BPM_0
+Doppler DPU Process. Cycles = 192135. 
+Test Pass maxError = 8 RefVal = 2559 DpuVal = 2551 percentage = 0.3 ratio = 0.99687
+
+Test #87  start
+scratch: sizeUsed=5632 total size=16384
+Test feature: Tx1 Rx1 Chirp128 R64 D256 BPM_0
+Doppler DPU Process. Cycles = 376329. 
+Test Pass maxError = 10 RefVal = 2894 DpuVal = 2884 percentage = 0.3 ratio = 0.99654
+
+Test #88  start
+scratch: sizeUsed=5120 total size=16384
+Test feature: Tx1 Rx1 Chirp64 R64 D256 BPM_0
+Doppler DPU Process. Cycles = 373345. 
+Test Pass maxError = 12 RefVal = 2394 DpuVal = 2382 percentage = 0.5 ratio = 0.99499
+
+Test #89  start
+scratch: sizeUsed=6560 total size=16384
+Test feature: Tx1 Rx1 Chirp244 R64 D256 BPM_0
+Doppler DPU Process. Cycles = 383343. 
+Test Pass maxError = 46 RefVal = 1659 DpuVal = 1705 percentage = 2.8 ratio = 1.02773
+
+Test #90  start
+scratch: sizeUsed=6656 total size=16384
+Test feature: Tx1 Rx1 Chirp256 R128 D256 BPM_0
+Doppler DPU Process. Cycles = 760891. 
+Test Pass maxError = 6 RefVal = 3089 DpuVal = 3083 percentage = 0.2 ratio = 0.99806
+
+Test #91  start
+scratch: sizeUsed=5632 total size=16384
+Test feature: Tx1 Rx1 Chirp128 R128 D256 BPM_0
+Doppler DPU Process. Cycles = 752517. 
+Test Pass maxError = 21 RefVal = 2593 DpuVal = 2614 percentage = 0.8 ratio = 1.00810
+
+Test #92  start
+scratch: sizeUsed=5120 total size=16384
+Test feature: Tx1 Rx1 Chirp64 R128 D256 BPM_0
+Doppler DPU Process. Cycles = 745279. 
+Test Pass maxError = 10 RefVal = 3104 DpuVal = 3094 percentage = 0.3 ratio = 0.99678
+
+Test #93  start
+scratch: sizeUsed=6656 total size=16384
+Test feature: Tx1 Rx1 Chirp256 R256 D256 BPM_0
+Doppler DPU Process. Cycles = 1520719. 
+Test Pass maxError = 17 RefVal = 2128 DpuVal = 2111 percentage = 0.8 ratio = 0.99201
+
+Test #94  start
+scratch: sizeUsed=6624 total size=16384
+Test feature: Tx1 Rx1 Chirp252 R256 D256 BPM_0
+Doppler DPU Process. Cycles = 1529865. 
+Test Pass maxError = 9 RefVal = 2422 DpuVal = 2413 percentage = 0.4 ratio = 0.99628
+
+Test #95  start
+scratch: sizeUsed=5632 total size=16384
+Test feature: Tx1 Rx1 Chirp128 R256 D256 BPM_0
+Doppler DPU Process. Cycles = 1503369. 
+Test Pass maxError = 9 RefVal = 3227 DpuVal = 3218 percentage = 0.3 ratio = 0.99721
+
+Test #96  start
+scratch: sizeUsed=13312 total size=16384
+Test feature: Tx1 Rx1 Chirp512 R16 D512 BPM_0
+Doppler DPU Process. Cycles = 186829. 
+Test Pass maxError = 6 RefVal = 3857 DpuVal = 3851 percentage = 0.2 ratio = 0.99844
+
+Test #97  start
+scratch: sizeUsed=13280 total size=16384
+Test feature: Tx1 Rx1 Chirp508 R16 D512 BPM_0
+Doppler DPU Process. Cycles = 186969. 
+Test Pass maxError = 5 RefVal = 4379 DpuVal = 4374 percentage = 0.1 ratio = 0.99886
+
+Test #98  start
+scratch: sizeUsed=11264 total size=16384
+Test feature: Tx1 Rx1 Chirp256 R16 D512 BPM_0
+Doppler DPU Process. Cycles = 182787. 
+Test Pass maxError = 5 RefVal = 3627 DpuVal = 3622 percentage = 0.1 ratio = 0.99862
+
+Test #99  start
+scratch: sizeUsed=10240 total size=16384
+Test feature: Tx1 Rx1 Chirp128 R32 D512 BPM_0
+Doppler DPU Process. Cycles = 359523. 
+Test Pass maxError = 7 RefVal = 2537 DpuVal = 2530 percentage = 0.3 ratio = 0.99724
+
+Test #100  start
+scratch: sizeUsed=13280 total size=16384
+Test feature: Tx1 Rx1 Chirp508 R32 D512 BPM_0
+Doppler DPU Process. Cycles = 370497. 
+Test Pass maxError = 6 RefVal = 3100 DpuVal = 3094 percentage = 0.2 ratio = 0.99806
+
+Test #101  start
+scratch: sizeUsed=13216 total size=16384
+Test feature: Tx1 Rx1 Chirp500 R32 D512 BPM_0
+Doppler DPU Process. Cycles = 370467. 
+Test Pass maxError = 6 RefVal = 3623 DpuVal = 3617 percentage = 0.2 ratio = 0.99834
+
+Test #102  start
+scratch: sizeUsed=11264 total size=16384
+Test feature: Tx1 Rx1 Chirp256 R64 D512 BPM_0
+Doppler DPU Process. Cycles = 725127. 
+Test Pass maxError = 9 RefVal = 3159 DpuVal = 3150 percentage = 0.3 ratio = 0.99715
+
+Test #103  start
+scratch: sizeUsed=10240 total size=16384
+Test feature: Tx1 Rx1 Chirp128 R64 D512 BPM_0
+Doppler DPU Process. Cycles = 717111. 
+Test Pass maxError = 9 RefVal = 2324 DpuVal = 2315 percentage = 0.4 ratio = 0.99613
+
+Test #104  start
+scratch: sizeUsed=13216 total size=16384
+Test feature: Tx1 Rx1 Chirp500 R64 D512 BPM_0
+Doppler DPU Process. Cycles = 738481. 
+Test Pass maxError = 6 RefVal = 3356 DpuVal = 3350 percentage = 0.2 ratio = 0.99821
+
+Test #105  start
+scratch: sizeUsed=13312 total size=16384
+Test feature: Tx1 Rx1 Chirp512 R128 D512 BPM_0
+Doppler DPU Process. Cycles = 1469695. 
+Test Pass maxError = 13 RefVal = 2334 DpuVal = 2321 percentage = 0.6 ratio = 0.99443
+
+Test #106  start
+scratch: sizeUsed=11264 total size=16384
+Test feature: Tx1 Rx1 Chirp256 R128 D512 BPM_0
+Doppler DPU Process. Cycles = 1447065. 
+Test Pass maxError = 17 RefVal = 2978 DpuVal = 2995 percentage = 0.6 ratio = 1.00571
+
+Test #107  start
+scratch: sizeUsed=10240 total size=16384
+Test feature: Tx1 Rx1 Chirp128 R128 D512 BPM_0
+Doppler DPU Process. Cycles = 1433031. 
+Test Pass maxError = 18 RefVal = 2110 DpuVal = 2092 percentage = 0.9 ratio = 0.99147
+
+Test #108  start
+scratch: sizeUsed=416 total size=16384
+Test feature: Tx1 Rx2 Chirp16 R16 D16 BPM_0
+Doppler DPU Process. Cycles = 39276. 
+Test Pass maxError = 5 RefVal = 3881 DpuVal = 3876 percentage = 0.1 ratio = 0.99871
+
+Test #109  start
+scratch: sizeUsed=384 total size=16384
+Test feature: Tx1 Rx2 Chirp12 R16 D16 BPM_0
+Doppler DPU Process. Cycles = 40567. 
+Test Pass maxError = 4 RefVal = 3484 DpuVal = 3480 percentage = 0.1 ratio = 0.99885
+
+Test #110  start
+scratch: sizeUsed=352 total size=16384
+Test feature: Tx1 Rx2 Chirp8 R16 D16 BPM_0
+Doppler DPU Process. Cycles = 40333. 
+Test Pass maxError = 5 RefVal = 3653 DpuVal = 3648 percentage = 0.1 ratio = 0.99863
+
+Test #111  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx1 Rx2 Chirp4 R32 D16 BPM_0
+Doppler DPU Process. Cycles = 80119. 
+Test Pass maxError = 6 RefVal = 3606 DpuVal = 3600 percentage = 0.2 ratio = 0.99834
+
+Test #112  start
+scratch: sizeUsed=384 total size=16384
+Test feature: Tx1 Rx2 Chirp12 R32 D16 BPM_0
+Doppler DPU Process. Cycles = 80503. 
+Test Pass maxError = 4 RefVal = 3501 DpuVal = 3497 percentage = 0.1 ratio = 0.99886
+
+Test #113  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx1 Rx2 Chirp4 R32 D16 BPM_0
+Doppler DPU Process. Cycles = 80119. 
+Test Pass maxError = 6 RefVal = 3347 DpuVal = 3341 percentage = 0.2 ratio = 0.99821
+
+Test #114  start
+scratch: sizeUsed=352 total size=16384
+Test feature: Tx1 Rx2 Chirp8 R64 D16 BPM_0
+Doppler DPU Process. Cycles = 160009. 
+Test Pass maxError = 5 RefVal = 3752 DpuVal = 3747 percentage = 0.1 ratio = 0.99867
+
+Test #115  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx1 Rx2 Chirp4 R64 D16 BPM_0
+Doppler DPU Process. Cycles = 159607. 
+Test Pass maxError = 5 RefVal = 3502 DpuVal = 3497 percentage = 0.1 ratio = 0.99857
+
+Test #116  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx1 Rx2 Chirp4 R64 D16 BPM_0
+Doppler DPU Process. Cycles = 159607. 
+Test Pass maxError = 6 RefVal = 2417 DpuVal = 2411 percentage = 0.2 ratio = 0.99752
+
+Test #117  start
+scratch: sizeUsed=416 total size=16384
+Test feature: Tx1 Rx2 Chirp16 R128 D16 BPM_0
+Doppler DPU Process. Cycles = 310320. 
+Test Pass maxError = 5 RefVal = 3646 DpuVal = 3641 percentage = 0.1 ratio = 0.99863
+
+Test #118  start
+scratch: sizeUsed=352 total size=16384
+Test feature: Tx1 Rx2 Chirp8 R128 D16 BPM_0
+Doppler DPU Process. Cycles = 318793. 
+Test Pass maxError = 5 RefVal = 3855 DpuVal = 3850 percentage = 0.1 ratio = 0.99870
+
+Test #119  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx1 Rx2 Chirp4 R128 D16 BPM_0
+Doppler DPU Process. Cycles = 319177. 
+Test Pass maxError = 14 RefVal = 2276 DpuVal = 2290 percentage = 0.6 ratio = 1.00615
+
+Test #120  start
+scratch: sizeUsed=416 total size=16384
+Test feature: Tx1 Rx2 Chirp16 R256 D16 BPM_0
+Doppler DPU Process. Cycles = 619434. 
+Test Pass maxError = 5 RefVal = 3883 DpuVal = 3878 percentage = 0.1 ratio = 0.99871
+
+Test #121  start
+scratch: sizeUsed=384 total size=16384
+Test feature: Tx1 Rx2 Chirp12 R256 D16 BPM_0
+Doppler DPU Process. Cycles = 640201. 
+Test Pass maxError = 6 RefVal = 3908 DpuVal = 3902 percentage = 0.2 ratio = 0.99846
+
+Test #122  start
+scratch: sizeUsed=352 total size=16384
+Test feature: Tx1 Rx2 Chirp8 R256 D16 BPM_0
+Doppler DPU Process. Cycles = 636361. 
+Test Pass maxError = 5 RefVal = 3602 DpuVal = 3597 percentage = 0.1 ratio = 0.99861
+
+Test #123  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx1 Rx2 Chirp4 R512 D16 BPM_0
+Doppler DPU Process. Cycles = 1273513. 
+Test Pass maxError = 8 RefVal = 2551 DpuVal = 2559 percentage = 0.3 ratio = 1.00314
+
+Test #124  start
+scratch: sizeUsed=384 total size=16384
+Test feature: Tx1 Rx2 Chirp12 R512 D16 BPM_0
+Doppler DPU Process. Cycles = 1279621. 
+Test Pass maxError = 5 RefVal = 3741 DpuVal = 3736 percentage = 0.1 ratio = 0.99866
+
+Test #125  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx1 Rx2 Chirp4 R512 D16 BPM_0
+Doppler DPU Process. Cycles = 1273525. 
+Test Pass maxError = 8 RefVal = 2341 DpuVal = 2333 percentage = 0.3 ratio = 0.99658
+
+Test #126  start
+scratch: sizeUsed=352 total size=16384
+Test feature: Tx1 Rx2 Chirp8 R1024 D16 BPM_0
+Doppler DPU Process. Cycles = 2543683. 
+Test Pass maxError = 6 RefVal = 3765 DpuVal = 3759 percentage = 0.2 ratio = 0.99841
+
+Test #127  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx1 Rx2 Chirp4 R1024 D16 BPM_0
+Doppler DPU Process. Cycles = 2546767. 
+Test Pass maxError = 6 RefVal = 3475 DpuVal = 3469 percentage = 0.2 ratio = 0.99827
+
+Test #128  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx1 Rx2 Chirp4 R1024 D16 BPM_0
+Doppler DPU Process. Cycles = 2546299. 
+Test Pass maxError = 6 RefVal = 3381 DpuVal = 3375 percentage = 0.2 ratio = 0.99823
+
+Test #129  start
+scratch: sizeUsed=832 total size=16384
+Test feature: Tx1 Rx2 Chirp32 R16 D32 BPM_0
+Doppler DPU Process. Cycles = 47970. 
+Test Pass maxError = 5 RefVal = 2965 DpuVal = 2960 percentage = 0.2 ratio = 0.99831
+
+Test #130  start
+scratch: sizeUsed=800 total size=16384
+Test feature: Tx1 Rx2 Chirp28 R16 D32 BPM_0
+Doppler DPU Process. Cycles = 49021. 
+Test Pass maxError = 6 RefVal = 3882 DpuVal = 3876 percentage = 0.2 ratio = 0.99845
+
+Test #131  start
+scratch: sizeUsed=704 total size=16384
+Test feature: Tx1 Rx2 Chirp16 R16 D32 BPM_0
+Doppler DPU Process. Cycles = 48823. 
+Test Pass maxError = 5 RefVal = 3826 DpuVal = 3821 percentage = 0.1 ratio = 0.99869
+
+Test #132  start
+scratch: sizeUsed=640 total size=16384
+Test feature: Tx1 Rx2 Chirp8 R32 D32 BPM_0
+Doppler DPU Process. Cycles = 96445. 
+Test Pass maxError = 5 RefVal = 3570 DpuVal = 3565 percentage = 0.1 ratio = 0.99860
+
+Test #133  start
+scratch: sizeUsed=800 total size=16384
+Test feature: Tx1 Rx2 Chirp28 R32 D32 BPM_0
+Doppler DPU Process. Cycles = 97993. 
+Test Pass maxError = 6 RefVal = 4006 DpuVal = 4000 percentage = 0.1 ratio = 0.99850
+
+Test #134  start
+scratch: sizeUsed=736 total size=16384
+Test feature: Tx1 Rx2 Chirp20 R32 D32 BPM_0
+Doppler DPU Process. Cycles = 97201. 
+Test Pass maxError = 5 RefVal = 3362 DpuVal = 3357 percentage = 0.1 ratio = 0.99851
+
+Test #135  start
+scratch: sizeUsed=704 total size=16384
+Test feature: Tx1 Rx2 Chirp16 R64 D32 BPM_0
+Doppler DPU Process. Cycles = 193399. 
+Test Pass maxError = 6 RefVal = 3870 DpuVal = 3864 percentage = 0.2 ratio = 0.99845
+
+Test #136  start
+scratch: sizeUsed=640 total size=16384
+Test feature: Tx1 Rx2 Chirp8 R64 D32 BPM_0
+Doppler DPU Process. Cycles = 192253. 
+Test Pass maxError = 5 RefVal = 3623 DpuVal = 3618 percentage = 0.1 ratio = 0.99862
+
+Test #137  start
+scratch: sizeUsed=736 total size=16384
+Test feature: Tx1 Rx2 Chirp20 R64 D32 BPM_0
+Doppler DPU Process. Cycles = 193777. 
+Test Pass maxError = 5 RefVal = 3890 DpuVal = 3885 percentage = 0.1 ratio = 0.99871
+
+Test #138  start
+scratch: sizeUsed=832 total size=16384
+Test feature: Tx1 Rx2 Chirp32 R128 D32 BPM_0
+Doppler DPU Process. Cycles = 379230. 
+Test Pass maxError = 5 RefVal = 3661 DpuVal = 3656 percentage = 0.1 ratio = 0.99863
+
+Test #139  start
+scratch: sizeUsed=704 total size=16384
+Test feature: Tx1 Rx2 Chirp16 R128 D32 BPM_0
+Doppler DPU Process. Cycles = 386167. 
+Test Pass maxError = 6 RefVal = 3600 DpuVal = 3594 percentage = 0.2 ratio = 0.99833
+
+Test #140  start
+scratch: sizeUsed=640 total size=16384
+Test feature: Tx1 Rx2 Chirp8 R128 D32 BPM_0
+Doppler DPU Process. Cycles = 384481. 
+Test Pass maxError = 5 RefVal = 3644 DpuVal = 3639 percentage = 0.1 ratio = 0.99863
+
+Test #141  start
+scratch: sizeUsed=832 total size=16384
+Test feature: Tx1 Rx2 Chirp32 R256 D32 BPM_0
+Doppler DPU Process. Cycles = 758922. 
+Test Pass maxError = 6 RefVal = 3878 DpuVal = 3872 percentage = 0.2 ratio = 0.99845
+
+Test #142  start
+scratch: sizeUsed=800 total size=16384
+Test feature: Tx1 Rx2 Chirp28 R256 D32 BPM_0
+Doppler DPU Process. Cycles = 775849. 
+Test Pass maxError = 5 RefVal = 3672 DpuVal = 3667 percentage = 0.1 ratio = 0.99864
+
+Test #143  start
+scratch: sizeUsed=704 total size=16384
+Test feature: Tx1 Rx2 Chirp16 R256 D32 BPM_0
+Doppler DPU Process. Cycles = 772279. 
+Test Pass maxError = 5 RefVal = 3593 DpuVal = 3588 percentage = 0.1 ratio = 0.99861
+
+Test #144  start
+scratch: sizeUsed=640 total size=16384
+Test feature: Tx1 Rx2 Chirp8 R512 D32 BPM_0
+Doppler DPU Process. Cycles = 1535161. 
+Test Pass maxError = 5 RefVal = 3355 DpuVal = 3350 percentage = 0.1 ratio = 0.99851
+
+Test #145  start
+scratch: sizeUsed=800 total size=16384
+Test feature: Tx1 Rx2 Chirp28 R512 D32 BPM_0
+Doppler DPU Process. Cycles = 1550023. 
+Test Pass maxError = 6 RefVal = 4013 DpuVal = 4007 percentage = 0.1 ratio = 0.99850
+
+Test #146  start
+scratch: sizeUsed=736 total size=16384
+Test feature: Tx1 Rx2 Chirp20 R512 D32 BPM_0
+Doppler DPU Process. Cycles = 1547371. 
+Test Pass maxError = 8 RefVal = 3002 DpuVal = 2994 percentage = 0.3 ratio = 0.99734
+
+Test #147  start
+scratch: sizeUsed=704 total size=16384
+Test feature: Tx1 Rx2 Chirp16 R1024 D32 BPM_0
+Doppler DPU Process. Cycles = 3087385. 
+Test Pass maxError = 8 RefVal = 2993 DpuVal = 3001 percentage = 0.3 ratio = 1.00267
+
+Test #148  start
+scratch: sizeUsed=640 total size=16384
+Test feature: Tx1 Rx2 Chirp8 R1024 D32 BPM_0
+Doppler DPU Process. Cycles = 3069073. 
+Test Pass maxError = 7 RefVal = 2658 DpuVal = 2665 percentage = 0.3 ratio = 1.00263
+
+Test #149  start
+scratch: sizeUsed=736 total size=16384
+Test feature: Tx1 Rx2 Chirp20 R1024 D32 BPM_0
+Doppler DPU Process. Cycles = 3093565. 
+Test Pass maxError = 14 RefVal = 2468 DpuVal = 2454 percentage = 0.6 ratio = 0.99433
+
+Test #150  start
+scratch: sizeUsed=1664 total size=16384
+Test feature: Tx1 Rx2 Chirp64 R16 D64 BPM_0
+Doppler DPU Process. Cycles = 61830. 
+Test Pass maxError = 5 RefVal = 3800 DpuVal = 3795 percentage = 0.1 ratio = 0.99868
+
+Test #151  start
+scratch: sizeUsed=1632 total size=16384
+Test feature: Tx1 Rx2 Chirp60 R16 D64 BPM_0
+Doppler DPU Process. Cycles = 62899. 
+Test Pass maxError = 5 RefVal = 4277 DpuVal = 4272 percentage = 0.1 ratio = 0.99883
+
+Test #152  start
+scratch: sizeUsed=1408 total size=16384
+Test feature: Tx1 Rx2 Chirp32 R16 D64 BPM_0
+Doppler DPU Process. Cycles = 62647. 
+Test Pass maxError = 5 RefVal = 3098 DpuVal = 3093 percentage = 0.2 ratio = 0.99839
+
+Test #153  start
+scratch: sizeUsed=1280 total size=16384
+Test feature: Tx1 Rx2 Chirp16 R32 D64 BPM_0
+Doppler DPU Process. Cycles = 122647. 
+Test Pass maxError = 5 RefVal = 3618 DpuVal = 3613 percentage = 0.1 ratio = 0.99862
+
+Test #154  start
+scratch: sizeUsed=1632 total size=16384
+Test feature: Tx1 Rx2 Chirp60 R32 D64 BPM_0
+Doppler DPU Process. Cycles = 125023. 
+Test Pass maxError = 5 RefVal = 3785 DpuVal = 3780 percentage = 0.1 ratio = 0.99868
+
+Test #155  start
+scratch: sizeUsed=1568 total size=16384
+Test feature: Tx1 Rx2 Chirp52 R32 D64 BPM_0
+Doppler DPU Process. Cycles = 124447. 
+Test Pass maxError = 5 RefVal = 4032 DpuVal = 4027 percentage = 0.1 ratio = 0.99876
+
+Test #156  start
+scratch: sizeUsed=1408 total size=16384
+Test feature: Tx1 Rx2 Chirp32 R64 D64 BPM_0
+Doppler DPU Process. Cycles = 246205. 
+Test Pass maxError = 7 RefVal = 3247 DpuVal = 3240 percentage = 0.2 ratio = 0.99784
+
+Test #157  start
+scratch: sizeUsed=1280 total size=16384
+Test feature: Tx1 Rx2 Chirp16 R64 D64 BPM_0
+Doppler DPU Process. Cycles = 244663. 
+Test Pass maxError = 5 RefVal = 2970 DpuVal = 2965 percentage = 0.2 ratio = 0.99832
+
+Test #158  start
+scratch: sizeUsed=1568 total size=16384
+Test feature: Tx1 Rx2 Chirp52 R64 D64 BPM_0
+Doppler DPU Process. Cycles = 248707. 
+Test Pass maxError = 6 RefVal = 3987 DpuVal = 3981 percentage = 0.2 ratio = 0.99850
+
+Test #159  start
+scratch: sizeUsed=1664 total size=16384
+Test feature: Tx1 Rx2 Chirp64 R128 D64 BPM_0
+Doppler DPU Process. Cycles = 488826. 
+Test Pass maxError = 6 RefVal = 4138 DpuVal = 4132 percentage = 0.1 ratio = 0.99855
+
+Test #160  start
+scratch: sizeUsed=1408 total size=16384
+Test feature: Tx1 Rx2 Chirp32 R128 D64 BPM_0
+Doppler DPU Process. Cycles = 492361. 
+Test Pass maxError = 10 RefVal = 2971 DpuVal = 2961 percentage = 0.3 ratio = 0.99663
+
+Test #161  start
+scratch: sizeUsed=1280 total size=16384
+Test feature: Tx1 Rx2 Chirp16 R128 D64 BPM_0
+Doppler DPU Process. Cycles = 489301. 
+Test Pass maxError = 5 RefVal = 3882 DpuVal = 3877 percentage = 0.1 ratio = 0.99871
+
+Test #162  start
+scratch: sizeUsed=1664 total size=16384
+Test feature: Tx1 Rx2 Chirp64 R256 D64 BPM_0
+Doppler DPU Process. Cycles = 977994. 
+Test Pass maxError = 6 RefVal = 4123 DpuVal = 4117 percentage = 0.1 ratio = 0.99854
+
+Test #163  start
+scratch: sizeUsed=1632 total size=16384
+Test feature: Tx1 Rx2 Chirp60 R256 D64 BPM_0
+Doppler DPU Process. Cycles = 995665. 
+Test Pass maxError = 6 RefVal = 3867 DpuVal = 3861 percentage = 0.2 ratio = 0.99845
+
+Test #164  start
+scratch: sizeUsed=1408 total size=16384
+Test feature: Tx1 Rx2 Chirp32 R256 D64 BPM_0
+Doppler DPU Process. Cycles = 984007. 
+Test Pass maxError = 7 RefVal = 2981 DpuVal = 2974 percentage = 0.2 ratio = 0.99765
+
+Test #165  start
+scratch: sizeUsed=1280 total size=16384
+Test feature: Tx1 Rx2 Chirp16 R512 D64 BPM_0
+Doppler DPU Process. Cycles = 1954477. 
+Test Pass maxError = 6 RefVal = 3600 DpuVal = 3594 percentage = 0.2 ratio = 0.99833
+
+Test #166  start
+scratch: sizeUsed=1632 total size=16384
+Test feature: Tx1 Rx2 Chirp60 R512 D64 BPM_0
+Doppler DPU Process. Cycles = 1989979. 
+Test Pass maxError = 6 RefVal = 4112 DpuVal = 4106 percentage = 0.1 ratio = 0.99854
+
+Test #167  start
+scratch: sizeUsed=1568 total size=16384
+Test feature: Tx1 Rx2 Chirp52 R512 D64 BPM_0
+Doppler DPU Process. Cycles = 1980733. 
+Test Pass maxError = 6 RefVal = 3859 DpuVal = 3853 percentage = 0.2 ratio = 0.99845
+
+Test #168  start
+scratch: sizeUsed=1408 total size=16384
+Test feature: Tx1 Rx2 Chirp32 R1024 D64 BPM_0
+Doppler DPU Process. Cycles = 3933241. 
+Test Pass maxError = 6 RefVal = 4010 DpuVal = 4004 percentage = 0.1 ratio = 0.99850
+
+Test #169  start
+scratch: sizeUsed=1280 total size=16384
+Test feature: Tx1 Rx2 Chirp16 R1024 D64 BPM_0
+Doppler DPU Process. Cycles = 3908143. 
+Test Pass maxError = 6 RefVal = 3885 DpuVal = 3879 percentage = 0.2 ratio = 0.99846
+
+Test #170  start
+scratch: sizeUsed=1568 total size=16384
+Test feature: Tx1 Rx2 Chirp52 R1024 D64 BPM_0
+Doppler DPU Process. Cycles = 3960577. 
+Test Pass maxError = 12 RefVal = 3181 DpuVal = 3169 percentage = 0.4 ratio = 0.99623
+
+Test #171  start
+scratch: sizeUsed=3328 total size=16384
+Test feature: Tx1 Rx2 Chirp128 R16 D128 BPM_0
+Doppler DPU Process. Cycles = 96919. 
+Test Pass maxError = 5 RefVal = 3697 DpuVal = 3692 percentage = 0.1 ratio = 0.99865
+
+Test #172  start
+scratch: sizeUsed=3296 total size=16384
+Test feature: Tx1 Rx2 Chirp124 R16 D128 BPM_0
+Doppler DPU Process. Cycles = 97905. 
+Test Pass maxError = 5 RefVal = 3503 DpuVal = 3498 percentage = 0.1 ratio = 0.99857
+
+Test #173  start
+scratch: sizeUsed=2816 total size=16384
+Test feature: Tx1 Rx2 Chirp64 R16 D128 BPM_0
+Doppler DPU Process. Cycles = 96241. 
+Test Pass maxError = 5 RefVal = 4023 DpuVal = 4018 percentage = 0.1 ratio = 0.99876
+
+Test #174  start
+scratch: sizeUsed=2560 total size=16384
+Test feature: Tx1 Rx2 Chirp32 R32 D128 BPM_0
+Doppler DPU Process. Cycles = 189769. 
+Test Pass maxError = 6 RefVal = 4010 DpuVal = 4004 percentage = 0.1 ratio = 0.99850
+
+Test #175  start
+scratch: sizeUsed=3296 total size=16384
+Test feature: Tx1 Rx2 Chirp124 R32 D128 BPM_0
+Doppler DPU Process. Cycles = 194835. 
+Test Pass maxError = 5 RefVal = 3930 DpuVal = 3925 percentage = 0.1 ratio = 0.99873
+
+Test #176  start
+scratch: sizeUsed=3232 total size=16384
+Test feature: Tx1 Rx2 Chirp116 R32 D128 BPM_0
+Doppler DPU Process. Cycles = 194961. 
+Test Pass maxError = 5 RefVal = 3989 DpuVal = 3984 percentage = 0.1 ratio = 0.99875
+
+Test #177  start
+scratch: sizeUsed=2816 total size=16384
+Test feature: Tx1 Rx2 Chirp64 R64 D128 BPM_0
+Doppler DPU Process. Cycles = 382513. 
+Test Pass maxError = 5 RefVal = 3800 DpuVal = 3795 percentage = 0.1 ratio = 0.99868
+
+Test #178  start
+scratch: sizeUsed=2560 total size=16384
+Test feature: Tx1 Rx2 Chirp32 R64 D128 BPM_0
+Doppler DPU Process. Cycles = 378889. 
+Test Pass maxError = 43 RefVal = 2188 DpuVal = 2231 percentage = 2.0 ratio = 1.01965
+
+Test #179  start
+scratch: sizeUsed=3232 total size=16384
+Test feature: Tx1 Rx2 Chirp116 R64 D128 BPM_0
+Doppler DPU Process. Cycles = 388299. 
+Test Pass maxError = 5 RefVal = 3866 DpuVal = 3861 percentage = 0.1 ratio = 0.99871
+
+Test #180  start
+scratch: sizeUsed=3328 total size=16384
+Test feature: Tx1 Rx2 Chirp128 R128 D128 BPM_0
+Doppler DPU Process. Cycles = 768823. 
+Test Pass maxError = 6 RefVal = 4123 DpuVal = 4117 percentage = 0.1 ratio = 0.99854
+
+Test #181  start
+scratch: sizeUsed=2816 total size=16384
+Test feature: Tx1 Rx2 Chirp64 R128 D128 BPM_0
+Doppler DPU Process. Cycles = 764815. 
+Test Pass maxError = 10 RefVal = 2702 DpuVal = 2692 percentage = 0.4 ratio = 0.99630
+
+Test #182  start
+scratch: sizeUsed=2560 total size=16384
+Test feature: Tx1 Rx2 Chirp32 R128 D128 BPM_0
+Doppler DPU Process. Cycles = 757753. 
+Test Pass maxError = 6 RefVal = 3867 DpuVal = 3861 percentage = 0.2 ratio = 0.99845
+
+Test #183  start
+scratch: sizeUsed=3328 total size=16384
+Test feature: Tx1 Rx2 Chirp128 R256 D128 BPM_0
+Doppler DPU Process. Cycles = 1536259. 
+Test Pass maxError = 6 RefVal = 3859 DpuVal = 3853 percentage = 0.2 ratio = 0.99845
+
+Test #184  start
+scratch: sizeUsed=3296 total size=16384
+Test feature: Tx1 Rx2 Chirp124 R256 D128 BPM_0
+Doppler DPU Process. Cycles = 1552719. 
+Test Pass maxError = 12 RefVal = 3231 DpuVal = 3243 percentage = 0.4 ratio = 1.00371
+
+Test #185  start
+scratch: sizeUsed=2816 total size=16384
+Test feature: Tx1 Rx2 Chirp64 R256 D128 BPM_0
+Doppler DPU Process. Cycles = 1529137. 
+Test Pass maxError = 6 RefVal = 3631 DpuVal = 3625 percentage = 0.2 ratio = 0.99835
+
+Test #186  start
+scratch: sizeUsed=2560 total size=16384
+Test feature: Tx1 Rx2 Chirp32 R512 D128 BPM_0
+Doppler DPU Process. Cycles = 3029137. 
+Test Pass maxError = 8 RefVal = 2886 DpuVal = 2894 percentage = 0.3 ratio = 1.00277
+
+Test #187  start
+scratch: sizeUsed=3296 total size=16384
+Test feature: Tx1 Rx2 Chirp124 R512 D128 BPM_0
+Doppler DPU Process. Cycles = 3104799. 
+Test Pass maxError = 13 RefVal = 3058 DpuVal = 3071 percentage = 0.4 ratio = 1.00425
+
+Test #188  start
+scratch: sizeUsed=3232 total size=16384
+Test feature: Tx1 Rx2 Chirp116 R512 D128 BPM_0
+Doppler DPU Process. Cycles = 3097029. 
+Test Pass maxError = 7 RefVal = 3361 DpuVal = 3368 percentage = 0.2 ratio = 1.00208
+
+Test #189  start
+scratch: sizeUsed=6656 total size=16384
+Test feature: Tx1 Rx2 Chirp256 R16 D256 BPM_0
+Doppler DPU Process. Cycles = 158611. 
+Test Pass maxError = 5 RefVal = 4003 DpuVal = 3998 percentage = 0.1 ratio = 0.99875
+
+Test #190  start
+scratch: sizeUsed=6624 total size=16384
+Test feature: Tx1 Rx2 Chirp252 R16 D256 BPM_0
+Doppler DPU Process. Cycles = 159825. 
+Test Pass maxError = 5 RefVal = 4200 DpuVal = 4195 percentage = 0.1 ratio = 0.99881
+
+Test #191  start
+scratch: sizeUsed=5632 total size=16384
+Test feature: Tx1 Rx2 Chirp128 R16 D256 BPM_0
+Doppler DPU Process. Cycles = 156027. 
+Test Pass maxError = 6 RefVal = 3372 DpuVal = 3366 percentage = 0.2 ratio = 0.99822
+
+Test #192  start
+scratch: sizeUsed=5120 total size=16384
+Test feature: Tx1 Rx2 Chirp64 R32 D256 BPM_0
+Doppler DPU Process. Cycles = 308125. 
+Test Pass maxError = 5 RefVal = 4128 DpuVal = 4123 percentage = 0.1 ratio = 0.99879
+
+Test #193  start
+scratch: sizeUsed=6624 total size=16384
+Test feature: Tx1 Rx2 Chirp252 R32 D256 BPM_0
+Doppler DPU Process. Cycles = 318483. 
+Test Pass maxError = 5 RefVal = 4212 DpuVal = 4207 percentage = 0.1 ratio = 0.99881
+
+Test #194  start
+scratch: sizeUsed=6560 total size=16384
+Test feature: Tx1 Rx2 Chirp244 R32 D256 BPM_0
+Doppler DPU Process. Cycles = 318129. 
+Test Pass maxError = 5 RefVal = 4286 DpuVal = 4281 percentage = 0.1 ratio = 0.99883
+
+Test #195  start
+scratch: sizeUsed=5632 total size=16384
+Test feature: Tx1 Rx2 Chirp128 R64 D256 BPM_0
+Doppler DPU Process. Cycles = 621417. 
+Test Pass maxError = 10 RefVal = 3435 DpuVal = 3425 percentage = 0.3 ratio = 0.99709
+
+Test #196  start
+scratch: sizeUsed=5120 total size=16384
+Test feature: Tx1 Rx2 Chirp64 R64 D256 BPM_0
+Doppler DPU Process. Cycles = 614641. 
+Test Pass maxError = 6 RefVal = 3242 DpuVal = 3236 percentage = 0.2 ratio = 0.99815
+
+Test #197  start
+scratch: sizeUsed=6560 total size=16384
+Test feature: Tx1 Rx2 Chirp244 R64 D256 BPM_0
+Doppler DPU Process. Cycles = 633831. 
+Test Pass maxError = 9 RefVal = 3424 DpuVal = 3415 percentage = 0.3 ratio = 0.99737
+
+Test #198  start
+scratch: sizeUsed=6656 total size=16384
+Test feature: Tx1 Rx2 Chirp256 R128 D256 BPM_0
+Doppler DPU Process. Cycles = 1259209. 
+Test Pass maxError = 10 RefVal = 3410 DpuVal = 3400 percentage = 0.3 ratio = 0.99707
+
+Test #199  start
+scratch: sizeUsed=5632 total size=16384
+Test feature: Tx1 Rx2 Chirp128 R128 D256 BPM_0
+Doppler DPU Process. Cycles = 1241715. 
+Test Pass maxError = 19 RefVal = 2835 DpuVal = 2816 percentage = 0.7 ratio = 0.99330
+
+Test #200  start
+scratch: sizeUsed=5120 total size=16384
+Test feature: Tx1 Rx2 Chirp64 R128 D256 BPM_0
+Doppler DPU Process. Cycles = 1228201. 
+Test Pass maxError = 6 RefVal = 3134 DpuVal = 3128 percentage = 0.2 ratio = 0.99809
+
+Test #201  start
+scratch: sizeUsed=6656 total size=16384
+Test feature: Tx1 Rx2 Chirp256 R256 D256 BPM_0
+Doppler DPU Process. Cycles = 2516509. 
+Test Pass maxError = 19 RefVal = 3472 DpuVal = 3453 percentage = 0.5 ratio = 0.99453
+
+Test #202  start
+scratch: sizeUsed=6624 total size=16384
+Test feature: Tx1 Rx2 Chirp252 R256 D256 BPM_0
+Doppler DPU Process. Cycles = 2534343. 
+Test Pass maxError = 9 RefVal = 3563 DpuVal = 3554 percentage = 0.3 ratio = 0.99747
+
+Test #203  start
+scratch: sizeUsed=5632 total size=16384
+Test feature: Tx1 Rx2 Chirp128 R256 D256 BPM_0
+Doppler DPU Process. Cycles = 2482263. 
+Test Pass maxError = 20 RefVal = 3177 DpuVal = 3197 percentage = 0.6 ratio = 1.00630
+
+Test #204  start
+scratch: sizeUsed=13312 total size=16384
+Test feature: Tx1 Rx2 Chirp512 R16 D512 BPM_0
+Doppler DPU Process. Cycles = 310747. 
+Test Pass maxError = 5 RefVal = 4289 DpuVal = 4284 percentage = 0.1 ratio = 0.99883
+
+Test #205  start
+scratch: sizeUsed=13280 total size=16384
+Test feature: Tx1 Rx2 Chirp508 R16 D512 BPM_0
+Doppler DPU Process. Cycles = 311991. 
+Test Pass maxError = 7 RefVal = 3664 DpuVal = 3671 percentage = 0.2 ratio = 1.00191
+
+Test #206  start
+scratch: sizeUsed=11264 total size=16384
+Test feature: Tx1 Rx2 Chirp256 R16 D512 BPM_0
+Doppler DPU Process. Cycles = 303981. 
+Test Pass maxError = 5 RefVal = 4256 DpuVal = 4251 percentage = 0.1 ratio = 0.99883
+
+Test #207  start
+scratch: sizeUsed=10240 total size=16384
+Test feature: Tx1 Rx2 Chirp128 R32 D512 BPM_0
+Doppler DPU Process. Cycles = 598353. 
+Test Pass maxError = 8 RefVal = 3267 DpuVal = 3259 percentage = 0.2 ratio = 0.99755
+
+Test #208  start
+scratch: sizeUsed=13280 total size=16384
+Test feature: Tx1 Rx2 Chirp508 R32 D512 BPM_0
+Doppler DPU Process. Cycles = 620049. 
+Test Pass maxError = 5 RefVal = 4133 DpuVal = 4128 percentage = 0.1 ratio = 0.99879
+
+Test #209  start
+scratch: sizeUsed=13216 total size=16384
+Test feature: Tx1 Rx2 Chirp500 R32 D512 BPM_0
+Doppler DPU Process. Cycles = 619623. 
+Test Pass maxError = 77 RefVal = 3378 DpuVal = 3301 percentage = 2.3 ratio = 0.97721
+
+Test #210  start
+scratch: sizeUsed=11264 total size=16384
+Test feature: Tx1 Rx2 Chirp256 R64 D512 BPM_0
+Doppler DPU Process. Cycles = 1209927. 
+Test Pass maxError = 6 RefVal = 4149 DpuVal = 4143 percentage = 0.1 ratio = 0.99855
+
+Test #211  start
+scratch: sizeUsed=10240 total size=16384
+Test feature: Tx1 Rx2 Chirp128 R64 D512 BPM_0
+Doppler DPU Process. Cycles = 1195185. 
+Test Pass maxError = 7 RefVal = 3674 DpuVal = 3667 percentage = 0.2 ratio = 0.99809
+
+Test #212  start
+scratch: sizeUsed=13216 total size=16384
+Test feature: Tx1 Rx2 Chirp500 R64 D512 BPM_0
+Doppler DPU Process. Cycles = 1235901. 
+Test Pass maxError = 9 RefVal = 3587 DpuVal = 3578 percentage = 0.3 ratio = 0.99749
+
+Test #213  start
+scratch: sizeUsed=13312 total size=16384
+Test feature: Tx1 Rx2 Chirp512 R128 D512 BPM_0
+Doppler DPU Process. Cycles = 2461387. 
+Test Pass maxError = 11 RefVal = 3732 DpuVal = 3743 percentage = 0.3 ratio = 1.00295
+
+Test #214  start
+scratch: sizeUsed=11264 total size=16384
+Test feature: Tx1 Rx2 Chirp256 R128 D512 BPM_0
+Doppler DPU Process. Cycles = 2417421. 
+Test Pass maxError = 20 RefVal = 3280 DpuVal = 3300 percentage = 0.6 ratio = 1.00610
+
+Test #215  start
+scratch: sizeUsed=10240 total size=16384
+Test feature: Tx1 Rx2 Chirp128 R128 D512 BPM_0
+Doppler DPU Process. Cycles = 2388921. 
+Test Pass maxError = 11 RefVal = 2934 DpuVal = 2923 percentage = 0.4 ratio = 0.99625
+
+Test #216  start
+scratch: sizeUsed=416 total size=16384
+Test feature: Tx1 Rx4 Chirp16 R16 D16 BPM_0
+Doppler DPU Process. Cycles = 70188. 
+Test Pass maxError = 4 RefVal = 3941 DpuVal = 3937 percentage = 0.1 ratio = 0.99899
+
+Test #217  start
+scratch: sizeUsed=384 total size=16384
+Test feature: Tx1 Rx4 Chirp12 R16 D16 BPM_0
+Doppler DPU Process. Cycles = 72631. 
+Test Pass maxError = 4 RefVal = 4024 DpuVal = 4020 percentage = 0.1 ratio = 0.99901
+
+Test #218  start
+scratch: sizeUsed=352 total size=16384
+Test feature: Tx1 Rx4 Chirp8 R16 D16 BPM_0
+Doppler DPU Process. Cycles = 72841. 
+Test Pass maxError = 4 RefVal = 3733 DpuVal = 3729 percentage = 0.1 ratio = 0.99893
+
+Test #219  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx1 Rx4 Chirp4 R32 D16 BPM_0
+Doppler DPU Process. Cycles = 144061. 
+Test Pass maxError = 4 RefVal = 3286 DpuVal = 3282 percentage = 0.1 ratio = 0.99878
+
+Test #220  start
+scratch: sizeUsed=384 total size=16384
+Test feature: Tx1 Rx4 Chirp12 R32 D16 BPM_0
+Doppler DPU Process. Cycles = 145213. 
+Test Pass maxError = 5 RefVal = 3684 DpuVal = 3679 percentage = 0.1 ratio = 0.99864
+
+Test #221  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx1 Rx4 Chirp4 R32 D16 BPM_0
+Doppler DPU Process. Cycles = 144061. 
+Test Pass maxError = 4 RefVal = 3354 DpuVal = 3350 percentage = 0.1 ratio = 0.99881
+
+Test #222  start
+scratch: sizeUsed=352 total size=16384
+Test feature: Tx1 Rx4 Chirp8 R64 D16 BPM_0
+Doppler DPU Process. Cycles = 287677. 
+Test Pass maxError = 5 RefVal = 3582 DpuVal = 3577 percentage = 0.1 ratio = 0.99860
+
+Test #223  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx1 Rx4 Chirp4 R64 D16 BPM_0
+Doppler DPU Process. Cycles = 288073. 
+Test Pass maxError = 6 RefVal = 3601 DpuVal = 3595 percentage = 0.2 ratio = 0.99833
+
+Test #224  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx1 Rx4 Chirp4 R64 D16 BPM_0
+Doppler DPU Process. Cycles = 287485. 
+Test Pass maxError = 5 RefVal = 3411 DpuVal = 3406 percentage = 0.1 ratio = 0.99853
+
+Test #225  start
+scratch: sizeUsed=416 total size=16384
+Test feature: Tx1 Rx4 Chirp16 R128 D16 BPM_0
+Doppler DPU Process. Cycles = 557616. 
+Test Pass maxError = 5 RefVal = 3714 DpuVal = 3709 percentage = 0.1 ratio = 0.99865
+
+Test #226  start
+scratch: sizeUsed=352 total size=16384
+Test feature: Tx1 Rx4 Chirp8 R128 D16 BPM_0
+Doppler DPU Process. Cycles = 573559. 
+Test Pass maxError = 5 RefVal = 3475 DpuVal = 3470 percentage = 0.1 ratio = 0.99856
+
+Test #227  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx1 Rx4 Chirp4 R128 D16 BPM_0
+Doppler DPU Process. Cycles = 574921. 
+Test Pass maxError = 16 RefVal = 2763 DpuVal = 2779 percentage = 0.6 ratio = 1.00579
+
+Test #228  start
+scratch: sizeUsed=416 total size=16384
+Test feature: Tx1 Rx4 Chirp16 R256 D16 BPM_0
+Doppler DPU Process. Cycles = 1114536. 
+Test Pass maxError = 5 RefVal = 3816 DpuVal = 3811 percentage = 0.1 ratio = 0.99869
+
+Test #229  start
+scratch: sizeUsed=384 total size=16384
+Test feature: Tx1 Rx4 Chirp12 R256 D16 BPM_0
+Doppler DPU Process. Cycles = 1153693. 
+Test Pass maxError = 5 RefVal = 3747 DpuVal = 3742 percentage = 0.1 ratio = 0.99867
+
+Test #230  start
+scratch: sizeUsed=352 total size=16384
+Test feature: Tx1 Rx4 Chirp8 R256 D16 BPM_0
+Doppler DPU Process. Cycles = 1147549. 
+Test Pass maxError = 5 RefVal = 3419 DpuVal = 3414 percentage = 0.1 ratio = 0.99854
+
+Test #231  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx1 Rx4 Chirp4 R512 D16 BPM_0
+Doppler DPU Process. Cycles = 2297461. 
+Test Pass maxError = 6 RefVal = 2928 DpuVal = 2922 percentage = 0.2 ratio = 0.99795
+
+Test #232  start
+scratch: sizeUsed=384 total size=16384
+Test feature: Tx1 Rx4 Chirp12 R512 D16 BPM_0
+Doppler DPU Process. Cycles = 2306671. 
+Test Pass maxError = 5 RefVal = 3749 DpuVal = 3744 percentage = 0.1 ratio = 0.99867
+
+Test #233  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx1 Rx4 Chirp4 R512 D16 BPM_0
+Doppler DPU Process. Cycles = 2297491. 
+Test Pass maxError = 6 RefVal = 3564 DpuVal = 3558 percentage = 0.2 ratio = 0.99832
+
+Test #234  start
+scratch: sizeUsed=352 total size=16384
+Test feature: Tx1 Rx4 Chirp8 R1024 D16 BPM_0
+Doppler DPU Process. Cycles = 4587955. 
+Test Pass maxError = 5 RefVal = 3808 DpuVal = 3803 percentage = 0.1 ratio = 0.99869
+
+Test #235  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx1 Rx4 Chirp4 R1024 D16 BPM_0
+Doppler DPU Process. Cycles = 4594177. 
+Test Pass maxError = 6 RefVal = 3368 DpuVal = 3362 percentage = 0.2 ratio = 0.99822
+
+Test #236  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx1 Rx4 Chirp4 R1024 D16 BPM_0
+Doppler DPU Process. Cycles = 4594159. 
+Test Pass maxError = 6 RefVal = 3393 DpuVal = 3387 percentage = 0.2 ratio = 0.99823
+
+Test #237  start
+scratch: sizeUsed=832 total size=16384
+Test feature: Tx1 Rx4 Chirp32 R16 D32 BPM_0
+Doppler DPU Process. Cycles = 86484. 
+Test Pass maxError = 5 RefVal = 3965 DpuVal = 3960 percentage = 0.1 ratio = 0.99874
+
+Test #238  start
+scratch: sizeUsed=800 total size=16384
+Test feature: Tx1 Rx4 Chirp28 R16 D32 BPM_0
+Doppler DPU Process. Cycles = 88087. 
+Test Pass maxError = 5 RefVal = 3774 DpuVal = 3769 percentage = 0.1 ratio = 0.99868
+
+Test #239  start
+scratch: sizeUsed=704 total size=16384
+Test feature: Tx1 Rx4 Chirp16 R16 D32 BPM_0
+Doppler DPU Process. Cycles = 87607. 
+Test Pass maxError = 4 RefVal = 3791 DpuVal = 3787 percentage = 0.1 ratio = 0.99894
+
+Test #240  start
+scratch: sizeUsed=640 total size=16384
+Test feature: Tx1 Rx4 Chirp8 R32 D32 BPM_0
+Doppler DPU Process. Cycles = 174037. 
+Test Pass maxError = 5 RefVal = 3828 DpuVal = 3823 percentage = 0.1 ratio = 0.99869
+
+Test #241  start
+scratch: sizeUsed=800 total size=16384
+Test feature: Tx1 Rx4 Chirp28 R32 D32 BPM_0
+Doppler DPU Process. Cycles = 175543. 
+Test Pass maxError = 4 RefVal = 3993 DpuVal = 3989 percentage = 0.1 ratio = 0.99900
+
+Test #242  start
+scratch: sizeUsed=736 total size=16384
+Test feature: Tx1 Rx4 Chirp20 R32 D32 BPM_0
+Doppler DPU Process. Cycles = 174961. 
+Test Pass maxError = 5 RefVal = 3945 DpuVal = 3940 percentage = 0.1 ratio = 0.99873
+
+Test #243  start
+scratch: sizeUsed=704 total size=16384
+Test feature: Tx1 Rx4 Chirp16 R64 D32 BPM_0
+Doppler DPU Process. Cycles = 348535. 
+Test Pass maxError = 4 RefVal = 3746 DpuVal = 3742 percentage = 0.1 ratio = 0.99893
+
+Test #244  start
+scratch: sizeUsed=640 total size=16384
+Test feature: Tx1 Rx4 Chirp8 R64 D32 BPM_0
+Doppler DPU Process. Cycles = 346237. 
+Test Pass maxError = 5 RefVal = 3734 DpuVal = 3729 percentage = 0.1 ratio = 0.99866
+
+Test #245  start
+scratch: sizeUsed=736 total size=16384
+Test feature: Tx1 Rx4 Chirp20 R64 D32 BPM_0
+Doppler DPU Process. Cycles = 349885. 
+Test Pass maxError = 5 RefVal = 3702 DpuVal = 3697 percentage = 0.1 ratio = 0.99865
+
+Test #246  start
+scratch: sizeUsed=832 total size=16384
+Test feature: Tx1 Rx4 Chirp32 R128 D32 BPM_0
+Doppler DPU Process. Cycles = 683178. 
+Test Pass maxError = 5 RefVal = 3934 DpuVal = 3929 percentage = 0.1 ratio = 0.99873
+
+Test #247  start
+scratch: sizeUsed=704 total size=16384
+Test feature: Tx1 Rx4 Chirp16 R128 D32 BPM_0
+Doppler DPU Process. Cycles = 697021. 
+Test Pass maxError = 6 RefVal = 3617 DpuVal = 3611 percentage = 0.2 ratio = 0.99834
+
+Test #248  start
+scratch: sizeUsed=640 total size=16384
+Test feature: Tx1 Rx4 Chirp8 R128 D32 BPM_0
+Doppler DPU Process. Cycles = 692455. 
+Test Pass maxError = 5 RefVal = 3348 DpuVal = 3343 percentage = 0.1 ratio = 0.99851
+
+Test #249  start
+scratch: sizeUsed=832 total size=16384
+Test feature: Tx1 Rx4 Chirp32 R256 D32 BPM_0
+Doppler DPU Process. Cycles = 1365678. 
+Test Pass maxError = 6 RefVal = 3662 DpuVal = 3656 percentage = 0.2 ratio = 0.99836
+
+Test #250  start
+scratch: sizeUsed=800 total size=16384
+Test feature: Tx1 Rx4 Chirp28 R256 D32 BPM_0
+Doppler DPU Process. Cycles = 1401493. 
+Test Pass maxError = 15 RefVal = 3560 DpuVal = 3545 percentage = 0.4 ratio = 0.99579
+
+Test #251  start
+scratch: sizeUsed=704 total size=16384
+Test feature: Tx1 Rx4 Chirp16 R256 D32 BPM_0
+Doppler DPU Process. Cycles = 1393309. 
+Test Pass maxError = 5 RefVal = 3699 DpuVal = 3694 percentage = 0.1 ratio = 0.99865
+
+Test #252  start
+scratch: sizeUsed=640 total size=16384
+Test feature: Tx1 Rx4 Chirp8 R512 D32 BPM_0
+Doppler DPU Process. Cycles = 2767477. 
+Test Pass maxError = 6 RefVal = 3521 DpuVal = 3515 percentage = 0.2 ratio = 0.99830
+
+Test #253  start
+scratch: sizeUsed=800 total size=16384
+Test feature: Tx1 Rx4 Chirp28 R512 D32 BPM_0
+Doppler DPU Process. Cycles = 2801251. 
+Test Pass maxError = 6 RefVal = 3813 DpuVal = 3807 percentage = 0.2 ratio = 0.99843
+
+Test #254  start
+scratch: sizeUsed=736 total size=16384
+Test feature: Tx1 Rx4 Chirp20 R512 D32 BPM_0
+Doppler DPU Process. Cycles = 2792035. 
+Test Pass maxError = 5 RefVal = 3752 DpuVal = 3747 percentage = 0.1 ratio = 0.99867
+
+Test #255  start
+scratch: sizeUsed=704 total size=16384
+Test feature: Tx1 Rx4 Chirp16 R1024 D32 BPM_0
+Doppler DPU Process. Cycles = 5571547. 
+Test Pass maxError = 5 RefVal = 3765 DpuVal = 3760 percentage = 0.1 ratio = 0.99867
+
+Test #256  start
+scratch: sizeUsed=640 total size=16384
+Test feature: Tx1 Rx4 Chirp8 R1024 D32 BPM_0
+Doppler DPU Process. Cycles = 5535223. 
+Test Pass maxError = 5 RefVal = 3480 DpuVal = 3475 percentage = 0.1 ratio = 0.99856
+
+Test #257  start
+scratch: sizeUsed=736 total size=16384
+Test feature: Tx1 Rx4 Chirp20 R1024 D32 BPM_0
+Doppler DPU Process. Cycles = 5583775. 
+Test Pass maxError = 55 RefVal = 3091 DpuVal = 3146 percentage = 1.8 ratio = 1.01779
+
+Test #258  start
+scratch: sizeUsed=1664 total size=16384
+Test feature: Tx1 Rx4 Chirp64 R16 D64 BPM_0
+Doppler DPU Process. Cycles = 110064. 
+Test Pass maxError = 5 RefVal = 4060 DpuVal = 4055 percentage = 0.1 ratio = 0.99877
+
+Test #259  start
+scratch: sizeUsed=1632 total size=16384
+Test feature: Tx1 Rx4 Chirp60 R16 D64 BPM_0
+Doppler DPU Process. Cycles = 112867. 
+Test Pass maxError = 5 RefVal = 4094 DpuVal = 4089 percentage = 0.1 ratio = 0.99878
+
+Test #260  start
+scratch: sizeUsed=1408 total size=16384
+Test feature: Tx1 Rx4 Chirp32 R16 D64 BPM_0
+Doppler DPU Process. Cycles = 110647. 
+Test Pass maxError = 5 RefVal = 3831 DpuVal = 3826 percentage = 0.1 ratio = 0.99869
+
+Test #261  start
+scratch: sizeUsed=1280 total size=16384
+Test feature: Tx1 Rx4 Chirp16 R32 D64 BPM_0
+Doppler DPU Process. Cycles = 219703. 
+Test Pass maxError = 5 RefVal = 3885 DpuVal = 3880 percentage = 0.1 ratio = 0.99871
+
+Test #262  start
+scratch: sizeUsed=1632 total size=16384
+Test feature: Tx1 Rx4 Chirp60 R32 D64 BPM_0
+Doppler DPU Process. Cycles = 224335. 
+Test Pass maxError = 5 RefVal = 4085 DpuVal = 4080 percentage = 0.1 ratio = 0.99878
+
+Test #263  start
+scratch: sizeUsed=1568 total size=16384
+Test feature: Tx1 Rx4 Chirp52 R32 D64 BPM_0
+Doppler DPU Process. Cycles = 222751. 
+Test Pass maxError = 5 RefVal = 4026 DpuVal = 4021 percentage = 0.1 ratio = 0.99876
+
+Test #264  start
+scratch: sizeUsed=1408 total size=16384
+Test feature: Tx1 Rx4 Chirp32 R64 D64 BPM_0
+Doppler DPU Process. Cycles = 441307. 
+Test Pass maxError = 5 RefVal = 4047 DpuVal = 4042 percentage = 0.1 ratio = 0.99876
+
+Test #265  start
+scratch: sizeUsed=1280 total size=16384
+Test feature: Tx1 Rx4 Chirp16 R64 D64 BPM_0
+Doppler DPU Process. Cycles = 438211. 
+Test Pass maxError = 5 RefVal = 3969 DpuVal = 3964 percentage = 0.1 ratio = 0.99874
+
+Test #266  start
+scratch: sizeUsed=1568 total size=16384
+Test feature: Tx1 Rx4 Chirp52 R64 D64 BPM_0
+Doppler DPU Process. Cycles = 445309. 
+Test Pass maxError = 7 RefVal = 4241 DpuVal = 4234 percentage = 0.2 ratio = 0.99835
+
+Test #267  start
+scratch: sizeUsed=1664 total size=16384
+Test feature: Tx1 Rx4 Chirp64 R128 D64 BPM_0
+Doppler DPU Process. Cycles = 875820. 
+Test Pass maxError = 5 RefVal = 4012 DpuVal = 4007 percentage = 0.1 ratio = 0.99875
+
+Test #268  start
+scratch: sizeUsed=1408 total size=16384
+Test feature: Tx1 Rx4 Chirp32 R128 D64 BPM_0
+Doppler DPU Process. Cycles = 881341. 
+Test Pass maxError = 5 RefVal = 3924 DpuVal = 3919 percentage = 0.1 ratio = 0.99873
+
+Test #269  start
+scratch: sizeUsed=1280 total size=16384
+Test feature: Tx1 Rx4 Chirp16 R128 D64 BPM_0
+Doppler DPU Process. Cycles = 875713. 
+Test Pass maxError = 5 RefVal = 3697 DpuVal = 3692 percentage = 0.1 ratio = 0.99865
+
+Test #270  start
+scratch: sizeUsed=1664 total size=16384
+Test feature: Tx1 Rx4 Chirp64 R256 D64 BPM_0
+Doppler DPU Process. Cycles = 1750272. 
+Test Pass maxError = 6 RefVal = 4029 DpuVal = 4023 percentage = 0.1 ratio = 0.99851
+
+Test #271  start
+scratch: sizeUsed=1632 total size=16384
+Test feature: Tx1 Rx4 Chirp60 R256 D64 BPM_0
+Doppler DPU Process. Cycles = 1785637. 
+Test Pass maxError = 9 RefVal = 3317 DpuVal = 3308 percentage = 0.3 ratio = 0.99729
+
+Test #272  start
+scratch: sizeUsed=1408 total size=16384
+Test feature: Tx1 Rx4 Chirp32 R256 D64 BPM_0
+Doppler DPU Process. Cycles = 1761919. 
+Test Pass maxError = 5 RefVal = 4042 DpuVal = 4037 percentage = 0.1 ratio = 0.99876
+
+Test #273  start
+scratch: sizeUsed=1280 total size=16384
+Test feature: Tx1 Rx4 Chirp16 R512 D64 BPM_0
+Doppler DPU Process. Cycles = 3499603. 
+Test Pass maxError = 5 RefVal = 3737 DpuVal = 3732 percentage = 0.1 ratio = 0.99866
+
+Test #274  start
+scratch: sizeUsed=1632 total size=16384
+Test feature: Tx1 Rx4 Chirp60 R512 D64 BPM_0
+Doppler DPU Process. Cycles = 3570427. 
+Test Pass maxError = 6 RefVal = 3990 DpuVal = 3984 percentage = 0.2 ratio = 0.99850
+
+Test #275  start
+scratch: sizeUsed=1568 total size=16384
+Test feature: Tx1 Rx4 Chirp52 R512 D64 BPM_0
+Doppler DPU Process. Cycles = 3555067. 
+Test Pass maxError = 6 RefVal = 3865 DpuVal = 3859 percentage = 0.2 ratio = 0.99845
+
+Test #276  start
+scratch: sizeUsed=3328 total size=16384
+Test feature: Tx1 Rx4 Chirp128 R16 D128 BPM_0
+Doppler DPU Process. Cycles = 174001. 
+Test Pass maxError = 5 RefVal = 4068 DpuVal = 4063 percentage = 0.1 ratio = 0.99877
+
+Test #277  start
+scratch: sizeUsed=3296 total size=16384
+Test feature: Tx1 Rx4 Chirp124 R16 D128 BPM_0
+Doppler DPU Process. Cycles = 175419. 
+Test Pass maxError = 5 RefVal = 4064 DpuVal = 4059 percentage = 0.1 ratio = 0.99877
+
+Test #278  start
+scratch: sizeUsed=2816 total size=16384
+Test feature: Tx1 Rx4 Chirp64 R16 D128 BPM_0
+Doppler DPU Process. Cycles = 172291. 
+Test Pass maxError = 5 RefVal = 4119 DpuVal = 4114 percentage = 0.1 ratio = 0.99879
+
+Test #279  start
+scratch: sizeUsed=2560 total size=16384
+Test feature: Tx1 Rx4 Chirp32 R32 D128 BPM_0
+Doppler DPU Process. Cycles = 340711. 
+Test Pass maxError = 5 RefVal = 3666 DpuVal = 3661 percentage = 0.1 ratio = 0.99864
+
+Test #280  start
+scratch: sizeUsed=3296 total size=16384
+Test feature: Tx1 Rx4 Chirp124 R32 D128 BPM_0
+Doppler DPU Process. Cycles = 350475. 
+Test Pass maxError = 5 RefVal = 3847 DpuVal = 3842 percentage = 0.1 ratio = 0.99870
+
+Test #281  start
+scratch: sizeUsed=3232 total size=16384
+Test feature: Tx1 Rx4 Chirp116 R32 D128 BPM_0
+Doppler DPU Process. Cycles = 349461. 
+Test Pass maxError = 5 RefVal = 3964 DpuVal = 3959 percentage = 0.1 ratio = 0.99874
+
+Test #282  start
+scratch: sizeUsed=2816 total size=16384
+Test feature: Tx1 Rx4 Chirp64 R64 D128 BPM_0
+Doppler DPU Process. Cycles = 687271. 
+Test Pass maxError = 5 RefVal = 4001 DpuVal = 3996 percentage = 0.1 ratio = 0.99875
+
+Test #283  start
+scratch: sizeUsed=2560 total size=16384
+Test feature: Tx1 Rx4 Chirp32 R64 D128 BPM_0
+Doppler DPU Process. Cycles = 680143. 
+Test Pass maxError = 16 RefVal = 3128 DpuVal = 3112 percentage = 0.5 ratio = 0.99488
+
+Test #284  start
+scratch: sizeUsed=3232 total size=16384
+Test feature: Tx1 Rx4 Chirp116 R64 D128 BPM_0
+Doppler DPU Process. Cycles = 697443. 
+Test Pass maxError = 6 RefVal = 3368 DpuVal = 3374 percentage = 0.2 ratio = 1.00178
+
+Test #285  start
+scratch: sizeUsed=3328 total size=16384
+Test feature: Tx1 Rx4 Chirp128 R128 D128 BPM_0
+Doppler DPU Process. Cycles = 1380583. 
+Test Pass maxError = 6 RefVal = 3722 DpuVal = 3716 percentage = 0.2 ratio = 0.99839
+
+Test #286  start
+scratch: sizeUsed=2816 total size=16384
+Test feature: Tx1 Rx4 Chirp64 R128 D128 BPM_0
+Doppler DPU Process. Cycles = 1373605. 
+Test Pass maxError = 6 RefVal = 3381 DpuVal = 3375 percentage = 0.2 ratio = 0.99823
+
+Test #287  start
+scratch: sizeUsed=2560 total size=16384
+Test feature: Tx1 Rx4 Chirp32 R128 D128 BPM_0
+Doppler DPU Process. Cycles = 1359541. 
+Test Pass maxError = 10 RefVal = 3417 DpuVal = 3407 percentage = 0.3 ratio = 0.99707
+
+Test #288  start
+scratch: sizeUsed=3328 total size=16384
+Test feature: Tx1 Rx4 Chirp128 R256 D128 BPM_0
+Doppler DPU Process. Cycles = 2760703. 
+Test Pass maxError = 5 RefVal = 3955 DpuVal = 3950 percentage = 0.1 ratio = 0.99874
+
+Test #289  start
+scratch: sizeUsed=3296 total size=16384
+Test feature: Tx1 Rx4 Chirp124 R256 D128 BPM_0
+Doppler DPU Process. Cycles = 2794491. 
+Test Pass maxError = 6 RefVal = 4349 DpuVal = 4343 percentage = 0.1 ratio = 0.99862
+
+Test #290  start
+scratch: sizeUsed=2816 total size=16384
+Test feature: Tx1 Rx4 Chirp64 R256 D128 BPM_0
+Doppler DPU Process. Cycles = 2746681. 
+Test Pass maxError = 6 RefVal = 3786 DpuVal = 3780 percentage = 0.2 ratio = 0.99842
+
+Test #291  start
+scratch: sizeUsed=6656 total size=16384
+Test feature: Tx1 Rx4 Chirp256 R16 D256 BPM_0
+Doppler DPU Process. Cycles = 283021. 
+Test Pass maxError = 5 RefVal = 4149 DpuVal = 4144 percentage = 0.1 ratio = 0.99879
+
+Test #292  start
+scratch: sizeUsed=6624 total size=16384
+Test feature: Tx1 Rx4 Chirp252 R16 D256 BPM_0
+Doppler DPU Process. Cycles = 285165. 
+Test Pass maxError = 5 RefVal = 4084 DpuVal = 4079 percentage = 0.1 ratio = 0.99878
+
+Test #293  start
+scratch: sizeUsed=5632 total size=16384
+Test feature: Tx1 Rx4 Chirp128 R16 D256 BPM_0
+Doppler DPU Process. Cycles = 278313. 
+Test Pass maxError = 5 RefVal = 3954 DpuVal = 3949 percentage = 0.1 ratio = 0.99874
+
+Test #294  start
+scratch: sizeUsed=5120 total size=16384
+Test feature: Tx1 Rx4 Chirp64 R32 D256 BPM_0
+Doppler DPU Process. Cycles = 548581. 
+Test Pass maxError = 5 RefVal = 3976 DpuVal = 3971 percentage = 0.1 ratio = 0.99874
+
+Test #295  start
+scratch: sizeUsed=6624 total size=16384
+Test feature: Tx1 Rx4 Chirp252 R32 D256 BPM_0
+Doppler DPU Process. Cycles = 569409. 
+Test Pass maxError = 5 RefVal = 4110 DpuVal = 4105 percentage = 0.1 ratio = 0.99878
+
+Test #296  start
+scratch: sizeUsed=6560 total size=16384
+Test feature: Tx1 Rx4 Chirp244 R32 D256 BPM_0
+Doppler DPU Process. Cycles = 568395. 
+Test Pass maxError = 5 RefVal = 4117 DpuVal = 4112 percentage = 0.1 ratio = 0.99879
+
+Test #297  start
+scratch: sizeUsed=5632 total size=16384
+Test feature: Tx1 Rx4 Chirp128 R64 D256 BPM_0
+Doppler DPU Process. Cycles = 1110855. 
+Test Pass maxError = 6 RefVal = 3971 DpuVal = 3965 percentage = 0.2 ratio = 0.99849
+
+Test #298  start
+scratch: sizeUsed=5120 total size=16384
+Test feature: Tx1 Rx4 Chirp64 R64 D256 BPM_0
+Doppler DPU Process. Cycles = 1097365. 
+Test Pass maxError = 5 RefVal = 3781 DpuVal = 3776 percentage = 0.1 ratio = 0.99868
+
+Test #299  start
+scratch: sizeUsed=6560 total size=16384
+Test feature: Tx1 Rx4 Chirp244 R64 D256 BPM_0
+Doppler DPU Process. Cycles = 1135125. 
+Test Pass maxError = 8 RefVal = 3894 DpuVal = 3886 percentage = 0.2 ratio = 0.99795
+
+Test #300  start
+scratch: sizeUsed=6656 total size=16384
+Test feature: Tx1 Rx4 Chirp256 R128 D256 BPM_0
+Doppler DPU Process. Cycles = 2254669. 
+Test Pass maxError = 7 RefVal = 3509 DpuVal = 3502 percentage = 0.2 ratio = 0.99801
+
+Test #301  start
+scratch: sizeUsed=5632 total size=16384
+Test feature: Tx1 Rx4 Chirp128 R128 D256 BPM_0
+Doppler DPU Process. Cycles = 2220453. 
+Test Pass maxError = 6 RefVal = 4190 DpuVal = 4184 percentage = 0.1 ratio = 0.99857
+
+Test #302  start
+scratch: sizeUsed=5120 total size=16384
+Test feature: Tx1 Rx4 Chirp64 R128 D256 BPM_0
+Doppler DPU Process. Cycles = 2193271. 
+Test Pass maxError = 6 RefVal = 4131 DpuVal = 4125 percentage = 0.1 ratio = 0.99855
+
+Test #303  start
+scratch: sizeUsed=13312 total size=16384
+Test feature: Tx1 Rx4 Chirp512 R16 D512 BPM_0
+Doppler DPU Process. Cycles = 558367. 
+Test Pass maxError = 6 RefVal = 4214 DpuVal = 4208 percentage = 0.1 ratio = 0.99858
+
+Test #304  start
+scratch: sizeUsed=13280 total size=16384
+Test feature: Tx1 Rx4 Chirp508 R16 D512 BPM_0
+Doppler DPU Process. Cycles = 560725. 
+Test Pass maxError = 5 RefVal = 4166 DpuVal = 4161 percentage = 0.1 ratio = 0.99880
+
+Test #305  start
+scratch: sizeUsed=11264 total size=16384
+Test feature: Tx1 Rx4 Chirp256 R16 D512 BPM_0
+Doppler DPU Process. Cycles = 546789. 
+Test Pass maxError = 5 RefVal = 4281 DpuVal = 4276 percentage = 0.1 ratio = 0.99883
+
+Test #306  start
+scratch: sizeUsed=10240 total size=16384
+Test feature: Tx1 Rx4 Chirp128 R32 D512 BPM_0
+Doppler DPU Process. Cycles = 1076589. 
+Test Pass maxError = 9 RefVal = 3516 DpuVal = 3507 percentage = 0.3 ratio = 0.99744
+
+Test #307  start
+scratch: sizeUsed=13280 total size=16384
+Test feature: Tx1 Rx4 Chirp508 R32 D512 BPM_0
+Doppler DPU Process. Cycles = 1117971. 
+Test Pass maxError = 6 RefVal = 4113 DpuVal = 4107 percentage = 0.1 ratio = 0.99854
+
+Test #308  start
+scratch: sizeUsed=13216 total size=16384
+Test feature: Tx1 Rx4 Chirp500 R32 D512 BPM_0
+Doppler DPU Process. Cycles = 1117251. 
+Test Pass maxError = 7 RefVal = 3924 DpuVal = 3917 percentage = 0.2 ratio = 0.99822
+
+Test #309  start
+scratch: sizeUsed=11264 total size=16384
+Test feature: Tx1 Rx4 Chirp256 R64 D512 BPM_0
+Doppler DPU Process. Cycles = 2179743. 
+Test Pass maxError = 7 RefVal = 3659 DpuVal = 3666 percentage = 0.2 ratio = 1.00191
+
+Test #310  start
+scratch: sizeUsed=10240 total size=16384
+Test feature: Tx1 Rx4 Chirp128 R64 D512 BPM_0
+Doppler DPU Process. Cycles = 2151099. 
+Test Pass maxError = 7 RefVal = 3496 DpuVal = 3503 percentage = 0.2 ratio = 1.00200
+
+Test #311  start
+scratch: sizeUsed=13216 total size=16384
+Test feature: Tx1 Rx4 Chirp500 R64 D512 BPM_0
+Doppler DPU Process. Cycles = 2230617. 
+Test Pass maxError = 6 RefVal = 4258 DpuVal = 4252 percentage = 0.1 ratio = 0.99859
+
+Test #312  start
+scratch: sizeUsed=416 total size=16384
+Test feature: Tx2 Rx2 Chirp16 R16 D16 BPM_0
+Doppler DPU Process. Cycles = 69486. 
+Test Pass maxError = 4 RefVal = 3824 DpuVal = 3820 percentage = 0.1 ratio = 0.99895
+
+Test #313  start
+scratch: sizeUsed=544 total size=16384
+Test feature: Tx2 Rx2 Chirp16 R16 D16 BPM_1
+Doppler DPU Process. Cycles = 98328. 
+Test Pass maxError = 4 RefVal = 3719 DpuVal = 3715 percentage = 0.1 ratio = 0.99892
+
+Test #314  start
+scratch: sizeUsed=384 total size=16384
+Test feature: Tx2 Rx2 Chirp12 R16 D16 BPM_0
+Doppler DPU Process. Cycles = 71863. 
+Test Pass maxError = 5 RefVal = 3607 DpuVal = 3602 percentage = 0.1 ratio = 0.99861
+
+Test #315  start
+scratch: sizeUsed=512 total size=16384
+Test feature: Tx2 Rx2 Chirp12 R16 D16 BPM_1
+Doppler DPU Process. Cycles = 100657. 
+Test Pass maxError = 4 RefVal = 3721 DpuVal = 3717 percentage = 0.1 ratio = 0.99893
+
+Test #316  start
+scratch: sizeUsed=352 total size=16384
+Test feature: Tx2 Rx2 Chirp8 R16 D16 BPM_0
+Doppler DPU Process. Cycles = 71479. 
+Test Pass maxError = 4 RefVal = 3885 DpuVal = 3881 percentage = 0.1 ratio = 0.99897
+
+Test #317  start
+scratch: sizeUsed=480 total size=16384
+Test feature: Tx2 Rx2 Chirp8 R16 D16 BPM_1
+Doppler DPU Process. Cycles = 100273. 
+Test Pass maxError = 4 RefVal = 3815 DpuVal = 3811 percentage = 0.1 ratio = 0.99895
+
+Test #318  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx2 Rx2 Chirp4 R32 D16 BPM_0
+Doppler DPU Process. Cycles = 143323. 
+Test Pass maxError = 5 RefVal = 3536 DpuVal = 3531 percentage = 0.1 ratio = 0.99859
+
+Test #319  start
+scratch: sizeUsed=448 total size=16384
+Test feature: Tx2 Rx2 Chirp4 R32 D16 BPM_1
+Doppler DPU Process. Cycles = 200131. 
+Test Pass maxError = 5 RefVal = 3533 DpuVal = 3528 percentage = 0.1 ratio = 0.99858
+
+Test #320  start
+scratch: sizeUsed=384 total size=16384
+Test feature: Tx2 Rx2 Chirp12 R32 D16 BPM_0
+Doppler DPU Process. Cycles = 143689. 
+Test Pass maxError = 5 RefVal = 3822 DpuVal = 3817 percentage = 0.1 ratio = 0.99869
+
+Test #321  start
+scratch: sizeUsed=512 total size=16384
+Test feature: Tx2 Rx2 Chirp12 R32 D16 BPM_1
+Doppler DPU Process. Cycles = 200701. 
+Test Pass maxError = 4 RefVal = 3581 DpuVal = 3577 percentage = 0.1 ratio = 0.99888
+
+Test #322  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx2 Rx2 Chirp4 R32 D16 BPM_0
+Doppler DPU Process. Cycles = 142717. 
+Test Pass maxError = 4 RefVal = 3478 DpuVal = 3474 percentage = 0.1 ratio = 0.99885
+
+Test #323  start
+scratch: sizeUsed=448 total size=16384
+Test feature: Tx2 Rx2 Chirp4 R32 D16 BPM_1
+Doppler DPU Process. Cycles = 200731. 
+Test Pass maxError = 7 RefVal = 2877 DpuVal = 2870 percentage = 0.2 ratio = 0.99757
+
+Test #324  start
+scratch: sizeUsed=352 total size=16384
+Test feature: Tx2 Rx2 Chirp8 R64 D16 BPM_0
+Doppler DPU Process. Cycles = 284611. 
+Test Pass maxError = 5 RefVal = 3718 DpuVal = 3713 percentage = 0.1 ratio = 0.99866
+
+Test #325  start
+scratch: sizeUsed=480 total size=16384
+Test feature: Tx2 Rx2 Chirp8 R64 D16 BPM_1
+Doppler DPU Process. Cycles = 399829. 
+Test Pass maxError = 5 RefVal = 3521 DpuVal = 3516 percentage = 0.1 ratio = 0.99858
+
+Test #326  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx2 Rx2 Chirp4 R64 D16 BPM_0
+Doppler DPU Process. Cycles = 285397. 
+Test Pass maxError = 4 RefVal = 3532 DpuVal = 3528 percentage = 0.1 ratio = 0.99887
+
+Test #327  start
+scratch: sizeUsed=448 total size=16384
+Test feature: Tx2 Rx2 Chirp4 R64 D16 BPM_1
+Doppler DPU Process. Cycles = 400231. 
+Test Pass maxError = 5 RefVal = 3524 DpuVal = 3519 percentage = 0.1 ratio = 0.99858
+
+Test #328  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx2 Rx2 Chirp4 R64 D16 BPM_0
+Doppler DPU Process. Cycles = 284797. 
+Test Pass maxError = 5 RefVal = 3436 DpuVal = 3431 percentage = 0.1 ratio = 0.99854
+
+Test #329  start
+scratch: sizeUsed=448 total size=16384
+Test feature: Tx2 Rx2 Chirp4 R64 D16 BPM_1
+Doppler DPU Process. Cycles = 400213. 
+Test Pass maxError = 5 RefVal = 3571 DpuVal = 3566 percentage = 0.1 ratio = 0.99860
+
+Test #330  start
+scratch: sizeUsed=416 total size=16384
+Test feature: Tx2 Rx2 Chirp16 R128 D16 BPM_0
+Doppler DPU Process. Cycles = 551268. 
+Test Pass maxError = 5 RefVal = 3862 DpuVal = 3857 percentage = 0.1 ratio = 0.99871
+
+Test #331  start
+scratch: sizeUsed=544 total size=16384
+Test feature: Tx2 Rx2 Chirp16 R128 D16 BPM_1
+Doppler DPU Process. Cycles = 783024. 
+Test Pass maxError = 5 RefVal = 3596 DpuVal = 3591 percentage = 0.1 ratio = 0.99861
+
+Test #332  start
+scratch: sizeUsed=352 total size=16384
+Test feature: Tx2 Rx2 Chirp8 R128 D16 BPM_0
+Doppler DPU Process. Cycles = 568009. 
+Test Pass maxError = 5 RefVal = 3622 DpuVal = 3617 percentage = 0.1 ratio = 0.99862
+
+Test #333  start
+scratch: sizeUsed=480 total size=16384
+Test feature: Tx2 Rx2 Chirp8 R128 D16 BPM_1
+Doppler DPU Process. Cycles = 798409. 
+Test Pass maxError = 5 RefVal = 3535 DpuVal = 3530 percentage = 0.1 ratio = 0.99859
+
+Test #334  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx2 Rx2 Chirp4 R128 D16 BPM_0
+Doppler DPU Process. Cycles = 569545. 
+Test Pass maxError = 5 RefVal = 3604 DpuVal = 3599 percentage = 0.1 ratio = 0.99861
+
+Test #335  start
+scratch: sizeUsed=448 total size=16384
+Test feature: Tx2 Rx2 Chirp4 R128 D16 BPM_1
+Doppler DPU Process. Cycles = 799207. 
+Test Pass maxError = 5 RefVal = 3467 DpuVal = 3462 percentage = 0.1 ratio = 0.99856
+
+Test #336  start
+scratch: sizeUsed=416 total size=16384
+Test feature: Tx2 Rx2 Chirp16 R256 D16 BPM_0
+Doppler DPU Process. Cycles = 1103004. 
+Test Pass maxError = 5 RefVal = 3720 DpuVal = 3715 percentage = 0.1 ratio = 0.99866
+
+Test #337  start
+scratch: sizeUsed=544 total size=16384
+Test feature: Tx2 Rx2 Chirp16 R256 D16 BPM_1
+Doppler DPU Process. Cycles = 1565796. 
+Test Pass maxError = 5 RefVal = 4121 DpuVal = 4116 percentage = 0.1 ratio = 0.99879
+
+Test #338  start
+scratch: sizeUsed=384 total size=16384
+Test feature: Tx2 Rx2 Chirp12 R256 D16 BPM_0
+Doppler DPU Process. Cycles = 1141417. 
+Test Pass maxError = 5 RefVal = 3890 DpuVal = 3885 percentage = 0.1 ratio = 0.99871
+
+Test #339  start
+scratch: sizeUsed=512 total size=16384
+Test feature: Tx2 Rx2 Chirp12 R256 D16 BPM_1
+Doppler DPU Process. Cycles = 1602229. 
+Test Pass maxError = 5 RefVal = 3926 DpuVal = 3921 percentage = 0.1 ratio = 0.99873
+
+Test #340  start
+scratch: sizeUsed=352 total size=16384
+Test feature: Tx2 Rx2 Chirp8 R256 D16 BPM_0
+Doppler DPU Process. Cycles = 1135261. 
+Test Pass maxError = 5 RefVal = 3819 DpuVal = 3814 percentage = 0.1 ratio = 0.99869
+
+Test #341  start
+scratch: sizeUsed=480 total size=16384
+Test feature: Tx2 Rx2 Chirp8 R256 D16 BPM_1
+Doppler DPU Process. Cycles = 1596091. 
+Test Pass maxError = 5 RefVal = 3859 DpuVal = 3854 percentage = 0.1 ratio = 0.99870
+
+Test #342  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx2 Rx2 Chirp4 R512 D16 BPM_0
+Doppler DPU Process. Cycles = 2275933. 
+Test Pass maxError = 5 RefVal = 3361 DpuVal = 3356 percentage = 0.1 ratio = 0.99851
+
+Test #343  start
+scratch: sizeUsed=448 total size=16384
+Test feature: Tx2 Rx2 Chirp4 R512 D16 BPM_1
+Doppler DPU Process. Cycles = 3195475. 
+Test Pass maxError = 5 RefVal = 3603 DpuVal = 3598 percentage = 0.1 ratio = 0.99861
+
+Test #344  start
+scratch: sizeUsed=384 total size=16384
+Test feature: Tx2 Rx2 Chirp12 R512 D16 BPM_0
+Doppler DPU Process. Cycles = 2282077. 
+Test Pass maxError = 5 RefVal = 3750 DpuVal = 3745 percentage = 0.1 ratio = 0.99867
+
+Test #345  start
+scratch: sizeUsed=512 total size=16384
+Test feature: Tx2 Rx2 Chirp12 R512 D16 BPM_1
+Doppler DPU Process. Cycles = 3204205. 
+Test Pass maxError = 5 RefVal = 3584 DpuVal = 3579 percentage = 0.1 ratio = 0.99860
+
+Test #346  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx2 Rx2 Chirp4 R512 D16 BPM_0
+Doppler DPU Process. Cycles = 2275459. 
+Test Pass maxError = 5 RefVal = 3450 DpuVal = 3445 percentage = 0.1 ratio = 0.99855
+
+Test #347  start
+scratch: sizeUsed=448 total size=16384
+Test feature: Tx2 Rx2 Chirp4 R512 D16 BPM_1
+Doppler DPU Process. Cycles = 3195007. 
+Test Pass maxError = 5 RefVal = 3322 DpuVal = 3317 percentage = 0.2 ratio = 0.99849
+
+Test #348  start
+scratch: sizeUsed=352 total size=16384
+Test feature: Tx2 Rx2 Chirp8 R1024 D16 BPM_0
+Doppler DPU Process. Cycles = 4538359. 
+Test Pass maxError = 14 RefVal = 3004 DpuVal = 2990 percentage = 0.5 ratio = 0.99534
+
+Test #349  start
+scratch: sizeUsed=480 total size=16384
+Test feature: Tx2 Rx2 Chirp8 R1024 D16 BPM_1
+Doppler DPU Process. Cycles = 6383575. 
+Test Pass maxError = 5 RefVal = 3724 DpuVal = 3719 percentage = 0.1 ratio = 0.99866
+
+Test #350  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx2 Rx2 Chirp4 R1024 D16 BPM_0
+Doppler DPU Process. Cycles = 4551127. 
+Test Pass maxError = 5 RefVal = 3386 DpuVal = 3381 percentage = 0.1 ratio = 0.99852
+
+Test #351  start
+scratch: sizeUsed=448 total size=16384
+Test feature: Tx2 Rx2 Chirp4 R1024 D16 BPM_1
+Doppler DPU Process. Cycles = 6389689. 
+Test Pass maxError = 9 RefVal = 2924 DpuVal = 2915 percentage = 0.3 ratio = 0.99692
+
+Test #352  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx2 Rx2 Chirp4 R1024 D16 BPM_0
+Doppler DPU Process. Cycles = 4551121. 
+Test Pass maxError = 5 RefVal = 3384 DpuVal = 3379 percentage = 0.1 ratio = 0.99852
+
+Test #353  start
+scratch: sizeUsed=448 total size=16384
+Test feature: Tx2 Rx2 Chirp4 R1024 D16 BPM_1
+Doppler DPU Process. Cycles = 6389743. 
+Test Pass maxError = 7 RefVal = 2937 DpuVal = 2930 percentage = 0.2 ratio = 0.99762
+
+Test #354  start
+scratch: sizeUsed=832 total size=16384
+Test feature: Tx2 Rx2 Chirp32 R16 D32 BPM_0
+Doppler DPU Process. Cycles = 85212. 
+Test Pass maxError = 5 RefVal = 3874 DpuVal = 3869 percentage = 0.1 ratio = 0.99871
+
+Test #355  start
+scratch: sizeUsed=1088 total size=16384
+Test feature: Tx2 Rx2 Chirp32 R16 D32 BPM_1
+Doppler DPU Process. Cycles = 142500. 
+Test Pass maxError = 5 RefVal = 3694 DpuVal = 3689 percentage = 0.1 ratio = 0.99865
+
+Test #356  start
+scratch: sizeUsed=800 total size=16384
+Test feature: Tx2 Rx2 Chirp28 R16 D32 BPM_0
+Doppler DPU Process. Cycles = 87325. 
+Test Pass maxError = 5 RefVal = 3672 DpuVal = 3667 percentage = 0.1 ratio = 0.99864
+
+Test #357  start
+scratch: sizeUsed=1056 total size=16384
+Test feature: Tx2 Rx2 Chirp28 R16 D32 BPM_1
+Doppler DPU Process. Cycles = 145219. 
+Test Pass maxError = 4 RefVal = 3918 DpuVal = 3914 percentage = 0.1 ratio = 0.99898
+
+Test #358  start
+scratch: sizeUsed=704 total size=16384
+Test feature: Tx2 Rx2 Chirp16 R16 D32 BPM_0
+Doppler DPU Process. Cycles = 86845. 
+Test Pass maxError = 4 RefVal = 3786 DpuVal = 3782 percentage = 0.1 ratio = 0.99894
+
+Test #359  start
+scratch: sizeUsed=960 total size=16384
+Test feature: Tx2 Rx2 Chirp16 R16 D32 BPM_1
+Doppler DPU Process. Cycles = 144055. 
+Test Pass maxError = 5 RefVal = 3697 DpuVal = 3692 percentage = 0.1 ratio = 0.99865
+
+Test #360  start
+scratch: sizeUsed=640 total size=16384
+Test feature: Tx2 Rx2 Chirp8 R32 D32 BPM_0
+Doppler DPU Process. Cycles = 172093. 
+Test Pass maxError = 4 RefVal = 3850 DpuVal = 3846 percentage = 0.1 ratio = 0.99896
+
+Test #361  start
+scratch: sizeUsed=896 total size=16384
+Test feature: Tx2 Rx2 Chirp8 R32 D32 BPM_1
+Doppler DPU Process. Cycles = 286921. 
+Test Pass maxError = 5 RefVal = 3902 DpuVal = 3897 percentage = 0.1 ratio = 0.99872
+
+Test #362  start
+scratch: sizeUsed=800 total size=16384
+Test feature: Tx2 Rx2 Chirp28 R32 D32 BPM_0
+Doppler DPU Process. Cycles = 174589. 
+Test Pass maxError = 5 RefVal = 3977 DpuVal = 3972 percentage = 0.1 ratio = 0.99874
+
+Test #363  start
+scratch: sizeUsed=1056 total size=16384
+Test feature: Tx2 Rx2 Chirp28 R32 D32 BPM_1
+Doppler DPU Process. Cycles = 288637. 
+Test Pass maxError = 4 RefVal = 3861 DpuVal = 3857 percentage = 0.1 ratio = 0.99896
+
+Test #364  start
+scratch: sizeUsed=736 total size=16384
+Test feature: Tx2 Rx2 Chirp20 R32 D32 BPM_0
+Doppler DPU Process. Cycles = 173431. 
+Test Pass maxError = 5 RefVal = 3822 DpuVal = 3817 percentage = 0.1 ratio = 0.99869
+
+Test #365  start
+scratch: sizeUsed=992 total size=16384
+Test feature: Tx2 Rx2 Chirp20 R32 D32 BPM_1
+Doppler DPU Process. Cycles = 287869. 
+Test Pass maxError = 5 RefVal = 4177 DpuVal = 4172 percentage = 0.1 ratio = 0.99880
+
+Test #366  start
+scratch: sizeUsed=704 total size=16384
+Test feature: Tx2 Rx2 Chirp16 R64 D32 BPM_0
+Doppler DPU Process. Cycles = 346075. 
+Test Pass maxError = 5 RefVal = 3759 DpuVal = 3754 percentage = 0.1 ratio = 0.99867
+
+Test #367  start
+scratch: sizeUsed=960 total size=16384
+Test feature: Tx2 Rx2 Chirp16 R64 D32 BPM_1
+Doppler DPU Process. Cycles = 574921. 
+Test Pass maxError = 5 RefVal = 3772 DpuVal = 3767 percentage = 0.1 ratio = 0.99867
+
+Test #368  start
+scratch: sizeUsed=640 total size=16384
+Test feature: Tx2 Rx2 Chirp8 R64 D32 BPM_0
+Doppler DPU Process. Cycles = 344131. 
+Test Pass maxError = 6 RefVal = 3764 DpuVal = 3758 percentage = 0.2 ratio = 0.99841
+
+Test #369  start
+scratch: sizeUsed=896 total size=16384
+Test feature: Tx2 Rx2 Chirp8 R64 D32 BPM_1
+Doppler DPU Process. Cycles = 572641. 
+Test Pass maxError = 6 RefVal = 3615 DpuVal = 3609 percentage = 0.2 ratio = 0.99834
+
+Test #370  start
+scratch: sizeUsed=736 total size=16384
+Test feature: Tx2 Rx2 Chirp20 R64 D32 BPM_0
+Doppler DPU Process. Cycles = 346837. 
+Test Pass maxError = 5 RefVal = 3870 DpuVal = 3865 percentage = 0.1 ratio = 0.99871
+
+Test #371  start
+scratch: sizeUsed=992 total size=16384
+Test feature: Tx2 Rx2 Chirp20 R64 D32 BPM_1
+Doppler DPU Process. Cycles = 575689. 
+Test Pass maxError = 5 RefVal = 3913 DpuVal = 3908 percentage = 0.1 ratio = 0.99872
+
+Test #372  start
+scratch: sizeUsed=832 total size=16384
+Test feature: Tx2 Rx2 Chirp32 R128 D32 BPM_0
+Doppler DPU Process. Cycles = 677814. 
+Test Pass maxError = 5 RefVal = 3861 DpuVal = 3856 percentage = 0.1 ratio = 0.99870
+
+Test #373  start
+scratch: sizeUsed=1088 total size=16384
+Test feature: Tx2 Rx2 Chirp32 R128 D32 BPM_1
+Doppler DPU Process. Cycles = 1136778. 
+Test Pass maxError = 6 RefVal = 3912 DpuVal = 3906 percentage = 0.2 ratio = 0.99847
+
+Test #374  start
+scratch: sizeUsed=704 total size=16384
+Test feature: Tx2 Rx2 Chirp16 R128 D32 BPM_0
+Doppler DPU Process. Cycles = 690889. 
+Test Pass maxError = 5 RefVal = 3810 DpuVal = 3805 percentage = 0.1 ratio = 0.99869
+
+Test #375  start
+scratch: sizeUsed=960 total size=16384
+Test feature: Tx2 Rx2 Chirp16 R128 D32 BPM_1
+Doppler DPU Process. Cycles = 1149109. 
+Test Pass maxError = 5 RefVal = 3925 DpuVal = 3920 percentage = 0.1 ratio = 0.99873
+
+Test #376  start
+scratch: sizeUsed=640 total size=16384
+Test feature: Tx2 Rx2 Chirp8 R128 D32 BPM_0
+Doppler DPU Process. Cycles = 687529. 
+Test Pass maxError = 5 RefVal = 3636 DpuVal = 3631 percentage = 0.1 ratio = 0.99862
+
+Test #377  start
+scratch: sizeUsed=896 total size=16384
+Test feature: Tx2 Rx2 Chirp8 R128 D32 BPM_1
+Doppler DPU Process. Cycles = 1144537. 
+Test Pass maxError = 6 RefVal = 3081 DpuVal = 3075 percentage = 0.2 ratio = 0.99805
+
+Test #378  start
+scratch: sizeUsed=832 total size=16384
+Test feature: Tx2 Rx2 Chirp32 R256 D32 BPM_0
+Doppler DPU Process. Cycles = 1354872. 
+Test Pass maxError = 10 RefVal = 3147 DpuVal = 3157 percentage = 0.3 ratio = 1.00318
+
+Test #379  start
+scratch: sizeUsed=1088 total size=16384
+Test feature: Tx2 Rx2 Chirp32 R256 D32 BPM_1
+Doppler DPU Process. Cycles = 2272872. 
+Test Pass maxError = 6 RefVal = 3984 DpuVal = 3978 percentage = 0.2 ratio = 0.99849
+
+Test #380  start
+scratch: sizeUsed=800 total size=16384
+Test feature: Tx2 Rx2 Chirp28 R256 D32 BPM_0
+Doppler DPU Process. Cycles = 1388725. 
+Test Pass maxError = 5 RefVal = 3790 DpuVal = 3785 percentage = 0.1 ratio = 0.99868
+
+Test #381  start
+scratch: sizeUsed=1056 total size=16384
+Test feature: Tx2 Rx2 Chirp28 R256 D32 BPM_1
+Doppler DPU Process. Cycles = 2306689. 
+Test Pass maxError = 5 RefVal = 3879 DpuVal = 3874 percentage = 0.1 ratio = 0.99871
+
+Test #382  start
+scratch: sizeUsed=704 total size=16384
+Test feature: Tx2 Rx2 Chirp16 R256 D32 BPM_0
+Doppler DPU Process. Cycles = 1381057. 
+Test Pass maxError = 5 RefVal = 3754 DpuVal = 3749 percentage = 0.1 ratio = 0.99867
+
+Test #383  start
+scratch: sizeUsed=960 total size=16384
+Test feature: Tx2 Rx2 Chirp16 R256 D32 BPM_1
+Doppler DPU Process. Cycles = 2297479. 
+Test Pass maxError = 6 RefVal = 3837 DpuVal = 3831 percentage = 0.2 ratio = 0.99844
+
+Test #384  start
+scratch: sizeUsed=640 total size=16384
+Test feature: Tx2 Rx2 Chirp8 R512 D32 BPM_0
+Doppler DPU Process. Cycles = 2746405. 
+Test Pass maxError = 5 RefVal = 3554 DpuVal = 3549 percentage = 0.1 ratio = 0.99859
+
+Test #385  start
+scratch: sizeUsed=896 total size=16384
+Test feature: Tx2 Rx2 Chirp8 R512 D32 BPM_1
+Doppler DPU Process. Cycles = 4575787. 
+Test Pass maxError = 5 RefVal = 3819 DpuVal = 3814 percentage = 0.1 ratio = 0.99869
+
+Test #386  start
+scratch: sizeUsed=800 total size=16384
+Test feature: Tx2 Rx2 Chirp28 R512 D32 BPM_0
+Doppler DPU Process. Cycles = 2777161. 
+Test Pass maxError = 5 RefVal = 4053 DpuVal = 4048 percentage = 0.1 ratio = 0.99877
+
+Test #387  start
+scratch: sizeUsed=1056 total size=16384
+Test feature: Tx2 Rx2 Chirp28 R512 D32 BPM_1
+Doppler DPU Process. Cycles = 4612633. 
+Test Pass maxError = 5 RefVal = 3897 DpuVal = 3892 percentage = 0.1 ratio = 0.99872
+
+Test #388  start
+scratch: sizeUsed=736 total size=16384
+Test feature: Tx2 Rx2 Chirp20 R512 D32 BPM_0
+Doppler DPU Process. Cycles = 2767537. 
+Test Pass maxError = 8 RefVal = 3443 DpuVal = 3435 percentage = 0.2 ratio = 0.99768
+
+Test #389  start
+scratch: sizeUsed=992 total size=16384
+Test feature: Tx2 Rx2 Chirp20 R512 D32 BPM_1
+Doppler DPU Process. Cycles = 4599895. 
+Test Pass maxError = 6 RefVal = 3665 DpuVal = 3659 percentage = 0.2 ratio = 0.99836
+
+Test #390  start
+scratch: sizeUsed=704 total size=16384
+Test feature: Tx2 Rx2 Chirp16 R1024 D32 BPM_0
+Doppler DPU Process. Cycles = 5522413. 
+Test Pass maxError = 6 RefVal = 3704 DpuVal = 3698 percentage = 0.2 ratio = 0.99838
+
+Test #391  start
+scratch: sizeUsed=960 total size=16384
+Test feature: Tx2 Rx2 Chirp16 R1024 D32 BPM_1
+Doppler DPU Process. Cycles = 9187657. 
+Test Pass maxError = 5 RefVal = 3665 DpuVal = 3660 percentage = 0.1 ratio = 0.99864
+
+Test #392  start
+scratch: sizeUsed=640 total size=16384
+Test feature: Tx2 Rx2 Chirp8 R1024 D32 BPM_0
+Doppler DPU Process. Cycles = 5492131. 
+Test Pass maxError = 5 RefVal = 3537 DpuVal = 3532 percentage = 0.1 ratio = 0.99859
+
+Test #393  start
+scratch: sizeUsed=896 total size=16384
+Test feature: Tx2 Rx2 Chirp8 R1024 D32 BPM_1
+Doppler DPU Process. Cycles = 9150349. 
+Test Pass maxError = 6 RefVal = 3464 DpuVal = 3458 percentage = 0.2 ratio = 0.99827
+
+Test #394  start
+scratch: sizeUsed=736 total size=16384
+Test feature: Tx2 Rx2 Chirp20 R1024 D32 BPM_0
+Doppler DPU Process. Cycles = 5534689. 
+Test Pass maxError = 6 RefVal = 3773 DpuVal = 3767 percentage = 0.2 ratio = 0.99841
+
+Test #395  start
+scratch: sizeUsed=992 total size=16384
+Test feature: Tx2 Rx2 Chirp20 R1024 D32 BPM_1
+Doppler DPU Process. Cycles = 9199471. 
+Test Pass maxError = 6 RefVal = 3882 DpuVal = 3876 percentage = 0.2 ratio = 0.99845
+
+Test #396  start
+scratch: sizeUsed=1664 total size=16384
+Test feature: Tx2 Rx2 Chirp64 R16 D64 BPM_0
+Doppler DPU Process. Cycles = 109308. 
+Test Pass maxError = 5 RefVal = 3930 DpuVal = 3925 percentage = 0.1 ratio = 0.99873
+
+Test #397  start
+scratch: sizeUsed=2176 total size=16384
+Test feature: Tx2 Rx2 Chirp64 R16 D64 BPM_1
+Doppler DPU Process. Cycles = 224076. 
+Test Pass maxError = 4 RefVal = 4035 DpuVal = 4031 percentage = 0.1 ratio = 0.99901
+
+Test #398  start
+scratch: sizeUsed=1632 total size=16384
+Test feature: Tx2 Rx2 Chirp60 R16 D64 BPM_0
+Doppler DPU Process. Cycles = 111505. 
+Test Pass maxError = 5 RefVal = 4095 DpuVal = 4090 percentage = 0.1 ratio = 0.99878
+
+Test #399  start
+scratch: sizeUsed=2144 total size=16384
+Test feature: Tx2 Rx2 Chirp60 R16 D64 BPM_1
+Doppler DPU Process. Cycles = 225277. 
+Test Pass maxError = 5 RefVal = 4123 DpuVal = 4118 percentage = 0.1 ratio = 0.99879
+
+Test #400  start
+scratch: sizeUsed=1408 total size=16384
+Test feature: Tx2 Rx2 Chirp32 R16 D64 BPM_0
+Doppler DPU Process. Cycles = 109891. 
+Test Pass maxError = 4 RefVal = 4008 DpuVal = 4004 percentage = 0.1 ratio = 0.99900
+
+Test #401  start
+scratch: sizeUsed=1920 total size=16384
+Test feature: Tx2 Rx2 Chirp32 R16 D64 BPM_1
+Doppler DPU Process. Cycles = 223939. 
+Test Pass maxError = 5 RefVal = 3844 DpuVal = 3839 percentage = 0.1 ratio = 0.99870
+
+Test #402  start
+scratch: sizeUsed=1280 total size=16384
+Test feature: Tx2 Rx2 Chirp16 R32 D64 BPM_0
+Doppler DPU Process. Cycles = 217603. 
+Test Pass maxError = 5 RefVal = 3931 DpuVal = 3926 percentage = 0.1 ratio = 0.99873
+
+Test #403  start
+scratch: sizeUsed=1792 total size=16384
+Test feature: Tx2 Rx2 Chirp16 R32 D64 BPM_1
+Doppler DPU Process. Cycles = 445699. 
+Test Pass maxError = 5 RefVal = 3714 DpuVal = 3709 percentage = 0.1 ratio = 0.99865
+
+Test #404  start
+scratch: sizeUsed=1632 total size=16384
+Test feature: Tx2 Rx2 Chirp60 R32 D64 BPM_0
+Doppler DPU Process. Cycles = 222781. 
+Test Pass maxError = 5 RefVal = 4028 DpuVal = 4023 percentage = 0.1 ratio = 0.99876
+
+Test #405  start
+scratch: sizeUsed=2144 total size=16384
+Test feature: Tx2 Rx2 Chirp60 R32 D64 BPM_1
+Doppler DPU Process. Cycles = 450337. 
+Test Pass maxError = 5 RefVal = 4150 DpuVal = 4145 percentage = 0.1 ratio = 0.99880
+
+Test #406  start
+scratch: sizeUsed=1568 total size=16384
+Test feature: Tx2 Rx2 Chirp52 R32 D64 BPM_0
+Doppler DPU Process. Cycles = 221233. 
+Test Pass maxError = 5 RefVal = 3926 DpuVal = 3921 percentage = 0.1 ratio = 0.99873
+
+Test #407  start
+scratch: sizeUsed=2080 total size=16384
+Test feature: Tx2 Rx2 Chirp52 R32 D64 BPM_1
+Doppler DPU Process. Cycles = 449731. 
+Test Pass maxError = 5 RefVal = 3946 DpuVal = 3941 percentage = 0.1 ratio = 0.99873
+
+Test #408  start
+scratch: sizeUsed=1408 total size=16384
+Test feature: Tx2 Rx2 Chirp32 R64 D64 BPM_0
+Doppler DPU Process. Cycles = 438217. 
+Test Pass maxError = 5 RefVal = 4175 DpuVal = 4170 percentage = 0.1 ratio = 0.99880
+
+Test #409  start
+scratch: sizeUsed=1920 total size=16384
+Test feature: Tx2 Rx2 Chirp32 R64 D64 BPM_1
+Doppler DPU Process. Cycles = 894427. 
+Test Pass maxError = 5 RefVal = 3949 DpuVal = 3944 percentage = 0.1 ratio = 0.99873
+
+Test #410  start
+scratch: sizeUsed=1280 total size=16384
+Test feature: Tx2 Rx2 Chirp16 R64 D64 BPM_0
+Doppler DPU Process. Cycles = 435157. 
+Test Pass maxError = 5 RefVal = 3846 DpuVal = 3841 percentage = 0.1 ratio = 0.99870
+
+Test #411  start
+scratch: sizeUsed=1792 total size=16384
+Test feature: Tx2 Rx2 Chirp16 R64 D64 BPM_1
+Doppler DPU Process. Cycles = 891349. 
+Test Pass maxError = 5 RefVal = 3957 DpuVal = 3952 percentage = 0.1 ratio = 0.99874
+
+Test #412  start
+scratch: sizeUsed=1568 total size=16384
+Test feature: Tx2 Rx2 Chirp52 R64 D64 BPM_0
+Doppler DPU Process. Cycles = 442237. 
+Test Pass maxError = 5 RefVal = 4098 DpuVal = 4093 percentage = 0.1 ratio = 0.99878
+
+Test #413  start
+scratch: sizeUsed=2080 total size=16384
+Test feature: Tx2 Rx2 Chirp52 R64 D64 BPM_1
+Doppler DPU Process. Cycles = 898537. 
+Test Pass maxError = 5 RefVal = 4213 DpuVal = 4208 percentage = 0.1 ratio = 0.99881
+
+Test #414  start
+scratch: sizeUsed=1664 total size=16384
+Test feature: Tx2 Rx2 Chirp64 R128 D64 BPM_0
+Doppler DPU Process. Cycles = 869688. 
+Test Pass maxError = 5 RefVal = 4083 DpuVal = 4078 percentage = 0.1 ratio = 0.99878
+
+Test #415  start
+scratch: sizeUsed=2176 total size=16384
+Test feature: Tx2 Rx2 Chirp64 R128 D64 BPM_1
+Doppler DPU Process. Cycles = 1784094. 
+Test Pass maxError = 5 RefVal = 3769 DpuVal = 3764 percentage = 0.1 ratio = 0.99867
+
+Test #416  start
+scratch: sizeUsed=1408 total size=16384
+Test feature: Tx2 Rx2 Chirp32 R128 D64 BPM_0
+Doppler DPU Process. Cycles = 875209. 
+Test Pass maxError = 5 RefVal = 3864 DpuVal = 3859 percentage = 0.1 ratio = 0.99871
+
+Test #417  start
+scratch: sizeUsed=1920 total size=16384
+Test feature: Tx2 Rx2 Chirp32 R128 D64 BPM_1
+Doppler DPU Process. Cycles = 1788595. 
+Test Pass maxError = 5 RefVal = 3958 DpuVal = 3953 percentage = 0.1 ratio = 0.99874
+
+Test #418  start
+scratch: sizeUsed=1280 total size=16384
+Test feature: Tx2 Rx2 Chirp16 R128 D64 BPM_0
+Doppler DPU Process. Cycles = 869569. 
+Test Pass maxError = 5 RefVal = 3645 DpuVal = 3640 percentage = 0.1 ratio = 0.99863
+
+Test #419  start
+scratch: sizeUsed=1792 total size=16384
+Test feature: Tx2 Rx2 Chirp16 R128 D64 BPM_1
+Doppler DPU Process. Cycles = 1782445. 
+Test Pass maxError = 5 RefVal = 3660 DpuVal = 3655 percentage = 0.1 ratio = 0.99863
+
+Test #420  start
+scratch: sizeUsed=1664 total size=16384
+Test feature: Tx2 Rx2 Chirp64 R256 D64 BPM_0
+Doppler DPU Process. Cycles = 1737528. 
+Test Pass maxError = 5 RefVal = 3841 DpuVal = 3836 percentage = 0.1 ratio = 0.99870
+
+Test #421  start
+scratch: sizeUsed=2176 total size=16384
+Test feature: Tx2 Rx2 Chirp64 R256 D64 BPM_1
+Doppler DPU Process. Cycles = 3567312. 
+Test Pass maxError = 5 RefVal = 3823 DpuVal = 3818 percentage = 0.1 ratio = 0.99869
+
+Test #422  start
+scratch: sizeUsed=1632 total size=16384
+Test feature: Tx2 Rx2 Chirp60 R256 D64 BPM_0
+Doppler DPU Process. Cycles = 1773409. 
+Test Pass maxError = 5 RefVal = 3956 DpuVal = 3951 percentage = 0.1 ratio = 0.99874
+
+Test #423  start
+scratch: sizeUsed=2144 total size=16384
+Test feature: Tx2 Rx2 Chirp60 R256 D64 BPM_1
+Doppler DPU Process. Cycles = 3595105. 
+Test Pass maxError = 6 RefVal = 4085 DpuVal = 4079 percentage = 0.1 ratio = 0.99853
+
+Test #424  start
+scratch: sizeUsed=1408 total size=16384
+Test feature: Tx2 Rx2 Chirp32 R256 D64 BPM_0
+Doppler DPU Process. Cycles = 1749685. 
+Test Pass maxError = 5 RefVal = 4041 DpuVal = 4036 percentage = 0.1 ratio = 0.99876
+
+Test #425  start
+scratch: sizeUsed=1920 total size=16384
+Test feature: Tx2 Rx2 Chirp32 R256 D64 BPM_1
+Doppler DPU Process. Cycles = 3576403. 
+Test Pass maxError = 5 RefVal = 3721 DpuVal = 3716 percentage = 0.1 ratio = 0.99866
+
+Test #426  start
+scratch: sizeUsed=1280 total size=16384
+Test feature: Tx2 Rx2 Chirp16 R512 D64 BPM_0
+Doppler DPU Process. Cycles = 3474967. 
+Test Pass maxError = 6 RefVal = 3802 DpuVal = 3796 percentage = 0.2 ratio = 0.99842
+
+Test #427  start
+scratch: sizeUsed=1792 total size=16384
+Test feature: Tx2 Rx2 Chirp16 R512 D64 BPM_1
+Doppler DPU Process. Cycles = 7127461. 
+Test Pass maxError = 5 RefVal = 3815 DpuVal = 3810 percentage = 0.1 ratio = 0.99869
+
+Test #428  start
+scratch: sizeUsed=1632 total size=16384
+Test feature: Tx2 Rx2 Chirp60 R512 D64 BPM_0
+Doppler DPU Process. Cycles = 3545833. 
+Test Pass maxError = 8 RefVal = 3333 DpuVal = 3341 percentage = 0.2 ratio = 1.00240
+
+Test #429  start
+scratch: sizeUsed=2144 total size=16384
+Test feature: Tx2 Rx2 Chirp60 R512 D64 BPM_1
+Doppler DPU Process. Cycles = 7189189. 
+Test Pass maxError = 5 RefVal = 3786 DpuVal = 3781 percentage = 0.1 ratio = 0.99868
+
+Test #430  start
+scratch: sizeUsed=1568 total size=16384
+Test feature: Tx2 Rx2 Chirp52 R512 D64 BPM_0
+Doppler DPU Process. Cycles = 3530521. 
+Test Pass maxError = 6 RefVal = 3971 DpuVal = 3965 percentage = 0.2 ratio = 0.99849
+
+Test #431  start
+scratch: sizeUsed=2080 total size=16384
+Test feature: Tx2 Rx2 Chirp52 R512 D64 BPM_1
+Doppler DPU Process. Cycles = 7179883. 
+Test Pass maxError = 6 RefVal = 3997 DpuVal = 3991 percentage = 0.2 ratio = 0.99850
+
+Test #432  start
+scratch: sizeUsed=3328 total size=16384
+Test feature: Tx2 Rx2 Chirp128 R16 D128 BPM_0
+Doppler DPU Process. Cycles = 172627. 
+Test Pass maxError = 5 RefVal = 4389 DpuVal = 4384 percentage = 0.1 ratio = 0.99886
+
+Test #433  start
+scratch: sizeUsed=4352 total size=16384
+Test feature: Tx2 Rx2 Chirp128 R16 D128 BPM_1
+Doppler DPU Process. Cycles = 400519. 
+Test Pass maxError = 5 RefVal = 4332 DpuVal = 4327 percentage = 0.1 ratio = 0.99885
+
+Test #434  start
+scratch: sizeUsed=3296 total size=16384
+Test feature: Tx2 Rx2 Chirp124 R16 D128 BPM_0
+Doppler DPU Process. Cycles = 175383. 
+Test Pass maxError = 5 RefVal = 4247 DpuVal = 4242 percentage = 0.1 ratio = 0.99882
+
+Test #435  start
+scratch: sizeUsed=4320 total size=16384
+Test feature: Tx2 Rx2 Chirp124 R16 D128 BPM_1
+Doppler DPU Process. Cycles = 402297. 
+Test Pass maxError = 5 RefVal = 4339 DpuVal = 4334 percentage = 0.1 ratio = 0.99885
+
+Test #436  start
+scratch: sizeUsed=2816 total size=16384
+Test feature: Tx2 Rx2 Chirp64 R16 D128 BPM_0
+Doppler DPU Process. Cycles = 171547. 
+Test Pass maxError = 5 RefVal = 4216 DpuVal = 4211 percentage = 0.1 ratio = 0.99881
+
+Test #437  start
+scratch: sizeUsed=3840 total size=16384
+Test feature: Tx2 Rx2 Chirp64 R16 D128 BPM_1
+Doppler DPU Process. Cycles = 400003. 
+Test Pass maxError = 4 RefVal = 3911 DpuVal = 3907 percentage = 0.1 ratio = 0.99898
+
+Test #438  start
+scratch: sizeUsed=2560 total size=16384
+Test feature: Tx2 Rx2 Chirp32 R32 D128 BPM_0
+Doppler DPU Process. Cycles = 338785. 
+Test Pass maxError = 5 RefVal = 3847 DpuVal = 3842 percentage = 0.1 ratio = 0.99870
+
+Test #439  start
+scratch: sizeUsed=3584 total size=16384
+Test feature: Tx2 Rx2 Chirp32 R32 D128 BPM_1
+Doppler DPU Process. Cycles = 794599. 
+Test Pass maxError = 5 RefVal = 3830 DpuVal = 3825 percentage = 0.1 ratio = 0.99869
+
+Test #440  start
+scratch: sizeUsed=3296 total size=16384
+Test feature: Tx2 Rx2 Chirp124 R32 D128 BPM_0
+Doppler DPU Process. Cycles = 348549. 
+Test Pass maxError = 5 RefVal = 3984 DpuVal = 3979 percentage = 0.1 ratio = 0.99874
+
+Test #441  start
+scratch: sizeUsed=4320 total size=16384
+Test feature: Tx2 Rx2 Chirp124 R32 D128 BPM_1
+Doppler DPU Process. Cycles = 804183. 
+Test Pass maxError = 5 RefVal = 3916 DpuVal = 3911 percentage = 0.1 ratio = 0.99872
+
+Test #442  start
+scratch: sizeUsed=3232 total size=16384
+Test feature: Tx2 Rx2 Chirp116 R32 D128 BPM_0
+Doppler DPU Process. Cycles = 348189. 
+Test Pass maxError = 6 RefVal = 4054 DpuVal = 4048 percentage = 0.1 ratio = 0.99852
+
+Test #443  start
+scratch: sizeUsed=4256 total size=16384
+Test feature: Tx2 Rx2 Chirp116 R32 D128 BPM_1
+Doppler DPU Process. Cycles = 804291. 
+Test Pass maxError = 5 RefVal = 4036 DpuVal = 4031 percentage = 0.1 ratio = 0.99876
+
+Test #444  start
+scratch: sizeUsed=2816 total size=16384
+Test feature: Tx2 Rx2 Chirp64 R64 D128 BPM_0
+Doppler DPU Process. Cycles = 684715. 
+Test Pass maxError = 6 RefVal = 3610 DpuVal = 3604 percentage = 0.2 ratio = 0.99834
+
+Test #445  start
+scratch: sizeUsed=3840 total size=16384
+Test feature: Tx2 Rx2 Chirp64 R64 D128 BPM_1
+Doppler DPU Process. Cycles = 1596745. 
+Test Pass maxError = 5 RefVal = 3973 DpuVal = 3968 percentage = 0.1 ratio = 0.99874
+
+Test #446  start
+scratch: sizeUsed=2560 total size=16384
+Test feature: Tx2 Rx2 Chirp32 R64 D128 BPM_0
+Doppler DPU Process. Cycles = 677503. 
+Test Pass maxError = 8 RefVal = 3442 DpuVal = 3434 percentage = 0.2 ratio = 0.99768
+
+Test #447  start
+scratch: sizeUsed=3584 total size=16384
+Test feature: Tx2 Rx2 Chirp32 R64 D128 BPM_1
+Doppler DPU Process. Cycles = 1588897. 
+Test Pass maxError = 5 RefVal = 3774 DpuVal = 3769 percentage = 0.1 ratio = 0.99868
+
+Test #448  start
+scratch: sizeUsed=3232 total size=16384
+Test feature: Tx2 Rx2 Chirp116 R64 D128 BPM_0
+Doppler DPU Process. Cycles = 694707. 
+Test Pass maxError = 43 RefVal = 3577 DpuVal = 3534 percentage = 1.2 ratio = 0.98798
+
+Test #449  start
+scratch: sizeUsed=4256 total size=16384
+Test feature: Tx2 Rx2 Chirp116 R64 D128 BPM_1
+Doppler DPU Process. Cycles = 1606941. 
+Test Pass maxError = 5 RefVal = 4231 DpuVal = 4226 percentage = 0.1 ratio = 0.99882
+
+Test #450  start
+scratch: sizeUsed=3328 total size=16384
+Test feature: Tx2 Rx2 Chirp128 R128 D128 BPM_0
+Doppler DPU Process. Cycles = 1374511. 
+Test Pass maxError = 6 RefVal = 3988 DpuVal = 3982 percentage = 0.2 ratio = 0.99850
+
+Test #451  start
+scratch: sizeUsed=4352 total size=16384
+Test feature: Tx2 Rx2 Chirp128 R128 D128 BPM_1
+Doppler DPU Process. Cycles = 3200461. 
+Test Pass maxError = 5 RefVal = 4157 DpuVal = 4152 percentage = 0.1 ratio = 0.99880
+
+Test #452  start
+scratch: sizeUsed=2816 total size=16384
+Test feature: Tx2 Rx2 Chirp64 R128 D128 BPM_0
+Doppler DPU Process. Cycles = 1367929. 
+Test Pass maxError = 6 RefVal = 3919 DpuVal = 3913 percentage = 0.2 ratio = 0.99847
+
+Test #453  start
+scratch: sizeUsed=3840 total size=16384
+Test feature: Tx2 Rx2 Chirp64 R128 D128 BPM_1
+Doppler DPU Process. Cycles = 3192559. 
+Test Pass maxError = 9 RefVal = 3685 DpuVal = 3676 percentage = 0.2 ratio = 0.99756
+
+Test #454  start
+scratch: sizeUsed=2560 total size=16384
+Test feature: Tx2 Rx2 Chirp32 R128 D128 BPM_0
+Doppler DPU Process. Cycles = 1354201. 
+Test Pass maxError = 10 RefVal = 3202 DpuVal = 3192 percentage = 0.3 ratio = 0.99688
+
+Test #455  start
+scratch: sizeUsed=3584 total size=16384
+Test feature: Tx2 Rx2 Chirp32 R128 D128 BPM_1
+Doppler DPU Process. Cycles = 3177019. 
+Test Pass maxError = 5 RefVal = 3758 DpuVal = 3753 percentage = 0.1 ratio = 0.99867
+
+Test #456  start
+scratch: sizeUsed=3328 total size=16384
+Test feature: Tx2 Rx2 Chirp128 R256 D128 BPM_0
+Doppler DPU Process. Cycles = 2748391. 
+Test Pass maxError = 5 RefVal = 4303 DpuVal = 4298 percentage = 0.1 ratio = 0.99884
+
+Test #457  start
+scratch: sizeUsed=4352 total size=16384
+Test feature: Tx2 Rx2 Chirp128 R256 D128 BPM_1
+Doppler DPU Process. Cycles = 6399151. 
+Test Pass maxError = 5 RefVal = 4110 DpuVal = 4105 percentage = 0.1 ratio = 0.99878
+
+Test #458  start
+scratch: sizeUsed=3296 total size=16384
+Test feature: Tx2 Rx2 Chirp124 R256 D128 BPM_0
+Doppler DPU Process. Cycles = 2783787. 
+Test Pass maxError = 6 RefVal = 4107 DpuVal = 4101 percentage = 0.1 ratio = 0.99854
+
+Test #459  start
+scratch: sizeUsed=4320 total size=16384
+Test feature: Tx2 Rx2 Chirp124 R256 D128 BPM_1
+Doppler DPU Process. Cycles = 6427065. 
+Test Pass maxError = 6 RefVal = 4065 DpuVal = 4059 percentage = 0.1 ratio = 0.99852
+
+Test #460  start
+scratch: sizeUsed=2816 total size=16384
+Test feature: Tx2 Rx2 Chirp64 R256 D128 BPM_0
+Doppler DPU Process. Cycles = 2733961. 
+Test Pass maxError = 6 RefVal = 4223 DpuVal = 4217 percentage = 0.1 ratio = 0.99858
+
+Test #461  start
+scratch: sizeUsed=3840 total size=16384
+Test feature: Tx2 Rx2 Chirp64 R256 D128 BPM_1
+Doppler DPU Process. Cycles = 6383839. 
+Test Pass maxError = 6 RefVal = 3754 DpuVal = 3748 percentage = 0.2 ratio = 0.99840
+
+Test #462  start
+scratch: sizeUsed=6656 total size=16384
+Test feature: Tx2 Rx2 Chirp256 R16 D256 BPM_0
+Doppler DPU Process. Cycles = 282409. 
+Test Pass maxError = 5 RefVal = 4271 DpuVal = 4266 percentage = 0.1 ratio = 0.99883
+
+Test #463  start
+scratch: sizeUsed=8704 total size=16384
+Test feature: Tx2 Rx2 Chirp256 R16 D256 BPM_1
+Doppler DPU Process. Cycles = 737905. 
+Test Pass maxError = 5 RefVal = 4088 DpuVal = 4083 percentage = 0.1 ratio = 0.99878
+
+Test #464  start
+scratch: sizeUsed=6624 total size=16384
+Test feature: Tx2 Rx2 Chirp252 R16 D256 BPM_0
+Doppler DPU Process. Cycles = 284577. 
+Test Pass maxError = 6 RefVal = 3998 DpuVal = 3992 percentage = 0.2 ratio = 0.99850
+
+Test #465  start
+scratch: sizeUsed=8672 total size=16384
+Test feature: Tx2 Rx2 Chirp252 R16 D256 BPM_1
+Doppler DPU Process. Cycles = 739845. 
+Test Pass maxError = 7 RefVal = 3590 DpuVal = 3583 percentage = 0.2 ratio = 0.99805
+
+Test #466  start
+scratch: sizeUsed=5632 total size=16384
+Test feature: Tx2 Rx2 Chirp128 R16 D256 BPM_0
+Doppler DPU Process. Cycles = 278355. 
+Test Pass maxError = 8 RefVal = 3569 DpuVal = 3561 percentage = 0.2 ratio = 0.99776
+
+Test #467  start
+scratch: sizeUsed=7680 total size=16384
+Test feature: Tx2 Rx2 Chirp128 R16 D256 BPM_1
+Doppler DPU Process. Cycles = 733275. 
+Test Pass maxError = 6 RefVal = 3778 DpuVal = 3772 percentage = 0.2 ratio = 0.99841
+
+Test #468  start
+scratch: sizeUsed=5120 total size=16384
+Test feature: Tx2 Rx2 Chirp64 R32 D256 BPM_0
+Doppler DPU Process. Cycles = 547915. 
+Test Pass maxError = 5 RefVal = 3793 DpuVal = 3788 percentage = 0.1 ratio = 0.99868
+
+Test #469  start
+scratch: sizeUsed=7168 total size=16384
+Test feature: Tx2 Rx2 Chirp64 R32 D256 BPM_1
+Doppler DPU Process. Cycles = 1458541. 
+Test Pass maxError = 5 RefVal = 3599 DpuVal = 3594 percentage = 0.1 ratio = 0.99861
+
+Test #470  start
+scratch: sizeUsed=6624 total size=16384
+Test feature: Tx2 Rx2 Chirp252 R32 D256 BPM_0
+Doppler DPU Process. Cycles = 567969. 
+Test Pass maxError = 5 RefVal = 4245 DpuVal = 4240 percentage = 0.1 ratio = 0.99882
+
+Test #471  start
+scratch: sizeUsed=8672 total size=16384
+Test feature: Tx2 Rx2 Chirp252 R32 D256 BPM_1
+Doppler DPU Process. Cycles = 1478493. 
+Test Pass maxError = 5 RefVal = 4193 DpuVal = 4188 percentage = 0.1 ratio = 0.99881
+
+Test #472  start
+scratch: sizeUsed=6560 total size=16384
+Test feature: Tx2 Rx2 Chirp244 R32 D256 BPM_0
+Doppler DPU Process. Cycles = 566607. 
+Test Pass maxError = 5 RefVal = 4320 DpuVal = 4315 percentage = 0.1 ratio = 0.99884
+
+Test #473  start
+scratch: sizeUsed=8608 total size=16384
+Test feature: Tx2 Rx2 Chirp244 R32 D256 BPM_1
+Doppler DPU Process. Cycles = 1477773. 
+Test Pass maxError = 5 RefVal = 4161 DpuVal = 4156 percentage = 0.1 ratio = 0.99880
+
+Test #474  start
+scratch: sizeUsed=5632 total size=16384
+Test feature: Tx2 Rx2 Chirp128 R64 D256 BPM_0
+Doppler DPU Process. Cycles = 1108263. 
+Test Pass maxError = 6 RefVal = 4031 DpuVal = 4025 percentage = 0.1 ratio = 0.99851
+
+Test #475  start
+scratch: sizeUsed=7680 total size=16384
+Test feature: Tx2 Rx2 Chirp128 R64 D256 BPM_1
+Doppler DPU Process. Cycles = 2930097. 
+Test Pass maxError = 5 RefVal = 3924 DpuVal = 3919 percentage = 0.1 ratio = 0.99873
+
+Test #476  start
+scratch: sizeUsed=5120 total size=16384
+Test feature: Tx2 Rx2 Chirp64 R64 D256 BPM_0
+Doppler DPU Process. Cycles = 1094131. 
+Test Pass maxError = 16 RefVal = 3054 DpuVal = 3070 percentage = 0.5 ratio = 1.00524
+
+Test #477  start
+scratch: sizeUsed=7168 total size=16384
+Test feature: Tx2 Rx2 Chirp64 R64 D256 BPM_1
+Doppler DPU Process. Cycles = 2915167. 
+Test Pass maxError = 5 RefVal = 3952 DpuVal = 3947 percentage = 0.1 ratio = 0.99873
+
+Test #478  start
+scratch: sizeUsed=6560 total size=16384
+Test feature: Tx2 Rx2 Chirp244 R64 D256 BPM_0
+Doppler DPU Process. Cycles = 1132575. 
+Test Pass maxError = 6 RefVal = 4248 DpuVal = 4242 percentage = 0.1 ratio = 0.99859
+
+Test #479  start
+scratch: sizeUsed=8608 total size=16384
+Test feature: Tx2 Rx2 Chirp244 R64 D256 BPM_1
+Doppler DPU Process. Cycles = 2954433. 
+Test Pass maxError = 5 RefVal = 4148 DpuVal = 4143 percentage = 0.1 ratio = 0.99879
+
+Test #480  start
+scratch: sizeUsed=6656 total size=16384
+Test feature: Tx2 Rx2 Chirp256 R128 D256 BPM_0
+Doppler DPU Process. Cycles = 2249437. 
+Test Pass maxError = 7 RefVal = 3915 DpuVal = 3908 percentage = 0.2 ratio = 0.99821
+
+Test #481  start
+scratch: sizeUsed=8704 total size=16384
+Test feature: Tx2 Rx2 Chirp256 R128 D256 BPM_1
+Doppler DPU Process. Cycles = 5892493. 
+Test Pass maxError = 5 RefVal = 4469 DpuVal = 4464 percentage = 0.1 ratio = 0.99888
+
+Test #482  start
+scratch: sizeUsed=5632 total size=16384
+Test feature: Tx2 Rx2 Chirp128 R128 D256 BPM_0
+Doppler DPU Process. Cycles = 2215119. 
+Test Pass maxError = 10 RefVal = 3755 DpuVal = 3745 percentage = 0.3 ratio = 0.99734
+
+Test #483  start
+scratch: sizeUsed=7680 total size=16384
+Test feature: Tx2 Rx2 Chirp128 R128 D256 BPM_1
+Doppler DPU Process. Cycles = 5858985. 
+Test Pass maxError = 6 RefVal = 4409 DpuVal = 4403 percentage = 0.1 ratio = 0.99864
+
+Test #484  start
+scratch: sizeUsed=5120 total size=16384
+Test feature: Tx2 Rx2 Chirp64 R128 D256 BPM_0
+Doppler DPU Process. Cycles = 2188165. 
+Test Pass maxError = 6 RefVal = 4114 DpuVal = 4108 percentage = 0.1 ratio = 0.99854
+
+Test #485  start
+scratch: sizeUsed=7168 total size=16384
+Test feature: Tx2 Rx2 Chirp64 R128 D256 BPM_1
+Doppler DPU Process. Cycles = 5829913. 
+Test Pass maxError = 6 RefVal = 3788 DpuVal = 3782 percentage = 0.2 ratio = 0.99842
+
+Test #486  start
+scratch: sizeUsed=13312 total size=16384
+Test feature: Tx2 Rx2 Chirp512 R16 D512 BPM_0
+Doppler DPU Process. Cycles = 557911. 
+Test Pass maxError = 5 RefVal = 3958 DpuVal = 3953 percentage = 0.1 ratio = 0.99874
+
+Test #487  start
+scratch: sizeUsed=17408 total size=16384
+Error! (windowingLog2AbsBuf_end - scratchStart)=17408 > scratch buffer size = 16384
+Test feature: Tx2 Rx2 Chirp512 R16 D512 BPM_1
+SKIPPING THIS TEST
+
+Test #487  start
+scratch: sizeUsed=13280 total size=16384
+Test feature: Tx2 Rx2 Chirp508 R16 D512 BPM_0
+Doppler DPU Process. Cycles = 559887. 
+Test Pass maxError = 5 RefVal = 4159 DpuVal = 4154 percentage = 0.1 ratio = 0.99880
+
+Test #488  start
+scratch: sizeUsed=17376 total size=16384
+Error! (windowingLog2AbsBuf_end - scratchStart)=17376 > scratch buffer size = 16384
+Test feature: Tx2 Rx2 Chirp508 R16 D512 BPM_1
+SKIPPING THIS TEST
+
+Test #488  start
+scratch: sizeUsed=11264 total size=16384
+Test feature: Tx2 Rx2 Chirp256 R16 D512 BPM_0
+Doppler DPU Process. Cycles = 546231. 
+Test Pass maxError = 6 RefVal = 4373 DpuVal = 4367 percentage = 0.1 ratio = 0.99863
+
+Test #489  start
+scratch: sizeUsed=15360 total size=16384
+Test feature: Tx2 Rx2 Chirp256 R16 D512 BPM_1
+Doppler DPU Process. Cycles = 1455981. 
+Test Pass maxError = 5 RefVal = 4152 DpuVal = 4147 percentage = 0.1 ratio = 0.99880
+
+Test #490  start
+scratch: sizeUsed=10240 total size=16384
+Test feature: Tx2 Rx2 Chirp128 R32 D512 BPM_0
+Doppler DPU Process. Cycles = 1075819. 
+Test Pass maxError = 5 RefVal = 3980 DpuVal = 3975 percentage = 0.1 ratio = 0.99874
+
+Test #491  start
+scratch: sizeUsed=14336 total size=16384
+Test feature: Tx2 Rx2 Chirp128 R32 D512 BPM_1
+Doppler DPU Process. Cycles = 2896047. 
+Test Pass maxError = 5 RefVal = 3927 DpuVal = 3922 percentage = 0.1 ratio = 0.99873
+
+Test #492  start
+scratch: sizeUsed=13280 total size=16384
+Test feature: Tx2 Rx2 Chirp508 R32 D512 BPM_0
+Doppler DPU Process. Cycles = 1116879. 
+Test Pass maxError = 5 RefVal = 4297 DpuVal = 4292 percentage = 0.1 ratio = 0.99884
+
+Test #493  start
+scratch: sizeUsed=17376 total size=16384
+Error! (windowingLog2AbsBuf_end - scratchStart)=17376 > scratch buffer size = 16384
+Test feature: Tx2 Rx2 Chirp508 R32 D512 BPM_1
+SKIPPING THIS TEST
+
+Test #493  start
+scratch: sizeUsed=13216 total size=16384
+Test feature: Tx2 Rx2 Chirp500 R32 D512 BPM_0
+Doppler DPU Process. Cycles = 1115571. 
+Test Pass maxError = 5 RefVal = 4490 DpuVal = 4485 percentage = 0.1 ratio = 0.99889
+
+Test #494  start
+scratch: sizeUsed=17312 total size=16384
+Error! (windowingLog2AbsBuf_end - scratchStart)=17312 > scratch buffer size = 16384
+Test feature: Tx2 Rx2 Chirp500 R32 D512 BPM_1
+SKIPPING THIS TEST
+
+Test #494  start
+scratch: sizeUsed=11264 total size=16384
+Test feature: Tx2 Rx2 Chirp256 R64 D512 BPM_0
+Doppler DPU Process. Cycles = 2177199. 
+Test Pass maxError = 9 RefVal = 3859 DpuVal = 3850 percentage = 0.2 ratio = 0.99767
+
+Test #495  start
+scratch: sizeUsed=15360 total size=16384
+Test feature: Tx2 Rx2 Chirp256 R64 D512 BPM_1
+Doppler DPU Process. Cycles = 5818779. 
+Test Pass maxError = 6 RefVal = 4226 DpuVal = 4220 percentage = 0.1 ratio = 0.99858
+
+Test #496  start
+scratch: sizeUsed=10240 total size=16384
+Test feature: Tx2 Rx2 Chirp128 R64 D512 BPM_0
+Doppler DPU Process. Cycles = 2149525. 
+Test Pass maxError = 6 RefVal = 3545 DpuVal = 3539 percentage = 0.2 ratio = 0.99831
+
+Test #497  start
+scratch: sizeUsed=14336 total size=16384
+Test feature: Tx2 Rx2 Chirp128 R64 D512 BPM_1
+Doppler DPU Process. Cycles = 5790639. 
+Test Pass maxError = 5 RefVal = 4027 DpuVal = 4022 percentage = 0.1 ratio = 0.99876
+
+Test #498  start
+scratch: sizeUsed=13216 total size=16384
+Test feature: Tx2 Rx2 Chirp500 R64 D512 BPM_0
+Doppler DPU Process. Cycles = 2228475. 
+Test Pass maxError = 8 RefVal = 4062 DpuVal = 4054 percentage = 0.2 ratio = 0.99803
+
+Test #499  start
+scratch: sizeUsed=17312 total size=16384
+Error! (windowingLog2AbsBuf_end - scratchStart)=17312 > scratch buffer size = 16384
+Test feature: Tx2 Rx2 Chirp500 R64 D512 BPM_1
+SKIPPING THIS TEST
+
+Test #499  start
+scratch: sizeUsed=416 total size=16384
+Test feature: Tx2 Rx4 Chirp16 R16 D16 BPM_0
+Doppler DPU Process. Cycles = 130530. 
+Test Pass maxError = 7 RefVal = 3608 DpuVal = 3601 percentage = 0.2 ratio = 0.99806
+
+Test #500  start
+scratch: sizeUsed=544 total size=16384
+Test feature: Tx2 Rx4 Chirp16 R16 D16 BPM_1
+Doppler DPU Process. Cycles = 188988. 
+Test Pass maxError = 5 RefVal = 3817 DpuVal = 3812 percentage = 0.1 ratio = 0.99869
+
+Test #501  start
+scratch: sizeUsed=384 total size=16384
+Test feature: Tx2 Rx4 Chirp12 R16 D16 BPM_0
+Doppler DPU Process. Cycles = 135817. 
+Test Pass maxError = 5 RefVal = 3722 DpuVal = 3717 percentage = 0.1 ratio = 0.99866
+
+Test #502  start
+scratch: sizeUsed=512 total size=16384
+Test feature: Tx2 Rx4 Chirp12 R16 D16 BPM_1
+Doppler DPU Process. Cycles = 193621. 
+Test Pass maxError = 5 RefVal = 3588 DpuVal = 3583 percentage = 0.1 ratio = 0.99861
+
+Test #503  start
+scratch: sizeUsed=352 total size=16384
+Test feature: Tx2 Rx4 Chirp8 R16 D16 BPM_0
+Doppler DPU Process. Cycles = 134455. 
+Test Pass maxError = 7 RefVal = 3542 DpuVal = 3535 percentage = 0.2 ratio = 0.99802
+
+Test #504  start
+scratch: sizeUsed=480 total size=16384
+Test feature: Tx2 Rx4 Chirp8 R16 D16 BPM_1
+Doppler DPU Process. Cycles = 192241. 
+Test Pass maxError = 5 RefVal = 3604 DpuVal = 3599 percentage = 0.1 ratio = 0.99861
+
+Test #505  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx2 Rx4 Chirp4 R32 D16 BPM_0
+Doppler DPU Process. Cycles = 269635. 
+Test Pass maxError = 5 RefVal = 3470 DpuVal = 3465 percentage = 0.1 ratio = 0.99856
+
+Test #506  start
+scratch: sizeUsed=448 total size=16384
+Test feature: Tx2 Rx4 Chirp4 R32 D16 BPM_1
+Doppler DPU Process. Cycles = 384655. 
+Test Pass maxError = 5 RefVal = 3359 DpuVal = 3354 percentage = 0.1 ratio = 0.99851
+
+Test #507  start
+scratch: sizeUsed=384 total size=16384
+Test feature: Tx2 Rx4 Chirp12 R32 D16 BPM_0
+Doppler DPU Process. Cycles = 270409. 
+Test Pass maxError = 5 RefVal = 3670 DpuVal = 3665 percentage = 0.1 ratio = 0.99864
+
+Test #508  start
+scratch: sizeUsed=512 total size=16384
+Test feature: Tx2 Rx4 Chirp12 R32 D16 BPM_1
+Doppler DPU Process. Cycles = 385999. 
+Test Pass maxError = 5 RefVal = 3678 DpuVal = 3673 percentage = 0.1 ratio = 0.99864
+
+Test #509  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx2 Rx4 Chirp4 R32 D16 BPM_0
+Doppler DPU Process. Cycles = 269053. 
+Test Pass maxError = 6 RefVal = 3405 DpuVal = 3399 percentage = 0.2 ratio = 0.99824
+
+Test #510  start
+scratch: sizeUsed=448 total size=16384
+Test feature: Tx2 Rx4 Chirp4 R32 D16 BPM_1
+Doppler DPU Process. Cycles = 384067. 
+Test Pass maxError = 6 RefVal = 3311 DpuVal = 3305 percentage = 0.2 ratio = 0.99819
+
+Test #511  start
+scratch: sizeUsed=352 total size=16384
+Test feature: Tx2 Rx4 Chirp8 R64 D16 BPM_0
+Doppler DPU Process. Cycles = 536515. 
+Test Pass maxError = 5 RefVal = 3542 DpuVal = 3537 percentage = 0.1 ratio = 0.99859
+
+Test #512  start
+scratch: sizeUsed=480 total size=16384
+Test feature: Tx2 Rx4 Chirp8 R64 D16 BPM_1
+Doppler DPU Process. Cycles = 767695. 
+Test Pass maxError = 6 RefVal = 3727 DpuVal = 3721 percentage = 0.2 ratio = 0.99839
+
+Test #513  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx2 Rx4 Chirp4 R64 D16 BPM_0
+Doppler DPU Process. Cycles = 538063. 
+Test Pass maxError = 6 RefVal = 3256 DpuVal = 3250 percentage = 0.2 ratio = 0.99816
+
+Test #514  start
+scratch: sizeUsed=448 total size=16384
+Test feature: Tx2 Rx4 Chirp4 R64 D16 BPM_1
+Doppler DPU Process. Cycles = 768103. 
+Test Pass maxError = 6 RefVal = 3388 DpuVal = 3382 percentage = 0.2 ratio = 0.99823
+
+Test #515  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx2 Rx4 Chirp4 R64 D16 BPM_0
+Doppler DPU Process. Cycles = 538057. 
+Test Pass maxError = 5 RefVal = 3493 DpuVal = 3488 percentage = 0.1 ratio = 0.99857
+
+Test #516  start
+scratch: sizeUsed=448 total size=16384
+Test feature: Tx2 Rx4 Chirp4 R64 D16 BPM_1
+Doppler DPU Process. Cycles = 768583. 
+Test Pass maxError = 6 RefVal = 3452 DpuVal = 3446 percentage = 0.2 ratio = 0.99826
+
+Test #517  start
+scratch: sizeUsed=416 total size=16384
+Test feature: Tx2 Rx4 Chirp16 R128 D16 BPM_0
+Doppler DPU Process. Cycles = 1040322. 
+Test Pass maxError = 6 RefVal = 3696 DpuVal = 3690 percentage = 0.2 ratio = 0.99838
+
+Test #518  start
+scratch: sizeUsed=544 total size=16384
+Test feature: Tx2 Rx4 Chirp16 R128 D16 BPM_1
+Doppler DPU Process. Cycles = 1503900. 
+Test Pass maxError = 6 RefVal = 3691 DpuVal = 3685 percentage = 0.2 ratio = 0.99837
+
+Test #519  start
+scratch: sizeUsed=352 total size=16384
+Test feature: Tx2 Rx4 Chirp8 R128 D16 BPM_0
+Doppler DPU Process. Cycles = 1072321. 
+Test Pass maxError = 6 RefVal = 3647 DpuVal = 3641 percentage = 0.2 ratio = 0.99835
+
+Test #520  start
+scratch: sizeUsed=480 total size=16384
+Test feature: Tx2 Rx4 Chirp8 R128 D16 BPM_1
+Doppler DPU Process. Cycles = 1535101. 
+Test Pass maxError = 7 RefVal = 3570 DpuVal = 3563 percentage = 0.2 ratio = 0.99804
+
+Test #521  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx2 Rx4 Chirp4 R128 D16 BPM_0
+Doppler DPU Process. Cycles = 1075381. 
+Test Pass maxError = 6 RefVal = 3359 DpuVal = 3353 percentage = 0.2 ratio = 0.99821
+
+Test #522  start
+scratch: sizeUsed=448 total size=16384
+Test feature: Tx2 Rx4 Chirp4 R128 D16 BPM_1
+Doppler DPU Process. Cycles = 1535911. 
+Test Pass maxError = 6 RefVal = 3376 DpuVal = 3370 percentage = 0.2 ratio = 0.99822
+
+Test #523  start
+scratch: sizeUsed=416 total size=16384
+Test feature: Tx2 Rx4 Chirp16 R256 D16 BPM_0
+Doppler DPU Process. Cycles = 2080398. 
+Test Pass maxError = 6 RefVal = 3716 DpuVal = 3710 percentage = 0.2 ratio = 0.99839
+
+Test #524  start
+scratch: sizeUsed=544 total size=16384
+Test feature: Tx2 Rx4 Chirp16 R256 D16 BPM_1
+Doppler DPU Process. Cycles = 3008010. 
+Test Pass maxError = 6 RefVal = 3539 DpuVal = 3533 percentage = 0.2 ratio = 0.99830
+
+Test #525  start
+scratch: sizeUsed=384 total size=16384
+Test feature: Tx2 Rx4 Chirp12 R256 D16 BPM_0
+Doppler DPU Process. Cycles = 2155651. 
+Test Pass maxError = 6 RefVal = 3721 DpuVal = 3715 percentage = 0.2 ratio = 0.99839
+
+Test #526  start
+scratch: sizeUsed=512 total size=16384
+Test feature: Tx2 Rx4 Chirp12 R256 D16 BPM_1
+Doppler DPU Process. Cycles = 3081265. 
+Test Pass maxError = 6 RefVal = 3555 DpuVal = 3549 percentage = 0.2 ratio = 0.99831
+
+Test #527  start
+scratch: sizeUsed=352 total size=16384
+Test feature: Tx2 Rx4 Chirp8 R256 D16 BPM_0
+Doppler DPU Process. Cycles = 2143849. 
+Test Pass maxError = 6 RefVal = 3587 DpuVal = 3581 percentage = 0.2 ratio = 0.99833
+
+Test #528  start
+scratch: sizeUsed=480 total size=16384
+Test feature: Tx2 Rx4 Chirp8 R256 D16 BPM_1
+Doppler DPU Process. Cycles = 3069019. 
+Test Pass maxError = 6 RefVal = 3612 DpuVal = 3606 percentage = 0.2 ratio = 0.99834
+
+Test #529  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx2 Rx4 Chirp4 R512 D16 BPM_0
+Doppler DPU Process. Cycles = 4298725. 
+Test Pass maxError = 6 RefVal = 3447 DpuVal = 3441 percentage = 0.2 ratio = 0.99826
+
+Test #530  start
+scratch: sizeUsed=448 total size=16384
+Test feature: Tx2 Rx4 Chirp4 R512 D16 BPM_1
+Doppler DPU Process. Cycles = 6140419. 
+Test Pass maxError = 6 RefVal = 3407 DpuVal = 3401 percentage = 0.2 ratio = 0.99824
+
+Test #531  start
+scratch: sizeUsed=384 total size=16384
+Test feature: Tx2 Rx4 Chirp12 R512 D16 BPM_0
+Doppler DPU Process. Cycles = 4311031. 
+Test Pass maxError = 7 RefVal = 3655 DpuVal = 3648 percentage = 0.2 ratio = 0.99808
+
+Test #532  start
+scratch: sizeUsed=512 total size=16384
+Test feature: Tx2 Rx4 Chirp12 R512 D16 BPM_1
+Doppler DPU Process. Cycles = 6162319. 
+Test Pass maxError = 16 RefVal = 3340 DpuVal = 3356 percentage = 0.5 ratio = 1.00479
+
+Test #533  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx2 Rx4 Chirp4 R512 D16 BPM_0
+Doppler DPU Process. Cycles = 4298749. 
+Test Pass maxError = 6 RefVal = 3378 DpuVal = 3372 percentage = 0.2 ratio = 0.99822
+
+Test #534  start
+scratch: sizeUsed=448 total size=16384
+Test feature: Tx2 Rx4 Chirp4 R512 D16 BPM_1
+Doppler DPU Process. Cycles = 6140431. 
+Test Pass maxError = 6 RefVal = 3393 DpuVal = 3387 percentage = 0.2 ratio = 0.99823
+
+Test #535  start
+scratch: sizeUsed=352 total size=16384
+Test feature: Tx2 Rx4 Chirp8 R1024 D16 BPM_0
+Doppler DPU Process. Cycles = 8572681. 
+Test Pass maxError = 7 RefVal = 3479 DpuVal = 3472 percentage = 0.2 ratio = 0.99799
+
+Test #536  start
+scratch: sizeUsed=480 total size=16384
+Test feature: Tx2 Rx4 Chirp8 R1024 D16 BPM_1
+Doppler DPU Process. Cycles = 12274255. 
+Test Pass maxError = 6 RefVal = 3764 DpuVal = 3758 percentage = 0.2 ratio = 0.99841
+
+Test #537  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx2 Rx4 Chirp4 R1024 D16 BPM_0
+Doppler DPU Process. Cycles = 8596753. 
+Test Pass maxError = 7 RefVal = 3597 DpuVal = 3590 percentage = 0.2 ratio = 0.99805
+
+Test #538  start
+scratch: sizeUsed=448 total size=16384
+Test feature: Tx2 Rx4 Chirp4 R1024 D16 BPM_1
+Doppler DPU Process. Cycles = 12280543. 
+Test Pass maxError = 6 RefVal = 3524 DpuVal = 3518 percentage = 0.2 ratio = 0.99830
+
+Test #539  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx2 Rx4 Chirp4 R1024 D16 BPM_0
+Doppler DPU Process. Cycles = 8596819. 
+Test Pass maxError = 7 RefVal = 3253 DpuVal = 3246 percentage = 0.2 ratio = 0.99785
+
+Test #540  start
+scratch: sizeUsed=448 total size=16384
+Test feature: Tx2 Rx4 Chirp4 R1024 D16 BPM_1
+Doppler DPU Process. Cycles = 12280531. 
+Test Pass maxError = 7 RefVal = 3363 DpuVal = 3356 percentage = 0.2 ratio = 0.99792
+
+Test #541  start
+scratch: sizeUsed=832 total size=16384
+Test feature: Tx2 Rx4 Chirp32 R16 D32 BPM_0
+Doppler DPU Process. Cycles = 160284. 
+Test Pass maxError = 6 RefVal = 3846 DpuVal = 3840 percentage = 0.2 ratio = 0.99844
+
+Test #542  start
+scratch: sizeUsed=1088 total size=16384
+Test feature: Tx2 Rx4 Chirp32 R16 D32 BPM_1
+Doppler DPU Process. Cycles = 274980. 
+Test Pass maxError = 6 RefVal = 3629 DpuVal = 3623 percentage = 0.2 ratio = 0.99835
+
+Test #543  start
+scratch: sizeUsed=800 total size=16384
+Test feature: Tx2 Rx4 Chirp28 R16 D32 BPM_0
+Doppler DPU Process. Cycles = 164509. 
+Test Pass maxError = 6 RefVal = 3770 DpuVal = 3764 percentage = 0.2 ratio = 0.99841
+
+Test #544  start
+scratch: sizeUsed=1056 total size=16384
+Test feature: Tx2 Rx4 Chirp28 R16 D32 BPM_1
+Doppler DPU Process. Cycles = 279229. 
+Test Pass maxError = 5 RefVal = 3753 DpuVal = 3748 percentage = 0.1 ratio = 0.99867
+
+Test #545  start
+scratch: sizeUsed=704 total size=16384
+Test feature: Tx2 Rx4 Chirp16 R16 D32 BPM_0
+Doppler DPU Process. Cycles = 163645. 
+Test Pass maxError = 6 RefVal = 3559 DpuVal = 3553 percentage = 0.2 ratio = 0.99831
+
+Test #546  start
+scratch: sizeUsed=960 total size=16384
+Test feature: Tx2 Rx4 Chirp16 R16 D32 BPM_1
+Doppler DPU Process. Cycles = 278677. 
+Test Pass maxError = 5 RefVal = 3769 DpuVal = 3764 percentage = 0.1 ratio = 0.99867
+
+Test #547  start
+scratch: sizeUsed=640 total size=16384
+Test feature: Tx2 Rx4 Chirp8 R32 D32 BPM_0
+Doppler DPU Process. Cycles = 325135. 
+Test Pass maxError = 6 RefVal = 3640 DpuVal = 3634 percentage = 0.2 ratio = 0.99835
+
+Test #548  start
+scratch: sizeUsed=896 total size=16384
+Test feature: Tx2 Rx4 Chirp8 R32 D32 BPM_1
+Doppler DPU Process. Cycles = 553837. 
+Test Pass maxError = 6 RefVal = 3590 DpuVal = 3584 percentage = 0.2 ratio = 0.99833
+
+Test #549  start
+scratch: sizeUsed=800 total size=16384
+Test feature: Tx2 Rx4 Chirp28 R32 D32 BPM_0
+Doppler DPU Process. Cycles = 328969. 
+Test Pass maxError = 6 RefVal = 3735 DpuVal = 3729 percentage = 0.2 ratio = 0.99839
+
+Test #550  start
+scratch: sizeUsed=1056 total size=16384
+Test feature: Tx2 Rx4 Chirp28 R32 D32 BPM_1
+Doppler DPU Process. Cycles = 558421. 
+Test Pass maxError = 5 RefVal = 3727 DpuVal = 3722 percentage = 0.1 ratio = 0.99866
+
+Test #551  start
+scratch: sizeUsed=736 total size=16384
+Test feature: Tx2 Rx4 Chirp20 R32 D32 BPM_0
+Doppler DPU Process. Cycles = 328009. 
+Test Pass maxError = 6 RefVal = 3830 DpuVal = 3824 percentage = 0.2 ratio = 0.99843
+
+Test #552  start
+scratch: sizeUsed=992 total size=16384
+Test feature: Tx2 Rx4 Chirp20 R32 D32 BPM_1
+Doppler DPU Process. Cycles = 556891. 
+Test Pass maxError = 6 RefVal = 3807 DpuVal = 3801 percentage = 0.2 ratio = 0.99842
+
+Test #553  start
+scratch: sizeUsed=704 total size=16384
+Test feature: Tx2 Rx4 Chirp16 R64 D32 BPM_0
+Doppler DPU Process. Cycles = 653743. 
+Test Pass maxError = 6 RefVal = 3637 DpuVal = 3631 percentage = 0.2 ratio = 0.99835
+
+Test #554  start
+scratch: sizeUsed=960 total size=16384
+Test feature: Tx2 Rx4 Chirp16 R64 D32 BPM_1
+Doppler DPU Process. Cycles = 1110985. 
+Test Pass maxError = 6 RefVal = 3587 DpuVal = 3581 percentage = 0.2 ratio = 0.99833
+
+Test #555  start
+scratch: sizeUsed=640 total size=16384
+Test feature: Tx2 Rx4 Chirp8 R64 D32 BPM_0
+Doppler DPU Process. Cycles = 649033. 
+Test Pass maxError = 6 RefVal = 3384 DpuVal = 3378 percentage = 0.2 ratio = 0.99823
+
+Test #556  start
+scratch: sizeUsed=896 total size=16384
+Test feature: Tx2 Rx4 Chirp8 R64 D32 BPM_1
+Doppler DPU Process. Cycles = 1106413. 
+Test Pass maxError = 6 RefVal = 3541 DpuVal = 3535 percentage = 0.2 ratio = 0.99831
+
+Test #557  start
+scratch: sizeUsed=736 total size=16384
+Test feature: Tx2 Rx4 Chirp20 R64 D32 BPM_0
+Doppler DPU Process. Cycles = 654793. 
+Test Pass maxError = 6 RefVal = 3739 DpuVal = 3733 percentage = 0.2 ratio = 0.99840
+
+Test #558  start
+scratch: sizeUsed=992 total size=16384
+Test feature: Tx2 Rx4 Chirp20 R64 D32 BPM_1
+Doppler DPU Process. Cycles = 1113001. 
+Test Pass maxError = 6 RefVal = 3707 DpuVal = 3701 percentage = 0.2 ratio = 0.99838
+
+Test #559  start
+scratch: sizeUsed=832 total size=16384
+Test feature: Tx2 Rx4 Chirp32 R128 D32 BPM_0
+Doppler DPU Process. Cycles = 1278870. 
+Test Pass maxError = 7 RefVal = 3961 DpuVal = 3954 percentage = 0.2 ratio = 0.99823
+
+Test #560  start
+scratch: sizeUsed=1088 total size=16384
+Test feature: Tx2 Rx4 Chirp32 R128 D32 BPM_1
+Doppler DPU Process. Cycles = 2197590. 
+Test Pass maxError = 7 RefVal = 3720 DpuVal = 3713 percentage = 0.2 ratio = 0.99812
+
+Test #561  start
+scratch: sizeUsed=704 total size=16384
+Test feature: Tx2 Rx4 Chirp16 R128 D32 BPM_0
+Doppler DPU Process. Cycles = 1305757. 
+Test Pass maxError = 7 RefVal = 3865 DpuVal = 3858 percentage = 0.2 ratio = 0.99819
+
+Test #562  start
+scratch: sizeUsed=960 total size=16384
+Test feature: Tx2 Rx4 Chirp16 R128 D32 BPM_1
+Doppler DPU Process. Cycles = 2221729. 
+Test Pass maxError = 6 RefVal = 3797 DpuVal = 3791 percentage = 0.2 ratio = 0.99842
+
+Test #563  start
+scratch: sizeUsed=640 total size=16384
+Test feature: Tx2 Rx4 Chirp8 R128 D32 BPM_0
+Doppler DPU Process. Cycles = 1297315. 
+Test Pass maxError = 6 RefVal = 3532 DpuVal = 3526 percentage = 0.2 ratio = 0.99830
+
+Test #564  start
+scratch: sizeUsed=896 total size=16384
+Test feature: Tx2 Rx4 Chirp8 R128 D32 BPM_1
+Doppler DPU Process. Cycles = 2213053. 
+Test Pass maxError = 6 RefVal = 3547 DpuVal = 3541 percentage = 0.2 ratio = 0.99831
+
+Test #565  start
+scratch: sizeUsed=832 total size=16384
+Test feature: Tx2 Rx4 Chirp32 R256 D32 BPM_0
+Doppler DPU Process. Cycles = 2557482. 
+Test Pass maxError = 7 RefVal = 3951 DpuVal = 3944 percentage = 0.2 ratio = 0.99823
+
+Test #566  start
+scratch: sizeUsed=1088 total size=16384
+Test feature: Tx2 Rx4 Chirp32 R256 D32 BPM_1
+Doppler DPU Process. Cycles = 4394508. 
+Test Pass maxError = 7 RefVal = 3782 DpuVal = 3775 percentage = 0.2 ratio = 0.99815
+
+Test #567  start
+scratch: sizeUsed=800 total size=16384
+Test feature: Tx2 Rx4 Chirp28 R256 D32 BPM_0
+Doppler DPU Process. Cycles = 2625079. 
+Test Pass maxError = 7 RefVal = 3916 DpuVal = 3909 percentage = 0.2 ratio = 0.99821
+
+Test #568  start
+scratch: sizeUsed=1056 total size=16384
+Test feature: Tx2 Rx4 Chirp28 R256 D32 BPM_1
+Doppler DPU Process. Cycles = 4461625. 
+Test Pass maxError = 6 RefVal = 3823 DpuVal = 3817 percentage = 0.2 ratio = 0.99843
+
+Test #569  start
+scratch: sizeUsed=704 total size=16384
+Test feature: Tx2 Rx4 Chirp16 R256 D32 BPM_0
+Doppler DPU Process. Cycles = 2611291. 
+Test Pass maxError = 7 RefVal = 3614 DpuVal = 3607 percentage = 0.2 ratio = 0.99806
+
+Test #570  start
+scratch: sizeUsed=960 total size=16384
+Test feature: Tx2 Rx4 Chirp16 R256 D32 BPM_1
+Doppler DPU Process. Cycles = 4443199. 
+Test Pass maxError = 6 RefVal = 3694 DpuVal = 3688 percentage = 0.2 ratio = 0.99838
+
+Test #571  start
+scratch: sizeUsed=640 total size=16384
+Test feature: Tx2 Rx4 Chirp8 R512 D32 BPM_0
+Doppler DPU Process. Cycles = 5187583. 
+Test Pass maxError = 7 RefVal = 3510 DpuVal = 3503 percentage = 0.2 ratio = 0.99801
+
+Test #572  start
+scratch: sizeUsed=896 total size=16384
+Test feature: Tx2 Rx4 Chirp8 R512 D32 BPM_1
+Doppler DPU Process. Cycles = 8849377. 
+Test Pass maxError = 7 RefVal = 3315 DpuVal = 3308 percentage = 0.2 ratio = 0.99789
+
+Test #573  start
+scratch: sizeUsed=800 total size=16384
+Test feature: Tx2 Rx4 Chirp28 R512 D32 BPM_0
+Doppler DPU Process. Cycles = 5248981. 
+Test Pass maxError = 7 RefVal = 3751 DpuVal = 3744 percentage = 0.2 ratio = 0.99813
+
+Test #574  start
+scratch: sizeUsed=1056 total size=16384
+Test feature: Tx2 Rx4 Chirp28 R512 D32 BPM_1
+Doppler DPU Process. Cycles = 8923003. 
+Test Pass maxError = 7 RefVal = 3914 DpuVal = 3907 percentage = 0.2 ratio = 0.99821
+
+Test #575  start
+scratch: sizeUsed=736 total size=16384
+Test feature: Tx2 Rx4 Chirp20 R512 D32 BPM_0
+Doppler DPU Process. Cycles = 5233129. 
+Test Pass maxError = 7 RefVal = 3819 DpuVal = 3812 percentage = 0.2 ratio = 0.99817
+
+Test #576  start
+scratch: sizeUsed=992 total size=16384
+Test feature: Tx2 Rx4 Chirp20 R512 D32 BPM_1
+Doppler DPU Process. Cycles = 8898427. 
+Test Pass maxError = 7 RefVal = 3931 DpuVal = 3924 percentage = 0.2 ratio = 0.99822
+
+Test #577  start
+scratch: sizeUsed=1664 total size=16384
+Test feature: Tx2 Rx4 Chirp64 R16 D64 BPM_0
+Doppler DPU Process. Cycles = 204924. 
+Test Pass maxError = 6 RefVal = 4057 DpuVal = 4051 percentage = 0.1 ratio = 0.99852
+
+Test #578  start
+scratch: sizeUsed=2176 total size=16384
+Test feature: Tx2 Rx4 Chirp64 R16 D64 BPM_1
+Doppler DPU Process. Cycles = 434124. 
+Test Pass maxError = 8 RefVal = 3965 DpuVal = 3957 percentage = 0.2 ratio = 0.99798
+
+Test #579  start
+scratch: sizeUsed=1632 total size=16384
+Test feature: Tx2 Rx4 Chirp60 R16 D64 BPM_0
+Doppler DPU Process. Cycles = 209425. 
+Test Pass maxError = 5 RefVal = 4013 DpuVal = 4008 percentage = 0.1 ratio = 0.99875
+
+Test #580  start
+scratch: sizeUsed=2144 total size=16384
+Test feature: Tx2 Rx4 Chirp60 R16 D64 BPM_1
+Doppler DPU Process. Cycles = 437053. 
+Test Pass maxError = 6 RefVal = 4020 DpuVal = 4014 percentage = 0.1 ratio = 0.99851
+
+Test #581  start
+scratch: sizeUsed=1408 total size=16384
+Test feature: Tx2 Rx4 Chirp32 R16 D64 BPM_0
+Doppler DPU Process. Cycles = 206275. 
+Test Pass maxError = 6 RefVal = 3980 DpuVal = 3974 percentage = 0.2 ratio = 0.99849
+
+Test #582  start
+scratch: sizeUsed=1920 total size=16384
+Test feature: Tx2 Rx4 Chirp32 R16 D64 BPM_1
+Doppler DPU Process. Cycles = 435139. 
+Test Pass maxError = 6 RefVal = 3825 DpuVal = 3819 percentage = 0.2 ratio = 0.99843
+
+Test #583  start
+scratch: sizeUsed=1280 total size=16384
+Test feature: Tx2 Rx4 Chirp16 R32 D64 BPM_0
+Doppler DPU Process. Cycles = 409423. 
+Test Pass maxError = 6 RefVal = 3603 DpuVal = 3597 percentage = 0.2 ratio = 0.99833
+
+Test #584  start
+scratch: sizeUsed=1792 total size=16384
+Test feature: Tx2 Rx4 Chirp16 R32 D64 BPM_1
+Doppler DPU Process. Cycles = 866005. 
+Test Pass maxError = 6 RefVal = 3819 DpuVal = 3813 percentage = 0.2 ratio = 0.99843
+
+Test #585  start
+scratch: sizeUsed=1632 total size=16384
+Test feature: Tx2 Rx4 Chirp60 R32 D64 BPM_0
+Doppler DPU Process. Cycles = 418639. 
+Test Pass maxError = 6 RefVal = 3934 DpuVal = 3928 percentage = 0.2 ratio = 0.99847
+
+Test #586  start
+scratch: sizeUsed=2144 total size=16384
+Test feature: Tx2 Rx4 Chirp60 R32 D64 BPM_1
+Doppler DPU Process. Cycles = 873895. 
+Test Pass maxError = 6 RefVal = 4013 DpuVal = 4007 percentage = 0.1 ratio = 0.99850
+
+Test #587  start
+scratch: sizeUsed=1568 total size=16384
+Test feature: Tx2 Rx4 Chirp52 R32 D64 BPM_0
+Doppler DPU Process. Cycles = 416893. 
+Test Pass maxError = 48 RefVal = 3679 DpuVal = 3631 percentage = 1.3 ratio = 0.98695
+
+Test #588  start
+scratch: sizeUsed=2080 total size=16384
+Test feature: Tx2 Rx4 Chirp52 R32 D64 BPM_1
+Doppler DPU Process. Cycles = 873025. 
+Test Pass maxError = 5 RefVal = 3997 DpuVal = 3992 percentage = 0.1 ratio = 0.99875
+
+Test #589  start
+scratch: sizeUsed=1408 total size=16384
+Test feature: Tx2 Rx4 Chirp32 R64 D64 BPM_0
+Doppler DPU Process. Cycles = 823759. 
+Test Pass maxError = 6 RefVal = 3924 DpuVal = 3918 percentage = 0.2 ratio = 0.99847
+
+Test #590  start
+scratch: sizeUsed=1920 total size=16384
+Test feature: Tx2 Rx4 Chirp32 R64 D64 BPM_1
+Doppler DPU Process. Cycles = 1737403. 
+Test Pass maxError = 6 RefVal = 3927 DpuVal = 3921 percentage = 0.2 ratio = 0.99847
+
+Test #591  start
+scratch: sizeUsed=1280 total size=16384
+Test feature: Tx2 Rx4 Chirp16 R64 D64 BPM_0
+Doppler DPU Process. Cycles = 817645. 
+Test Pass maxError = 6 RefVal = 3719 DpuVal = 3713 percentage = 0.2 ratio = 0.99839
+
+Test #592  start
+scratch: sizeUsed=1792 total size=16384
+Test feature: Tx2 Rx4 Chirp16 R64 D64 BPM_1
+Doppler DPU Process. Cycles = 1731739. 
+Test Pass maxError = 6 RefVal = 3759 DpuVal = 3753 percentage = 0.2 ratio = 0.99840
+
+Test #593  start
+scratch: sizeUsed=1568 total size=16384
+Test feature: Tx2 Rx4 Chirp52 R64 D64 BPM_0
+Doppler DPU Process. Cycles = 832381. 
+Test Pass maxError = 7 RefVal = 3958 DpuVal = 3951 percentage = 0.2 ratio = 0.99823
+
+Test #594  start
+scratch: sizeUsed=2080 total size=16384
+Test feature: Tx2 Rx4 Chirp52 R64 D64 BPM_1
+Doppler DPU Process. Cycles = 1744621. 
+Test Pass maxError = 7 RefVal = 3817 DpuVal = 3810 percentage = 0.2 ratio = 0.99817
+
+Test #595  start
+scratch: sizeUsed=1664 total size=16384
+Test feature: Tx2 Rx4 Chirp64 R128 D64 BPM_0
+Doppler DPU Process. Cycles = 1634640. 
+Test Pass maxError = 6 RefVal = 3982 DpuVal = 3976 percentage = 0.2 ratio = 0.99849
+
+Test #596  start
+scratch: sizeUsed=2176 total size=16384
+Test feature: Tx2 Rx4 Chirp64 R128 D64 BPM_1
+Doppler DPU Process. Cycles = 3465918. 
+Test Pass maxError = 7 RefVal = 3962 DpuVal = 3955 percentage = 0.2 ratio = 0.99823
+
+Test #597  start
+scratch: sizeUsed=1408 total size=16384
+Test feature: Tx2 Rx4 Chirp32 R128 D64 BPM_0
+Doppler DPU Process. Cycles = 1646779. 
+Test Pass maxError = 7 RefVal = 4011 DpuVal = 4004 percentage = 0.2 ratio = 0.99825
+
+Test #598  start
+scratch: sizeUsed=1920 total size=16384
+Test feature: Tx2 Rx4 Chirp32 R128 D64 BPM_1
+Doppler DPU Process. Cycles = 3475039. 
+Test Pass maxError = 7 RefVal = 3757 DpuVal = 3750 percentage = 0.2 ratio = 0.99814
+
+Test #599  start
+scratch: sizeUsed=1280 total size=16384
+Test feature: Tx2 Rx4 Chirp16 R128 D64 BPM_0
+Doppler DPU Process. Cycles = 1634947. 
+Test Pass maxError = 7 RefVal = 3667 DpuVal = 3660 percentage = 0.2 ratio = 0.99809
+
+Test #600  start
+scratch: sizeUsed=1792 total size=16384
+Test feature: Tx2 Rx4 Chirp16 R128 D64 BPM_1
+Doppler DPU Process. Cycles = 3462745. 
+Test Pass maxError = 7 RefVal = 3744 DpuVal = 3737 percentage = 0.2 ratio = 0.99813
+
+Test #601  start
+scratch: sizeUsed=1664 total size=16384
+Test feature: Tx2 Rx4 Chirp64 R256 D64 BPM_0
+Doppler DPU Process. Cycles = 3268920. 
+Test Pass maxError = 7 RefVal = 3926 DpuVal = 3919 percentage = 0.2 ratio = 0.99822
+
+Test #602  start
+scratch: sizeUsed=2176 total size=16384
+Test feature: Tx2 Rx4 Chirp64 R256 D64 BPM_1
+Doppler DPU Process. Cycles = 6930510. 
+Test Pass maxError = 7 RefVal = 3770 DpuVal = 3763 percentage = 0.2 ratio = 0.99814
+
+Test #603  start
+scratch: sizeUsed=1632 total size=16384
+Test feature: Tx2 Rx4 Chirp60 R256 D64 BPM_0
+Doppler DPU Process. Cycles = 3341539. 
+Test Pass maxError = 6 RefVal = 4059 DpuVal = 4053 percentage = 0.1 ratio = 0.99852
+
+Test #604  start
+scratch: sizeUsed=2144 total size=16384
+Test feature: Tx2 Rx4 Chirp60 R256 D64 BPM_1
+Doppler DPU Process. Cycles = 6985993. 
+Test Pass maxError = 6 RefVal = 4011 DpuVal = 4005 percentage = 0.1 ratio = 0.99850
+
+Test #605  start
+scratch: sizeUsed=1408 total size=16384
+Test feature: Tx2 Rx4 Chirp32 R256 D64 BPM_0
+Doppler DPU Process. Cycles = 3293809. 
+Test Pass maxError = 7 RefVal = 4019 DpuVal = 4012 percentage = 0.2 ratio = 0.99826
+
+Test #606  start
+scratch: sizeUsed=1920 total size=16384
+Test feature: Tx2 Rx4 Chirp32 R256 D64 BPM_1
+Doppler DPU Process. Cycles = 6949255. 
+Test Pass maxError = 7 RefVal = 3799 DpuVal = 3792 percentage = 0.2 ratio = 0.99816
+
+Test #607  start
+scratch: sizeUsed=3328 total size=16384
+Test feature: Tx2 Rx4 Chirp128 R16 D128 BPM_0
+Doppler DPU Process. Cycles = 324691. 
+Test Pass maxError = 7 RefVal = 4042 DpuVal = 4035 percentage = 0.2 ratio = 0.99827
+
+Test #608  start
+scratch: sizeUsed=4352 total size=16384
+Test feature: Tx2 Rx4 Chirp128 R16 D128 BPM_1
+Doppler DPU Process. Cycles = 781747. 
+Test Pass maxError = 5 RefVal = 4026 DpuVal = 4021 percentage = 0.1 ratio = 0.99876
+
+Test #609  start
+scratch: sizeUsed=3296 total size=16384
+Test feature: Tx2 Rx4 Chirp124 R16 D128 BPM_0
+Doppler DPU Process. Cycles = 329781. 
+Test Pass maxError = 6 RefVal = 4165 DpuVal = 4159 percentage = 0.1 ratio = 0.99856
+
+Test #610  start
+scratch: sizeUsed=4320 total size=16384
+Test feature: Tx2 Rx4 Chirp124 R16 D128 BPM_1
+Doppler DPU Process. Cycles = 785259. 
+Test Pass maxError = 6 RefVal = 4060 DpuVal = 4054 percentage = 0.1 ratio = 0.99852
+
+Test #611  start
+scratch: sizeUsed=2816 total size=16384
+Test feature: Tx2 Rx4 Chirp64 R16 D128 BPM_0
+Doppler DPU Process. Cycles = 323431. 
+Test Pass maxError = 6 RefVal = 3972 DpuVal = 3966 percentage = 0.2 ratio = 0.99849
+
+Test #612  start
+scratch: sizeUsed=3840 total size=16384
+Test feature: Tx2 Rx4 Chirp64 R16 D128 BPM_1
+Doppler DPU Process. Cycles = 779209. 
+Test Pass maxError = 6 RefVal = 3925 DpuVal = 3919 percentage = 0.2 ratio = 0.99847
+
+Test #613  start
+scratch: sizeUsed=2560 total size=16384
+Test feature: Tx2 Rx4 Chirp32 R32 D128 BPM_0
+Doppler DPU Process. Cycles = 638539. 
+Test Pass maxError = 7 RefVal = 3746 DpuVal = 3739 percentage = 0.2 ratio = 0.99813
+
+Test #614  start
+scratch: sizeUsed=3584 total size=16384
+Test feature: Tx2 Rx4 Chirp32 R32 D128 BPM_1
+Doppler DPU Process. Cycles = 1550113. 
+Test Pass maxError = 7 RefVal = 3770 DpuVal = 3763 percentage = 0.2 ratio = 0.99814
+
+Test #615  start
+scratch: sizeUsed=3296 total size=16384
+Test feature: Tx2 Rx4 Chirp124 R32 D128 BPM_0
+Doppler DPU Process. Cycles = 657873. 
+Test Pass maxError = 6 RefVal = 4045 DpuVal = 4039 percentage = 0.1 ratio = 0.99852
+
+Test #616  start
+scratch: sizeUsed=4320 total size=16384
+Test feature: Tx2 Rx4 Chirp124 R32 D128 BPM_1
+Doppler DPU Process. Cycles = 1568991. 
+Test Pass maxError = 6 RefVal = 3984 DpuVal = 3978 percentage = 0.2 ratio = 0.99849
+
+Test #617  start
+scratch: sizeUsed=3232 total size=16384
+Test feature: Tx2 Rx4 Chirp116 R32 D128 BPM_0
+Doppler DPU Process. Cycles = 656283. 
+Test Pass maxError = 6 RefVal = 4004 DpuVal = 3998 percentage = 0.1 ratio = 0.99850
+
+Test #618  start
+scratch: sizeUsed=4256 total size=16384
+Test feature: Tx2 Rx4 Chirp116 R32 D128 BPM_1
+Doppler DPU Process. Cycles = 1567653. 
+Test Pass maxError = 6 RefVal = 4016 DpuVal = 4010 percentage = 0.1 ratio = 0.99851
+
+Test #619  start
+scratch: sizeUsed=2816 total size=16384
+Test feature: Tx2 Rx4 Chirp64 R64 D128 BPM_0
+Doppler DPU Process. Cycles = 1289893. 
+Test Pass maxError = 6 RefVal = 3940 DpuVal = 3934 percentage = 0.2 ratio = 0.99848
+
+Test #620  start
+scratch: sizeUsed=3840 total size=16384
+Test feature: Tx2 Rx4 Chirp64 R64 D128 BPM_1
+Doppler DPU Process. Cycles = 3114571. 
+Test Pass maxError = 7 RefVal = 3907 DpuVal = 3900 percentage = 0.2 ratio = 0.99821
+
+Test #621  start
+scratch: sizeUsed=2560 total size=16384
+Test feature: Tx2 Rx4 Chirp32 R64 D128 BPM_0
+Doppler DPU Process. Cycles = 1276231. 
+Test Pass maxError = 7 RefVal = 3810 DpuVal = 3803 percentage = 0.2 ratio = 0.99816
+
+Test #622  start
+scratch: sizeUsed=3584 total size=16384
+Test feature: Tx2 Rx4 Chirp32 R64 D128 BPM_1
+Doppler DPU Process. Cycles = 3099007. 
+Test Pass maxError = 7 RefVal = 3778 DpuVal = 3771 percentage = 0.2 ratio = 0.99815
+
+Test #623  start
+scratch: sizeUsed=3232 total size=16384
+Test feature: Tx2 Rx4 Chirp116 R64 D128 BPM_0
+Doppler DPU Process. Cycles = 1310433. 
+Test Pass maxError = 6 RefVal = 3935 DpuVal = 3929 percentage = 0.2 ratio = 0.99848
+
+Test #624  start
+scratch: sizeUsed=4256 total size=16384
+Test feature: Tx2 Rx4 Chirp116 R64 D128 BPM_1
+Doppler DPU Process. Cycles = 3134673. 
+Test Pass maxError = 7 RefVal = 3914 DpuVal = 3907 percentage = 0.2 ratio = 0.99821
+
+Test #625  start
+scratch: sizeUsed=3328 total size=16384
+Test feature: Tx2 Rx4 Chirp128 R128 D128 BPM_0
+Doppler DPU Process. Cycles = 2592025. 
+Test Pass maxError = 7 RefVal = 4006 DpuVal = 3999 percentage = 0.2 ratio = 0.99825
+
+Test #626  start
+scratch: sizeUsed=4352 total size=16384
+Test feature: Tx2 Rx4 Chirp128 R128 D128 BPM_1
+Doppler DPU Process. Cycles = 6244015. 
+Test Pass maxError = 7 RefVal = 4080 DpuVal = 4073 percentage = 0.2 ratio = 0.99828
+
+Test #627  start
+scratch: sizeUsed=2816 total size=16384
+Test feature: Tx2 Rx4 Chirp64 R128 D128 BPM_0
+Doppler DPU Process. Cycles = 2578717. 
+Test Pass maxError = 6 RefVal = 3768 DpuVal = 3762 percentage = 0.2 ratio = 0.99841
+
+Test #628  start
+scratch: sizeUsed=3840 total size=16384
+Test feature: Tx2 Rx4 Chirp64 R128 D128 BPM_1
+Doppler DPU Process. Cycles = 6228109. 
+Test Pass maxError = 7 RefVal = 3947 DpuVal = 3940 percentage = 0.2 ratio = 0.99823
+
+Test #629  start
+scratch: sizeUsed=2560 total size=16384
+Test feature: Tx2 Rx4 Chirp32 R128 D128 BPM_0
+Doppler DPU Process. Cycles = 2552239. 
+Test Pass maxError = 7 RefVal = 3813 DpuVal = 3806 percentage = 0.2 ratio = 0.99816
+
+Test #630  start
+scratch: sizeUsed=3584 total size=16384
+Test feature: Tx2 Rx4 Chirp32 R128 D128 BPM_1
+Doppler DPU Process. Cycles = 6197227. 
+Test Pass maxError = 6 RefVal = 3828 DpuVal = 3822 percentage = 0.2 ratio = 0.99843
+
+Test #631  start
+scratch: sizeUsed=6656 total size=16384
+Test feature: Tx2 Rx4 Chirp256 R16 D256 BPM_0
+Doppler DPU Process. Cycles = 530881. 
+Test Pass maxError = 6 RefVal = 4255 DpuVal = 4249 percentage = 0.1 ratio = 0.99859
+
+Test #632  start
+scratch: sizeUsed=8704 total size=16384
+Test feature: Tx2 Rx4 Chirp256 R16 D256 BPM_1
+Doppler DPU Process. Cycles = 1441501. 
+Test Pass maxError = 6 RefVal = 4223 DpuVal = 4217 percentage = 0.1 ratio = 0.99858
+
+Test #633  start
+scratch: sizeUsed=6624 total size=16384
+Test feature: Tx2 Rx4 Chirp252 R16 D256 BPM_0
+Doppler DPU Process. Cycles = 535173. 
+Test Pass maxError = 7 RefVal = 4148 DpuVal = 4141 percentage = 0.2 ratio = 0.99831
+
+Test #634  start
+scratch: sizeUsed=8672 total size=16384
+Test feature: Tx2 Rx4 Chirp252 R16 D256 BPM_1
+Doppler DPU Process. Cycles = 1445361. 
+Test Pass maxError = 6 RefVal = 4008 DpuVal = 4002 percentage = 0.1 ratio = 0.99850
+
+Test #635  start
+scratch: sizeUsed=5632 total size=16384
+Test feature: Tx2 Rx4 Chirp128 R16 D256 BPM_0
+Doppler DPU Process. Cycles = 521967. 
+Test Pass maxError = 7 RefVal = 4112 DpuVal = 4105 percentage = 0.2 ratio = 0.99830
+
+Test #636  start
+scratch: sizeUsed=7680 total size=16384
+Test feature: Tx2 Rx4 Chirp128 R16 D256 BPM_1
+Doppler DPU Process. Cycles = 1433127. 
+Test Pass maxError = 7 RefVal = 4040 DpuVal = 4033 percentage = 0.2 ratio = 0.99827
+
+Test #637  start
+scratch: sizeUsed=5120 total size=16384
+Test feature: Tx2 Rx4 Chirp64 R32 D256 BPM_0
+Doppler DPU Process. Cycles = 1028689. 
+Test Pass maxError = 6 RefVal = 3868 DpuVal = 3862 percentage = 0.2 ratio = 0.99845
+
+Test #638  start
+scratch: sizeUsed=7168 total size=16384
+Test feature: Tx2 Rx4 Chirp64 R32 D256 BPM_1
+Doppler DPU Process. Cycles = 2850319. 
+Test Pass maxError = 6 RefVal = 3733 DpuVal = 3727 percentage = 0.2 ratio = 0.99839
+
+Test #639  start
+scratch: sizeUsed=6624 total size=16384
+Test feature: Tx2 Rx4 Chirp252 R32 D256 BPM_0
+Doppler DPU Process. Cycles = 1068471. 
+Test Pass maxError = 7 RefVal = 4133 DpuVal = 4126 percentage = 0.2 ratio = 0.99831
+
+Test #640  start
+scratch: sizeUsed=8672 total size=16384
+Test feature: Tx2 Rx4 Chirp252 R32 D256 BPM_1
+Doppler DPU Process. Cycles = 2889513. 
+Test Pass maxError = 6 RefVal = 4204 DpuVal = 4198 percentage = 0.1 ratio = 0.99857
+
+Test #641  start
+scratch: sizeUsed=6560 total size=16384
+Test feature: Tx2 Rx4 Chirp244 R32 D256 BPM_0
+Doppler DPU Process. Cycles = 1066395. 
+Test Pass maxError = 7 RefVal = 4180 DpuVal = 4173 percentage = 0.2 ratio = 0.99833
+
+Test #642  start
+scratch: sizeUsed=8608 total size=16384
+Test feature: Tx2 Rx4 Chirp244 R32 D256 BPM_1
+Doppler DPU Process. Cycles = 2888931. 
+Test Pass maxError = 6 RefVal = 4207 DpuVal = 4201 percentage = 0.1 ratio = 0.99857
+
+Test #643  start
+scratch: sizeUsed=5632 total size=16384
+Test feature: Tx2 Rx4 Chirp128 R64 D256 BPM_0
+Doppler DPU Process. Cycles = 2083389. 
+Test Pass maxError = 7 RefVal = 4155 DpuVal = 4148 percentage = 0.2 ratio = 0.99832
+
+Test #644  start
+scratch: sizeUsed=7680 total size=16384
+Test feature: Tx2 Rx4 Chirp128 R64 D256 BPM_1
+Doppler DPU Process. Cycles = 5727567. 
+Test Pass maxError = 6 RefVal = 4005 DpuVal = 3999 percentage = 0.1 ratio = 0.99850
+
+Test #645  start
+scratch: sizeUsed=5120 total size=16384
+Test feature: Tx2 Rx4 Chirp64 R64 D256 BPM_0
+Doppler DPU Process. Cycles = 2057185. 
+Test Pass maxError = 7 RefVal = 3761 DpuVal = 3754 percentage = 0.2 ratio = 0.99814
+
+Test #646  start
+scratch: sizeUsed=7168 total size=16384
+Test feature: Tx2 Rx4 Chirp64 R64 D256 BPM_1
+Doppler DPU Process. Cycles = 5699743. 
+Test Pass maxError = 6 RefVal = 3872 DpuVal = 3866 percentage = 0.2 ratio = 0.99845
+
+Test #647  start
+scratch: sizeUsed=6560 total size=16384
+Test feature: Tx2 Rx4 Chirp244 R64 D256 BPM_0
+Doppler DPU Process. Cycles = 2131431. 
+Test Pass maxError = 7 RefVal = 4214 DpuVal = 4207 percentage = 0.2 ratio = 0.99834
+
+Test #648  start
+scratch: sizeUsed=8608 total size=16384
+Test feature: Tx2 Rx4 Chirp244 R64 D256 BPM_1
+Doppler DPU Process. Cycles = 5775627. 
+Test Pass maxError = 7 RefVal = 4221 DpuVal = 4214 percentage = 0.2 ratio = 0.99834
+
+Test #649  start
+scratch: sizeUsed=13312 total size=16384
+Test feature: Tx2 Rx4 Chirp512 R16 D512 BPM_0
+Doppler DPU Process. Cycles = 1052923. 
+Test Pass maxError = 6 RefVal = 4402 DpuVal = 4396 percentage = 0.1 ratio = 0.99864
+
+Test #650  start
+scratch: sizeUsed=17408 total size=16384
+Error! (windowingLog2AbsBuf_end - scratchStart)=17408 > scratch buffer size = 16384
+Test feature: Tx2 Rx4 Chirp512 R16 D512 BPM_1
+SKIPPING THIS TEST
+
+Test #650  start
+scratch: sizeUsed=13280 total size=16384
+Test feature: Tx2 Rx4 Chirp508 R16 D512 BPM_0
+Doppler DPU Process. Cycles = 1057263. 
+Test Pass maxError = 7 RefVal = 4331 DpuVal = 4324 percentage = 0.2 ratio = 0.99838
+
+Test #651  start
+scratch: sizeUsed=17376 total size=16384
+Error! (windowingLog2AbsBuf_end - scratchStart)=17376 > scratch buffer size = 16384
+Test feature: Tx2 Rx4 Chirp508 R16 D512 BPM_1
+SKIPPING THIS TEST
+
+Test #651  start
+scratch: sizeUsed=11264 total size=16384
+Test feature: Tx2 Rx4 Chirp256 R16 D512 BPM_0
+Doppler DPU Process. Cycles = 1029849. 
+Test Pass maxError = 7 RefVal = 3996 DpuVal = 3989 percentage = 0.2 ratio = 0.99825
+
+Test #652  start
+scratch: sizeUsed=15360 total size=16384
+Test feature: Tx2 Rx4 Chirp256 R16 D512 BPM_1
+Doppler DPU Process. Cycles = 2850997. 
+Test Pass maxError = 6 RefVal = 4197 DpuVal = 4191 percentage = 0.1 ratio = 0.99857
+
+Test #653  start
+scratch: sizeUsed=10240 total size=16384
+Test feature: Tx2 Rx4 Chirp128 R32 D512 BPM_0
+Doppler DPU Process. Cycles = 2030659. 
+Test Pass maxError = 6 RefVal = 4084 DpuVal = 4078 percentage = 0.1 ratio = 0.99853
+
+Test #654  start
+scratch: sizeUsed=14336 total size=16384
+Test feature: Tx2 Rx4 Chirp128 R32 D512 BPM_1
+Doppler DPU Process. Cycles = 5671257. 
+Test Pass maxError = 7 RefVal = 4074 DpuVal = 4067 percentage = 0.2 ratio = 0.99828
+
+Test #655  start
+scratch: sizeUsed=13280 total size=16384
+Test feature: Tx2 Rx4 Chirp508 R32 D512 BPM_0
+Doppler DPU Process. Cycles = 2111625. 
+Test Pass maxError = 7 RefVal = 4278 DpuVal = 4271 percentage = 0.2 ratio = 0.99836
+
+Test #656  start
+scratch: sizeUsed=17376 total size=16384
+Error! (windowingLog2AbsBuf_end - scratchStart)=17376 > scratch buffer size = 16384
+Test feature: Tx2 Rx4 Chirp508 R32 D512 BPM_1
+SKIPPING THIS TEST
+
+Test #656  start
+scratch: sizeUsed=13216 total size=16384
+Test feature: Tx2 Rx4 Chirp500 R32 D512 BPM_0
+Doppler DPU Process. Cycles = 2109063. 
+Test Pass maxError = 8 RefVal = 4045 DpuVal = 4037 percentage = 0.2 ratio = 0.99802
+
+Test #657  start
+scratch: sizeUsed=17312 total size=16384
+Error! (windowingLog2AbsBuf_end - scratchStart)=17312 > scratch buffer size = 16384
+Test feature: Tx2 Rx4 Chirp500 R32 D512 BPM_1
+SKIPPING THIS TEST
+
+Test #657  start
+scratch: sizeUsed=416 total size=16384
+Test feature: Tx3 Rx4 Chirp16 R16 D16 BPM_0
+Doppler DPU Process. Cycles = 190830. 
+Test Pass maxError = 5 RefVal = 2821 DpuVal = 2816 percentage = 0.2 ratio = 0.99823
+
+Test #658  start
+scratch: sizeUsed=384 total size=16384
+Test feature: Tx3 Rx4 Chirp12 R16 D16 BPM_0
+Doppler DPU Process. Cycles = 197815. 
+Test Pass maxError = 5 RefVal = 2806 DpuVal = 2801 percentage = 0.2 ratio = 0.99822
+
+Test #659  start
+scratch: sizeUsed=352 total size=16384
+Test feature: Tx3 Rx4 Chirp8 R16 D16 BPM_0
+Doppler DPU Process. Cycles = 197269. 
+Test Pass maxError = 5 RefVal = 2731 DpuVal = 2726 percentage = 0.2 ratio = 0.99817
+
+Test #660  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx3 Rx4 Chirp4 R32 D16 BPM_0
+Doppler DPU Process. Cycles = 394633. 
+Test Pass maxError = 5 RefVal = 2464 DpuVal = 2459 percentage = 0.2 ratio = 0.99797
+
+Test #661  start
+scratch: sizeUsed=384 total size=16384
+Test feature: Tx3 Rx4 Chirp12 R32 D16 BPM_0
+Doppler DPU Process. Cycles = 395605. 
+Test Pass maxError = 5 RefVal = 2738 DpuVal = 2733 percentage = 0.2 ratio = 0.99817
+
+Test #662  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx3 Rx4 Chirp4 R32 D16 BPM_0
+Doppler DPU Process. Cycles = 394045. 
+Test Pass maxError = 5 RefVal = 2633 DpuVal = 2628 percentage = 0.2 ratio = 0.99810
+
+Test #663  start
+scratch: sizeUsed=352 total size=16384
+Test feature: Tx3 Rx4 Chirp8 R64 D16 BPM_0
+Doppler DPU Process. Cycles = 785833. 
+Test Pass maxError = 6 RefVal = 2591 DpuVal = 2585 percentage = 0.2 ratio = 0.99768
+
+Test #664  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx3 Rx4 Chirp4 R64 D16 BPM_0
+Doppler DPU Process. Cycles = 788047. 
+Test Pass maxError = 5 RefVal = 2663 DpuVal = 2658 percentage = 0.2 ratio = 0.99812
+
+Test #665  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx3 Rx4 Chirp4 R64 D16 BPM_0
+Doppler DPU Process. Cycles = 788551. 
+Test Pass maxError = 5 RefVal = 2515 DpuVal = 2510 percentage = 0.2 ratio = 0.99801
+
+Test #666  start
+scratch: sizeUsed=416 total size=16384
+Test feature: Tx3 Rx4 Chirp16 R128 D16 BPM_0
+Doppler DPU Process. Cycles = 1523574. 
+Test Pass maxError = 5 RefVal = 2829 DpuVal = 2824 percentage = 0.2 ratio = 0.99823
+
+Test #667  start
+scratch: sizeUsed=352 total size=16384
+Test feature: Tx3 Rx4 Chirp8 R128 D16 BPM_0
+Doppler DPU Process. Cycles = 1569973. 
+Test Pass maxError = 6 RefVal = 2659 DpuVal = 2653 percentage = 0.2 ratio = 0.99774
+
+Test #668  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx3 Rx4 Chirp4 R128 D16 BPM_0
+Doppler DPU Process. Cycles = 1575361. 
+Test Pass maxError = 5 RefVal = 2520 DpuVal = 2515 percentage = 0.2 ratio = 0.99802
+
+Test #669  start
+scratch: sizeUsed=416 total size=16384
+Test feature: Tx3 Rx4 Chirp16 R256 D16 BPM_0
+Doppler DPU Process. Cycles = 3046482. 
+Test Pass maxError = 20 RefVal = 2578 DpuVal = 2558 percentage = 0.8 ratio = 0.99224
+
+Test #670  start
+scratch: sizeUsed=384 total size=16384
+Test feature: Tx3 Rx4 Chirp12 R256 D16 BPM_0
+Doppler DPU Process. Cycles = 3158083. 
+Test Pass maxError = 6 RefVal = 2738 DpuVal = 2732 percentage = 0.2 ratio = 0.99781
+
+Test #671  start
+scratch: sizeUsed=352 total size=16384
+Test feature: Tx3 Rx4 Chirp8 R256 D16 BPM_0
+Doppler DPU Process. Cycles = 3139675. 
+Test Pass maxError = 6 RefVal = 2619 DpuVal = 2613 percentage = 0.2 ratio = 0.99771
+
+Test #672  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx3 Rx4 Chirp4 R512 D16 BPM_0
+Doppler DPU Process. Cycles = 6300091. 
+Test Pass maxError = 31 RefVal = 2435 DpuVal = 2404 percentage = 1.3 ratio = 0.98727
+
+Test #673  start
+scratch: sizeUsed=384 total size=16384
+Test feature: Tx3 Rx4 Chirp12 R512 D16 BPM_0
+Doppler DPU Process. Cycles = 6315415. 
+Test Pass maxError = 5 RefVal = 3019 DpuVal = 3014 percentage = 0.2 ratio = 0.99834
+
+Test #674  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx3 Rx4 Chirp4 R512 D16 BPM_0
+Doppler DPU Process. Cycles = 6300547. 
+Test Pass maxError = 6 RefVal = 2703 DpuVal = 2697 percentage = 0.2 ratio = 0.99778
+
+Test #675  start
+scratch: sizeUsed=352 total size=16384
+Test feature: Tx3 Rx4 Chirp8 R1024 D16 BPM_0
+Doppler DPU Process. Cycles = 12556909. 
+Test Pass maxError = 6 RefVal = 2661 DpuVal = 2655 percentage = 0.2 ratio = 0.99775
+
+Test #676  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx3 Rx4 Chirp4 R1024 D16 BPM_0
+Doppler DPU Process. Cycles = 12599869. 
+Test Pass maxError = 6 RefVal = 2527 DpuVal = 2521 percentage = 0.2 ratio = 0.99763
+
+Test #677  start
+scratch: sizeUsed=320 total size=16384
+Test feature: Tx3 Rx4 Chirp4 R1024 D16 BPM_0
+Doppler DPU Process. Cycles = 12599929. 
+Test Pass maxError = 6 RefVal = 2491 DpuVal = 2485 percentage = 0.2 ratio = 0.99759
+
+Test #678  start
+scratch: sizeUsed=832 total size=16384
+Test feature: Tx3 Rx4 Chirp32 R16 D32 BPM_0
+Doppler DPU Process. Cycles = 234774. 
+Test Pass maxError = 4 RefVal = 2929 DpuVal = 2925 percentage = 0.1 ratio = 0.99863
+
+Test #679  start
+scratch: sizeUsed=800 total size=16384
+Test feature: Tx3 Rx4 Chirp28 R16 D32 BPM_0
+Doppler DPU Process. Cycles = 241525. 
+Test Pass maxError = 4 RefVal = 2911 DpuVal = 2907 percentage = 0.1 ratio = 0.99863
+
+Test #680  start
+scratch: sizeUsed=704 total size=16384
+Test feature: Tx3 Rx4 Chirp16 R16 D32 BPM_0
+Doppler DPU Process. Cycles = 239677. 
+Test Pass maxError = 5 RefVal = 2652 DpuVal = 2647 percentage = 0.2 ratio = 0.99811
+
+Test #681  start
+scratch: sizeUsed=640 total size=16384
+Test feature: Tx3 Rx4 Chirp8 R32 D32 BPM_0
+Doppler DPU Process. Cycles = 476425. 
+Test Pass maxError = 5 RefVal = 2731 DpuVal = 2726 percentage = 0.2 ratio = 0.99817
+
+Test #682  start
+scratch: sizeUsed=800 total size=16384
+Test feature: Tx3 Rx4 Chirp28 R32 D32 BPM_0
+Doppler DPU Process. Cycles = 481801. 
+Test Pass maxError = 5 RefVal = 2854 DpuVal = 2849 percentage = 0.2 ratio = 0.99825
+
+Test #683  start
+scratch: sizeUsed=736 total size=16384
+Test feature: Tx3 Rx4 Chirp20 R32 D32 BPM_0
+Doppler DPU Process. Cycles = 479875. 
+Test Pass maxError = 5 RefVal = 2869 DpuVal = 2864 percentage = 0.2 ratio = 0.99826
+
+Test #684  start
+scratch: sizeUsed=704 total size=16384
+Test feature: Tx3 Rx4 Chirp16 R64 D32 BPM_0
+Doppler DPU Process. Cycles = 957379. 
+Test Pass maxError = 5 RefVal = 2643 DpuVal = 2638 percentage = 0.2 ratio = 0.99811
+
+Test #685  start
+scratch: sizeUsed=640 total size=16384
+Test feature: Tx3 Rx4 Chirp8 R64 D32 BPM_0
+Doppler DPU Process. Cycles = 952111. 
+Test Pass maxError = 6 RefVal = 2671 DpuVal = 2665 percentage = 0.2 ratio = 0.99775
+
+Test #686  start
+scratch: sizeUsed=736 total size=16384
+Test feature: Tx3 Rx4 Chirp20 R64 D32 BPM_0
+Doppler DPU Process. Cycles = 960169. 
+Test Pass maxError = 6 RefVal = 2882 DpuVal = 2876 percentage = 0.2 ratio = 0.99792
+
+Test #687  start
+scratch: sizeUsed=832 total size=16384
+Test feature: Tx3 Rx4 Chirp32 R128 D32 BPM_0
+Doppler DPU Process. Cycles = 1875270. 
+Test Pass maxError = 6 RefVal = 2819 DpuVal = 2813 percentage = 0.2 ratio = 0.99787
+
+Test #688  start
+scratch: sizeUsed=704 total size=16384
+Test feature: Tx3 Rx4 Chirp16 R128 D32 BPM_0
+Doppler DPU Process. Cycles = 1914997. 
+Test Pass maxError = 6 RefVal = 2744 DpuVal = 2738 percentage = 0.2 ratio = 0.99781
+
+Test #689  start
+scratch: sizeUsed=640 total size=16384
+Test feature: Tx3 Rx4 Chirp8 R128 D32 BPM_0
+Doppler DPU Process. Cycles = 1903009. 
+Test Pass maxError = 5 RefVal = 2707 DpuVal = 2702 percentage = 0.2 ratio = 0.99815
+
+Test #690  start
+scratch: sizeUsed=832 total size=16384
+Test feature: Tx3 Rx4 Chirp32 R256 D32 BPM_0
+Doppler DPU Process. Cycles = 3749862. 
+Test Pass maxError = 6 RefVal = 2840 DpuVal = 2834 percentage = 0.2 ratio = 0.99789
+
+Test #691  start
+scratch: sizeUsed=800 total size=16384
+Test feature: Tx3 Rx4 Chirp28 R256 D32 BPM_0
+Doppler DPU Process. Cycles = 3848245. 
+Test Pass maxError = 6 RefVal = 2899 DpuVal = 2893 percentage = 0.2 ratio = 0.99793
+
+Test #692  start
+scratch: sizeUsed=704 total size=16384
+Test feature: Tx3 Rx4 Chirp16 R256 D32 BPM_0
+Doppler DPU Process. Cycles = 3828253. 
+Test Pass maxError = 7 RefVal = 2789 DpuVal = 2782 percentage = 0.3 ratio = 0.99749
+
+Test #693  start
+scratch: sizeUsed=640 total size=16384
+Test feature: Tx3 Rx4 Chirp8 R512 D32 BPM_0
+Doppler DPU Process. Cycles = 7610173. 
+Test Pass maxError = 8 RefVal = 2683 DpuVal = 2675 percentage = 0.3 ratio = 0.99702
+
+Test #694  start
+scratch: sizeUsed=800 total size=16384
+Test feature: Tx3 Rx4 Chirp28 R512 D32 BPM_0
+Doppler DPU Process. Cycles = 7696135. 
+Test Pass maxError = 7 RefVal = 2850 DpuVal = 2843 percentage = 0.2 ratio = 0.99754
+
+Test #695  start
+scratch: sizeUsed=736 total size=16384
+Test feature: Tx3 Rx4 Chirp20 R512 D32 BPM_0
+Doppler DPU Process. Cycles = 7674247. 
+Test Pass maxError = 6 RefVal = 2813 DpuVal = 2807 percentage = 0.2 ratio = 0.99787
+
+Test #696  start
+scratch: sizeUsed=1664 total size=16384
+Test feature: Tx3 Rx4 Chirp64 R16 D64 BPM_0
+Doppler DPU Process. Cycles = 299772. 
+Test Pass maxError = 5 RefVal = 3087 DpuVal = 3082 percentage = 0.2 ratio = 0.99838
+
+Test #697  start
+scratch: sizeUsed=1632 total size=16384
+Test feature: Tx3 Rx4 Chirp60 R16 D64 BPM_0
+Doppler DPU Process. Cycles = 307189. 
+Test Pass maxError = 6 RefVal = 3081 DpuVal = 3075 percentage = 0.2 ratio = 0.99805
+
+Test #698  start
+scratch: sizeUsed=1408 total size=16384
+Test feature: Tx3 Rx4 Chirp32 R16 D64 BPM_0
+Doppler DPU Process. Cycles = 302503. 
+Test Pass maxError = 4 RefVal = 3104 DpuVal = 3100 percentage = 0.1 ratio = 0.99871
+
+Test #699  start
+scratch: sizeUsed=1280 total size=16384
+Test feature: Tx3 Rx4 Chirp16 R32 D64 BPM_0
+Doppler DPU Process. Cycles = 599137. 
+Test Pass maxError = 6 RefVal = 2774 DpuVal = 2768 percentage = 0.2 ratio = 0.99784
+
+Test #700  start
+scratch: sizeUsed=1632 total size=16384
+Test feature: Tx3 Rx4 Chirp60 R32 D64 BPM_0
+Doppler DPU Process. Cycles = 612955. 
+Test Pass maxError = 5 RefVal = 3060 DpuVal = 3055 percentage = 0.2 ratio = 0.99837
+
+Test #701  start
+scratch: sizeUsed=1568 total size=16384
+Test feature: Tx3 Rx4 Chirp52 R32 D64 BPM_0
+Doppler DPU Process. Cycles = 610453. 
+Test Pass maxError = 6 RefVal = 2901 DpuVal = 2895 percentage = 0.2 ratio = 0.99793
+
+Test #702  start
+scratch: sizeUsed=1408 total size=16384
+Test feature: Tx3 Rx4 Chirp32 R64 D64 BPM_0
+Doppler DPU Process. Cycles = 1206703. 
+Test Pass maxError = 6 RefVal = 2980 DpuVal = 2974 percentage = 0.2 ratio = 0.99799
+
+Test #703  start
+scratch: sizeUsed=1280 total size=16384
+Test feature: Tx3 Rx4 Chirp16 R64 D64 BPM_0
+Doppler DPU Process. Cycles = 1197499. 
+Test Pass maxError = 6 RefVal = 2741 DpuVal = 2735 percentage = 0.2 ratio = 0.99781
+
+Test #704  start
+scratch: sizeUsed=1568 total size=16384
+Test feature: Tx3 Rx4 Chirp52 R64 D64 BPM_0
+Doppler DPU Process. Cycles = 1219945. 
+Test Pass maxError = 6 RefVal = 2910 DpuVal = 2904 percentage = 0.2 ratio = 0.99794
+
+Test #705  start
+scratch: sizeUsed=1664 total size=16384
+Test feature: Tx3 Rx4 Chirp64 R128 D64 BPM_0
+Doppler DPU Process. Cycles = 2394336. 
+Test Pass maxError = 5 RefVal = 2970 DpuVal = 2965 percentage = 0.2 ratio = 0.99832
+
+Test #706  start
+scratch: sizeUsed=1408 total size=16384
+Test feature: Tx3 Rx4 Chirp32 R128 D64 BPM_0
+Doppler DPU Process. Cycles = 2412733. 
+Test Pass maxError = 7 RefVal = 2949 DpuVal = 2942 percentage = 0.2 ratio = 0.99763
+
+Test #707  start
+scratch: sizeUsed=1280 total size=16384
+Test feature: Tx3 Rx4 Chirp16 R128 D64 BPM_0
+Doppler DPU Process. Cycles = 2394241. 
+Test Pass maxError = 6 RefVal = 2694 DpuVal = 2688 percentage = 0.2 ratio = 0.99777
+
+Test #708  start
+scratch: sizeUsed=1664 total size=16384
+Test feature: Tx3 Rx4 Chirp64 R256 D64 BPM_0
+Doppler DPU Process. Cycles = 4787856. 
+Test Pass maxError = 7 RefVal = 2902 DpuVal = 2895 percentage = 0.2 ratio = 0.99759
+
+Test #709  start
+scratch: sizeUsed=1632 total size=16384
+Test feature: Tx3 Rx4 Chirp60 R256 D64 BPM_0
+Doppler DPU Process. Cycles = 4896973. 
+Test Pass maxError = 6 RefVal = 3034 DpuVal = 3028 percentage = 0.2 ratio = 0.99802
+
+Test #710  start
+scratch: sizeUsed=1408 total size=16384
+Test feature: Tx3 Rx4 Chirp32 R256 D64 BPM_0
+Doppler DPU Process. Cycles = 4824607. 
+Test Pass maxError = 5 RefVal = 2925 DpuVal = 2920 percentage = 0.2 ratio = 0.99829
+
+Test #711  start
+scratch: sizeUsed=3328 total size=16384
+Test feature: Tx3 Rx4 Chirp128 R16 D128 BPM_0
+Doppler DPU Process. Cycles = 475981. 
+Test Pass maxError = 7 RefVal = 3033 DpuVal = 3026 percentage = 0.2 ratio = 0.99769
+
+Test #712  start
+scratch: sizeUsed=3296 total size=16384
+Test feature: Tx3 Rx4 Chirp124 R16 D128 BPM_0
+Doppler DPU Process. Cycles = 483339. 
+Test Pass maxError = 5 RefVal = 3056 DpuVal = 3051 percentage = 0.2 ratio = 0.99836
+
+Test #713  start
+scratch: sizeUsed=2816 total size=16384
+Test feature: Tx3 Rx4 Chirp64 R16 D128 BPM_0
+Doppler DPU Process. Cycles = 473353. 
+Test Pass maxError = 5 RefVal = 2877 DpuVal = 2872 percentage = 0.2 ratio = 0.99826
+
+Test #714  start
+scratch: sizeUsed=2560 total size=16384
+Test feature: Tx3 Rx4 Chirp32 R32 D128 BPM_0
+Doppler DPU Process. Cycles = 936457. 
+Test Pass maxError = 6 RefVal = 2827 DpuVal = 2821 percentage = 0.2 ratio = 0.99788
+
+Test #715  start
+scratch: sizeUsed=3296 total size=16384
+Test feature: Tx3 Rx4 Chirp124 R32 D128 BPM_0
+Doppler DPU Process. Cycles = 965577. 
+Test Pass maxError = 5 RefVal = 2869 DpuVal = 2864 percentage = 0.2 ratio = 0.99826
+
+Test #716  start
+scratch: sizeUsed=3232 total size=16384
+Test feature: Tx3 Rx4 Chirp116 R32 D128 BPM_0
+Doppler DPU Process. Cycles = 962655. 
+Test Pass maxError = 6 RefVal = 2995 DpuVal = 2989 percentage = 0.2 ratio = 0.99800
+
+Test #717  start
+scratch: sizeUsed=2816 total size=16384
+Test feature: Tx3 Rx4 Chirp64 R64 D128 BPM_0
+Doppler DPU Process. Cycles = 1892503. 
+Test Pass maxError = 7 RefVal = 2935 DpuVal = 2928 percentage = 0.2 ratio = 0.99761
+
+Test #718  start
+scratch: sizeUsed=2560 total size=16384
+Test feature: Tx3 Rx4 Chirp32 R64 D128 BPM_0
+Doppler DPU Process. Cycles = 1872715. 
+Test Pass maxError = 6 RefVal = 2760 DpuVal = 2754 percentage = 0.2 ratio = 0.99783
+
+Test #719  start
+scratch: sizeUsed=3232 total size=16384
+Test feature: Tx3 Rx4 Chirp116 R64 D128 BPM_0
+Doppler DPU Process. Cycles = 1924269. 
+Test Pass maxError = 6 RefVal = 3021 DpuVal = 3015 percentage = 0.2 ratio = 0.99801
+
+Test #720  start
+scratch: sizeUsed=3328 total size=16384
+Test feature: Tx3 Rx4 Chirp128 R128 D128 BPM_0
+Doppler DPU Process. Cycles = 3803803. 
+Test Pass maxError = 6 RefVal = 2985 DpuVal = 2979 percentage = 0.2 ratio = 0.99799
+
+Test #721  start
+scratch: sizeUsed=2816 total size=16384
+Test feature: Tx3 Rx4 Chirp64 R128 D128 BPM_0
+Doppler DPU Process. Cycles = 3784033. 
+Test Pass maxError = 7 RefVal = 3055 DpuVal = 3048 percentage = 0.2 ratio = 0.99771
+
+Test #722  start
+scratch: sizeUsed=2560 total size=16384
+Test feature: Tx3 Rx4 Chirp32 R128 D128 BPM_0
+Doppler DPU Process. Cycles = 3744589. 
+Test Pass maxError = 8 RefVal = 2952 DpuVal = 2944 percentage = 0.3 ratio = 0.99729
+
+Test #723  start
+scratch: sizeUsed=6656 total size=16384
+Test feature: Tx3 Rx4 Chirp256 R16 D256 BPM_0
+Doppler DPU Process. Cycles = 778051. 
+Test Pass maxError = 6 RefVal = 3133 DpuVal = 3127 percentage = 0.2 ratio = 0.99808
+
+Test #724  start
+scratch: sizeUsed=6624 total size=16384
+Test feature: Tx3 Rx4 Chirp252 R16 D256 BPM_0
+Doppler DPU Process. Cycles = 784155. 
+Test Pass maxError = 6 RefVal = 3083 DpuVal = 3077 percentage = 0.2 ratio = 0.99805
+
+Test #725  start
+scratch: sizeUsed=5632 total size=16384
+Test feature: Tx3 Rx4 Chirp128 R16 D256 BPM_0
+Doppler DPU Process. Cycles = 765435. 
+Test Pass maxError = 6 RefVal = 2994 DpuVal = 2988 percentage = 0.2 ratio = 0.99800
+
+Test #726  start
+scratch: sizeUsed=5120 total size=16384
+Test feature: Tx3 Rx4 Chirp64 R32 D256 BPM_0
+Doppler DPU Process. Cycles = 1508203. 
+Test Pass maxError = 6 RefVal = 2919 DpuVal = 2913 percentage = 0.2 ratio = 0.99794
+
+Test #727  start
+scratch: sizeUsed=6624 total size=16384
+Test feature: Tx3 Rx4 Chirp252 R32 D256 BPM_0
+Doppler DPU Process. Cycles = 1566825. 
+Test Pass maxError = 7 RefVal = 3152 DpuVal = 3145 percentage = 0.2 ratio = 0.99778
+
+Test #728  start
+scratch: sizeUsed=6560 total size=16384
+Test feature: Tx3 Rx4 Chirp244 R32 D256 BPM_0
+Doppler DPU Process. Cycles = 1564893. 
+Test Pass maxError = 5 RefVal = 3174 DpuVal = 3169 percentage = 0.2 ratio = 0.99842
+
+Test #729  start
+scratch: sizeUsed=5632 total size=16384
+Test feature: Tx3 Rx4 Chirp128 R64 D256 BPM_0
+Doppler DPU Process. Cycles = 3056157. 
+Test Pass maxError = 9 RefVal = 2765 DpuVal = 2774 percentage = 0.3 ratio = 1.00326
+
+Test #730  start
+scratch: sizeUsed=5120 total size=16384
+Test feature: Tx3 Rx4 Chirp64 R64 D256 BPM_0
+Doppler DPU Process. Cycles = 3015943. 
+Test Pass maxError = 5 RefVal = 2920 DpuVal = 2915 percentage = 0.2 ratio = 0.99829
+
+Test #731  start
+scratch: sizeUsed=6560 total size=16384
+Test feature: Tx3 Rx4 Chirp244 R64 D256 BPM_0
+Doppler DPU Process. Cycles = 3127713. 
+Test Pass maxError = 6 RefVal = 3157 DpuVal = 3151 percentage = 0.2 ratio = 0.99810
+
+Test #732  start
+scratch: sizeUsed=13312 total size=16384
+Test feature: Tx3 Rx4 Chirp512 R16 D512 BPM_0
+Doppler DPU Process. Cycles = 1547059. 
+Test Pass maxError = 6 RefVal = 3208 DpuVal = 3202 percentage = 0.2 ratio = 0.99813
+
+Test #733  start
+scratch: sizeUsed=13280 total size=16384
+Test feature: Tx3 Rx4 Chirp508 R16 D512 BPM_0
+Doppler DPU Process. Cycles = 1554147. 
+Test Pass maxError = 6 RefVal = 3245 DpuVal = 3239 percentage = 0.2 ratio = 0.99815
+
+Test #734  start
+scratch: sizeUsed=11264 total size=16384
+Test feature: Tx3 Rx4 Chirp256 R16 D512 BPM_0
+Doppler DPU Process. Cycles = 1513287. 
+Test Pass maxError = 6 RefVal = 3126 DpuVal = 3120 percentage = 0.2 ratio = 0.99808
+
+Test #735  start
+scratch: sizeUsed=10240 total size=16384
+Test feature: Tx3 Rx4 Chirp128 R32 D512 BPM_0
+Doppler DPU Process. Cycles = 2983009. 
+Test Pass maxError = 6 RefVal = 3064 DpuVal = 3058 percentage = 0.2 ratio = 0.99804
+
+Test #736  start
+scratch: sizeUsed=13280 total size=16384
+Test feature: Tx3 Rx4 Chirp508 R32 D512 BPM_0
+Doppler DPU Process. Cycles = 3104157. 
+Test Pass maxError = 6 RefVal = 3174 DpuVal = 3168 percentage = 0.2 ratio = 0.99811
+
+Test #737  start
+scratch: sizeUsed=13216 total size=16384
+Test feature: Tx3 Rx4 Chirp500 R32 D512 BPM_0
+Doppler DPU Process. Cycles = 3102469. 
+Test Pass maxError = 6 RefVal = 3175 DpuVal = 3169 percentage = 0.2 ratio = 0.99811
+
+----------------------------
+Run 738 tests. Maximum error is 77
+All Tests PASSED!
+Feature: doppler_DPU: Passed
+Test Finished
+Value read from Global variable (MCPI_Result): 0
+Test Failure Signature: 0
+Test Log Messages: 
+Feature tested: doppler_DPU: Passed
+
+
+shutting down py4j gw server.
+
+
+**************************************************
+Terminating the debug session and Shutting down gateway.
+**************************************************
+
+**************************************************
+Test case execution completed
+**************************************************
+
+**************************************************
+Testcase Result : PASS
+**************************************************

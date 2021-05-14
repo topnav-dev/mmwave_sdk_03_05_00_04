@@ -1,0 +1,7355 @@
+pre script = /home/lte_phy/ti/mcpi_tf/mmwave_sdk_test/mcpitf_scripts/mmwave_sdk/setup.py
+
+
+cmd: python /home/lte_phy/ti/mcpi_tf/mmwave_sdk_test/mcpitf_scripts/mmwave_sdk/setup.py uda0227080_hs-iwr68
+eth008 Board details:
+IP address: 10.218.113.74
+
+Port: 17494
+
+connecting...
+Relay states 8->1 : 01010101
+3 off
+4 off
+Relay states 8->1 : 01010001
+3 on
+Relay states 8->1 : 01010101
+exit
+Disconnected
+Pre-Script returned: Success
+**************************************************
+Testcase mods & parameters invoked:
+**************************************************
+Two core test case: None (this is not a two core testcase)
+
+**************************************************
+Copying test case files from the Build server
+**************************************************
+Testdata possible location 1: http://gtjenkins.itg.ti.com/nightly_builds/mmwave_sdk-dev/313-2020-09-23_16-37-34/artifacts/mmwave_sdk/packages/ti/datapath/dpc/objectdetection/objdetdsp/testdata
+
+
+Testdata directory was not found on Testdata possible location 1
+
+
+Testdata possible location 2: http://gtjenkins.itg.ti.com/nightly_builds/mmwave_sdk-dev/313-2020-09-23_16-37-34/artifacts/test/mmwave_sdk/packages/ti/datapath/dpc/objectdetection/objdetdsp/test/testdata
+
+
+Copy-To local testcase data path is: /home/lte_phy/ti/mcpi_tf/mcpi_testframework_1_50_00_01/test/temp/mmWave_SDK___hs_iwr68xx_sdk03.05.00_Test_Plan___mmwave-sdk-03-05-00-2020-09-23-19-04-16_2020_09_23_18_04_16/testdata
+
+Test case data file xwr18xx_data_path_test_config.bin found on server for downloading
+Test case data file xwr16xx_data_path_test_config.bin found on server for downloading
+Test case data file xwr68xx_data_path_test_config.bin found on server for downloading
+Call to copy_testcase_binary:
+TCP: http://gtjenkins.itg.ti.com/nightly_builds/mmwave_sdk-dev/313-2020-09-23_16-37-34/artifacts/test/mmwave_sdk/packages/ti/datapath/dpc/objectdetection/objdetdsp/test; /home/lte_phy/ti/mcpi_tf/mcpi_testframework_1_50_00_01/test/temp/mmWave_SDK___hs_iwr68xx_sdk03.05.00_Test_Plan___mmwave-sdk-03-05-00-2020-09-23-19-04-16_2020_09_23_18_04_16
+
+Copying testcase binary file from http://gtjenkins.itg.ti.com/nightly_builds/mmwave_sdk-dev/313-2020-09-23_16-37-34/artifacts/test/mmwave_sdk/packages/ti/datapath/dpc/objectdetection/objdetdsp/test/xwr68xx_objectdetection_test_dss.xe674 to /home/lte_phy/ti/mcpi_tf/mcpi_testframework_1_50_00_01/test/temp/mmWave_SDK___hs_iwr68xx_sdk03.05.00_Test_Plan___mmwave-sdk-03-05-00-2020-09-23-19-04-16_2020_09_23_18_04_16 using command: 
+wget -e robots=off --no-proxy -N -T 30 -t 2 -P /home/lte_phy/ti/mcpi_tf/mcpi_testframework_1_50_00_01/test/temp/mmWave_SDK___hs_iwr68xx_sdk03.05.00_Test_Plan___mmwave-sdk-03-05-00-2020-09-23-19-04-16_2020_09_23_18_04_16 http://gtjenkins.itg.ti.com/nightly_builds/mmwave_sdk-dev/313-2020-09-23_16-37-34/artifacts/test/mmwave_sdk/packages/ti/datapath/dpc/objectdetection/objdetdsp/test/xwr68xx_objectdetection_test_dss.xe674
+**************************************************
+Executing Testcase:/home/lte_phy/ti/mcpi_tf/mcpi_testframework_1_50_00_01/test/temp/mmWave_SDK___hs_iwr68xx_sdk03.05.00_Test_Plan___mmwave-sdk-03-05-00-2020-09-23-19-04-16_2020_09_23_18_04_16/xwr68xx_objectdetection_test_dss.xe674
+**************************************************
+Checking if Py4J Gateway server has started...
+Py4J Gateway Server is Started
+amk: a path in cpuList is Texas Instruments XDS110 USB Debug Probe_0/DEBUGSSM_0
+amk: a path in cpuList is Texas Instruments XDS110 USB Debug Probe_0/CS_DAP_0
+amk: a path in cpuList is Texas Instruments XDS110 USB Debug Probe_0/Cortex_R4_0
+amk: a path in cpuList is Texas Instruments XDS110 USB Debug Probe_0/CSETB_0
+amk: a path in cpuList is Texas Instruments XDS110 USB Debug Probe_0/IcePick_M_0
+amk: a path in cpuList is Texas Instruments XDS110 USB Debug Probe_0/C674X_0
+DSS test case opening debug session.
+
+cr4ctl = 0x0
+
+Loading binary to the DUT (no binary args updated):/home/lte_phy/ti/mcpi_tf/mcpi_testframework_1_50_00_01/test/temp/mmWave_SDK___hs_iwr68xx_sdk03.05.00_Test_Plan___mmwave-sdk-03-05-00-2020-09-23-19-04-16_2020_09_23_18_04_16/xwr68xx_objectdetection_test_dss.xe674
+binary path = /home/lte_phy/ti/mcpi_tf/mcpi_testframework_1_50_00_01/test/temp/mmWave_SDK___hs_iwr68xx_sdk03.05.00_Test_Plan___mmwave-sdk-03-05-00-2020-09-23-19-04-16_2020_09_23_18_04_16/xwr68xx_objectdetection_test_dss.xe674
+
+total CCS time = 1706
+
+
+**************************************************
+CIO Log captured for the testcase
+**************************************************
+148 Tests to be run
+
+Number of antennas: Ntx=1, Nrx=1
+Number of antennas: Ntx=1, Nrx=1
+Number of antennas: Ntx=1, Nrx=1
+Number of antennas: Ntx=1, Nrx=1
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 5632 Bytes, L2: 15976 Bytes, L1: 5216 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 11264 Bytes, L2: 17448 Bytes, L1: 5840 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 22528 Bytes, L2: 20392 Bytes, L1: 7136 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 45056 Bytes, L2: 26280 Bytes, L1: 10656 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Read Test #1 
+numRxAntennas = 1
+numAdcSamples = 16
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 56
+numChirpsPerEvent = 8
+numTargets = 2
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 504
+    rngPhyBin = 1
+    doppPhyBin = -28
+    azimPhyBin = 5
+    elevPhyBin = -3
+sceneObj[1] = 
+    amplitude = 501
+    rngPhyBin = 9
+    doppPhyBin = -3
+    azimPhyBin = -16
+    elevPhyBin = -9
+Frame processing Done!! num obj: 3
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1169	   1	 -28	   0	NA
+[ 1]:	  998	  15	 -28	   0	NA
+[ 2]:	 1163	   9	  -3	   0	NA
+
+Test PASSED!
+Feature: #1:TxA1 TxE0 Rx1 R16 D56 m: Passed
+Test #1 finished!
+
+Read Test #2 
+numRxAntennas = 1
+numAdcSamples = 16
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 112
+numChirpsPerEvent = 8
+numTargets = 2
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 506
+    rngPhyBin = 1
+    doppPhyBin = 17
+    azimPhyBin = 16
+    elevPhyBin = 20
+sceneObj[1] = 
+    amplitude = 505
+    rngPhyBin = 9
+    doppPhyBin = -61
+    azimPhyBin = -8
+    elevPhyBin = -16
+Frame processing Done!! num obj: 3
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1230	   1	  17	   0	NA
+[ 1]:	 1049	  15	  17	   0	NA
+[ 2]:	 1226	   9	 -61	   0	NA
+
+Test PASSED!
+Feature: #2:TxA1 TxE0 Rx1 R16 D112 m: Passed
+Test #2 finished!
+
+Read Test #3 
+numRxAntennas = 1
+numAdcSamples = 16
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 224
+numChirpsPerEvent = 8
+numTargets = 2
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 506
+    rngPhyBin = 1
+    doppPhyBin = 52
+    azimPhyBin = 20
+    elevPhyBin = -14
+sceneObj[1] = 
+    amplitude = 497
+    rngPhyBin = 9
+    doppPhyBin = -110
+    azimPhyBin = -10
+    elevPhyBin = 3
+Frame processing Done!! num obj: 3
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1290	   1	  52	   0	NA
+[ 1]:	 1119	  15	  52	   0	NA
+[ 2]:	 1288	   9	-110	   0	NA
+
+Test PASSED!
+Feature: #3:TxA1 TxE0 Rx1 R16 D224 m: Passed
+Test #3 finished!
+
+Read Test #4 
+numRxAntennas = 1
+numAdcSamples = 16
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 448
+numChirpsPerEvent = 8
+numTargets = 2
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 506
+    rngPhyBin = 1
+    doppPhyBin = 94
+    azimPhyBin = -14
+    elevPhyBin = -14
+sceneObj[1] = 
+    amplitude = 504
+    rngPhyBin = 9
+    doppPhyBin = -225
+    azimPhyBin = 8
+    elevPhyBin = -8
+Frame processing Done!! num obj: 3
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1350	   1	  94	   0	NA
+[ 1]:	 1178	  15	  94	   0	NA
+[ 2]:	 1342	   9	-225	   0	NA
+
+Test PASSED!
+Feature: #4:TxA1 TxE0 Rx1 R16 D448 m: Passed
+Test #4 finished!
+
+Number of antennas: Ntx=1, Nrx=1
+Number of antennas: Ntx=1, Nrx=1
+Number of antennas: Ntx=1, Nrx=1
+Number of antennas: Ntx=1, Nrx=1
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 11264 Bytes, L2: 15976 Bytes, L1: 5296 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 22528 Bytes, L2: 17448 Bytes, L1: 5920 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 45056 Bytes, L2: 20392 Bytes, L1: 7216 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 90112 Bytes, L2: 26280 Bytes, L1: 10736 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Read Test #5 
+numRxAntennas = 1
+numAdcSamples = 32
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 56
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 496
+    rngPhyBin = 1
+    doppPhyBin = 3
+    azimPhyBin = -14
+    elevPhyBin = -10
+sceneObj[1] = 
+    amplitude = 514
+    rngPhyBin = 9
+    doppPhyBin = -12
+    azimPhyBin = 18
+    elevPhyBin = 18
+sceneObj[2] = 
+    amplitude = 499
+    rngPhyBin = 17
+    doppPhyBin = 9
+    azimPhyBin = 20
+    elevPhyBin = -14
+sceneObj[3] = 
+    amplitude = 492
+    rngPhyBin = 25
+    doppPhyBin = -13
+    azimPhyBin = -2
+    elevPhyBin = -6
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1168	   1	   3	   0	NA
+[ 1]:	  989	  31	   3	   0	NA
+[ 2]:	 1172	  17	   9	   0	NA
+[ 3]:	 1168	  25	 -13	   0	NA
+[ 4]:	 1173	   9	 -12	   0	NA
+
+Test PASSED!
+Feature: #5:TxA1 TxE0 Rx1 R32 D56 r: Passed
+Test #5 finished!
+
+Read Test #6 
+numRxAntennas = 1
+numAdcSamples = 32
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 112
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 515
+    rngPhyBin = 1
+    doppPhyBin = -37
+    azimPhyBin = 7
+    elevPhyBin = 5
+sceneObj[1] = 
+    amplitude = 501
+    rngPhyBin = 9
+    doppPhyBin = 24
+    azimPhyBin = -5
+    elevPhyBin = -16
+sceneObj[2] = 
+    amplitude = 492
+    rngPhyBin = 17
+    doppPhyBin = -59
+    azimPhyBin = 17
+    elevPhyBin = -14
+sceneObj[3] = 
+    amplitude = 487
+    rngPhyBin = 25
+    doppPhyBin = -8
+    azimPhyBin = 19
+    elevPhyBin = -13
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1228	   9	  24	   0	NA
+[ 1]:	 1229	  17	 -59	   0	NA
+[ 2]:	 1234	   1	 -37	   0	NA
+[ 3]:	 1039	  31	 -37	   0	NA
+[ 4]:	 1229	  25	  -8	   0	NA
+
+Test PASSED!
+Feature: #6:TxA1 TxE0 Rx1 R32 D112 r: Passed
+Test #6 finished!
+
+Read Test #7 
+numRxAntennas = 1
+numAdcSamples = 32
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 224
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 506
+    rngPhyBin = 1
+    doppPhyBin = 114
+    azimPhyBin = 17
+    elevPhyBin = 19
+sceneObj[1] = 
+    amplitude = 501
+    rngPhyBin = 9
+    doppPhyBin = -32
+    azimPhyBin = -6
+    elevPhyBin = -10
+sceneObj[2] = 
+    amplitude = 502
+    rngPhyBin = 17
+    doppPhyBin = -91
+    azimPhyBin = 8
+    elevPhyBin = -4
+sceneObj[3] = 
+    amplitude = 493
+    rngPhyBin = 25
+    doppPhyBin = 53
+    azimPhyBin = 3
+    elevPhyBin = -17
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1289	  25	  53	   0	NA
+[ 1]:	 1295	   1	 114	   0	NA
+[ 2]:	 1101	  31	 114	   0	NA
+[ 3]:	 1294	  17	 -91	   0	NA
+[ 4]:	 1291	   9	 -32	   0	NA
+
+Test PASSED!
+Feature: #7:TxA1 TxE0 Rx1 R32 D224 r: Passed
+Test #7 finished!
+
+Read Test #8 
+numRxAntennas = 1
+numAdcSamples = 32
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 448
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 500
+    rngPhyBin = 1
+    doppPhyBin = 176
+    azimPhyBin = -19
+    elevPhyBin = -10
+sceneObj[1] = 
+    amplitude = 502
+    rngPhyBin = 9
+    doppPhyBin = -195
+    azimPhyBin = 12
+    elevPhyBin = -9
+sceneObj[2] = 
+    amplitude = 496
+    rngPhyBin = 17
+    doppPhyBin = 49
+    azimPhyBin = 2
+    elevPhyBin = 7
+sceneObj[3] = 
+    amplitude = 508
+    rngPhyBin = 25
+    doppPhyBin = -55
+    azimPhyBin = 12
+    elevPhyBin = 0
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1347	  17	  49	   0	NA
+[ 1]:	 1351	   1	 176	   0	NA
+[ 2]:	 1164	  31	 176	   0	NA
+[ 3]:	 1349	   9	-195	   0	NA
+[ 4]:	 1348	  25	 -55	   0	NA
+
+Test PASSED!
+Feature: #8:TxA1 TxE0 Rx1 R32 D448 r: Passed
+Test #8 finished!
+
+Number of antennas: Ntx=1, Nrx=1
+Number of antennas: Ntx=1, Nrx=1
+Number of antennas: Ntx=1, Nrx=1
+Number of antennas: Ntx=1, Nrx=1
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 5120 Bytes, L2: 14984 Bytes, L1: 5176 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 11264 Bytes, L2: 15240 Bytes, L1: 5272 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 22528 Bytes, L2: 15976 Bytes, L1: 5456 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 45056 Bytes, L2: 17448 Bytes, L1: 6080 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Read Test #9 
+numRxAntennas = 1
+numAdcSamples = 64
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 12
+numChirpsPerEvent = 4
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 501
+    rngPhyBin = 34
+    doppPhyBin = -3
+    azimPhyBin = -12
+    elevPhyBin = 0
+sceneObj[1] = 
+    amplitude = 515
+    rngPhyBin = 37
+    doppPhyBin = 7
+    azimPhyBin = -1
+    elevPhyBin = 10
+sceneObj[2] = 
+    amplitude = 494
+    rngPhyBin = 44
+    doppPhyBin = -5
+    azimPhyBin = -4
+    elevPhyBin = 7
+sceneObj[3] = 
+    amplitude = 501
+    rngPhyBin = 6
+    doppPhyBin = -3
+    azimPhyBin = -13
+    elevPhyBin = 5
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1097	  37	   7	   0	NA
+[ 1]:	 1085	  44	  -5	   0	NA
+[ 2]:	 1092	   6	  -3	   0	NA
+[ 3]:	 1085	  34	  -3	   0	NA
+
+Test PASSED!
+Feature: #9:TxA1 TxE0 Rx1 R64 D12 r: Passed
+Test #9 finished!
+
+Read Test #10 
+numRxAntennas = 1
+numAdcSamples = 64
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 28
+numChirpsPerEvent = 4
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 476
+    rngPhyBin = 40
+    doppPhyBin = -4
+    azimPhyBin = -10
+    elevPhyBin = 1
+sceneObj[1] = 
+    amplitude = 514
+    rngPhyBin = 5
+    doppPhyBin = 10
+    azimPhyBin = 3
+    elevPhyBin = -19
+sceneObj[2] = 
+    amplitude = 510
+    rngPhyBin = 2
+    doppPhyBin = -3
+    azimPhyBin = 14
+    elevPhyBin = 6
+sceneObj[3] = 
+    amplitude = 513
+    rngPhyBin = 30
+    doppPhyBin = 1
+    azimPhyBin = 9
+    elevPhyBin = 20
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1175	  30	   1	   0	NA
+[ 1]:	 1175	   5	  10	   0	NA
+[ 2]:	 1165	  40	  -4	   0	NA
+[ 3]:	 1170	   2	  -3	   0	NA
+
+Test PASSED!
+Feature: #10:TxA1 TxE0 Rx1 R64 D28 r: Passed
+Test #10 finished!
+
+Read Test #11 
+numRxAntennas = 1
+numAdcSamples = 64
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 56
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 505
+    rngPhyBin = 18
+    doppPhyBin = 30
+    azimPhyBin = 12
+    elevPhyBin = 9
+sceneObj[1] = 
+    amplitude = 501
+    rngPhyBin = 1
+    doppPhyBin = -5
+    azimPhyBin = 17
+    elevPhyBin = -14
+sceneObj[2] = 
+    amplitude = 492
+    rngPhyBin = 30
+    doppPhyBin = -24
+    azimPhyBin = -5
+    elevPhyBin = 1
+sceneObj[3] = 
+    amplitude = 499
+    rngPhyBin = 13
+    doppPhyBin = -25
+    azimPhyBin = -17
+    elevPhyBin = -6
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1229	  18	  30	   0	NA
+[ 1]:	 1231	  13	 -25	   0	NA
+[ 2]:	 1228	  30	 -24	   0	NA
+[ 3]:	 1231	   1	  -5	   0	NA
+[ 4]:	 1041	  63	  -5	   0	NA
+
+Test PASSED!
+Feature: #11:TxA1 TxE0 Rx1 R64 D56 r: Passed
+Test #11 finished!
+
+Read Test #12 
+numRxAntennas = 1
+numAdcSamples = 64
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 112
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 488
+    rngPhyBin = 3
+    doppPhyBin = 24
+    azimPhyBin = 5
+    elevPhyBin = 5
+sceneObj[1] = 
+    amplitude = 515
+    rngPhyBin = 4
+    doppPhyBin = -15
+    azimPhyBin = 5
+    elevPhyBin = 4
+sceneObj[2] = 
+    amplitude = 504
+    rngPhyBin = 40
+    doppPhyBin = 30
+    azimPhyBin = -6
+    elevPhyBin = -16
+sceneObj[3] = 
+    amplitude = 491
+    rngPhyBin = 11
+    doppPhyBin = -52
+    azimPhyBin = 1
+    elevPhyBin = -4
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1292	   3	  24	   0	NA
+[ 1]:	 1289	  40	  30	   0	NA
+[ 2]:	 1293	  11	 -52	   0	NA
+[ 3]:	 1296	   4	 -15	   0	NA
+
+Test PASSED!
+Feature: #12:TxA1 TxE0 Rx1 R64 D112 r: Passed
+Test #12 finished!
+
+Number of antennas: Ntx=1, Nrx=1
+Number of antennas: Ntx=1, Nrx=1
+Number of antennas: Ntx=1, Nrx=1
+Number of antennas: Ntx=1, Nrx=1
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 90112 Bytes, L2: 20392 Bytes, L1: 7376 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 180224 Bytes, L2: 26280 Bytes, L1: 10896 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 10240 Bytes, L2: 14984 Bytes, L1: 5736 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 22528 Bytes, L2: 15240 Bytes, L1: 5832 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Read Test #13 
+numRxAntennas = 1
+numAdcSamples = 64
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 224
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 498
+    rngPhyBin = 36
+    doppPhyBin = -31
+    azimPhyBin = -13
+    elevPhyBin = 19
+sceneObj[1] = 
+    amplitude = 492
+    rngPhyBin = 1
+    doppPhyBin = 32
+    azimPhyBin = 17
+    elevPhyBin = 2
+sceneObj[2] = 
+    amplitude = 513
+    rngPhyBin = 25
+    doppPhyBin = 114
+    azimPhyBin = 17
+    elevPhyBin = 2
+sceneObj[3] = 
+    amplitude = 481
+    rngPhyBin = 3
+    doppPhyBin = -123
+    azimPhyBin = 1
+    elevPhyBin = 1
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1352	   1	  32	   0	NA
+[ 1]:	 1148	  63	  32	   0	NA
+[ 2]:	 1356	  25	 114	   0	NA
+[ 3]:	 1348	   3	-123	   0	NA
+[ 4]:	 1354	  36	 -31	   0	NA
+
+Test PASSED!
+Feature: #13:TxA1 TxE0 Rx1 R64 D224 r: Passed
+Test #13 finished!
+
+Read Test #14 
+numRxAntennas = 1
+numAdcSamples = 64
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 448
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 499
+    rngPhyBin = 22
+    doppPhyBin = -21
+    azimPhyBin = -18
+    elevPhyBin = 7
+sceneObj[1] = 
+    amplitude = 496
+    rngPhyBin = 19
+    doppPhyBin = -228
+    azimPhyBin = 13
+    elevPhyBin = 5
+sceneObj[2] = 
+    amplitude = 508
+    rngPhyBin = 2
+    doppPhyBin = 251
+    azimPhyBin = -18
+    elevPhyBin = -3
+sceneObj[3] = 
+    amplitude = 496
+    rngPhyBin = 12
+    doppPhyBin = 107
+    azimPhyBin = 5
+    elevPhyBin = -11
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1414	  12	 107	   0	NA
+[ 1]:	 1416	   2	 251	   0	NA
+[ 2]:	 1413	  19	-228	   0	NA
+[ 3]:	 1409	  22	 -21	   0	NA
+
+Test PASSED!
+Feature: #14:TxA1 TxE0 Rx1 R64 D448 r: Passed
+Test #14 finished!
+
+Read Test #15 
+numRxAntennas = 1
+numAdcSamples = 112
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 12
+numChirpsPerEvent = 4
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 507
+    rngPhyBin = 20
+    doppPhyBin = 4
+    azimPhyBin = 20
+    elevPhyBin = -13
+sceneObj[1] = 
+    amplitude = 496
+    rngPhyBin = 61
+    doppPhyBin = 7
+    azimPhyBin = 13
+    elevPhyBin = -8
+sceneObj[2] = 
+    amplitude = 500
+    rngPhyBin = 87
+    doppPhyBin = -1
+    azimPhyBin = 20
+    elevPhyBin = -7
+sceneObj[3] = 
+    amplitude = 494
+    rngPhyBin = 40
+    doppPhyBin = -6
+    azimPhyBin = -19
+    elevPhyBin = 3
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1083	  20	   4	   0	NA
+[ 1]:	 1077	  61	   7	   0	NA
+[ 2]:	 1081	  40	  -6	   0	NA
+[ 3]:	 1078	  87	  -1	   0	NA
+
+Test PASSED!
+Feature: #15:TxA1 TxE0 Rx1 R112 D12 r: Passed
+Test #15 finished!
+
+Read Test #16 
+numRxAntennas = 1
+numAdcSamples = 112
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 28
+numChirpsPerEvent = 4
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 501
+    rngPhyBin = 5
+    doppPhyBin = 13
+    azimPhyBin = -6
+    elevPhyBin = 20
+sceneObj[1] = 
+    amplitude = 478
+    rngPhyBin = 86
+    doppPhyBin = -2
+    azimPhyBin = 5
+    elevPhyBin = -15
+sceneObj[2] = 
+    amplitude = 529
+    rngPhyBin = 49
+    doppPhyBin = 11
+    azimPhyBin = -15
+    elevPhyBin = -7
+sceneObj[3] = 
+    amplitude = 505
+    rngPhyBin = 24
+    doppPhyBin = -2
+    azimPhyBin = 13
+    elevPhyBin = -10
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1162	  49	  11	   0	NA
+[ 1]:	 1161	   5	  13	   0	NA
+[ 2]:	 1158	  24	  -2	   0	NA
+[ 3]:	 1153	  86	  -2	   0	NA
+
+Test PASSED!
+Feature: #16:TxA1 TxE0 Rx1 R112 D28 r: Passed
+Test #16 finished!
+
+Number of antennas: Ntx=1, Nrx=1
+Number of antennas: Ntx=1, Nrx=1
+Number of antennas: Ntx=1, Nrx=1
+Number of antennas: Ntx=1, Nrx=1
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 45056 Bytes, L2: 15976 Bytes, L1: 6016 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 90112 Bytes, L2: 17448 Bytes, L1: 6384 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 180224 Bytes, L2: 20392 Bytes, L1: 7680 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 360448 Bytes, L2: 26280 Bytes, L1: 11200 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Read Test #17 
+numRxAntennas = 1
+numAdcSamples = 112
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 56
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 499
+    rngPhyBin = 70
+    doppPhyBin = -9
+    azimPhyBin = 20
+    elevPhyBin = 10
+sceneObj[1] = 
+    amplitude = 499
+    rngPhyBin = 51
+    doppPhyBin = -22
+    azimPhyBin = -4
+    elevPhyBin = 1
+sceneObj[2] = 
+    amplitude = 493
+    rngPhyBin = 15
+    doppPhyBin = -20
+    azimPhyBin = -5
+    elevPhyBin = 2
+sceneObj[3] = 
+    amplitude = 489
+    rngPhyBin = 74
+    doppPhyBin = -30
+    azimPhyBin = -11
+    elevPhyBin = 0
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1214	  74	 -30	   0	NA
+[ 1]:	 1218	  51	 -22	   0	NA
+[ 2]:	 1221	  15	 -20	   0	NA
+[ 3]:	 1219	  70	  -9	   0	NA
+
+Test PASSED!
+Feature: #17:TxA1 TxE0 Rx1 R112 D56 r: Passed
+Test #17 finished!
+
+Read Test #18 
+numRxAntennas = 1
+numAdcSamples = 112
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 112
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 491
+    rngPhyBin = 9
+    doppPhyBin = -56
+    azimPhyBin = -8
+    elevPhyBin = 8
+sceneObj[1] = 
+    amplitude = 489
+    rngPhyBin = 85
+    doppPhyBin = -15
+    azimPhyBin = 6
+    elevPhyBin = -4
+sceneObj[2] = 
+    amplitude = 508
+    rngPhyBin = 13
+    doppPhyBin = -1
+    azimPhyBin = -13
+    elevPhyBin = 9
+sceneObj[3] = 
+    amplitude = 517
+    rngPhyBin = 46
+    doppPhyBin = -61
+    azimPhyBin = 0
+    elevPhyBin = -20
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  961	  47	  51	   0	NA
+[ 1]:	 1285	  46	 -61	   0	NA
+[ 2]:	 1273	   9	 -56	   0	NA
+[ 3]:	 1281	  85	 -15	   0	NA
+[ 4]:	 1280	  13	  -1	   0	NA
+
+Test PASSED!
+Feature: #18:TxA1 TxE0 Rx1 R112 D112 r: Passed
+Test #18 finished!
+
+Read Test #19 
+numRxAntennas = 1
+numAdcSamples = 112
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 224
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 495
+    rngPhyBin = 99
+    doppPhyBin = -114
+    azimPhyBin = -8
+    elevPhyBin = -12
+sceneObj[1] = 
+    amplitude = 507
+    rngPhyBin = 14
+    doppPhyBin = 103
+    azimPhyBin = 8
+    elevPhyBin = 14
+sceneObj[2] = 
+    amplitude = 493
+    rngPhyBin = 26
+    doppPhyBin = 27
+    azimPhyBin = 12
+    elevPhyBin = 5
+sceneObj[3] = 
+    amplitude = 508
+    rngPhyBin = 88
+    doppPhyBin = -12
+    azimPhyBin = -12
+    elevPhyBin = 13
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1341	  26	  27	   0	NA
+[ 1]:	 1343	  14	 103	   0	NA
+[ 2]:	 1343	  99	-114	   0	NA
+[ 3]:	  978	  69	 -54	   0	NA
+[ 4]:	 1344	  88	 -12	   0	NA
+
+Test PASSED!
+Feature: #19:TxA1 TxE0 Rx1 R112 D224 r: Passed
+Test #19 finished!
+
+Read Test #20 
+numRxAntennas = 1
+numAdcSamples = 112
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 448
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 500
+    rngPhyBin = 53
+    doppPhyBin = -246
+    azimPhyBin = 6
+    elevPhyBin = -19
+sceneObj[1] = 
+    amplitude = 510
+    rngPhyBin = 99
+    doppPhyBin = 49
+    azimPhyBin = 18
+    elevPhyBin = -10
+sceneObj[2] = 
+    amplitude = 491
+    rngPhyBin = 53
+    doppPhyBin = 229
+    azimPhyBin = 13
+    elevPhyBin = 11
+sceneObj[3] = 
+    amplitude = 500
+    rngPhyBin = 55
+    doppPhyBin = -81
+    azimPhyBin = -9
+    elevPhyBin = 1
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1403	  99	  49	   0	NA
+[ 1]:	 1401	  53	 229	   0	NA
+[ 2]:	  967	  69	 236	   0	NA
+[ 3]:	 1403	  53	-246	   0	NA
+[ 4]:	 1401	  55	 -81	   0	NA
+
+Test PASSED!
+Feature: #20:TxA1 TxE0 Rx1 R112 D448 r: Passed
+Test #20 finished!
+
+Number of antennas: Ntx=1, Nrx=1
+Number of antennas: Ntx=1, Nrx=1
+Number of antennas: Ntx=1, Nrx=1
+Number of antennas: Ntx=1, Nrx=1
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 20480 Bytes, L2: 14984 Bytes, L1: 6872 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 45056 Bytes, L2: 15240 Bytes, L1: 6968 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 90112 Bytes, L2: 15976 Bytes, L1: 7152 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 180224 Bytes, L2: 17448 Bytes, L1: 7520 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Read Test #21 
+numRxAntennas = 1
+numAdcSamples = 224
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 12
+numChirpsPerEvent = 4
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 507
+    rngPhyBin = 147
+    doppPhyBin = 5
+    azimPhyBin = -8
+    elevPhyBin = -13
+sceneObj[1] = 
+    amplitude = 486
+    rngPhyBin = 114
+    doppPhyBin = -1
+    azimPhyBin = 11
+    elevPhyBin = -4
+sceneObj[2] = 
+    amplitude = 504
+    rngPhyBin = 25
+    doppPhyBin = -6
+    azimPhyBin = -5
+    elevPhyBin = 14
+sceneObj[3] = 
+    amplitude = 519
+    rngPhyBin = 74
+    doppPhyBin = 4
+    azimPhyBin = 8
+    elevPhyBin = 4
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1146	  74	   4	   0	NA
+[ 1]:	 1143	 147	   5	   0	NA
+[ 2]:	 1142	  25	  -6	   0	NA
+[ 3]:	 1141	 114	  -1	   0	NA
+
+Test PASSED!
+Feature: #21:TxA1 TxE0 Rx1 R224 D12 r: Passed
+Test #21 finished!
+
+Read Test #22 
+numRxAntennas = 1
+numAdcSamples = 224
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 28
+numChirpsPerEvent = 4
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 502
+    rngPhyBin = 144
+    doppPhyBin = -9
+    azimPhyBin = -19
+    elevPhyBin = 14
+sceneObj[1] = 
+    amplitude = 504
+    rngPhyBin = 112
+    doppPhyBin = 10
+    azimPhyBin = -1
+    elevPhyBin = -7
+sceneObj[2] = 
+    amplitude = 521
+    rngPhyBin = 78
+    doppPhyBin = -5
+    azimPhyBin = 3
+    elevPhyBin = 7
+sceneObj[3] = 
+    amplitude = 492
+    rngPhyBin = 201
+    doppPhyBin = 5
+    azimPhyBin = 1
+    elevPhyBin = 0
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1214	 201	   5	   0	NA
+[ 1]:	 1217	 112	  10	   0	NA
+[ 2]:	  907	 214	 -15	   0	NA
+[ 3]:	 1220	 144	  -9	   0	NA
+[ 4]:	 1220	  78	  -5	   0	NA
+
+Test PASSED!
+Feature: #22:TxA1 TxE0 Rx1 R224 D28 r: Passed
+Test #22 finished!
+
+Read Test #23 
+numRxAntennas = 1
+numAdcSamples = 224
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 56
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 485
+    rngPhyBin = 79
+    doppPhyBin = -30
+    azimPhyBin = 19
+    elevPhyBin = -14
+sceneObj[1] = 
+    amplitude = 493
+    rngPhyBin = 138
+    doppPhyBin = 29
+    azimPhyBin = 18
+    elevPhyBin = -4
+sceneObj[2] = 
+    amplitude = 523
+    rngPhyBin = 182
+    doppPhyBin = -26
+    azimPhyBin = 11
+    elevPhyBin = -10
+sceneObj[3] = 
+    amplitude = 500
+    rngPhyBin = 10
+    doppPhyBin = 7
+    azimPhyBin = 13
+    elevPhyBin = 2
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1281	  10	   7	   0	NA
+[ 1]:	 1281	 138	  29	   0	NA
+[ 2]:	 1279	  79	 -30	   0	NA
+[ 3]:	 1284	 182	 -26	   0	NA
+
+Test PASSED!
+Feature: #23:TxA1 TxE0 Rx1 R224 D56 r: Passed
+Test #23 finished!
+
+Read Test #24 
+numRxAntennas = 1
+numAdcSamples = 224
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 112
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 505
+    rngPhyBin = 68
+    doppPhyBin = 13
+    azimPhyBin = -9
+    elevPhyBin = -12
+sceneObj[1] = 
+    amplitude = 500
+    rngPhyBin = 138
+    doppPhyBin = 28
+    azimPhyBin = -1
+    elevPhyBin = -2
+sceneObj[2] = 
+    amplitude = 515
+    rngPhyBin = 102
+    doppPhyBin = -16
+    azimPhyBin = 1
+    elevPhyBin = 9
+sceneObj[3] = 
+    amplitude = 488
+    rngPhyBin = 145
+    doppPhyBin = -13
+    azimPhyBin = 9
+    elevPhyBin = 12
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1344	  68	  13	   0	NA
+[ 1]:	 1342	 138	  28	   0	NA
+[ 2]:	 1341	 102	 -16	   0	NA
+[ 3]:	 1341	 145	 -13	   0	NA
+
+Test PASSED!
+Feature: #24:TxA1 TxE0 Rx1 R224 D112 r: Passed
+Test #24 finished!
+
+Number of antennas: Ntx=1, Nrx=1
+Number of antennas: Ntx=1, Nrx=1
+Number of antennas: Ntx=1, Nrx=1
+Number of antennas: Ntx=1, Nrx=1
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 360448 Bytes, L2: 20392 Bytes, L1: 8304 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 716800 Bytes, L2: 26528 Bytes, L1: 11816 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 40960 Bytes, L2: 14984 Bytes, L1: 9144 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 90112 Bytes, L2: 15240 Bytes, L1: 9240 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Read Test #25 
+numRxAntennas = 1
+numAdcSamples = 224
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 224
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 503
+    rngPhyBin = 173
+    doppPhyBin = 119
+    azimPhyBin = 5
+    elevPhyBin = 10
+sceneObj[1] = 
+    amplitude = 478
+    rngPhyBin = 92
+    doppPhyBin = 7
+    azimPhyBin = 2
+    elevPhyBin = 12
+sceneObj[2] = 
+    amplitude = 501
+    rngPhyBin = 41
+    doppPhyBin = -51
+    azimPhyBin = -12
+    elevPhyBin = -20
+sceneObj[3] = 
+    amplitude = 488
+    rngPhyBin = 82
+    doppPhyBin = -124
+    azimPhyBin = -7
+    elevPhyBin = 8
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1400	  92	   7	   0	NA
+[ 1]:	 1402	 173	 119	   0	NA
+[ 2]:	 1393	  82	-124	   0	NA
+[ 3]:	  999	 207	 -68	   0	NA
+[ 4]:	 1403	  41	 -51	   0	NA
+
+Test PASSED!
+Feature: #25:TxA1 TxE0 Rx1 R224 D224 r: Passed
+Test #25 finished!
+
+Read Test #26 
+numRxAntennas = 1
+numAdcSamples = 224
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 444
+numChirpsPerEvent = 4
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 492
+    rngPhyBin = 5
+    doppPhyBin = -5
+    azimPhyBin = 6
+    elevPhyBin = -9
+sceneObj[1] = 
+    amplitude = 513
+    rngPhyBin = 166
+    doppPhyBin = -190
+    azimPhyBin = 19
+    elevPhyBin = -4
+sceneObj[2] = 
+    amplitude = 513
+    rngPhyBin = 166
+    doppPhyBin = -25
+    azimPhyBin = 8
+    elevPhyBin = -9
+sceneObj[3] = 
+    amplitude = 501
+    rngPhyBin = 160
+    doppPhyBin = 223
+    azimPhyBin = -17
+    elevPhyBin = 16
+Frame processing Done!! num obj: 7
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1458	 160	 223	   0	NA
+[ 1]:	 1040	 153	 228	   0	NA
+[ 2]:	 1030	 106	-255	   0	NA
+[ 3]:	 1466	 166	-190	   0	NA
+[ 4]:	 1027	  69	-155	   0	NA
+[ 5]:	 1460	 166	 -25	   0	NA
+[ 6]:	 1457	   5	  -5	   0	NA
+
+Test PASSED!
+Feature: #26:TxA1 TxE0 Rx1 R224 D444 r: Passed
+Test #26 finished!
+
+Read Test #27 
+numRxAntennas = 1
+numAdcSamples = 448
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 12
+numChirpsPerEvent = 4
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 512
+    rngPhyBin = 208
+    doppPhyBin = -7
+    azimPhyBin = 2
+    elevPhyBin = -16
+sceneObj[1] = 
+    amplitude = 497
+    rngPhyBin = 336
+    doppPhyBin = -4
+    azimPhyBin = -2
+    elevPhyBin = -16
+sceneObj[2] = 
+    amplitude = 503
+    rngPhyBin = 9
+    doppPhyBin = 1
+    azimPhyBin = 5
+    elevPhyBin = -17
+sceneObj[3] = 
+    amplitude = 516
+    rngPhyBin = 105
+    doppPhyBin = -1
+    azimPhyBin = -15
+    elevPhyBin = -9
+Frame processing Done!! num obj: 6
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  830	 424	   0	   0	NA
+[ 1]:	 1141	   9	   1	   0	NA
+[ 2]:	  836	 495	   7	   0	NA
+[ 3]:	 1140	 208	  -7	   0	NA
+[ 4]:	 1139	 336	  -4	   0	NA
+[ 5]:	 1141	 105	  -1	   0	NA
+
+Test PASSED!
+Feature: #27:TxA1 TxE0 Rx1 R448 D12 r: Passed
+Test #27 finished!
+
+Read Test #28 
+numRxAntennas = 1
+numAdcSamples = 448
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 28
+numChirpsPerEvent = 4
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 502
+    rngPhyBin = 188
+    doppPhyBin = -14
+    azimPhyBin = 18
+    elevPhyBin = 6
+sceneObj[1] = 
+    amplitude = 502
+    rngPhyBin = 388
+    doppPhyBin = 14
+    azimPhyBin = 17
+    elevPhyBin = -17
+sceneObj[2] = 
+    amplitude = 504
+    rngPhyBin = 24
+    doppPhyBin = -7
+    azimPhyBin = -11
+    elevPhyBin = 16
+sceneObj[3] = 
+    amplitude = 513
+    rngPhyBin = 94
+    doppPhyBin = 1
+    azimPhyBin = -15
+    elevPhyBin = -5
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1223	  94	   1	   0	NA
+[ 1]:	 1218	 388	  14	   0	NA
+[ 2]:	 1219	 188	 -14	   0	NA
+[ 3]:	 1217	  24	  -7	   0	NA
+
+Test PASSED!
+Feature: #28:TxA1 TxE0 Rx1 R448 D28 r: Passed
+Test #28 finished!
+
+Number of antennas: Ntx=1, Nrx=1
+Number of antennas: Ntx=1, Nrx=1
+Number of antennas: Ntx=1, Nrx=1
+Number of antennas: Ntx=1, Nrx=1
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 180224 Bytes, L2: 15976 Bytes, L1: 9424 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 360448 Bytes, L2: 17448 Bytes, L1: 9792 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 712704 Bytes, L2: 24480 Bytes, L1: 10520 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 81920 Bytes, L2: 14984 Bytes, L1: 13784 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Read Test #29 
+numRxAntennas = 1
+numAdcSamples = 448
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 56
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 503
+    rngPhyBin = 338
+    doppPhyBin = -17
+    azimPhyBin = 9
+    elevPhyBin = -10
+sceneObj[1] = 
+    amplitude = 505
+    rngPhyBin = 97
+    doppPhyBin = -3
+    azimPhyBin = 1
+    elevPhyBin = 7
+sceneObj[2] = 
+    amplitude = 494
+    rngPhyBin = 177
+    doppPhyBin = -12
+    azimPhyBin = -13
+    elevPhyBin = -14
+sceneObj[3] = 
+    amplitude = 485
+    rngPhyBin = 7
+    doppPhyBin = 7
+    azimPhyBin = -8
+    elevPhyBin = 13
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1280	   7	   7	   0	NA
+[ 1]:	 1281	 338	 -17	   0	NA
+[ 2]:	 1281	 177	 -12	   0	NA
+[ 3]:	 1279	  97	  -3	   0	NA
+
+Test PASSED!
+Feature: #29:TxA1 TxE0 Rx1 R448 D56 r: Passed
+Test #29 finished!
+
+Read Test #30 
+numRxAntennas = 1
+numAdcSamples = 448
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 112
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 489
+    rngPhyBin = 361
+    doppPhyBin = 16
+    azimPhyBin = -19
+    elevPhyBin = 4
+sceneObj[1] = 
+    amplitude = 488
+    rngPhyBin = 273
+    doppPhyBin = 36
+    azimPhyBin = 15
+    elevPhyBin = -15
+sceneObj[2] = 
+    amplitude = 487
+    rngPhyBin = 47
+    doppPhyBin = -62
+    azimPhyBin = 4
+    elevPhyBin = 14
+sceneObj[3] = 
+    amplitude = 505
+    rngPhyBin = 307
+    doppPhyBin = -33
+    azimPhyBin = -4
+    elevPhyBin = 11
+Frame processing Done!! num obj: 6
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1342	 361	  16	   0	NA
+[ 1]:	 1338	 273	  36	   0	NA
+[ 2]:	 1340	  47	 -62	   0	NA
+[ 3]:	  927	 203	 -51	   0	NA
+[ 4]:	 1343	 307	 -33	   0	NA
+[ 5]:	  925	 261	 -10	   0	NA
+
+Test PASSED!
+Feature: #30:TxA1 TxE0 Rx1 R448 D112 r: Passed
+Test #30 finished!
+
+Read Test #31 
+numRxAntennas = 1
+numAdcSamples = 448
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 220
+numChirpsPerEvent = 4
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 502
+    rngPhyBin = 190
+    doppPhyBin = 25
+    azimPhyBin = 18
+    elevPhyBin = 5
+sceneObj[1] = 
+    amplitude = 511
+    rngPhyBin = 283
+    doppPhyBin = 46
+    azimPhyBin = 14
+    elevPhyBin = -13
+sceneObj[2] = 
+    amplitude = 478
+    rngPhyBin = 67
+    doppPhyBin = 74
+    azimPhyBin = 4
+    elevPhyBin = 12
+sceneObj[3] = 
+    amplitude = 497
+    rngPhyBin = 114
+    doppPhyBin = -44
+    azimPhyBin = -20
+    elevPhyBin = -3
+Frame processing Done!! num obj: 6
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  968	 132	   5	   0	NA
+[ 1]:	 1402	 190	  25	   0	NA
+[ 2]:	 1404	 283	  46	   0	NA
+[ 3]:	  966	  98	  62	   0	NA
+[ 4]:	 1398	  67	  74	   0	NA
+[ 5]:	 1401	 114	 -44	   0	NA
+
+Test PASSED!
+Feature: #31:TxA1 TxE0 Rx1 R448 D220 r: Passed
+Test #31 finished!
+
+Read Test #32 
+numRxAntennas = 1
+numAdcSamples = 896
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 12
+numChirpsPerEvent = 4
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 501
+    rngPhyBin = 747
+    doppPhyBin = -8
+    azimPhyBin = 2
+    elevPhyBin = 19
+sceneObj[1] = 
+    amplitude = 505
+    rngPhyBin = 510
+    doppPhyBin = -2
+    azimPhyBin = 12
+    elevPhyBin = 5
+sceneObj[2] = 
+    amplitude = 505
+    rngPhyBin = 382
+    doppPhyBin = 3
+    azimPhyBin = 5
+    elevPhyBin = -1
+sceneObj[3] = 
+    amplitude = 508
+    rngPhyBin = 213
+    doppPhyBin = 7
+    azimPhyBin = 2
+    elevPhyBin = -7
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1201	 382	   3	   0	NA
+[ 1]:	  832	  19	   6	   0	NA
+[ 2]:	 1200	 213	   7	   0	NA
+[ 3]:	 1203	 747	  -8	   0	NA
+[ 4]:	 1203	 510	  -2	   0	NA
+
+Test PASSED!
+Feature: #32:TxA1 TxE0 Rx1 R896 D12 r: Passed
+Test #32 finished!
+
+Number of antennas: Ntx=1, Nrx=1
+Number of antennas: Ntx=1, Nrx=1
+Number of antennas: Ntx=1, Nrx=1
+Number of antennas: Ntx=1, Nrx=2
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 180224 Bytes, L2: 15240 Bytes, L1: 13880 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 360448 Bytes, L2: 16800 Bytes, L1: 14064 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 704512 Bytes, L2: 25504 Bytes, L1: 14424 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 9344 Bytes, L2: 15976 Bytes, L1: 5216 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Read Test #33 
+numRxAntennas = 1
+numAdcSamples = 896
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 28
+numChirpsPerEvent = 4
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 492
+    rngPhyBin = 764
+    doppPhyBin = 3
+    azimPhyBin = 8
+    elevPhyBin = 0
+sceneObj[1] = 
+    amplitude = 498
+    rngPhyBin = 537
+    doppPhyBin = 10
+    azimPhyBin = 8
+    elevPhyBin = 9
+sceneObj[2] = 
+    amplitude = 480
+    rngPhyBin = 91
+    doppPhyBin = 3
+    azimPhyBin = 3
+    elevPhyBin = -12
+sceneObj[3] = 
+    amplitude = 500
+    rngPhyBin = 364
+    doppPhyBin = 2
+    azimPhyBin = 16
+    elevPhyBin = 15
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1278	 364	   2	   0	NA
+[ 1]:	 1278	  91	   3	   0	NA
+[ 2]:	 1274	 764	   3	   0	NA
+[ 3]:	 1275	 537	  10	   0	NA
+[ 4]:	  905	 315	  -2	   0	NA
+
+Test PASSED!
+Feature: #33:TxA1 TxE0 Rx1 R896 D28 r: Passed
+Test #33 finished!
+
+Read Test #34 
+numRxAntennas = 1
+numAdcSamples = 896
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 56
+numChirpsPerEvent = 4
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 500
+    rngPhyBin = 565
+    doppPhyBin = 2
+    azimPhyBin = -2
+    elevPhyBin = -10
+sceneObj[1] = 
+    amplitude = 510
+    rngPhyBin = 266
+    doppPhyBin = 19
+    azimPhyBin = -20
+    elevPhyBin = -5
+sceneObj[2] = 
+    amplitude = 476
+    rngPhyBin = 106
+    doppPhyBin = 17
+    azimPhyBin = 3
+    elevPhyBin = -2
+sceneObj[3] = 
+    amplitude = 504
+    rngPhyBin = 419
+    doppPhyBin = 7
+    azimPhyBin = 12
+    elevPhyBin = 2
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1340	 565	   2	   0	NA
+[ 1]:	 1342	 419	   7	   0	NA
+[ 2]:	 1337	 106	  17	   0	NA
+[ 3]:	 1344	 266	  19	   0	NA
+[ 4]:	  928	 890	  -3	   0	NA
+
+Test PASSED!
+Feature: #34:TxA1 TxE0 Rx1 R896 D56 r: Passed
+Test #34 finished!
+
+Read Test #35 
+numRxAntennas = 1
+numAdcSamples = 896
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 108
+numChirpsPerEvent = 4
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 514
+    rngPhyBin = 757
+    doppPhyBin = 30
+    azimPhyBin = 16
+    elevPhyBin = 8
+sceneObj[1] = 
+    amplitude = 511
+    rngPhyBin = 175
+    doppPhyBin = -3
+    azimPhyBin = 13
+    elevPhyBin = -1
+sceneObj[2] = 
+    amplitude = 492
+    rngPhyBin = 583
+    doppPhyBin = -13
+    azimPhyBin = 17
+    elevPhyBin = 10
+sceneObj[3] = 
+    amplitude = 503
+    rngPhyBin = 412
+    doppPhyBin = 16
+    azimPhyBin = -7
+    elevPhyBin = 8
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  973	 528	   7	   0	NA
+[ 1]:	 1393	 412	  16	   0	NA
+[ 2]:	 1394	 757	  30	   0	NA
+[ 3]:	 1397	 583	 -13	   0	NA
+[ 4]:	 1399	 175	  -3	   0	NA
+
+Test PASSED!
+Feature: #35:TxA1 TxE0 Rx1 R896 D108 r: Passed
+Test #35 finished!
+
+Read Test #36 
+numRxAntennas = 2
+numAdcSamples = 16
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 56
+numChirpsPerEvent = 8
+numTargets = 2
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 507
+    rngPhyBin = 1
+    doppPhyBin = 9
+    azimPhyBin = -19
+    elevPhyBin = 10
+sceneObj[1] = 
+    amplitude = 501
+    rngPhyBin = 9
+    doppPhyBin = -18
+    azimPhyBin = 15
+    elevPhyBin = -14
+Frame processing Done!! num obj: 2
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1166	   1	   9	 -19	NA
+[ 1]:	 1167	   9	 -18	  15	NA
+
+Test PASSED!
+Feature: #36:TxA1 TxE0 Rx2 R16 D56 m: Passed
+Test #36 finished!
+
+Number of antennas: Ntx=1, Nrx=2
+Number of antennas: Ntx=1, Nrx=2
+Number of antennas: Ntx=1, Nrx=2
+Number of antennas: Ntx=1, Nrx=2
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 18560 Bytes, L2: 17448 Bytes, L1: 5840 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 36992 Bytes, L2: 20392 Bytes, L1: 7136 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 73856 Bytes, L2: 26280 Bytes, L1: 10656 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 18688 Bytes, L2: 15976 Bytes, L1: 5296 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Read Test #37 
+numRxAntennas = 2
+numAdcSamples = 16
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 112
+numChirpsPerEvent = 8
+numTargets = 2
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 508
+    rngPhyBin = 1
+    doppPhyBin = 6
+    azimPhyBin = -12
+    elevPhyBin = -14
+sceneObj[1] = 
+    amplitude = 504
+    rngPhyBin = 9
+    doppPhyBin = -55
+    azimPhyBin = 11
+    elevPhyBin = -7
+Frame processing Done!! num obj: 3
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1230	   1	   6	 -12	NA
+[ 1]:	 1057	  15	   6	 -12	NA
+[ 2]:	 1228	   9	 -55	  11	NA
+
+Test PASSED!
+Feature: #37:TxA1 TxE0 Rx2 R16 D112 m: Passed
+Test #37 finished!
+
+Read Test #38 
+numRxAntennas = 2
+numAdcSamples = 16
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 224
+numChirpsPerEvent = 8
+numTargets = 2
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 495
+    rngPhyBin = 1
+    doppPhyBin = 90
+    azimPhyBin = 7
+    elevPhyBin = -8
+sceneObj[1] = 
+    amplitude = 486
+    rngPhyBin = 9
+    doppPhyBin = 28
+    azimPhyBin = 11
+    elevPhyBin = -20
+Frame processing Done!! num obj: 3
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1286	   9	  28	  11	NA
+[ 1]:	 1283	   1	  90	   7	NA
+[ 2]:	 1112	  15	  90	   7	NA
+
+Test PASSED!
+Feature: #38:TxA1 TxE0 Rx2 R16 D224 m: Passed
+Test #38 finished!
+
+Read Test #39 
+numRxAntennas = 2
+numAdcSamples = 16
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 448
+numChirpsPerEvent = 8
+numTargets = 2
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 506
+    rngPhyBin = 1
+    doppPhyBin = 85
+    azimPhyBin = -12
+    elevPhyBin = 17
+sceneObj[1] = 
+    amplitude = 497
+    rngPhyBin = 9
+    doppPhyBin = -109
+    azimPhyBin = 10
+    elevPhyBin = -3
+Frame processing Done!! num obj: 3
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1350	   1	  85	 -12	NA
+[ 1]:	 1174	  15	  85	 -12	NA
+[ 2]:	 1346	   9	-109	  10	NA
+
+Test PASSED!
+Feature: #39:TxA1 TxE0 Rx2 R16 D448 m: Passed
+Test #39 finished!
+
+Read Test #40 
+numRxAntennas = 2
+numAdcSamples = 32
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 56
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 500
+    rngPhyBin = 1
+    doppPhyBin = -17
+    azimPhyBin = -19
+    elevPhyBin = -17
+sceneObj[1] = 
+    amplitude = 498
+    rngPhyBin = 9
+    doppPhyBin = 29
+    azimPhyBin = 6
+    elevPhyBin = -12
+sceneObj[2] = 
+    amplitude = 501
+    rngPhyBin = 17
+    doppPhyBin = -15
+    azimPhyBin = 4
+    elevPhyBin = 2
+sceneObj[3] = 
+    amplitude = 503
+    rngPhyBin = 25
+    doppPhyBin = 3
+    azimPhyBin = 10
+    elevPhyBin = 7
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1168	  25	   3	  10	NA
+[ 1]:	 1170	   9	  29	   6	NA
+[ 2]:	 1170	   1	 -17	 -19	NA
+[ 3]:	  978	  31	 -17	 -19	NA
+[ 4]:	 1170	  17	 -15	   4	NA
+
+Test PASSED!
+Feature: #40:TxA1 TxE0 Rx2 R32 D56 r: Passed
+Test #40 finished!
+
+Number of antennas: Ntx=1, Nrx=2
+Number of antennas: Ntx=1, Nrx=2
+Number of antennas: Ntx=1, Nrx=2
+Number of antennas: Ntx=1, Nrx=2
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 37120 Bytes, L2: 17448 Bytes, L1: 5920 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 73984 Bytes, L2: 20392 Bytes, L1: 7216 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 147712 Bytes, L2: 26280 Bytes, L1: 10736 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 8704 Bytes, L2: 14984 Bytes, L1: 5176 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Read Test #41 
+numRxAntennas = 2
+numAdcSamples = 32
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 112
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 478
+    rngPhyBin = 1
+    doppPhyBin = 35
+    azimPhyBin = -6
+    elevPhyBin = 5
+sceneObj[1] = 
+    amplitude = 495
+    rngPhyBin = 9
+    doppPhyBin = -17
+    azimPhyBin = -15
+    elevPhyBin = 16
+sceneObj[2] = 
+    amplitude = 485
+    rngPhyBin = 17
+    doppPhyBin = -50
+    azimPhyBin = -10
+    elevPhyBin = -13
+sceneObj[3] = 
+    amplitude = 496
+    rngPhyBin = 25
+    doppPhyBin = 5
+    azimPhyBin = -13
+    elevPhyBin = 19
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1230	  25	   5	 -13	NA
+[ 1]:	 1226	   1	  35	  -6	NA
+[ 2]:	 1031	  31	  35	  -5	NA
+[ 3]:	 1228	  17	 -50	 -10	NA
+[ 4]:	 1227	   9	 -17	 -15	NA
+
+Test PASSED!
+Feature: #41:TxA1 TxE0 Rx2 R32 D112 r: Passed
+Test #41 finished!
+
+Read Test #42 
+numRxAntennas = 2
+numAdcSamples = 32
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 224
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 504
+    rngPhyBin = 1
+    doppPhyBin = -19
+    azimPhyBin = -14
+    elevPhyBin = 5
+sceneObj[1] = 
+    amplitude = 498
+    rngPhyBin = 9
+    doppPhyBin = 96
+    azimPhyBin = -14
+    elevPhyBin = 7
+sceneObj[2] = 
+    amplitude = 492
+    rngPhyBin = 17
+    doppPhyBin = -74
+    azimPhyBin = -7
+    elevPhyBin = 8
+sceneObj[3] = 
+    amplitude = 506
+    rngPhyBin = 25
+    doppPhyBin = 37
+    azimPhyBin = 2
+    elevPhyBin = 18
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1293	  25	  37	   2	NA
+[ 1]:	 1288	   9	  96	 -14	NA
+[ 2]:	 1286	  17	 -74	  -7	NA
+[ 3]:	 1291	   1	 -19	 -14	NA
+[ 4]:	 1106	  31	 -19	 -15	NA
+
+Test PASSED!
+Feature: #42:TxA1 TxE0 Rx2 R32 D224 r: Passed
+Test #42 finished!
+
+Read Test #43 
+numRxAntennas = 2
+numAdcSamples = 32
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 448
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 494
+    rngPhyBin = 1
+    doppPhyBin = 239
+    azimPhyBin = -9
+    elevPhyBin = -19
+sceneObj[1] = 
+    amplitude = 491
+    rngPhyBin = 9
+    doppPhyBin = 53
+    azimPhyBin = 19
+    elevPhyBin = 10
+sceneObj[2] = 
+    amplitude = 513
+    rngPhyBin = 17
+    doppPhyBin = -191
+    azimPhyBin = 17
+    elevPhyBin = -16
+sceneObj[3] = 
+    amplitude = 494
+    rngPhyBin = 25
+    doppPhyBin = -60
+    azimPhyBin = 13
+    elevPhyBin = -19
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1350	   9	  53	  19	NA
+[ 1]:	 1352	   1	 239	  -9	NA
+[ 2]:	 1166	  31	 239	  -8	NA
+[ 3]:	 1351	  17	-191	  17	NA
+[ 4]:	 1350	  25	 -60	  13	NA
+
+Test PASSED!
+Feature: #43:TxA1 TxE0 Rx2 R32 D448 r: Passed
+Test #43 finished!
+
+Read Test #44 
+numRxAntennas = 2
+numAdcSamples = 64
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 12
+numChirpsPerEvent = 4
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 503
+    rngPhyBin = 30
+    doppPhyBin = -3
+    azimPhyBin = 13
+    elevPhyBin = 12
+sceneObj[1] = 
+    amplitude = 501
+    rngPhyBin = 47
+    doppPhyBin = 2
+    azimPhyBin = 4
+    elevPhyBin = 17
+sceneObj[2] = 
+    amplitude = 491
+    rngPhyBin = 11
+    doppPhyBin = -1
+    azimPhyBin = 3
+    elevPhyBin = -11
+sceneObj[3] = 
+    amplitude = 496
+    rngPhyBin = 19
+    doppPhyBin = 6
+    azimPhyBin = 5
+    elevPhyBin = 0
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1093	  47	   2	   3	NA
+[ 1]:	 1089	  19	   6	   5	NA
+[ 2]:	 1090	  30	  -3	  13	NA
+[ 3]:	 1088	  11	  -1	   3	NA
+
+Test PASSED!
+Feature: #44:TxA1 TxE0 Rx2 R64 D12 r: Passed
+Test #44 finished!
+
+Number of antennas: Ntx=1, Nrx=2
+Number of antennas: Ntx=1, Nrx=2
+Number of antennas: Ntx=1, Nrx=2
+Number of antennas: Ntx=1, Nrx=2
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 18944 Bytes, L2: 15240 Bytes, L1: 5272 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 37376 Bytes, L2: 15976 Bytes, L1: 5456 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 74240 Bytes, L2: 17448 Bytes, L1: 6080 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 147968 Bytes, L2: 20392 Bytes, L1: 7376 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Read Test #45 
+numRxAntennas = 2
+numAdcSamples = 64
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 28
+numChirpsPerEvent = 4
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 486
+    rngPhyBin = 24
+    doppPhyBin = 8
+    azimPhyBin = -10
+    elevPhyBin = 8
+sceneObj[1] = 
+    amplitude = 506
+    rngPhyBin = 15
+    doppPhyBin = 2
+    azimPhyBin = 2
+    elevPhyBin = -16
+sceneObj[2] = 
+    amplitude = 520
+    rngPhyBin = 7
+    doppPhyBin = 15
+    azimPhyBin = -5
+    elevPhyBin = -19
+sceneObj[3] = 
+    amplitude = 501
+    rngPhyBin = 7
+    doppPhyBin = -8
+    azimPhyBin = -15
+    elevPhyBin = -12
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1169	  15	   2	   2	NA
+[ 1]:	 1164	  24	   8	 -10	NA
+[ 2]:	 1171	   7	  15	  -5	NA
+[ 3]:	 1171	   7	  -8	 -15	NA
+
+Test PASSED!
+Feature: #45:TxA1 TxE0 Rx2 R64 D28 r: Passed
+Test #45 finished!
+
+Read Test #46 
+numRxAntennas = 2
+numAdcSamples = 64
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 56
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 500
+    rngPhyBin = 50
+    doppPhyBin = 19
+    azimPhyBin = -12
+    elevPhyBin = -3
+sceneObj[1] = 
+    amplitude = 507
+    rngPhyBin = 23
+    doppPhyBin = -23
+    azimPhyBin = -17
+    elevPhyBin = 20
+sceneObj[2] = 
+    amplitude = 485
+    rngPhyBin = 5
+    doppPhyBin = 9
+    azimPhyBin = 17
+    elevPhyBin = -10
+sceneObj[3] = 
+    amplitude = 509
+    rngPhyBin = 5
+    doppPhyBin = -31
+    azimPhyBin = 4
+    elevPhyBin = -6
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1228	   5	   9	  17	NA
+[ 1]:	 1232	  50	  19	 -12	NA
+[ 2]:	 1233	   5	 -31	   4	NA
+[ 3]:	 1234	  23	 -23	 -17	NA
+
+Test PASSED!
+Feature: #46:TxA1 TxE0 Rx2 R64 D56 r: Passed
+Test #46 finished!
+
+Read Test #47 
+numRxAntennas = 2
+numAdcSamples = 64
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 112
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 503
+    rngPhyBin = 1
+    doppPhyBin = -40
+    azimPhyBin = -15
+    elevPhyBin = -7
+sceneObj[1] = 
+    amplitude = 481
+    rngPhyBin = 50
+    doppPhyBin = 4
+    azimPhyBin = 16
+    elevPhyBin = -16
+sceneObj[2] = 
+    amplitude = 477
+    rngPhyBin = 10
+    doppPhyBin = 7
+    azimPhyBin = 2
+    elevPhyBin = 1
+sceneObj[3] = 
+    amplitude = 518
+    rngPhyBin = 21
+    doppPhyBin = 44
+    azimPhyBin = 20
+    elevPhyBin = -8
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1285	  50	   4	  16	NA
+[ 1]:	 1288	  10	   7	   2	NA
+[ 2]:	 1293	  21	  44	  20	NA
+[ 3]:	 1291	   1	 -40	 -15	NA
+[ 4]:	 1095	  63	 -40	 -14	NA
+
+Test PASSED!
+Feature: #47:TxA1 TxE0 Rx2 R64 D112 r: Passed
+Test #47 finished!
+
+Read Test #48 
+numRxAntennas = 2
+numAdcSamples = 64
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 224
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 505
+    rngPhyBin = 16
+    doppPhyBin = 40
+    azimPhyBin = -18
+    elevPhyBin = -1
+sceneObj[1] = 
+    amplitude = 499
+    rngPhyBin = 50
+    doppPhyBin = -102
+    azimPhyBin = -12
+    elevPhyBin = 7
+sceneObj[2] = 
+    amplitude = 504
+    rngPhyBin = 44
+    doppPhyBin = -41
+    azimPhyBin = 9
+    elevPhyBin = 6
+sceneObj[3] = 
+    amplitude = 513
+    rngPhyBin = 49
+    doppPhyBin = 87
+    azimPhyBin = 2
+    elevPhyBin = 11
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1354	  16	  40	 -18	NA
+[ 1]:	 1356	  49	  87	   2	NA
+[ 2]:	 1351	  50	-102	 -12	NA
+[ 3]:	 1353	  44	 -41	   9	NA
+
+Test PASSED!
+Feature: #48:TxA1 TxE0 Rx2 R64 D224 r: Passed
+Test #48 finished!
+
+Number of antennas: Ntx=1, Nrx=2
+Number of antennas: Ntx=1, Nrx=2
+Number of antennas: Ntx=1, Nrx=2
+Number of antennas: Ntx=1, Nrx=2
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 295424 Bytes, L2: 26280 Bytes, L1: 10896 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 17408 Bytes, L2: 14984 Bytes, L1: 5736 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 37888 Bytes, L2: 15240 Bytes, L1: 5832 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 74752 Bytes, L2: 15976 Bytes, L1: 6016 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Read Test #49 
+numRxAntennas = 2
+numAdcSamples = 64
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 448
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 497
+    rngPhyBin = 15
+    doppPhyBin = -34
+    azimPhyBin = 0
+    elevPhyBin = 3
+sceneObj[1] = 
+    amplitude = 504
+    rngPhyBin = 36
+    doppPhyBin = -222
+    azimPhyBin = -19
+    elevPhyBin = 12
+sceneObj[2] = 
+    amplitude = 504
+    rngPhyBin = 24
+    doppPhyBin = 209
+    azimPhyBin = -18
+    elevPhyBin = -4
+sceneObj[3] = 
+    amplitude = 490
+    rngPhyBin = 40
+    doppPhyBin = 70
+    azimPhyBin = -5
+    elevPhyBin = -13
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1412	  40	  70	  -5	NA
+[ 1]:	 1414	  24	 209	 -18	NA
+[ 2]:	 1412	  36	-222	 -19	NA
+[ 3]:	 1414	  15	 -34	   0	NA
+
+Test PASSED!
+Feature: #49:TxA1 TxE0 Rx2 R64 D448 r: Passed
+Test #49 finished!
+
+Read Test #50 
+numRxAntennas = 2
+numAdcSamples = 112
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 12
+numChirpsPerEvent = 4
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 516
+    rngPhyBin = 34
+    doppPhyBin = -2
+    azimPhyBin = 16
+    elevPhyBin = -14
+sceneObj[1] = 
+    amplitude = 498
+    rngPhyBin = 12
+    doppPhyBin = -7
+    azimPhyBin = 6
+    elevPhyBin = -16
+sceneObj[2] = 
+    amplitude = 500
+    rngPhyBin = 59
+    doppPhyBin = 7
+    azimPhyBin = -13
+    elevPhyBin = 9
+sceneObj[3] = 
+    amplitude = 499
+    rngPhyBin = 85
+    doppPhyBin = -7
+    azimPhyBin = 3
+    elevPhyBin = -16
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1079	  59	   7	 -13	NA
+[ 1]:	 1079	  12	  -7	   6	NA
+[ 2]:	 1081	  85	  -7	   3	NA
+[ 3]:	 1085	  34	  -2	  16	NA
+
+Test PASSED!
+Feature: #50:TxA1 TxE0 Rx2 R112 D12 r: Passed
+Test #50 finished!
+
+Read Test #51 
+numRxAntennas = 2
+numAdcSamples = 112
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 28
+numChirpsPerEvent = 4
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 475
+    rngPhyBin = 90
+    doppPhyBin = -12
+    azimPhyBin = 14
+    elevPhyBin = -1
+sceneObj[1] = 
+    amplitude = 486
+    rngPhyBin = 59
+    doppPhyBin = 15
+    azimPhyBin = 11
+    elevPhyBin = 4
+sceneObj[2] = 
+    amplitude = 485
+    rngPhyBin = 38
+    doppPhyBin = -10
+    azimPhyBin = -19
+    elevPhyBin = 9
+sceneObj[3] = 
+    amplitude = 506
+    rngPhyBin = 11
+    doppPhyBin = -4
+    azimPhyBin = 11
+    elevPhyBin = -19
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1156	  59	  15	  11	NA
+[ 1]:	 1154	  90	 -12	  14	NA
+[ 2]:	 1155	  38	 -10	 -19	NA
+[ 3]:	 1158	  11	  -4	  11	NA
+
+Test PASSED!
+Feature: #51:TxA1 TxE0 Rx2 R112 D28 r: Passed
+Test #51 finished!
+
+Read Test #52 
+numRxAntennas = 2
+numAdcSamples = 112
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 56
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 507
+    rngPhyBin = 25
+    doppPhyBin = -31
+    azimPhyBin = -1
+    elevPhyBin = 9
+sceneObj[1] = 
+    amplitude = 482
+    rngPhyBin = 1
+    doppPhyBin = 10
+    azimPhyBin = -19
+    elevPhyBin = -2
+sceneObj[2] = 
+    amplitude = 513
+    rngPhyBin = 96
+    doppPhyBin = -4
+    azimPhyBin = 4
+    elevPhyBin = 14
+sceneObj[3] = 
+    amplitude = 515
+    rngPhyBin = 81
+    doppPhyBin = 12
+    azimPhyBin = -10
+    elevPhyBin = -4
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1218	   1	  10	 -19	NA
+[ 1]:	 1076	 127	  10	 -19	NA
+[ 2]:	 1224	  81	  12	 -10	NA
+[ 3]:	 1217	  25	 -31	  -1	NA
+[ 4]:	 1224	  96	  -4	   4	NA
+
+Test PASSED!
+Feature: #52:TxA1 TxE0 Rx2 R112 D56 r: Passed
+Test #52 finished!
+
+Number of antennas: Ntx=1, Nrx=2
+Number of antennas: Ntx=1, Nrx=2
+Number of antennas: Ntx=1, Nrx=2
+Number of antennas: Ntx=1, Nrx=2
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 148480 Bytes, L2: 17448 Bytes, L1: 6384 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 295936 Bytes, L2: 20392 Bytes, L1: 7680 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 656384 Bytes, L2: 26792 Bytes, L1: 11328 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 34816 Bytes, L2: 14984 Bytes, L1: 6872 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Read Test #53 
+numRxAntennas = 2
+numAdcSamples = 112
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 112
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 507
+    rngPhyBin = 15
+    doppPhyBin = 16
+    azimPhyBin = -16
+    elevPhyBin = 9
+sceneObj[1] = 
+    amplitude = 514
+    rngPhyBin = 44
+    doppPhyBin = -2
+    azimPhyBin = -19
+    elevPhyBin = 11
+sceneObj[2] = 
+    amplitude = 484
+    rngPhyBin = 73
+    doppPhyBin = -36
+    azimPhyBin = -6
+    elevPhyBin = -7
+sceneObj[3] = 
+    amplitude = 493
+    rngPhyBin = 100
+    doppPhyBin = 48
+    azimPhyBin = -10
+    elevPhyBin = 18
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1279	  15	  16	 -16	NA
+[ 1]:	 1276	 100	  48	 -10	NA
+[ 2]:	 1278	  73	 -36	  -6	NA
+[ 3]:	 1280	  44	  -2	 -19	NA
+
+Test PASSED!
+Feature: #53:TxA1 TxE0 Rx2 R112 D112 r: Passed
+Test #53 finished!
+
+Read Test #54 
+numRxAntennas = 2
+numAdcSamples = 112
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 224
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 505
+    rngPhyBin = 60
+    doppPhyBin = -108
+    azimPhyBin = 15
+    elevPhyBin = 5
+sceneObj[1] = 
+    amplitude = 508
+    rngPhyBin = 2
+    doppPhyBin = -38
+    azimPhyBin = 14
+    elevPhyBin = -12
+sceneObj[2] = 
+    amplitude = 493
+    rngPhyBin = 100
+    doppPhyBin = -7
+    azimPhyBin = 8
+    elevPhyBin = 4
+sceneObj[3] = 
+    amplitude = 494
+    rngPhyBin = 76
+    doppPhyBin = 47
+    azimPhyBin = 7
+    elevPhyBin = -2
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1341	  76	  47	   7	NA
+[ 1]:	 1343	  60	-108	  15	NA
+[ 2]:	 1344	   2	 -38	  14	NA
+[ 3]:	 1342	 100	  -7	   8	NA
+
+Test PASSED!
+Feature: #54:TxA1 TxE0 Rx2 R112 D224 r: Passed
+Test #54 finished!
+
+Read Test #55 
+numRxAntennas = 2
+numAdcSamples = 112
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 512
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 495
+    rngPhyBin = 30
+    doppPhyBin = 179
+    azimPhyBin = 1
+    elevPhyBin = 14
+sceneObj[1] = 
+    amplitude = 505
+    rngPhyBin = 33
+    doppPhyBin = -82
+    azimPhyBin = -10
+    elevPhyBin = -2
+sceneObj[2] = 
+    amplitude = 504
+    rngPhyBin = 69
+    doppPhyBin = -222
+    azimPhyBin = -15
+    elevPhyBin = 9
+sceneObj[3] = 
+    amplitude = 511
+    rngPhyBin = 95
+    doppPhyBin = 88
+    azimPhyBin = 20
+    elevPhyBin = -18
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1416	  95	  88	  20	NA
+[ 1]:	 1412	  30	 179	   1	NA
+[ 2]:	 1412	  69	-222	 -15	NA
+[ 3]:	 1415	  33	 -82	 -10	NA
+
+Test PASSED!
+Feature: #55:TxA1 TxE0 Rx2 R112 D512 r: Passed
+Test #55 finished!
+
+Read Test #56 
+numRxAntennas = 2
+numAdcSamples = 224
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 12
+numChirpsPerEvent = 4
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 504
+    rngPhyBin = 76
+    doppPhyBin = 1
+    azimPhyBin = -7
+    elevPhyBin = -17
+sceneObj[1] = 
+    amplitude = 480
+    rngPhyBin = 155
+    doppPhyBin = -4
+    azimPhyBin = 13
+    elevPhyBin = -12
+sceneObj[2] = 
+    amplitude = 501
+    rngPhyBin = 3
+    doppPhyBin = -3
+    azimPhyBin = -1
+    elevPhyBin = 12
+sceneObj[3] = 
+    amplitude = 492
+    rngPhyBin = 112
+    doppPhyBin = -5
+    azimPhyBin = -7
+    elevPhyBin = -14
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1138	  76	   1	  -7	NA
+[ 1]:	 1140	 112	  -5	  -7	NA
+[ 2]:	 1138	 155	  -4	  13	NA
+[ 3]:	 1143	   3	  -3	  -1	NA
+
+Test PASSED!
+Feature: #56:TxA1 TxE0 Rx2 R224 D12 r: Passed
+Test #56 finished!
+
+Number of antennas: Ntx=1, Nrx=2
+Number of antennas: Ntx=1, Nrx=2
+Number of antennas: Ntx=1, Nrx=2
+Number of antennas: Ntx=1, Nrx=2
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 75776 Bytes, L2: 15240 Bytes, L1: 6968 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 149504 Bytes, L2: 15976 Bytes, L1: 7152 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 296960 Bytes, L2: 17448 Bytes, L1: 7520 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 657408 Bytes, L2: 20648 Bytes, L1: 8368 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Read Test #57 
+numRxAntennas = 2
+numAdcSamples = 224
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 28
+numChirpsPerEvent = 4
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 501
+    rngPhyBin = 31
+    doppPhyBin = 9
+    azimPhyBin = -14
+    elevPhyBin = 11
+sceneObj[1] = 
+    amplitude = 489
+    rngPhyBin = 151
+    doppPhyBin = -6
+    azimPhyBin = -8
+    elevPhyBin = 1
+sceneObj[2] = 
+    amplitude = 512
+    rngPhyBin = 62
+    doppPhyBin = -4
+    azimPhyBin = -13
+    elevPhyBin = -7
+sceneObj[3] = 
+    amplitude = 511
+    rngPhyBin = 113
+    doppPhyBin = -12
+    azimPhyBin = 10
+    elevPhyBin = -15
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1220	  31	   9	 -14	NA
+[ 1]:	 1221	 113	 -12	  10	NA
+[ 2]:	 1214	 151	  -6	  -8	NA
+[ 3]:	 1221	  62	  -4	 -13	NA
+
+Test PASSED!
+Feature: #57:TxA1 TxE0 Rx2 R224 D28 r: Passed
+Test #57 finished!
+
+Read Test #58 
+numRxAntennas = 2
+numAdcSamples = 224
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 56
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 485
+    rngPhyBin = 92
+    doppPhyBin = 2
+    azimPhyBin = 4
+    elevPhyBin = 12
+sceneObj[1] = 
+    amplitude = 499
+    rngPhyBin = 196
+    doppPhyBin = -26
+    azimPhyBin = 16
+    elevPhyBin = 13
+sceneObj[2] = 
+    amplitude = 510
+    rngPhyBin = 4
+    doppPhyBin = 19
+    azimPhyBin = -1
+    elevPhyBin = 18
+sceneObj[3] = 
+    amplitude = 501
+    rngPhyBin = 17
+    doppPhyBin = -21
+    azimPhyBin = 11
+    elevPhyBin = 6
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1276	  92	   2	   4	NA
+[ 1]:	 1282	   4	  19	  -1	NA
+[ 2]:	 1282	 196	 -26	  16	NA
+[ 3]:	 1280	  17	 -21	  11	NA
+
+Test PASSED!
+Feature: #58:TxA1 TxE0 Rx2 R224 D56 r: Passed
+Test #58 finished!
+
+Read Test #59 
+numRxAntennas = 2
+numAdcSamples = 224
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 112
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 495
+    rngPhyBin = 24
+    doppPhyBin = -39
+    azimPhyBin = -9
+    elevPhyBin = -12
+sceneObj[1] = 
+    amplitude = 498
+    rngPhyBin = 188
+    doppPhyBin = -32
+    azimPhyBin = -6
+    elevPhyBin = 2
+sceneObj[2] = 
+    amplitude = 486
+    rngPhyBin = 77
+    doppPhyBin = -62
+    azimPhyBin = -1
+    elevPhyBin = 4
+sceneObj[3] = 
+    amplitude = 504
+    rngPhyBin = 126
+    doppPhyBin = -47
+    azimPhyBin = 14
+    elevPhyBin = 5
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1341	  77	 -62	  -1	NA
+[ 1]:	 1343	 126	 -47	  14	NA
+[ 2]:	 1342	  24	 -39	  -9	NA
+[ 3]:	 1342	 188	 -32	  -6	NA
+
+Test PASSED!
+Feature: #59:TxA1 TxE0 Rx2 R224 D112 r: Passed
+Test #59 finished!
+
+Read Test #60 
+numRxAntennas = 2
+numAdcSamples = 224
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 256
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 511
+    rngPhyBin = 77
+    doppPhyBin = 31
+    azimPhyBin = -2
+    elevPhyBin = -10
+sceneObj[1] = 
+    amplitude = 502
+    rngPhyBin = 19
+    doppPhyBin = -96
+    azimPhyBin = 13
+    elevPhyBin = -5
+sceneObj[2] = 
+    amplitude = 483
+    rngPhyBin = 18
+    doppPhyBin = 9
+    azimPhyBin = -12
+    elevPhyBin = 5
+sceneObj[3] = 
+    amplitude = 495
+    rngPhyBin = 80
+    doppPhyBin = -44
+    azimPhyBin = -12
+    elevPhyBin = -2
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1410	  18	   9	 -12	NA
+[ 1]:	 1416	  77	  31	  -2	NA
+[ 2]:	 1411	  19	 -96	  13	NA
+[ 3]:	 1413	  80	 -44	 -12	NA
+
+Test PASSED!
+Feature: #60:TxA1 TxE0 Rx2 R224 D256 r: Passed
+Test #60 finished!
+
+Number of antennas: Ntx=1, Nrx=2
+Number of antennas: Ntx=1, Nrx=2
+Number of antennas: Ntx=1, Nrx=2
+Number of antennas: Ntx=1, Nrx=2
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 69632 Bytes, L2: 14984 Bytes, L1: 9144 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 151552 Bytes, L2: 15240 Bytes, L1: 9240 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 299008 Bytes, L2: 15976 Bytes, L1: 9424 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 659456 Bytes, L2: 17576 Bytes, L1: 9824 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Read Test #61 
+numRxAntennas = 2
+numAdcSamples = 448
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 12
+numChirpsPerEvent = 4
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 482
+    rngPhyBin = 54
+    doppPhyBin = -1
+    azimPhyBin = 8
+    elevPhyBin = 13
+sceneObj[1] = 
+    amplitude = 496
+    rngPhyBin = 384
+    doppPhyBin = -1
+    azimPhyBin = -19
+    elevPhyBin = -11
+sceneObj[2] = 
+    amplitude = 505
+    rngPhyBin = 181
+    doppPhyBin = -2
+    azimPhyBin = 12
+    elevPhyBin = 10
+sceneObj[3] = 
+    amplitude = 505
+    rngPhyBin = 258
+    doppPhyBin = 2
+    azimPhyBin = 10
+    elevPhyBin = 12
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1144	 258	   2	  10	NA
+[ 1]:	 1142	 181	  -2	  12	NA
+[ 2]:	 1140	  54	  -1	   8	NA
+[ 3]:	 1141	 384	  -1	 -19	NA
+
+Test PASSED!
+Feature: #61:TxA1 TxE0 Rx2 R448 D12 r: Passed
+Test #61 finished!
+
+Read Test #62 
+numRxAntennas = 2
+numAdcSamples = 448
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 28
+numChirpsPerEvent = 4
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 499
+    rngPhyBin = 183
+    doppPhyBin = -14
+    azimPhyBin = -2
+    elevPhyBin = -2
+sceneObj[1] = 
+    amplitude = 522
+    rngPhyBin = 23
+    doppPhyBin = 6
+    azimPhyBin = 13
+    elevPhyBin = 8
+sceneObj[2] = 
+    amplitude = 491
+    rngPhyBin = 295
+    doppPhyBin = -1
+    azimPhyBin = 3
+    elevPhyBin = 3
+sceneObj[3] = 
+    amplitude = 479
+    rngPhyBin = 122
+    doppPhyBin = 11
+    azimPhyBin = -11
+    elevPhyBin = 3
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1221	  23	   6	  13	NA
+[ 1]:	 1212	 122	  11	 -11	NA
+[ 2]:	 1220	 183	 -14	  -2	NA
+[ 3]:	 1218	 295	  -1	   3	NA
+
+Test PASSED!
+Feature: #62:TxA1 TxE0 Rx2 R448 D28 r: Passed
+Test #62 finished!
+
+Read Test #63 
+numRxAntennas = 2
+numAdcSamples = 448
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 56
+numChirpsPerEvent = 4
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 515
+    rngPhyBin = 182
+    doppPhyBin = 20
+    azimPhyBin = 7
+    elevPhyBin = 15
+sceneObj[1] = 
+    amplitude = 493
+    rngPhyBin = 295
+    doppPhyBin = -10
+    azimPhyBin = 11
+    elevPhyBin = -9
+sceneObj[2] = 
+    amplitude = 490
+    rngPhyBin = 25
+    doppPhyBin = 13
+    azimPhyBin = -18
+    elevPhyBin = 5
+sceneObj[3] = 
+    amplitude = 509
+    rngPhyBin = 370
+    doppPhyBin = 10
+    azimPhyBin = 0
+    elevPhyBin = 5
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1283	 370	  10	   0	NA
+[ 1]:	 1280	  25	  13	 -18	NA
+[ 2]:	 1282	 182	  20	   7	NA
+[ 3]:	 1279	 295	 -10	  11	NA
+
+Test PASSED!
+Feature: #63:TxA1 TxE0 Rx2 R448 D56 r: Passed
+Test #63 finished!
+
+Read Test #64 
+numRxAntennas = 2
+numAdcSamples = 448
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 128
+numChirpsPerEvent = 4
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 506
+    rngPhyBin = 256
+    doppPhyBin = 11
+    azimPhyBin = -7
+    elevPhyBin = 8
+sceneObj[1] = 
+    amplitude = 516
+    rngPhyBin = 335
+    doppPhyBin = -1
+    azimPhyBin = 2
+    elevPhyBin = -3
+sceneObj[2] = 
+    amplitude = 507
+    rngPhyBin = 224
+    doppPhyBin = -59
+    azimPhyBin = -4
+    elevPhyBin = 10
+sceneObj[3] = 
+    amplitude = 492
+    rngPhyBin = 98
+    doppPhyBin = 56
+    azimPhyBin = 12
+    elevPhyBin = -20
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1350	 256	  11	  -7	NA
+[ 1]:	 1350	  98	  56	  12	NA
+[ 2]:	 1354	 224	 -59	  -4	NA
+[ 3]:	 1356	 335	  -1	   2	NA
+
+Test PASSED!
+Feature: #64:TxA1 TxE0 Rx2 R448 D128 r: Passed
+Test #64 finished!
+
+Number of antennas: Ntx=1, Nrx=2
+Number of antennas: Ntx=1, Nrx=2
+Number of antennas: Ntx=1, Nrx=2
+Number of antennas: Ntx=1, Nrx=4
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 139264 Bytes, L2: 20512 Bytes, L1: 13784 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 303104 Bytes, L2: 20640 Bytes, L1: 13880 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 663552 Bytes, L2: 20896 Bytes, L1: 14080 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 16640 Bytes, L2: 15976 Bytes, L1: 5216 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Read Test #65 
+numRxAntennas = 2
+numAdcSamples = 896
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 12
+numChirpsPerEvent = 2
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 496
+    rngPhyBin = 732
+    doppPhyBin = -4
+    azimPhyBin = -19
+    elevPhyBin = 5
+sceneObj[1] = 
+    amplitude = 493
+    rngPhyBin = 313
+    doppPhyBin = 0
+    azimPhyBin = -20
+    elevPhyBin = 11
+sceneObj[2] = 
+    amplitude = 486
+    rngPhyBin = 3
+    doppPhyBin = -7
+    azimPhyBin = 8
+    elevPhyBin = 12
+sceneObj[3] = 
+    amplitude = 504
+    rngPhyBin = 488
+    doppPhyBin = -2
+    azimPhyBin = 5
+    elevPhyBin = 2
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1200	 313	   0	 -20	NA
+[ 1]:	 1200	   3	  -7	   8	NA
+[ 2]:	 1201	 732	  -4	 -19	NA
+[ 3]:	 1201	 488	  -2	   5	NA
+
+Test PASSED!
+Feature: #65:TxA1 TxE0 Rx2 R896 D12 r: Passed
+Test #65 finished!
+
+Read Test #66 
+numRxAntennas = 2
+numAdcSamples = 896
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 28
+numChirpsPerEvent = 2
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 499
+    rngPhyBin = 584
+    doppPhyBin = 1
+    azimPhyBin = 19
+    elevPhyBin = -16
+sceneObj[1] = 
+    amplitude = 507
+    rngPhyBin = 741
+    doppPhyBin = -15
+    azimPhyBin = 4
+    elevPhyBin = -14
+sceneObj[2] = 
+    amplitude = 501
+    rngPhyBin = 409
+    doppPhyBin = -8
+    azimPhyBin = 16
+    elevPhyBin = 14
+sceneObj[3] = 
+    amplitude = 498
+    rngPhyBin = 85
+    doppPhyBin = -16
+    azimPhyBin = -4
+    elevPhyBin = -3
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1278	 584	   1	  19	NA
+[ 1]:	 1278	  85	 -16	  -4	NA
+[ 2]:	 1280	 741	 -15	   4	NA
+[ 3]:	 1280	 409	  -8	  16	NA
+
+Test PASSED!
+Feature: #66:TxA1 TxE0 Rx2 R896 D28 r: Passed
+Test #66 finished!
+
+Read Test #67 
+numRxAntennas = 2
+numAdcSamples = 896
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 64
+numChirpsPerEvent = 2
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 503
+    rngPhyBin = 443
+    doppPhyBin = -20
+    azimPhyBin = 11
+    elevPhyBin = -9
+sceneObj[1] = 
+    amplitude = 480
+    rngPhyBin = 622
+    doppPhyBin = -21
+    azimPhyBin = 11
+    elevPhyBin = -20
+sceneObj[2] = 
+    amplitude = 510
+    rngPhyBin = 797
+    doppPhyBin = -23
+    azimPhyBin = 20
+    elevPhyBin = -6
+sceneObj[3] = 
+    amplitude = 512
+    rngPhyBin = 313
+    doppPhyBin = 31
+    azimPhyBin = -13
+    elevPhyBin = 1
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1355	 313	  31	 -13	NA
+[ 1]:	 1355	 797	 -23	  20	NA
+[ 2]:	 1348	 622	 -21	  11	NA
+[ 3]:	 1352	 443	 -20	  11	NA
+
+Test PASSED!
+Feature: #67:TxA1 TxE0 Rx2 R896 D64 r: Passed
+Test #67 finished!
+
+Read Test #68 
+numRxAntennas = 4
+numAdcSamples = 16
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 56
+numChirpsPerEvent = 8
+numTargets = 2
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 512
+    rngPhyBin = 1
+    doppPhyBin = 26
+    azimPhyBin = -3
+    elevPhyBin = -15
+sceneObj[1] = 
+    amplitude = 498
+    rngPhyBin = 9
+    doppPhyBin = -5
+    azimPhyBin = -19
+    elevPhyBin = 5
+Frame processing Done!! num obj: 3
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1167	   1	  26	  -3	NA
+[ 1]:	  998	  15	  26	  -3	NA
+[ 2]:	 1166	   9	  -5	 -19	NA
+
+Test PASSED!
+Feature: #68:TxA1 TxE0 Rx4 R16 D56 m: Passed
+Test #68 finished!
+
+Number of antennas: Ntx=1, Nrx=4
+Number of antennas: Ntx=1, Nrx=4
+Number of antennas: Ntx=1, Nrx=4
+Number of antennas: Ntx=1, Nrx=4
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 33024 Bytes, L2: 17448 Bytes, L1: 5840 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 65792 Bytes, L2: 20392 Bytes, L1: 7136 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 131328 Bytes, L2: 26280 Bytes, L1: 10656 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 33280 Bytes, L2: 15976 Bytes, L1: 5296 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Read Test #69 
+numRxAntennas = 4
+numAdcSamples = 16
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 112
+numChirpsPerEvent = 8
+numTargets = 2
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 504
+    rngPhyBin = 1
+    doppPhyBin = 29
+    azimPhyBin = 20
+    elevPhyBin = 5
+sceneObj[1] = 
+    amplitude = 506
+    rngPhyBin = 9
+    doppPhyBin = -64
+    azimPhyBin = 0
+    elevPhyBin = 1
+Frame processing Done!! num obj: 3
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1227	   1	  29	  20	NA
+[ 1]:	 1053	  15	  29	  20	NA
+[ 2]:	 1227	   9	 -64	   0	NA
+
+Test PASSED!
+Feature: #69:TxA1 TxE0 Rx4 R16 D112 m: Passed
+Test #69 finished!
+
+Read Test #70 
+numRxAntennas = 4
+numAdcSamples = 16
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 224
+numChirpsPerEvent = 8
+numTargets = 2
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 520
+    rngPhyBin = 1
+    doppPhyBin = 89
+    azimPhyBin = 10
+    elevPhyBin = -10
+sceneObj[1] = 
+    amplitude = 499
+    rngPhyBin = 9
+    doppPhyBin = -111
+    azimPhyBin = -14
+    elevPhyBin = -4
+Frame processing Done!! num obj: 3
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1291	   1	  89	  10	NA
+[ 1]:	 1118	  15	  89	  10	NA
+[ 2]:	 1288	   9	-111	 -14	NA
+
+Test PASSED!
+Feature: #70:TxA1 TxE0 Rx4 R16 D224 m: Passed
+Test #70 finished!
+
+Read Test #71 
+numRxAntennas = 4
+numAdcSamples = 16
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 448
+numChirpsPerEvent = 8
+numTargets = 2
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 487
+    rngPhyBin = 1
+    doppPhyBin = -251
+    azimPhyBin = 19
+    elevPhyBin = 1
+sceneObj[1] = 
+    amplitude = 509
+    rngPhyBin = 9
+    doppPhyBin = -20
+    azimPhyBin = 13
+    elevPhyBin = -15
+Frame processing Done!! num obj: 3
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1345	   1	-251	  19	NA
+[ 1]:	 1171	  15	-251	  19	NA
+[ 2]:	 1349	   9	 -20	  13	NA
+
+Test PASSED!
+Feature: #71:TxA1 TxE0 Rx4 R16 D448 m: Passed
+Test #71 finished!
+
+Read Test #72 
+numRxAntennas = 4
+numAdcSamples = 32
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 56
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 508
+    rngPhyBin = 1
+    doppPhyBin = -6
+    azimPhyBin = -16
+    elevPhyBin = -12
+sceneObj[1] = 
+    amplitude = 509
+    rngPhyBin = 9
+    doppPhyBin = 13
+    azimPhyBin = 19
+    elevPhyBin = -19
+sceneObj[2] = 
+    amplitude = 496
+    rngPhyBin = 17
+    doppPhyBin = 2
+    azimPhyBin = -17
+    elevPhyBin = 14
+sceneObj[3] = 
+    amplitude = 497
+    rngPhyBin = 25
+    doppPhyBin = 15
+    azimPhyBin = -5
+    elevPhyBin = 20
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1170	  17	   2	 -17	NA
+[ 1]:	 1171	   9	  13	  19	NA
+[ 2]:	 1170	  25	  15	  -5	NA
+[ 3]:	 1173	   1	  -6	 -16	NA
+[ 4]:	  984	  31	  -6	 -16	NA
+
+Test PASSED!
+Feature: #72:TxA1 TxE0 Rx4 R32 D56 r: Passed
+Test #72 finished!
+
+Number of antennas: Ntx=1, Nrx=4
+Number of antennas: Ntx=1, Nrx=4
+Number of antennas: Ntx=1, Nrx=4
+Number of antennas: Ntx=1, Nrx=4
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 66048 Bytes, L2: 17448 Bytes, L1: 5920 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 131584 Bytes, L2: 20392 Bytes, L1: 7216 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 262656 Bytes, L2: 26280 Bytes, L1: 10736 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 15360 Bytes, L2: 14984 Bytes, L1: 5176 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Read Test #73 
+numRxAntennas = 4
+numAdcSamples = 32
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 112
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 494
+    rngPhyBin = 1
+    doppPhyBin = -17
+    azimPhyBin = 6
+    elevPhyBin = -13
+sceneObj[1] = 
+    amplitude = 507
+    rngPhyBin = 9
+    doppPhyBin = 60
+    azimPhyBin = 0
+    elevPhyBin = 7
+sceneObj[2] = 
+    amplitude = 497
+    rngPhyBin = 17
+    doppPhyBin = 6
+    azimPhyBin = -9
+    elevPhyBin = 10
+sceneObj[3] = 
+    amplitude = 498
+    rngPhyBin = 25
+    doppPhyBin = -54
+    azimPhyBin = -20
+    elevPhyBin = 7
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1228	  17	   6	  -9	NA
+[ 1]:	 1228	   9	  60	   0	NA
+[ 2]:	 1229	  25	 -54	 -20	NA
+[ 3]:	 1230	   1	 -17	   6	NA
+[ 4]:	 1038	  31	 -17	   6	NA
+
+Test PASSED!
+Feature: #73:TxA1 TxE0 Rx4 R32 D112 r: Passed
+Test #73 finished!
+
+Read Test #74 
+numRxAntennas = 4
+numAdcSamples = 32
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 224
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 494
+    rngPhyBin = 1
+    doppPhyBin = 47
+    azimPhyBin = 18
+    elevPhyBin = 3
+sceneObj[1] = 
+    amplitude = 497
+    rngPhyBin = 9
+    doppPhyBin = -90
+    azimPhyBin = 6
+    elevPhyBin = 16
+sceneObj[2] = 
+    amplitude = 491
+    rngPhyBin = 17
+    doppPhyBin = -34
+    azimPhyBin = 16
+    elevPhyBin = -8
+sceneObj[3] = 
+    amplitude = 496
+    rngPhyBin = 25
+    doppPhyBin = 99
+    azimPhyBin = -4
+    elevPhyBin = 13
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1289	   1	  47	  18	NA
+[ 1]:	 1096	  31	  47	  18	NA
+[ 2]:	 1290	  25	  99	  -4	NA
+[ 3]:	 1290	   9	 -90	   6	NA
+[ 4]:	 1283	  17	 -34	  16	NA
+
+Test PASSED!
+Feature: #74:TxA1 TxE0 Rx4 R32 D224 r: Passed
+Test #74 finished!
+
+Read Test #75 
+numRxAntennas = 4
+numAdcSamples = 32
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 448
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 513
+    rngPhyBin = 1
+    doppPhyBin = -13
+    azimPhyBin = 7
+    elevPhyBin = -19
+sceneObj[1] = 
+    amplitude = 482
+    rngPhyBin = 9
+    doppPhyBin = -136
+    azimPhyBin = -11
+    elevPhyBin = 19
+sceneObj[2] = 
+    amplitude = 508
+    rngPhyBin = 17
+    doppPhyBin = -252
+    azimPhyBin = -13
+    elevPhyBin = 16
+sceneObj[3] = 
+    amplitude = 507
+    rngPhyBin = 25
+    doppPhyBin = 206
+    azimPhyBin = 3
+    elevPhyBin = 17
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1351	  25	 206	   3	NA
+[ 1]:	 1351	  17	-252	 -13	NA
+[ 2]:	 1347	   9	-136	 -11	NA
+[ 3]:	 1355	   1	 -13	   7	NA
+[ 4]:	 1163	  31	 -13	   7	NA
+
+Test PASSED!
+Feature: #75:TxA1 TxE0 Rx4 R32 D448 r: Passed
+Test #75 finished!
+
+Read Test #76 
+numRxAntennas = 4
+numAdcSamples = 64
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 12
+numChirpsPerEvent = 4
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 523
+    rngPhyBin = 11
+    doppPhyBin = -8
+    azimPhyBin = 6
+    elevPhyBin = -2
+sceneObj[1] = 
+    amplitude = 497
+    rngPhyBin = 23
+    doppPhyBin = -6
+    azimPhyBin = -8
+    elevPhyBin = 10
+sceneObj[2] = 
+    amplitude = 511
+    rngPhyBin = 24
+    doppPhyBin = 3
+    azimPhyBin = -6
+    elevPhyBin = -4
+sceneObj[3] = 
+    amplitude = 506
+    rngPhyBin = 12
+    doppPhyBin = 5
+    azimPhyBin = -8
+    elevPhyBin = 5
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1093	  24	   3	  -6	NA
+[ 1]:	 1094	  12	   5	  -8	NA
+[ 2]:	 1096	  11	  -8	   6	NA
+[ 3]:	 1090	  23	  -6	  -8	NA
+
+Test PASSED!
+Feature: #76:TxA1 TxE0 Rx4 R64 D12 r: Passed
+Test #76 finished!
+
+Number of antennas: Ntx=1, Nrx=4
+Number of antennas: Ntx=1, Nrx=4
+Number of antennas: Ntx=1, Nrx=4
+Number of antennas: Ntx=1, Nrx=4
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 33792 Bytes, L2: 15240 Bytes, L1: 5272 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 66560 Bytes, L2: 15976 Bytes, L1: 5456 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 132096 Bytes, L2: 17448 Bytes, L1: 6080 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 263168 Bytes, L2: 20392 Bytes, L1: 7376 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Read Test #77 
+numRxAntennas = 4
+numAdcSamples = 64
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 28
+numChirpsPerEvent = 4
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 498
+    rngPhyBin = 46
+    doppPhyBin = 15
+    azimPhyBin = -9
+    elevPhyBin = 14
+sceneObj[1] = 
+    amplitude = 504
+    rngPhyBin = 14
+    doppPhyBin = -9
+    azimPhyBin = -3
+    elevPhyBin = 5
+sceneObj[2] = 
+    amplitude = 509
+    rngPhyBin = 4
+    doppPhyBin = 5
+    azimPhyBin = -13
+    elevPhyBin = -2
+sceneObj[3] = 
+    amplitude = 495
+    rngPhyBin = 39
+    doppPhyBin = -9
+    azimPhyBin = -13
+    elevPhyBin = 3
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1170	   4	   5	 -13	NA
+[ 1]:	 1170	  46	  15	  -9	NA
+[ 2]:	 1172	  14	  -9	  -3	NA
+[ 3]:	 1167	  39	  -9	 -13	NA
+
+Test PASSED!
+Feature: #77:TxA1 TxE0 Rx4 R64 D28 r: Passed
+Test #77 finished!
+
+Read Test #78 
+numRxAntennas = 4
+numAdcSamples = 64
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 56
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 488
+    rngPhyBin = 32
+    doppPhyBin = -2
+    azimPhyBin = 16
+    elevPhyBin = 8
+sceneObj[1] = 
+    amplitude = 502
+    rngPhyBin = 7
+    doppPhyBin = -31
+    azimPhyBin = 14
+    elevPhyBin = 1
+sceneObj[2] = 
+    amplitude = 509
+    rngPhyBin = 19
+    doppPhyBin = -17
+    azimPhyBin = 2
+    elevPhyBin = 16
+sceneObj[3] = 
+    amplitude = 508
+    rngPhyBin = 13
+    doppPhyBin = 18
+    azimPhyBin = 3
+    elevPhyBin = 4
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1232	  13	  18	   3	NA
+[ 1]:	 1231	   7	 -31	  14	NA
+[ 2]:	 1232	  19	 -17	   2	NA
+[ 3]:	 1223	  32	  -2	  16	NA
+
+Test PASSED!
+Feature: #78:TxA1 TxE0 Rx4 R64 D56 r: Passed
+Test #78 finished!
+
+Read Test #79 
+numRxAntennas = 4
+numAdcSamples = 64
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 112
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 505
+    rngPhyBin = 8
+    doppPhyBin = 63
+    azimPhyBin = -12
+    elevPhyBin = 3
+sceneObj[1] = 
+    amplitude = 510
+    rngPhyBin = 24
+    doppPhyBin = 7
+    azimPhyBin = -13
+    elevPhyBin = 18
+sceneObj[2] = 
+    amplitude = 508
+    rngPhyBin = 7
+    doppPhyBin = 35
+    azimPhyBin = 6
+    elevPhyBin = 0
+sceneObj[3] = 
+    amplitude = 489
+    rngPhyBin = 44
+    doppPhyBin = -14
+    azimPhyBin = -6
+    elevPhyBin = -12
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1293	  24	   7	 -13	NA
+[ 1]:	 1293	   7	  35	   6	NA
+[ 2]:	 1292	   8	  63	 -12	NA
+[ 3]:	 1289	  44	 -14	  -6	NA
+
+Test PASSED!
+Feature: #79:TxA1 TxE0 Rx4 R64 D112 r: Passed
+Test #79 finished!
+
+Read Test #80 
+numRxAntennas = 4
+numAdcSamples = 64
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 224
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 522
+    rngPhyBin = 29
+    doppPhyBin = 42
+    azimPhyBin = -1
+    elevPhyBin = -16
+sceneObj[1] = 
+    amplitude = 499
+    rngPhyBin = 40
+    doppPhyBin = -32
+    azimPhyBin = -20
+    elevPhyBin = 14
+sceneObj[2] = 
+    amplitude = 502
+    rngPhyBin = 9
+    doppPhyBin = -116
+    azimPhyBin = -2
+    elevPhyBin = -2
+sceneObj[3] = 
+    amplitude = 501
+    rngPhyBin = 44
+    doppPhyBin = 97
+    azimPhyBin = 15
+    elevPhyBin = -7
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1355	  29	  42	  -1	NA
+[ 1]:	 1349	  44	  97	  15	NA
+[ 2]:	 1351	   9	-116	  -2	NA
+[ 3]:	 1352	  40	 -32	 -20	NA
+
+Test PASSED!
+Feature: #80:TxA1 TxE0 Rx4 R64 D224 r: Passed
+Test #80 finished!
+
+Number of antennas: Ntx=1, Nrx=4
+Number of antennas: Ntx=1, Nrx=4
+Number of antennas: Ntx=1, Nrx=4
+Number of antennas: Ntx=1, Nrx=4
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 590848 Bytes, L2: 26792 Bytes, L1: 11024 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 30720 Bytes, L2: 14984 Bytes, L1: 5736 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 67584 Bytes, L2: 15240 Bytes, L1: 5832 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 133120 Bytes, L2: 15976 Bytes, L1: 6016 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Read Test #81 
+numRxAntennas = 4
+numAdcSamples = 64
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 512
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 490
+    rngPhyBin = 36
+    doppPhyBin = -12
+    azimPhyBin = 20
+    elevPhyBin = 8
+sceneObj[1] = 
+    amplitude = 506
+    rngPhyBin = 35
+    doppPhyBin = 97
+    azimPhyBin = 20
+    elevPhyBin = -3
+sceneObj[2] = 
+    amplitude = 490
+    rngPhyBin = 42
+    doppPhyBin = -210
+    azimPhyBin = 12
+    elevPhyBin = -14
+sceneObj[3] = 
+    amplitude = 504
+    rngPhyBin = 23
+    doppPhyBin = 233
+    azimPhyBin = 19
+    elevPhyBin = -3
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1425	  35	  97	  20	NA
+[ 1]:	 1424	  23	 233	  19	NA
+[ 2]:	 1422	  42	-210	  12	NA
+[ 3]:	 1421	  36	 -12	  20	NA
+
+Test PASSED!
+Feature: #81:TxA1 TxE0 Rx4 R64 D512 r: Passed
+Test #81 finished!
+
+Read Test #82 
+numRxAntennas = 4
+numAdcSamples = 112
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 12
+numChirpsPerEvent = 4
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 495
+    rngPhyBin = 23
+    doppPhyBin = -8
+    azimPhyBin = -11
+    elevPhyBin = 5
+sceneObj[1] = 
+    amplitude = 508
+    rngPhyBin = 64
+    doppPhyBin = 1
+    azimPhyBin = 15
+    elevPhyBin = 11
+sceneObj[2] = 
+    amplitude = 503
+    rngPhyBin = 36
+    doppPhyBin = 6
+    azimPhyBin = 4
+    elevPhyBin = -9
+sceneObj[3] = 
+    amplitude = 490
+    rngPhyBin = 86
+    doppPhyBin = -3
+    azimPhyBin = -11
+    elevPhyBin = -13
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1080	  64	   1	  15	NA
+[ 1]:	 1082	  36	   6	   4	NA
+[ 2]:	 1079	  23	  -8	 -11	NA
+[ 3]:	 1079	  86	  -3	 -11	NA
+
+Test PASSED!
+Feature: #82:TxA1 TxE0 Rx4 R112 D12 r: Passed
+Test #82 finished!
+
+Read Test #83 
+numRxAntennas = 4
+numAdcSamples = 112
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 28
+numChirpsPerEvent = 4
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 491
+    rngPhyBin = 57
+    doppPhyBin = 12
+    azimPhyBin = 5
+    elevPhyBin = 13
+sceneObj[1] = 
+    amplitude = 485
+    rngPhyBin = 91
+    doppPhyBin = -15
+    azimPhyBin = 9
+    elevPhyBin = 7
+sceneObj[2] = 
+    amplitude = 501
+    rngPhyBin = 52
+    doppPhyBin = -10
+    azimPhyBin = 11
+    elevPhyBin = 19
+sceneObj[3] = 
+    amplitude = 495
+    rngPhyBin = 101
+    doppPhyBin = 6
+    azimPhyBin = 15
+    elevPhyBin = 19
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1157	 101	   6	  15	NA
+[ 1]:	 1156	  57	  12	   5	NA
+[ 2]:	 1154	  91	 -15	   9	NA
+[ 3]:	 1159	  52	 -10	  11	NA
+
+Test PASSED!
+Feature: #83:TxA1 TxE0 Rx4 R112 D28 r: Passed
+Test #83 finished!
+
+Read Test #84 
+numRxAntennas = 4
+numAdcSamples = 112
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 56
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 500
+    rngPhyBin = 66
+    doppPhyBin = -29
+    azimPhyBin = 10
+    elevPhyBin = 0
+sceneObj[1] = 
+    amplitude = 508
+    rngPhyBin = 12
+    doppPhyBin = 12
+    azimPhyBin = -1
+    elevPhyBin = -4
+sceneObj[2] = 
+    amplitude = 492
+    rngPhyBin = 72
+    doppPhyBin = -2
+    azimPhyBin = 5
+    elevPhyBin = 11
+sceneObj[3] = 
+    amplitude = 491
+    rngPhyBin = 26
+    doppPhyBin = -21
+    azimPhyBin = 19
+    elevPhyBin = 13
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1221	  12	  12	  -1	NA
+[ 1]:	 1220	  66	 -29	  10	NA
+[ 2]:	 1217	  26	 -21	  19	NA
+[ 3]:	 1217	  72	  -2	   5	NA
+
+Test PASSED!
+Feature: #84:TxA1 TxE0 Rx4 R112 D56 r: Passed
+Test #84 finished!
+
+Number of antennas: Ntx=1, Nrx=4
+Number of antennas: Ntx=1, Nrx=4
+Number of antennas: Ntx=1, Nrx=4
+Number of antennas: Ntx=1, Nrx=4
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 264192 Bytes, L2: 17448 Bytes, L1: 6384 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 591872 Bytes, L2: 20648 Bytes, L1: 7744 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 714752 Bytes, L2: 24968 Bytes, L1: 10872 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 61440 Bytes, L2: 14984 Bytes, L1: 6872 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Read Test #85 
+numRxAntennas = 4
+numAdcSamples = 112
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 112
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 496
+    rngPhyBin = 11
+    doppPhyBin = 48
+    azimPhyBin = -18
+    elevPhyBin = -15
+sceneObj[1] = 
+    amplitude = 504
+    rngPhyBin = 77
+    doppPhyBin = 2
+    azimPhyBin = 14
+    elevPhyBin = -9
+sceneObj[2] = 
+    amplitude = 513
+    rngPhyBin = 19
+    doppPhyBin = -41
+    azimPhyBin = -13
+    elevPhyBin = 6
+sceneObj[3] = 
+    amplitude = 497
+    rngPhyBin = 101
+    doppPhyBin = 39
+    azimPhyBin = 13
+    elevPhyBin = 11
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1282	  77	   2	  14	NA
+[ 1]:	 1280	 101	  39	  13	NA
+[ 2]:	 1280	  11	  48	 -18	NA
+[ 3]:	 1282	  19	 -41	 -13	NA
+
+Test PASSED!
+Feature: #85:TxA1 TxE0 Rx4 R112 D112 r: Passed
+Test #85 finished!
+
+Read Test #86 
+numRxAntennas = 4
+numAdcSamples = 112
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 256
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 493
+    rngPhyBin = 39
+    doppPhyBin = -28
+    azimPhyBin = -6
+    elevPhyBin = 2
+sceneObj[1] = 
+    amplitude = 504
+    rngPhyBin = 65
+    doppPhyBin = -128
+    azimPhyBin = 12
+    elevPhyBin = 16
+sceneObj[2] = 
+    amplitude = 499
+    rngPhyBin = 99
+    doppPhyBin = 114
+    azimPhyBin = 17
+    elevPhyBin = 17
+sceneObj[3] = 
+    amplitude = 501
+    rngPhyBin = 38
+    doppPhyBin = 26
+    azimPhyBin = -2
+    elevPhyBin = -11
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1353	  38	  26	  -2	NA
+[ 1]:	 1353	  99	 114	  17	NA
+[ 2]:	 1352	  65	-128	  12	NA
+[ 3]:	 1351	  39	 -28	  -6	NA
+
+Test PASSED!
+Feature: #86:TxA1 TxE0 Rx4 R112 D256 r: Passed
+Test #86 finished!
+
+Read Test #87 
+numRxAntennas = 4
+numAdcSamples = 112
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 284
+numChirpsPerEvent = 4
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 495
+    rngPhyBin = 2
+    doppPhyBin = -214
+    azimPhyBin = 5
+    elevPhyBin = 5
+sceneObj[1] = 
+    amplitude = 490
+    rngPhyBin = 20
+    doppPhyBin = 118
+    azimPhyBin = 16
+    elevPhyBin = 4
+sceneObj[2] = 
+    amplitude = 503
+    rngPhyBin = 80
+    doppPhyBin = -4
+    azimPhyBin = -1
+    elevPhyBin = -11
+sceneObj[3] = 
+    amplitude = 501
+    rngPhyBin = 48
+    doppPhyBin = 236
+    azimPhyBin = -16
+    elevPhyBin = -6
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1362	  20	 118	  16	NA
+[ 1]:	 1361	  48	 236	 -16	NA
+[ 2]:	 1361	   2	-214	   5	NA
+[ 3]:	 1364	  80	  -4	  -1	NA
+
+Test PASSED!
+Feature: #87:TxA1 TxE0 Rx4 R112 D284 r: Passed
+Test #87 finished!
+
+Read Test #88 
+numRxAntennas = 4
+numAdcSamples = 224
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 12
+numChirpsPerEvent = 4
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 475
+    rngPhyBin = 185
+    doppPhyBin = 4
+    azimPhyBin = 9
+    elevPhyBin = 11
+sceneObj[1] = 
+    amplitude = 493
+    rngPhyBin = 10
+    doppPhyBin = 1
+    azimPhyBin = -1
+    elevPhyBin = 18
+sceneObj[2] = 
+    amplitude = 508
+    rngPhyBin = 116
+    doppPhyBin = -1
+    azimPhyBin = -9
+    elevPhyBin = -11
+sceneObj[3] = 
+    amplitude = 525
+    rngPhyBin = 59
+    doppPhyBin = -1
+    azimPhyBin = -17
+    elevPhyBin = 3
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1139	  10	   1	  -1	NA
+[ 1]:	 1138	 185	   4	   9	NA
+[ 2]:	 1145	  59	  -1	 -17	NA
+[ 3]:	 1144	 116	  -1	  -9	NA
+
+Test PASSED!
+Feature: #88:TxA1 TxE0 Rx4 R224 D12 r: Passed
+Test #88 finished!
+
+Number of antennas: Ntx=1, Nrx=4
+Number of antennas: Ntx=1, Nrx=4
+Number of antennas: Ntx=1, Nrx=4
+Number of antennas: Ntx=1, Nrx=4
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 135168 Bytes, L2: 15240 Bytes, L1: 6968 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 266240 Bytes, L2: 15976 Bytes, L1: 7152 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 593920 Bytes, L2: 17576 Bytes, L1: 7552 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 708608 Bytes, L2: 19720 Bytes, L1: 8136 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Read Test #89 
+numRxAntennas = 4
+numAdcSamples = 224
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 28
+numChirpsPerEvent = 4
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 492
+    rngPhyBin = 149
+    doppPhyBin = -9
+    azimPhyBin = -15
+    elevPhyBin = 3
+sceneObj[1] = 
+    amplitude = 495
+    rngPhyBin = 73
+    doppPhyBin = -11
+    azimPhyBin = -9
+    elevPhyBin = 16
+sceneObj[2] = 
+    amplitude = 498
+    rngPhyBin = 5
+    doppPhyBin = 0
+    azimPhyBin = 12
+    elevPhyBin = 14
+sceneObj[3] = 
+    amplitude = 492
+    rngPhyBin = 188
+    doppPhyBin = -10
+    azimPhyBin = 3
+    elevPhyBin = 6
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1218	   5	   0	  12	NA
+[ 1]:	 1216	  73	 -11	  -9	NA
+[ 2]:	 1216	 188	 -10	   3	NA
+[ 3]:	 1218	 149	  -9	 -15	NA
+
+Test PASSED!
+Feature: #89:TxA1 TxE0 Rx4 R224 D28 r: Passed
+Test #89 finished!
+
+Read Test #90 
+numRxAntennas = 4
+numAdcSamples = 224
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 56
+numChirpsPerEvent = 4
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 513
+    rngPhyBin = 146
+    doppPhyBin = -30
+    azimPhyBin = 17
+    elevPhyBin = -5
+sceneObj[1] = 
+    amplitude = 516
+    rngPhyBin = 191
+    doppPhyBin = 21
+    azimPhyBin = 5
+    elevPhyBin = 14
+sceneObj[2] = 
+    amplitude = 491
+    rngPhyBin = 129
+    doppPhyBin = 28
+    azimPhyBin = -18
+    elevPhyBin = -13
+sceneObj[3] = 
+    amplitude = 491
+    rngPhyBin = 17
+    doppPhyBin = 8
+    azimPhyBin = -10
+    elevPhyBin = -12
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1278	  17	   8	 -10	NA
+[ 1]:	 1283	 191	  21	   5	NA
+[ 2]:	 1279	 129	  28	 -18	NA
+[ 3]:	 1284	 146	 -30	  17	NA
+
+Test PASSED!
+Feature: #90:TxA1 TxE0 Rx4 R224 D56 r: Passed
+Test #90 finished!
+
+Read Test #91 
+numRxAntennas = 4
+numAdcSamples = 224
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 128
+numChirpsPerEvent = 4
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 500
+    rngPhyBin = 135
+    doppPhyBin = -40
+    azimPhyBin = 9
+    elevPhyBin = -8
+sceneObj[1] = 
+    amplitude = 482
+    rngPhyBin = 1
+    doppPhyBin = -38
+    azimPhyBin = 2
+    elevPhyBin = -8
+sceneObj[2] = 
+    amplitude = 486
+    rngPhyBin = 173
+    doppPhyBin = 16
+    azimPhyBin = -9
+    elevPhyBin = 15
+sceneObj[3] = 
+    amplitude = 509
+    rngPhyBin = 72
+    doppPhyBin = 13
+    azimPhyBin = 1
+    elevPhyBin = 13
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1354	  72	  13	   1	NA
+[ 1]:	 1351	 173	  16	  -9	NA
+[ 2]:	 1351	 135	 -40	   9	NA
+[ 3]:	 1349	   1	 -38	   2	NA
+[ 4]:	 1202	 255	 -38	   2	NA
+
+Test PASSED!
+Feature: #91:TxA1 TxE0 Rx4 R224 D128 r: Passed
+Test #91 finished!
+
+Read Test #92 
+numRxAntennas = 4
+numAdcSamples = 224
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 140
+numChirpsPerEvent = 4
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 495
+    rngPhyBin = 106
+    doppPhyBin = 41
+    azimPhyBin = -17
+    elevPhyBin = 15
+sceneObj[1] = 
+    amplitude = 500
+    rngPhyBin = 104
+    doppPhyBin = -61
+    azimPhyBin = -18
+    elevPhyBin = 4
+sceneObj[2] = 
+    amplitude = 504
+    rngPhyBin = 56
+    doppPhyBin = -108
+    azimPhyBin = 1
+    elevPhyBin = -18
+sceneObj[3] = 
+    amplitude = 490
+    rngPhyBin = 186
+    doppPhyBin = -121
+    azimPhyBin = -18
+    elevPhyBin = -17
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1360	 106	  41	 -17	NA
+[ 1]:	 1359	 186	-121	 -18	NA
+[ 2]:	 1360	  56	-108	   1	NA
+[ 3]:	 1360	 104	 -61	 -18	NA
+
+Test PASSED!
+Feature: #92:TxA1 TxE0 Rx4 R224 D140 r: Passed
+Test #92 finished!
+
+Number of antennas: Ntx=1, Nrx=4
+Number of antennas: Ntx=1, Nrx=4
+Number of antennas: Ntx=1, Nrx=4
+Number of antennas: Ntx=1, Nrx=4
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 122880 Bytes, L2: 20512 Bytes, L1: 9144 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 270336 Bytes, L2: 20640 Bytes, L1: 9240 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 598016 Bytes, L2: 20896 Bytes, L1: 9440 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 696320 Bytes, L2: 21408 Bytes, L1: 9704 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Read Test #93 
+numRxAntennas = 4
+numAdcSamples = 448
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 12
+numChirpsPerEvent = 2
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 502
+    rngPhyBin = 377
+    doppPhyBin = 5
+    azimPhyBin = 18
+    elevPhyBin = -6
+sceneObj[1] = 
+    amplitude = 489
+    rngPhyBin = 243
+    doppPhyBin = 3
+    azimPhyBin = 6
+    elevPhyBin = 13
+sceneObj[2] = 
+    amplitude = 501
+    rngPhyBin = 28
+    doppPhyBin = 2
+    azimPhyBin = -2
+    elevPhyBin = 15
+sceneObj[3] = 
+    amplitude = 512
+    rngPhyBin = 100
+    doppPhyBin = -4
+    azimPhyBin = 11
+    elevPhyBin = 2
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1141	  28	   2	  -2	NA
+[ 1]:	 1139	 243	   3	   6	NA
+[ 2]:	 1140	 377	   5	  18	NA
+[ 3]:	 1143	 100	  -4	  11	NA
+
+Test PASSED!
+Feature: #93:TxA1 TxE0 Rx4 R448 D12 r: Passed
+Test #93 finished!
+
+Read Test #94 
+numRxAntennas = 4
+numAdcSamples = 448
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 28
+numChirpsPerEvent = 2
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 506
+    rngPhyBin = 110
+    doppPhyBin = -14
+    azimPhyBin = 1
+    elevPhyBin = -14
+sceneObj[1] = 
+    amplitude = 496
+    rngPhyBin = 400
+    doppPhyBin = 4
+    azimPhyBin = -4
+    elevPhyBin = -7
+sceneObj[2] = 
+    amplitude = 491
+    rngPhyBin = 20
+    doppPhyBin = -7
+    azimPhyBin = 0
+    elevPhyBin = 2
+sceneObj[3] = 
+    amplitude = 493
+    rngPhyBin = 240
+    doppPhyBin = 12
+    azimPhyBin = -17
+    elevPhyBin = 7
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1218	 400	   4	  -4	NA
+[ 1]:	 1217	 240	  12	 -17	NA
+[ 2]:	 1222	 110	 -14	   1	NA
+[ 3]:	 1218	  20	  -7	   0	NA
+
+Test PASSED!
+Feature: #94:TxA1 TxE0 Rx4 R448 D28 r: Passed
+Test #94 finished!
+
+Read Test #95 
+numRxAntennas = 4
+numAdcSamples = 448
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 64
+numChirpsPerEvent = 2
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 489
+    rngPhyBin = 166
+    doppPhyBin = 6
+    azimPhyBin = -10
+    elevPhyBin = -20
+sceneObj[1] = 
+    amplitude = 502
+    rngPhyBin = 5
+    doppPhyBin = 16
+    azimPhyBin = 14
+    elevPhyBin = 7
+sceneObj[2] = 
+    amplitude = 508
+    rngPhyBin = 377
+    doppPhyBin = 5
+    azimPhyBin = -14
+    elevPhyBin = -6
+sceneObj[3] = 
+    amplitude = 503
+    rngPhyBin = 70
+    doppPhyBin = -31
+    azimPhyBin = 0
+    elevPhyBin = -19
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1293	 377	   5	 -14	NA
+[ 1]:	 1290	 166	   6	 -10	NA
+[ 2]:	 1292	   5	  16	  14	NA
+[ 3]:	 1294	  70	 -31	   0	NA
+
+Test PASSED!
+Feature: #95:TxA1 TxE0 Rx4 R448 D64 r: Passed
+Test #95 finished!
+
+Read Test #96 
+numRxAntennas = 4
+numAdcSamples = 448
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 68
+numChirpsPerEvent = 2
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 512
+    rngPhyBin = 326
+    doppPhyBin = 39
+    azimPhyBin = -20
+    elevPhyBin = 7
+sceneObj[1] = 
+    amplitude = 511
+    rngPhyBin = 276
+    doppPhyBin = -27
+    azimPhyBin = 2
+    elevPhyBin = -12
+sceneObj[2] = 
+    amplitude = 494
+    rngPhyBin = 62
+    doppPhyBin = 40
+    azimPhyBin = 10
+    elevPhyBin = 14
+sceneObj[3] = 
+    amplitude = 515
+    rngPhyBin = 145
+    doppPhyBin = -47
+    azimPhyBin = 10
+    elevPhyBin = 5
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1299	 326	  39	 -20	NA
+[ 1]:	 1296	  62	  40	  10	NA
+[ 2]:	 1300	 145	 -47	  10	NA
+[ 3]:	 1298	 276	 -27	   2	NA
+
+Test PASSED!
+Feature: #96:TxA1 TxE0 Rx4 R448 D68 r: Passed
+Test #96 finished!
+
+Number of antennas: Ntx=1, Nrx=4
+Number of antennas: Ntx=1, Nrx=4
+Number of antennas: Ntx=2, Nrx=4
+Number of antennas: Ntx=2, Nrx=4
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 245760 Bytes, L2: 36896 Bytes, L1: 13784 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 606208 Bytes, L2: 37024 Bytes, L1: 13888 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 31232 Bytes, L2: 15976 Bytes, L1: 5216 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 61952 Bytes, L2: 17448 Bytes, L1: 5840 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Read Test #97 
+numRxAntennas = 4
+numAdcSamples = 896
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 12
+numChirpsPerEvent = 1
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 487
+    rngPhyBin = 587
+    doppPhyBin = 7
+    azimPhyBin = 7
+    elevPhyBin = -15
+sceneObj[1] = 
+    amplitude = 486
+    rngPhyBin = 717
+    doppPhyBin = 0
+    azimPhyBin = 12
+    elevPhyBin = 9
+sceneObj[2] = 
+    amplitude = 504
+    rngPhyBin = 371
+    doppPhyBin = -6
+    azimPhyBin = 3
+    elevPhyBin = 9
+sceneObj[3] = 
+    amplitude = 510
+    rngPhyBin = 238
+    doppPhyBin = -2
+    azimPhyBin = -12
+    elevPhyBin = 19
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1199	 717	   0	  12	NA
+[ 1]:	 1197	 587	   7	   7	NA
+[ 2]:	 1202	 371	  -6	   3	NA
+[ 3]:	 1203	 238	  -2	 -12	NA
+
+Test PASSED!
+Feature: #97:TxA1 TxE0 Rx4 R896 D12 r: Passed
+Test #97 finished!
+
+Read Test #98 
+numRxAntennas = 4
+numAdcSamples = 896
+numTxAntAzim = 1
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 32
+numChirpsPerEvent = 1
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 492
+    rngPhyBin = 764
+    doppPhyBin = -10
+    azimPhyBin = 4
+    elevPhyBin = -12
+sceneObj[1] = 
+    amplitude = 504
+    rngPhyBin = 426
+    doppPhyBin = 6
+    azimPhyBin = -11
+    elevPhyBin = 12
+sceneObj[2] = 
+    amplitude = 509
+    rngPhyBin = 102
+    doppPhyBin = 12
+    azimPhyBin = -7
+    elevPhyBin = 9
+sceneObj[3] = 
+    amplitude = 488
+    rngPhyBin = 270
+    doppPhyBin = -3
+    azimPhyBin = 1
+    elevPhyBin = -14
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1292	 426	   6	 -11	NA
+[ 1]:	 1293	 102	  12	  -7	NA
+[ 2]:	 1288	 764	 -10	   4	NA
+[ 3]:	 1290	 270	  -3	   1	NA
+
+Test PASSED!
+Feature: #98:TxA1 TxE0 Rx4 R896 D32 r: Passed
+Test #98 finished!
+
+Read Test #99 
+numRxAntennas = 4
+numAdcSamples = 16
+numTxAntAzim = 2
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 112
+numChirpsPerEvent = 8
+numTargets = 2
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 491
+    rngPhyBin = 1
+    doppPhyBin = -49
+    azimPhyBin = -4
+    elevPhyBin = -7
+sceneObj[1] = 
+    amplitude = 496
+    rngPhyBin = 9
+    doppPhyBin = -20
+    azimPhyBin = 4
+    elevPhyBin = -2
+Frame processing Done!! num obj: 3
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1164	   1	 -49	  -4	NA
+[ 1]:	  991	  15	 -49	  -4	NA
+[ 2]:	 1165	   9	 -20	   4	NA
+
+Test PASSED!
+Feature: #99:TxA2 TxE0 Rx4 R16 D56 m: Passed
+Test #99 finished!
+
+Read Test #100 
+numRxAntennas = 4
+numAdcSamples = 16
+numTxAntAzim = 2
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 224
+numChirpsPerEvent = 8
+numTargets = 2
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 502
+    rngPhyBin = 1
+    doppPhyBin = -47
+    azimPhyBin = 12
+    elevPhyBin = 15
+sceneObj[1] = 
+    amplitude = 497
+    rngPhyBin = 9
+    doppPhyBin = 5
+    azimPhyBin = -13
+    elevPhyBin = 3
+Frame processing Done!! num obj: 3
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1226	   9	   5	 -13	NA
+[ 1]:	 1227	   1	 -47	  12	NA
+[ 2]:	 1055	  15	 -47	  12	NA
+
+Test PASSED!
+Feature: #100:TxA2 TxE0 Rx4 R16 D112 m: Passed
+Test #100 finished!
+
+Number of antennas: Ntx=2, Nrx=4
+Number of antennas: Ntx=2, Nrx=4
+Number of antennas: Ntx=2, Nrx=4
+Number of antennas: Ntx=2, Nrx=4
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 123392 Bytes, L2: 20392 Bytes, L1: 7136 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 246272 Bytes, L2: 26280 Bytes, L1: 10656 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 62464 Bytes, L2: 15976 Bytes, L1: 5296 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 123904 Bytes, L2: 17448 Bytes, L1: 5920 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Read Test #101 
+numRxAntennas = 4
+numAdcSamples = 16
+numTxAntAzim = 2
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 448
+numChirpsPerEvent = 8
+numTargets = 2
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 513
+    rngPhyBin = 1
+    doppPhyBin = 230
+    azimPhyBin = 0
+    elevPhyBin = -15
+sceneObj[1] = 
+    amplitude = 495
+    rngPhyBin = 9
+    doppPhyBin = -46
+    azimPhyBin = -2
+    elevPhyBin = 1
+Frame processing Done!! num obj: 3
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1287	   9	 -46	  -2	NA
+[ 1]:	 1289	   1	 230	   0	NA
+[ 2]:	 1114	  15	 230	   0	NA
+
+Test PASSED!
+Feature: #101:TxA2 TxE0 Rx4 R16 D224 m: Passed
+Test #101 finished!
+
+Read Test #102 
+numRxAntennas = 4
+numAdcSamples = 16
+numTxAntAzim = 2
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 896
+numChirpsPerEvent = 8
+numTargets = 2
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 486
+    rngPhyBin = 1
+    doppPhyBin = -81
+    azimPhyBin = -19
+    elevPhyBin = 18
+sceneObj[1] = 
+    amplitude = 486
+    rngPhyBin = 9
+    doppPhyBin = 368
+    azimPhyBin = -14
+    elevPhyBin = -19
+Frame processing Done!! num obj: 3
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1346	   9	 368	 -14	NA
+[ 1]:	 1344	   1	 -81	 -19	NA
+[ 2]:	 1168	  15	 -81	 -19	NA
+
+Test PASSED!
+Feature: #102:TxA2 TxE0 Rx4 R16 D448 m: Passed
+Test #102 finished!
+
+Read Test #103 
+numRxAntennas = 4
+numAdcSamples = 32
+numTxAntAzim = 2
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 112
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 507
+    rngPhyBin = 1
+    doppPhyBin = 63
+    azimPhyBin = 18
+    elevPhyBin = 19
+sceneObj[1] = 
+    amplitude = 506
+    rngPhyBin = 9
+    doppPhyBin = 2
+    azimPhyBin = 5
+    elevPhyBin = 2
+sceneObj[2] = 
+    amplitude = 518
+    rngPhyBin = 17
+    doppPhyBin = -62
+    azimPhyBin = -15
+    elevPhyBin = -17
+sceneObj[3] = 
+    amplitude = 507
+    rngPhyBin = 25
+    doppPhyBin = 40
+    azimPhyBin = 7
+    elevPhyBin = 10
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1169	   9	   2	   5	NA
+[ 1]:	 1171	  17	 -62	 -15	NA
+[ 2]:	 1168	  25	  40	   7	NA
+[ 3]:	 1170	   1	  63	  18	NA
+[ 4]:	  975	  31	  63	  18	NA
+
+Test PASSED!
+Feature: #103:TxA2 TxE0 Rx4 R32 D56 r: Passed
+Test #103 finished!
+
+Read Test #104 
+numRxAntennas = 4
+numAdcSamples = 32
+numTxAntAzim = 2
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 224
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 491
+    rngPhyBin = 1
+    doppPhyBin = -71
+    azimPhyBin = -20
+    elevPhyBin = -11
+sceneObj[1] = 
+    amplitude = 496
+    rngPhyBin = 9
+    doppPhyBin = -20
+    azimPhyBin = -6
+    elevPhyBin = -8
+sceneObj[2] = 
+    amplitude = 505
+    rngPhyBin = 17
+    doppPhyBin = 53
+    azimPhyBin = 11
+    elevPhyBin = 19
+sceneObj[3] = 
+    amplitude = 487
+    rngPhyBin = 25
+    doppPhyBin = -117
+    azimPhyBin = 7
+    elevPhyBin = 20
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1227	  25	-117	   7	NA
+[ 1]:	 1231	  17	  53	  11	NA
+[ 2]:	 1228	   1	 -71	 -20	NA
+[ 3]:	 1037	  31	 -71	 -20	NA
+[ 4]:	 1228	   9	 -20	  -6	NA
+
+Test PASSED!
+Feature: #104:TxA2 TxE0 Rx4 R32 D112 r: Passed
+Test #104 finished!
+
+Number of antennas: Ntx=2, Nrx=4
+Number of antennas: Ntx=2, Nrx=4
+Number of antennas: Ntx=2, Nrx=4
+Number of antennas: Ntx=2, Nrx=4
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 246784 Bytes, L2: 20392 Bytes, L1: 7216 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 558080 Bytes, L2: 26792 Bytes, L1: 10864 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 28672 Bytes, L2: 14984 Bytes, L1: 5176 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 63488 Bytes, L2: 15240 Bytes, L1: 5272 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Read Test #105 
+numRxAntennas = 4
+numAdcSamples = 32
+numTxAntAzim = 2
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 448
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 498
+    rngPhyBin = 1
+    doppPhyBin = -160
+    azimPhyBin = -13
+    elevPhyBin = -14
+sceneObj[1] = 
+    amplitude = 511
+    rngPhyBin = 9
+    doppPhyBin = -18
+    azimPhyBin = 0
+    elevPhyBin = -15
+sceneObj[2] = 
+    amplitude = 510
+    rngPhyBin = 17
+    doppPhyBin = 245
+    azimPhyBin = -2
+    elevPhyBin = 2
+sceneObj[3] = 
+    amplitude = 506
+    rngPhyBin = 25
+    doppPhyBin = 136
+    azimPhyBin = -11
+    elevPhyBin = -11
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1289	   1	-160	 -13	NA
+[ 1]:	 1100	  31	-160	 -13	NA
+[ 2]:	 1291	  25	 136	 -11	NA
+[ 3]:	 1291	   9	 -18	   0	NA
+[ 4]:	 1291	  17	 245	  -2	NA
+
+Test PASSED!
+Feature: #105:TxA2 TxE0 Rx4 R32 D224 r: Passed
+Test #105 finished!
+
+Read Test #106 
+numRxAntennas = 4
+numAdcSamples = 32
+numTxAntAzim = 2
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 1024
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 506
+    rngPhyBin = 1
+    doppPhyBin = 260
+    azimPhyBin = -15
+    elevPhyBin = -7
+sceneObj[1] = 
+    amplitude = 511
+    rngPhyBin = 9
+    doppPhyBin = -67
+    azimPhyBin = -6
+    elevPhyBin = -4
+sceneObj[2] = 
+    amplitude = 501
+    rngPhyBin = 17
+    doppPhyBin = -453
+    azimPhyBin = 5
+    elevPhyBin = 18
+sceneObj[3] = 
+    amplitude = 484
+    rngPhyBin = 25
+    doppPhyBin = 472
+    azimPhyBin = 2
+    elevPhyBin = -11
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1362	  17	-453	   5	NA
+[ 1]:	 1363	   1	 260	 -15	NA
+[ 2]:	 1173	  31	 260	 -15	NA
+[ 3]:	 1364	   9	 -67	  -6	NA
+[ 4]:	 1359	  25	 472	   2	NA
+
+Test PASSED!
+Feature: #106:TxA2 TxE0 Rx4 R32 D512 r: Passed
+Test #106 finished!
+
+Read Test #107 
+numRxAntennas = 4
+numAdcSamples = 64
+numTxAntAzim = 2
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 24
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 496
+    rngPhyBin = 31
+    doppPhyBin = -7
+    azimPhyBin = 19
+    elevPhyBin = -8
+sceneObj[1] = 
+    amplitude = 502
+    rngPhyBin = 24
+    doppPhyBin = 8
+    azimPhyBin = 19
+    elevPhyBin = 1
+sceneObj[2] = 
+    amplitude = 500
+    rngPhyBin = 8
+    doppPhyBin = -12
+    azimPhyBin = 8
+    elevPhyBin = 15
+sceneObj[3] = 
+    amplitude = 498
+    rngPhyBin = 4
+    doppPhyBin = 10
+    azimPhyBin = -19
+    elevPhyBin = 11
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1089	   8	 -12	   8	NA
+[ 1]:	 1090	  24	   8	  19	NA
+[ 2]:	 1089	  31	  -7	  19	NA
+[ 3]:	 1089	   4	  10	 -19	NA
+
+Test PASSED!
+Feature: #107:TxA2 TxE0 Rx4 R64 D12 r: Passed
+Test #107 finished!
+
+Read Test #108 
+numRxAntennas = 4
+numAdcSamples = 64
+numTxAntAzim = 2
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 56
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 522
+    rngPhyBin = 27
+    doppPhyBin = 16
+    azimPhyBin = 13
+    elevPhyBin = 13
+sceneObj[1] = 
+    amplitude = 508
+    rngPhyBin = 34
+    doppPhyBin = -14
+    azimPhyBin = -10
+    elevPhyBin = -4
+sceneObj[2] = 
+    amplitude = 517
+    rngPhyBin = 18
+    doppPhyBin = -28
+    azimPhyBin = 12
+    elevPhyBin = 3
+sceneObj[3] = 
+    amplitude = 496
+    rngPhyBin = 14
+    doppPhyBin = 5
+    azimPhyBin = 0
+    elevPhyBin = 13
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1171	  18	 -28	  12	NA
+[ 1]:	 1170	  14	   5	   0	NA
+[ 2]:	 1172	  27	  16	  13	NA
+[ 3]:	 1169	  34	 -14	 -10	NA
+
+Test PASSED!
+Feature: #108:TxA2 TxE0 Rx4 R64 D28 r: Passed
+Test #108 finished!
+
+Number of antennas: Ntx=2, Nrx=4
+Number of antennas: Ntx=2, Nrx=4
+Number of antennas: Ntx=2, Nrx=4
+Number of antennas: Ntx=2, Nrx=4
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 124928 Bytes, L2: 15976 Bytes, L1: 5456 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 247808 Bytes, L2: 17448 Bytes, L1: 6080 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 559104 Bytes, L2: 20648 Bytes, L1: 7440 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 714752 Bytes, L2: 25224 Bytes, L1: 10632 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Read Test #109 
+numRxAntennas = 4
+numAdcSamples = 64
+numTxAntAzim = 2
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 112
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 511
+    rngPhyBin = 15
+    doppPhyBin = 0
+    azimPhyBin = 0
+    elevPhyBin = -10
+sceneObj[1] = 
+    amplitude = 502
+    rngPhyBin = 31
+    doppPhyBin = 22
+    azimPhyBin = -7
+    elevPhyBin = 1
+sceneObj[2] = 
+    amplitude = 502
+    rngPhyBin = 42
+    doppPhyBin = -18
+    azimPhyBin = 6
+    elevPhyBin = 16
+sceneObj[3] = 
+    amplitude = 500
+    rngPhyBin = 20
+    doppPhyBin = -64
+    azimPhyBin = -15
+    elevPhyBin = 3
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1231	  15	   0	   0	NA
+[ 1]:	 1229	  20	 -64	 -15	NA
+[ 2]:	 1230	  31	  22	  -7	NA
+[ 3]:	 1230	  42	 -18	   6	NA
+
+Test PASSED!
+Feature: #109:TxA2 TxE0 Rx4 R64 D56 r: Passed
+Test #109 finished!
+
+Read Test #110 
+numRxAntennas = 4
+numAdcSamples = 64
+numTxAntAzim = 2
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 224
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 497
+    rngPhyBin = 49
+    doppPhyBin = -42
+    azimPhyBin = 14
+    elevPhyBin = -8
+sceneObj[1] = 
+    amplitude = 503
+    rngPhyBin = 5
+    doppPhyBin = 17
+    azimPhyBin = 19
+    elevPhyBin = 2
+sceneObj[2] = 
+    amplitude = 492
+    rngPhyBin = 21
+    doppPhyBin = 67
+    azimPhyBin = 3
+    elevPhyBin = 11
+sceneObj[3] = 
+    amplitude = 500
+    rngPhyBin = 1
+    doppPhyBin = 127
+    azimPhyBin = 12
+    elevPhyBin = 13
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1291	   5	  17	  19	NA
+[ 1]:	 1289	  21	  67	   3	NA
+[ 2]:	 1290	  49	 -42	  14	NA
+[ 3]:	 1291	   1	 127	  12	NA
+[ 4]:	 1092	  63	 127	  12	NA
+
+Test PASSED!
+Feature: #110:TxA2 TxE0 Rx4 R64 D112 r: Passed
+Test #110 finished!
+
+Read Test #111 
+numRxAntennas = 4
+numAdcSamples = 64
+numTxAntAzim = 2
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 512
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 489
+    rngPhyBin = 43
+    doppPhyBin = 6
+    azimPhyBin = 15
+    elevPhyBin = -17
+sceneObj[1] = 
+    amplitude = 497
+    rngPhyBin = 35
+    doppPhyBin = 242
+    azimPhyBin = -3
+    elevPhyBin = 13
+sceneObj[2] = 
+    amplitude = 499
+    rngPhyBin = 35
+    doppPhyBin = -234
+    azimPhyBin = -1
+    elevPhyBin = -8
+sceneObj[3] = 
+    amplitude = 474
+    rngPhyBin = 13
+    doppPhyBin = 110
+    azimPhyBin = 19
+    elevPhyBin = -15
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1361	  43	   6	  15	NA
+[ 1]:	 1362	  35	-234	  -1	NA
+[ 2]:	 1359	  13	 110	  19	NA
+[ 3]:	 1362	  35	 242	  -3	NA
+
+Test PASSED!
+Feature: #111:TxA2 TxE0 Rx4 R64 D256 r: Passed
+Test #111 finished!
+
+Read Test #112 
+numRxAntennas = 4
+numAdcSamples = 64
+numTxAntAzim = 2
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 632
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 494
+    rngPhyBin = 6
+    doppPhyBin = 65
+    azimPhyBin = -8
+    elevPhyBin = 18
+sceneObj[1] = 
+    amplitude = 498
+    rngPhyBin = 47
+    doppPhyBin = 393
+    azimPhyBin = -9
+    elevPhyBin = -1
+sceneObj[2] = 
+    amplitude = 505
+    rngPhyBin = 29
+    doppPhyBin = -393
+    azimPhyBin = 20
+    elevPhyBin = -17
+sceneObj[3] = 
+    amplitude = 502
+    rngPhyBin = 15
+    doppPhyBin = -162
+    azimPhyBin = -5
+    elevPhyBin = -3
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1380	   6	  65	  -8	NA
+[ 1]:	 1382	  29	-393	  20	NA
+[ 2]:	 1381	  15	-162	  -5	NA
+[ 3]:	 1381	  47	 393	  -9	NA
+
+Test PASSED!
+Feature: #112:TxA2 TxE0 Rx4 R64 D316 r: Passed
+Test #112 finished!
+
+Number of antennas: Ntx=2, Nrx=4
+Number of antennas: Ntx=2, Nrx=4
+Number of antennas: Ntx=2, Nrx=4
+Number of antennas: Ntx=2, Nrx=4
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 57344 Bytes, L2: 14984 Bytes, L1: 5736 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 126976 Bytes, L2: 15240 Bytes, L1: 5832 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 249856 Bytes, L2: 15976 Bytes, L1: 6016 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 561152 Bytes, L2: 17576 Bytes, L1: 6416 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Read Test #113 
+numRxAntennas = 4
+numAdcSamples = 112
+numTxAntAzim = 2
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 24
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 505
+    rngPhyBin = 64
+    doppPhyBin = -7
+    azimPhyBin = -4
+    elevPhyBin = 14
+sceneObj[1] = 
+    amplitude = 510
+    rngPhyBin = 22
+    doppPhyBin = 0
+    azimPhyBin = -14
+    elevPhyBin = 9
+sceneObj[2] = 
+    amplitude = 498
+    rngPhyBin = 43
+    doppPhyBin = 4
+    azimPhyBin = 11
+    elevPhyBin = 11
+sceneObj[3] = 
+    amplitude = 505
+    rngPhyBin = 100
+    doppPhyBin = -9
+    azimPhyBin = 2
+    elevPhyBin = -5
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1081	  22	   0	 -14	NA
+[ 1]:	 1079	  43	   4	  11	NA
+[ 2]:	 1081	 100	  -9	   2	NA
+[ 3]:	 1080	  64	  -7	  -4	NA
+
+Test PASSED!
+Feature: #113:TxA2 TxE0 Rx4 R112 D12 r: Passed
+Test #113 finished!
+
+Read Test #114 
+numRxAntennas = 4
+numAdcSamples = 112
+numTxAntAzim = 2
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 56
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 498
+    rngPhyBin = 18
+    doppPhyBin = 10
+    azimPhyBin = -2
+    elevPhyBin = -9
+sceneObj[1] = 
+    amplitude = 471
+    rngPhyBin = 74
+    doppPhyBin = 4
+    azimPhyBin = 19
+    elevPhyBin = 2
+sceneObj[2] = 
+    amplitude = 522
+    rngPhyBin = 49
+    doppPhyBin = 17
+    azimPhyBin = 15
+    elevPhyBin = -6
+sceneObj[3] = 
+    amplitude = 490
+    rngPhyBin = 24
+    doppPhyBin = -10
+    azimPhyBin = -3
+    elevPhyBin = 19
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1151	  74	   4	  19	NA
+[ 1]:	 1156	  18	  10	  -2	NA
+[ 2]:	 1160	  49	  17	  15	NA
+[ 3]:	 1155	  24	 -10	  -3	NA
+
+Test PASSED!
+Feature: #114:TxA2 TxE0 Rx4 R112 D28 r: Passed
+Test #114 finished!
+
+Read Test #115 
+numRxAntennas = 4
+numAdcSamples = 112
+numTxAntAzim = 2
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 112
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 493
+    rngPhyBin = 2
+    doppPhyBin = 19
+    azimPhyBin = -14
+    elevPhyBin = 10
+sceneObj[1] = 
+    amplitude = 482
+    rngPhyBin = 21
+    doppPhyBin = -31
+    azimPhyBin = -3
+    elevPhyBin = 4
+sceneObj[2] = 
+    amplitude = 496
+    rngPhyBin = 95
+    doppPhyBin = 34
+    azimPhyBin = -20
+    elevPhyBin = -12
+sceneObj[3] = 
+    amplitude = 486
+    rngPhyBin = 29
+    doppPhyBin = 39
+    azimPhyBin = 17
+    elevPhyBin = -6
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1218	   2	  19	 -14	NA
+[ 1]:	 1216	  21	 -31	  -3	NA
+[ 2]:	 1218	  95	  34	 -20	NA
+[ 3]:	 1218	  29	  39	  17	NA
+
+Test PASSED!
+Feature: #115:TxA2 TxE0 Rx4 R112 D56 r: Passed
+Test #115 finished!
+
+Read Test #116 
+numRxAntennas = 4
+numAdcSamples = 112
+numTxAntAzim = 2
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 256
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 501
+    rngPhyBin = 72
+    doppPhyBin = -126
+    azimPhyBin = 7
+    elevPhyBin = -12
+sceneObj[1] = 
+    amplitude = 498
+    rngPhyBin = 100
+    doppPhyBin = 101
+    azimPhyBin = 4
+    elevPhyBin = -14
+sceneObj[2] = 
+    amplitude = 499
+    rngPhyBin = 26
+    doppPhyBin = 107
+    azimPhyBin = 8
+    elevPhyBin = 6
+sceneObj[3] = 
+    amplitude = 505
+    rngPhyBin = 44
+    doppPhyBin = -1
+    azimPhyBin = 3
+    elevPhyBin = 15
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1291	  72	-126	   7	NA
+[ 1]:	 1291	 100	 101	   4	NA
+[ 2]:	 1290	  26	 107	   8	NA
+[ 3]:	 1292	  44	  -1	   3	NA
+
+Test PASSED!
+Feature: #116:TxA2 TxE0 Rx4 R112 D128 r: Passed
+Test #116 finished!
+
+Number of antennas: Ntx=2, Nrx=4
+Number of antennas: Ntx=2, Nrx=4
+Number of antennas: Ntx=2, Nrx=4
+Number of antennas: Ntx=2, Nrx=4
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 708608 Bytes, L2: 19848 Bytes, L1: 7544 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 114688 Bytes, L2: 14984 Bytes, L1: 6872 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 253952 Bytes, L2: 15240 Bytes, L1: 6968 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 565248 Bytes, L2: 16040 Bytes, L1: 7168 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Read Test #117 
+numRxAntennas = 4
+numAdcSamples = 112
+numTxAntAzim = 2
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 312
+numChirpsPerEvent = 8
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 518
+    rngPhyBin = 3
+    doppPhyBin = 205
+    azimPhyBin = 11
+    elevPhyBin = 19
+sceneObj[1] = 
+    amplitude = 501
+    rngPhyBin = 1
+    doppPhyBin = -14
+    azimPhyBin = 16
+    elevPhyBin = 14
+sceneObj[2] = 
+    amplitude = 490
+    rngPhyBin = 59
+    doppPhyBin = -251
+    azimPhyBin = 0
+    elevPhyBin = -13
+sceneObj[3] = 
+    amplitude = 495
+    rngPhyBin = 85
+    doppPhyBin = -150
+    azimPhyBin = 5
+    elevPhyBin = 18
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1310	  59	-251	   0	NA
+[ 1]:	 1308	  85	-150	   5	NA
+[ 2]:	 1312	   3	 205	  11	NA
+[ 3]:	 1311	   1	 -14	  16	NA
+[ 4]:	 1165	 127	 -14	  16	NA
+
+Test PASSED!
+Feature: #117:TxA2 TxE0 Rx4 R112 D156 r: Passed
+Test #117 finished!
+
+Read Test #118 
+numRxAntennas = 4
+numAdcSamples = 224
+numTxAntAzim = 2
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 24
+numChirpsPerEvent = 4
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 507
+    rngPhyBin = 26
+    doppPhyBin = -14
+    azimPhyBin = 6
+    elevPhyBin = 11
+sceneObj[1] = 
+    amplitude = 489
+    rngPhyBin = 191
+    doppPhyBin = -11
+    azimPhyBin = 19
+    elevPhyBin = -5
+sceneObj[2] = 
+    amplitude = 506
+    rngPhyBin = 76
+    doppPhyBin = 8
+    azimPhyBin = 15
+    elevPhyBin = 5
+sceneObj[3] = 
+    amplitude = 498
+    rngPhyBin = 151
+    doppPhyBin = -12
+    azimPhyBin = -4
+    elevPhyBin = -15
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1141	  26	 -14	   6	NA
+[ 1]:	 1140	 151	 -12	  -4	NA
+[ 2]:	 1139	 191	 -11	  19	NA
+[ 3]:	 1142	  76	   8	  15	NA
+
+Test PASSED!
+Feature: #118:TxA2 TxE0 Rx4 R224 D12 r: Passed
+Test #118 finished!
+
+Read Test #119 
+numRxAntennas = 4
+numAdcSamples = 224
+numTxAntAzim = 2
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 56
+numChirpsPerEvent = 4
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 518
+    rngPhyBin = 64
+    doppPhyBin = -17
+    azimPhyBin = 0
+    elevPhyBin = 19
+sceneObj[1] = 
+    amplitude = 484
+    rngPhyBin = 155
+    doppPhyBin = 22
+    azimPhyBin = -15
+    elevPhyBin = 4
+sceneObj[2] = 
+    amplitude = 493
+    rngPhyBin = 82
+    doppPhyBin = 18
+    azimPhyBin = 10
+    elevPhyBin = -7
+sceneObj[3] = 
+    amplitude = 500
+    rngPhyBin = 188
+    doppPhyBin = -32
+    azimPhyBin = 1
+    elevPhyBin = 13
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1218	 188	 -32	   1	NA
+[ 1]:	 1222	  64	 -17	   0	NA
+[ 2]:	 1216	  82	  18	  10	NA
+[ 3]:	 1215	 155	  22	 -15	NA
+
+Test PASSED!
+Feature: #119:TxA2 TxE0 Rx4 R224 D28 r: Passed
+Test #119 finished!
+
+Read Test #120 
+numRxAntennas = 4
+numAdcSamples = 224
+numTxAntAzim = 2
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 128
+numChirpsPerEvent = 4
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 494
+    rngPhyBin = 172
+    doppPhyBin = -15
+    azimPhyBin = -17
+    elevPhyBin = 9
+sceneObj[1] = 
+    amplitude = 493
+    rngPhyBin = 65
+    doppPhyBin = -27
+    azimPhyBin = -16
+    elevPhyBin = 10
+sceneObj[2] = 
+    amplitude = 502
+    rngPhyBin = 9
+    doppPhyBin = 7
+    azimPhyBin = -18
+    elevPhyBin = -10
+sceneObj[3] = 
+    amplitude = 507
+    rngPhyBin = 125
+    doppPhyBin = -4
+    azimPhyBin = -9
+    elevPhyBin = -3
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1292	   9	   7	 -18	NA
+[ 1]:	 1290	  65	 -27	 -16	NA
+[ 2]:	 1289	 172	 -15	 -17	NA
+[ 3]:	 1293	 125	  -4	  -9	NA
+
+Test PASSED!
+Feature: #120:TxA2 TxE0 Rx4 R224 D64 r: Passed
+Test #120 finished!
+
+Number of antennas: Ntx=2, Nrx=4
+Number of antennas: Ntx=2, Nrx=4
+Number of antennas: Ntx=2, Nrx=4
+Number of antennas: Ntx=2, Nrx=4
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 696320 Bytes, L2: 17160 Bytes, L1: 7448 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 229376 Bytes, L2: 20512 Bytes, L1: 9144 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 573440 Bytes, L2: 20640 Bytes, L1: 9248 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 671744 Bytes, L2: 20896 Bytes, L1: 9384 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Read Test #121 
+numRxAntennas = 4
+numAdcSamples = 224
+numTxAntAzim = 2
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 152
+numChirpsPerEvent = 4
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 496
+    rngPhyBin = 121
+    doppPhyBin = 63
+    azimPhyBin = 11
+    elevPhyBin = 5
+sceneObj[1] = 
+    amplitude = 488
+    rngPhyBin = 123
+    doppPhyBin = -116
+    azimPhyBin = 14
+    elevPhyBin = 9
+sceneObj[2] = 
+    amplitude = 500
+    rngPhyBin = 27
+    doppPhyBin = 4
+    azimPhyBin = -12
+    elevPhyBin = 3
+sceneObj[3] = 
+    amplitude = 497
+    rngPhyBin = 59
+    doppPhyBin = 88
+    azimPhyBin = 16
+    elevPhyBin = -7
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1306	  27	   4	 -12	NA
+[ 1]:	 1305	 123	-116	  14	NA
+[ 2]:	 1306	 121	  63	  11	NA
+[ 3]:	 1305	  59	  88	  16	NA
+
+Test PASSED!
+Feature: #121:TxA2 TxE0 Rx4 R224 D76 r: Passed
+Test #121 finished!
+
+Read Test #122 
+numRxAntennas = 4
+numAdcSamples = 448
+numTxAntAzim = 2
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 24
+numChirpsPerEvent = 2
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 514
+    rngPhyBin = 266
+    doppPhyBin = 5
+    azimPhyBin = 5
+    elevPhyBin = 17
+sceneObj[1] = 
+    amplitude = 512
+    rngPhyBin = 85
+    doppPhyBin = 15
+    azimPhyBin = 15
+    elevPhyBin = 10
+sceneObj[2] = 
+    amplitude = 489
+    rngPhyBin = 191
+    doppPhyBin = 0
+    azimPhyBin = -3
+    elevPhyBin = -16
+sceneObj[3] = 
+    amplitude = 494
+    rngPhyBin = 334
+    doppPhyBin = 8
+    azimPhyBin = -11
+    elevPhyBin = -7
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1137	 191	   0	  -3	NA
+[ 1]:	 1142	 266	   5	   5	NA
+[ 2]:	 1139	 334	   8	 -11	NA
+[ 3]:	 1142	  85	  15	  15	NA
+
+Test PASSED!
+Feature: #122:TxA2 TxE0 Rx4 R448 D12 r: Passed
+Test #122 finished!
+
+Read Test #123 
+numRxAntennas = 4
+numAdcSamples = 448
+numTxAntAzim = 2
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 64
+numChirpsPerEvent = 2
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 508
+    rngPhyBin = 66
+    doppPhyBin = -19
+    azimPhyBin = -12
+    elevPhyBin = -4
+sceneObj[1] = 
+    amplitude = 494
+    rngPhyBin = 275
+    doppPhyBin = 29
+    azimPhyBin = -12
+    elevPhyBin = 7
+sceneObj[2] = 
+    amplitude = 496
+    rngPhyBin = 324
+    doppPhyBin = -29
+    azimPhyBin = -6
+    elevPhyBin = -1
+sceneObj[3] = 
+    amplitude = 499
+    rngPhyBin = 386
+    doppPhyBin = 12
+    azimPhyBin = 12
+    elevPhyBin = 4
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1229	 324	 -29	  -6	NA
+[ 1]:	 1228	 386	  12	  12	NA
+[ 2]:	 1230	  66	 -19	 -12	NA
+[ 3]:	 1228	 275	  29	 -12	NA
+
+Test PASSED!
+Feature: #123:TxA2 TxE0 Rx4 R448 D32 r: Passed
+Test #123 finished!
+
+Read Test #124 
+numRxAntennas = 4
+numAdcSamples = 448
+numTxAntAzim = 2
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 72
+numChirpsPerEvent = 2
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 496
+    rngPhyBin = 327
+    doppPhyBin = -3
+    azimPhyBin = -11
+    elevPhyBin = 2
+sceneObj[1] = 
+    amplitude = 496
+    rngPhyBin = 184
+    doppPhyBin = 30
+    azimPhyBin = -5
+    elevPhyBin = -19
+sceneObj[2] = 
+    amplitude = 506
+    rngPhyBin = 75
+    doppPhyBin = 43
+    azimPhyBin = -2
+    elevPhyBin = 11
+sceneObj[3] = 
+    amplitude = 488
+    rngPhyBin = 405
+    doppPhyBin = -18
+    azimPhyBin = -19
+    elevPhyBin = -1
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1238	 184	  30	  -5	NA
+[ 1]:	 1241	  75	  43	  -2	NA
+[ 2]:	 1238	 405	 -18	 -19	NA
+[ 3]:	 1241	 327	  -3	 -11	NA
+
+Test PASSED!
+Feature: #124:TxA2 TxE0 Rx4 R448 D36 r: Passed
+Test #124 finished!
+
+Number of antennas: Ntx=2, Nrx=4
+Number of antennas: Ntx=3, Nrx=4
+Number of antennas: Ntx=3, Nrx=4
+Number of antennas: Ntx=3, Nrx=4
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 589824 Bytes, L2: 36896 Bytes, L1: 13792 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 45568 Bytes, L2: 15976 Bytes, L1: 5216 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 90624 Bytes, L2: 17448 Bytes, L1: 5840 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 180736 Bytes, L2: 20392 Bytes, L1: 7136 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Read Test #125 
+numRxAntennas = 4
+numAdcSamples = 896
+numTxAntAzim = 2
+numTxAntElev = 0
+numAngleBins = 64
+numChirpsPerFrame = 32
+numChirpsPerEvent = 1
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 514
+    rngPhyBin = 92
+    doppPhyBin = -7
+    azimPhyBin = -5
+    elevPhyBin = -18
+sceneObj[1] = 
+    amplitude = 507
+    rngPhyBin = 608
+    doppPhyBin = -8
+    azimPhyBin = 3
+    elevPhyBin = 3
+sceneObj[2] = 
+    amplitude = 490
+    rngPhyBin = 424
+    doppPhyBin = -8
+    azimPhyBin = 10
+    elevPhyBin = 9
+sceneObj[3] = 
+    amplitude = 490
+    rngPhyBin = 803
+    doppPhyBin = -6
+    azimPhyBin = -8
+    elevPhyBin = -14
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1226	 424	  -8	  10	NA
+[ 1]:	 1228	 608	  -8	   3	NA
+[ 2]:	 1230	  92	  -7	  -5	NA
+[ 3]:	 1226	 803	  -6	  -8	NA
+
+Test PASSED!
+Feature: #125:TxA2 TxE0 Rx4 R896 D16 r: Passed
+Test #125 finished!
+
+Read Test #126 
+numRxAntennas = 4
+numAdcSamples = 16
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 168
+numChirpsPerEvent = 6
+numTargets = 2
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 481
+    rngPhyBin = 1
+    doppPhyBin = -68
+    azimPhyBin = -5
+    elevPhyBin = 8
+sceneObj[1] = 
+    amplitude = 499
+    rngPhyBin = 9
+    doppPhyBin = 89
+    azimPhyBin = 16
+    elevPhyBin = 1
+Frame processing Done!! num obj: 3
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  873	   9	  89	  16	   1
+[ 1]:	  871	   1	 -68	  -5	   8
+[ 2]:	  740	  15	 -68	  -5	   9
+
+Test PASSED!
+Feature: #126:TxA2 TxE1 Rx4 R16 D56 m: Passed
+Test #126 finished!
+
+Read Test #127 
+numRxAntennas = 4
+numAdcSamples = 16
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 336
+numChirpsPerEvent = 6
+numTargets = 2
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 495
+    rngPhyBin = 1
+    doppPhyBin = 62
+    azimPhyBin = -7
+    elevPhyBin = -13
+sceneObj[1] = 
+    amplitude = 495
+    rngPhyBin = 9
+    doppPhyBin = 175
+    azimPhyBin = -15
+    elevPhyBin = -9
+Frame processing Done!! num obj: 3
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  918	   9	 175	 -15	  -9
+[ 1]:	  918	   1	  62	  -7	 -13
+[ 2]:	  788	  15	  62	  -7	 -13
+
+Test PASSED!
+Feature: #127:TxA2 TxE1 Rx4 R16 D112 m: Passed
+Test #127 finished!
+
+Read Test #128 
+numRxAntennas = 4
+numAdcSamples = 16
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 672
+numChirpsPerEvent = 6
+numTargets = 2
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 487
+    rngPhyBin = 1
+    doppPhyBin = -76
+    azimPhyBin = -20
+    elevPhyBin = 6
+sceneObj[1] = 
+    amplitude = 503
+    rngPhyBin = 9
+    doppPhyBin = -307
+    azimPhyBin = 19
+    elevPhyBin = -8
+Frame processing Done!! num obj: 3
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  963	   1	 -76	 -20	   6
+[ 1]:	  833	  15	 -76	 -20	   6
+[ 2]:	  965	   9	-307	  19	  -8
+
+Test PASSED!
+Feature: #128:TxA2 TxE1 Rx4 R16 D224 m: Passed
+Test #128 finished!
+
+Number of antennas: Ntx=3, Nrx=4
+Number of antennas: Ntx=3, Nrx=4
+Number of antennas: Ntx=3, Nrx=4
+Number of antennas: Ntx=3, Nrx=4
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 410112 Bytes, L2: 26792 Bytes, L1: 10784 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 91136 Bytes, L2: 15976 Bytes, L1: 5296 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 181248 Bytes, L2: 17448 Bytes, L1: 5920 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 410624 Bytes, L2: 20648 Bytes, L1: 7280 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Read Test #129 
+numRxAntennas = 4
+numAdcSamples = 16
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 1536
+numChirpsPerEvent = 6
+numTargets = 2
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 484
+    rngPhyBin = 1
+    doppPhyBin = 456
+    azimPhyBin = -16
+    elevPhyBin = 14
+sceneObj[1] = 
+    amplitude = 495
+    rngPhyBin = 9
+    doppPhyBin = -31
+    azimPhyBin = 13
+    elevPhyBin = 7
+Frame processing Done!! num obj: 3
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1016	   1	 456	 -16	  14
+[ 1]:	  887	  15	 456	 -16	  14
+[ 2]:	 1018	   9	 -31	  13	   7
+
+Test PASSED!
+Feature: #129:TxA2 TxE1 Rx4 R16 D512 m: Passed
+Test #129 finished!
+
+Read Test #130 
+numRxAntennas = 4
+numAdcSamples = 32
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 168
+numChirpsPerEvent = 6
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 495
+    rngPhyBin = 1
+    doppPhyBin = 87
+    azimPhyBin = 7
+    elevPhyBin = -15
+sceneObj[1] = 
+    amplitude = 504
+    rngPhyBin = 9
+    doppPhyBin = -29
+    azimPhyBin = 2
+    elevPhyBin = 20
+sceneObj[2] = 
+    amplitude = 482
+    rngPhyBin = 17
+    doppPhyBin = 42
+    azimPhyBin = 15
+    elevPhyBin = -17
+sceneObj[3] = 
+    amplitude = 506
+    rngPhyBin = 25
+    doppPhyBin = -84
+    azimPhyBin = 7
+    elevPhyBin = 6
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  874	   1	  87	   7	 -15
+[ 1]:	  736	  31	  87	   7	 -14
+[ 2]:	  875	   9	 -29	   2	  20
+[ 3]:	  872	  17	  42	  15	 -17
+[ 4]:	  877	  25	 -84	   7	   6
+
+Test PASSED!
+Feature: #130:TxA2 TxE1 Rx4 R32 D56 r: Passed
+Test #130 finished!
+
+Read Test #131 
+numRxAntennas = 4
+numAdcSamples = 32
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 336
+numChirpsPerEvent = 6
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 507
+    rngPhyBin = 1
+    doppPhyBin = -139
+    azimPhyBin = -17
+    elevPhyBin = 6
+sceneObj[1] = 
+    amplitude = 501
+    rngPhyBin = 9
+    doppPhyBin = -45
+    azimPhyBin = 15
+    elevPhyBin = -3
+sceneObj[2] = 
+    amplitude = 491
+    rngPhyBin = 17
+    doppPhyBin = 156
+    azimPhyBin = -3
+    elevPhyBin = -13
+sceneObj[3] = 
+    amplitude = 499
+    rngPhyBin = 25
+    doppPhyBin = 50
+    azimPhyBin = -6
+    elevPhyBin = -3
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  920	  17	 156	  -3	 -13
+[ 1]:	  921	  25	  50	  -6	  -3
+[ 2]:	  921	   9	 -45	  15	  -3
+[ 3]:	  922	   1	-139	 -17	   6
+[ 4]:	  780	  31	-139	 -17	   6
+
+Test PASSED!
+Feature: #131:TxA2 TxE1 Rx4 R32 D112 r: Passed
+Test #131 finished!
+
+Read Test #132 
+numRxAntennas = 4
+numAdcSamples = 32
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 768
+numChirpsPerEvent = 6
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 485
+    rngPhyBin = 1
+    doppPhyBin = -310
+    azimPhyBin = 4
+    elevPhyBin = 14
+sceneObj[1] = 
+    amplitude = 508
+    rngPhyBin = 9
+    doppPhyBin = -147
+    azimPhyBin = -14
+    elevPhyBin = -12
+sceneObj[2] = 
+    amplitude = 516
+    rngPhyBin = 17
+    doppPhyBin = 40
+    azimPhyBin = -17
+    elevPhyBin = 6
+sceneObj[3] = 
+    amplitude = 511
+    rngPhyBin = 25
+    doppPhyBin = 196
+    azimPhyBin = 20
+    elevPhyBin = 14
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  978	  17	  40	 -17	   6
+[ 1]:	  976	   9	-147	 -14	 -12
+[ 2]:	  977	  25	 196	  20	  14
+[ 3]:	  973	   1	-310	   4	  14
+[ 4]:	  833	  31	-310	   4	  14
+
+Test PASSED!
+Feature: #132:TxA2 TxE1 Rx4 R32 D256 r: Passed
+Test #132 finished!
+
+Number of antennas: Ntx=3, Nrx=4
+Number of antennas: Ntx=3, Nrx=4
+Number of antennas: Ntx=3, Nrx=4
+Number of antennas: Ntx=3, Nrx=4
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 715776 Bytes, L2: 26248 Bytes, L1: 10728 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 40960 Bytes, L2: 14984 Bytes, L1: 5176 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 92160 Bytes, L2: 15240 Bytes, L1: 5272 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 182272 Bytes, L2: 15976 Bytes, L1: 5456 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Read Test #133 
+numRxAntennas = 4
+numAdcSamples = 32
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 1332
+numChirpsPerEvent = 6
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 503
+    rngPhyBin = 1
+    doppPhyBin = -223
+    azimPhyBin = 19
+    elevPhyBin = -14
+sceneObj[1] = 
+    amplitude = 497
+    rngPhyBin = 9
+    doppPhyBin = -632
+    azimPhyBin = -5
+    elevPhyBin = -11
+sceneObj[2] = 
+    amplitude = 510
+    rngPhyBin = 17
+    doppPhyBin = 285
+    azimPhyBin = 7
+    elevPhyBin = 0
+sceneObj[3] = 
+    amplitude = 512
+    rngPhyBin = 25
+    doppPhyBin = 631
+    azimPhyBin = 19
+    elevPhyBin = -14
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1013	  25	 631	  19	 -14
+[ 1]:	 1012	  17	 285	   7	   0
+[ 2]:	 1012	   1	-223	  19	 -14
+[ 3]:	  870	  31	-223	  19	 -14
+[ 4]:	 1011	   9	-632	  -5	 -11
+
+Test PASSED!
+Feature: #133:TxA2 TxE1 Rx4 R32 D444 r: Passed
+Test #133 finished!
+
+Read Test #134 
+numRxAntennas = 4
+numAdcSamples = 64
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 36
+numChirpsPerEvent = 6
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 514
+    rngPhyBin = 23
+    doppPhyBin = 12
+    azimPhyBin = 18
+    elevPhyBin = -16
+sceneObj[1] = 
+    amplitude = 488
+    rngPhyBin = 46
+    doppPhyBin = 11
+    azimPhyBin = -7
+    elevPhyBin = 13
+sceneObj[2] = 
+    amplitude = 512
+    rngPhyBin = 44
+    doppPhyBin = -11
+    azimPhyBin = 8
+    elevPhyBin = 14
+sceneObj[3] = 
+    amplitude = 487
+    rngPhyBin = 31
+    doppPhyBin = -4
+    azimPhyBin = -2
+    elevPhyBin = 9
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  819	  44	 -11	   8	  14
+[ 1]:	  815	  46	  11	  -7	  13
+[ 2]:	  818	  23	  12	  18	 -16
+[ 3]:	  816	  31	  -4	  -2	   9
+
+Test PASSED!
+Feature: #134:TxA2 TxE1 Rx4 R64 D12 r: Passed
+Test #134 finished!
+
+Read Test #135 
+numRxAntennas = 4
+numAdcSamples = 64
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 84
+numChirpsPerEvent = 6
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 513
+    rngPhyBin = 19
+    doppPhyBin = -27
+    azimPhyBin = -12
+    elevPhyBin = 8
+sceneObj[1] = 
+    amplitude = 517
+    rngPhyBin = 1
+    doppPhyBin = 22
+    azimPhyBin = -2
+    elevPhyBin = -1
+sceneObj[2] = 
+    amplitude = 510
+    rngPhyBin = 47
+    doppPhyBin = 0
+    azimPhyBin = -8
+    elevPhyBin = -11
+sceneObj[3] = 
+    amplitude = 491
+    rngPhyBin = 10
+    doppPhyBin = -46
+    azimPhyBin = -3
+    elevPhyBin = -14
+Frame processing Done!! num obj: 5
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  877	  47	   0	  -8	 -11
+[ 1]:	  877	  19	 -27	 -12	   8
+[ 2]:	  874	  10	 -46	  -3	 -14
+[ 3]:	  878	   1	  22	  -2	  -1
+[ 4]:	  732	  63	  22	  -2	  -2
+
+Test PASSED!
+Feature: #135:TxA2 TxE1 Rx4 R64 D28 r: Passed
+Test #135 finished!
+
+Read Test #136 
+numRxAntennas = 4
+numAdcSamples = 64
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 168
+numChirpsPerEvent = 6
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 501
+    rngPhyBin = 4
+    doppPhyBin = -61
+    azimPhyBin = -15
+    elevPhyBin = -14
+sceneObj[1] = 
+    amplitude = 489
+    rngPhyBin = 22
+    doppPhyBin = 62
+    azimPhyBin = -20
+    elevPhyBin = 11
+sceneObj[2] = 
+    amplitude = 501
+    rngPhyBin = 30
+    doppPhyBin = 19
+    azimPhyBin = -2
+    elevPhyBin = -18
+sceneObj[3] = 
+    amplitude = 489
+    rngPhyBin = 47
+    doppPhyBin = -88
+    azimPhyBin = 4
+    elevPhyBin = 15
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  923	   4	 -61	 -15	 -14
+[ 1]:	  921	  30	  19	  -2	 -18
+[ 2]:	  920	  47	 -88	   4	  15
+[ 3]:	  920	  22	  62	 -20	  11
+
+Test PASSED!
+Feature: #136:TxA2 TxE1 Rx4 R64 D56 r: Passed
+Test #136 finished!
+
+Number of antennas: Ntx=3, Nrx=4
+Number of antennas: Ntx=3, Nrx=4
+Number of antennas: Ntx=3, Nrx=4
+Number of antennas: Ntx=3, Nrx=4
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 411648 Bytes, L2: 17576 Bytes, L1: 6112 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 710656 Bytes, L2: 20360 Bytes, L1: 7368 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 81920 Bytes, L2: 14984 Bytes, L1: 5736 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 184320 Bytes, L2: 15240 Bytes, L1: 5832 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Read Test #137 
+numRxAntennas = 4
+numAdcSamples = 64
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 384
+numChirpsPerEvent = 6
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 503
+    rngPhyBin = 43
+    doppPhyBin = 80
+    azimPhyBin = 14
+    elevPhyBin = -3
+sceneObj[1] = 
+    amplitude = 497
+    rngPhyBin = 21
+    doppPhyBin = 158
+    azimPhyBin = -20
+    elevPhyBin = 19
+sceneObj[2] = 
+    amplitude = 482
+    rngPhyBin = 34
+    doppPhyBin = -123
+    azimPhyBin = 11
+    elevPhyBin = -4
+sceneObj[3] = 
+    amplitude = 499
+    rngPhyBin = 11
+    doppPhyBin = -12
+    azimPhyBin = 17
+    elevPhyBin = -10
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  974	  34	-123	  11	  -4
+[ 1]:	  977	  21	 158	 -20	  19
+[ 2]:	  977	  43	  80	  14	  -3
+[ 3]:	  975	  11	 -12	  17	 -10
+
+Test PASSED!
+Feature: #137:TxA2 TxE1 Rx4 R64 D128 r: Passed
+Test #137 finished!
+
+Read Test #138 
+numRxAntennas = 4
+numAdcSamples = 64
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 660
+numChirpsPerEvent = 6
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 494
+    rngPhyBin = 23
+    doppPhyBin = 346
+    azimPhyBin = -11
+    elevPhyBin = 0
+sceneObj[1] = 
+    amplitude = 490
+    rngPhyBin = 17
+    doppPhyBin = -242
+    azimPhyBin = 6
+    elevPhyBin = -9
+sceneObj[2] = 
+    amplitude = 511
+    rngPhyBin = 27
+    doppPhyBin = -73
+    azimPhyBin = -19
+    elevPhyBin = 4
+sceneObj[3] = 
+    amplitude = 517
+    rngPhyBin = 11
+    doppPhyBin = 189
+    azimPhyBin = 20
+    elevPhyBin = -1
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	 1010	  17	-242	   6	  -9
+[ 1]:	 1010	  23	 346	 -11	   0
+[ 2]:	 1013	  27	 -73	 -19	   4
+[ 3]:	 1014	  11	 189	  20	  -1
+
+Test PASSED!
+Feature: #138:TxA2 TxE1 Rx4 R64 D220 r: Passed
+Test #138 finished!
+
+Read Test #139 
+numRxAntennas = 4
+numAdcSamples = 112
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 36
+numChirpsPerEvent = 6
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 502
+    rngPhyBin = 70
+    doppPhyBin = -7
+    azimPhyBin = 20
+    elevPhyBin = -14
+sceneObj[1] = 
+    amplitude = 499
+    rngPhyBin = 7
+    doppPhyBin = 19
+    azimPhyBin = -16
+    elevPhyBin = 16
+sceneObj[2] = 
+    amplitude = 504
+    rngPhyBin = 77
+    doppPhyBin = 23
+    azimPhyBin = -18
+    elevPhyBin = 10
+sceneObj[3] = 
+    amplitude = 508
+    rngPhyBin = 13
+    doppPhyBin = -3
+    azimPhyBin = -7
+    elevPhyBin = 11
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  809	   7	  19	 -16	  16
+[ 1]:	  809	  77	  23	 -18	  10
+[ 2]:	  810	  70	  -7	  20	 -14
+[ 3]:	  812	  13	  -3	  -7	  11
+
+Test PASSED!
+Feature: #139:TxA2 TxE1 Rx4 R112 D12 r: Passed
+Test #139 finished!
+
+Read Test #140 
+numRxAntennas = 4
+numAdcSamples = 112
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 84
+numChirpsPerEvent = 6
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 486
+    rngPhyBin = 28
+    doppPhyBin = 38
+    azimPhyBin = 7
+    elevPhyBin = -2
+sceneObj[1] = 
+    amplitude = 496
+    rngPhyBin = 53
+    doppPhyBin = -2
+    azimPhyBin = 10
+    elevPhyBin = 7
+sceneObj[2] = 
+    amplitude = 491
+    rngPhyBin = 28
+    doppPhyBin = -21
+    azimPhyBin = 18
+    elevPhyBin = 13
+sceneObj[3] = 
+    amplitude = 490
+    rngPhyBin = 66
+    doppPhyBin = -47
+    azimPhyBin = 16
+    elevPhyBin = -17
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  865	  28	  38	   7	  -2
+[ 1]:	  866	  28	 -21	  18	  13
+[ 2]:	  864	  66	 -47	  16	 -17
+[ 3]:	  867	  53	  -2	  10	   7
+
+Test PASSED!
+Feature: #140:TxA2 TxE1 Rx4 R112 D28 r: Passed
+Test #140 finished!
+
+Number of antennas: Ntx=3, Nrx=4
+Number of antennas: Ntx=3, Nrx=4
+Number of antennas: Ntx=3, Nrx=4
+Number of antennas: Ntx=3, Nrx=4
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 413696 Bytes, L2: 16040 Bytes, L1: 6032 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 700416 Bytes, L2: 17416 Bytes, L1: 6376 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 163840 Bytes, L2: 14984 Bytes, L1: 6872 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 417792 Bytes, L2: 15272 Bytes, L1: 6976 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Read Test #141 
+numRxAntennas = 4
+numAdcSamples = 112
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 192
+numChirpsPerEvent = 6
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 497
+    rngPhyBin = 45
+    doppPhyBin = -38
+    azimPhyBin = -12
+    elevPhyBin = -18
+sceneObj[1] = 
+    amplitude = 487
+    rngPhyBin = 2
+    doppPhyBin = -49
+    azimPhyBin = -7
+    elevPhyBin = -16
+sceneObj[2] = 
+    amplitude = 470
+    rngPhyBin = 17
+    doppPhyBin = 88
+    azimPhyBin = -12
+    elevPhyBin = 2
+sceneObj[3] = 
+    amplitude = 504
+    rngPhyBin = 31
+    doppPhyBin = 44
+    azimPhyBin = 2
+    elevPhyBin = 19
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  921	   2	 -49	  -7	 -16
+[ 1]:	  918	  17	  88	 -12	   2
+[ 2]:	  922	  45	 -38	 -12	 -18
+[ 3]:	  923	  31	  44	   2	  19
+
+Test PASSED!
+Feature: #141:TxA2 TxE1 Rx4 R112 D64 r: Passed
+Test #141 finished!
+
+Read Test #142 
+numRxAntennas = 4
+numAdcSamples = 112
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 324
+numChirpsPerEvent = 6
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 508
+    rngPhyBin = 85
+    doppPhyBin = -81
+    azimPhyBin = -19
+    elevPhyBin = -18
+sceneObj[1] = 
+    amplitude = 495
+    rngPhyBin = 96
+    doppPhyBin = 30
+    azimPhyBin = 12
+    elevPhyBin = -19
+sceneObj[2] = 
+    amplitude = 492
+    rngPhyBin = 73
+    doppPhyBin = -167
+    azimPhyBin = 15
+    elevPhyBin = 20
+sceneObj[3] = 
+    amplitude = 511
+    rngPhyBin = 91
+    doppPhyBin = 138
+    azimPhyBin = 20
+    elevPhyBin = 13
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  958	  91	 138	  20	  13
+[ 1]:	  956	  96	  30	  12	 -19
+[ 2]:	  958	  85	 -81	 -19	 -18
+[ 3]:	  956	  73	-167	  15	  20
+
+Test PASSED!
+Feature: #142:TxA2 TxE1 Rx4 R112 D108 r: Passed
+Test #142 finished!
+
+Read Test #143 
+numRxAntennas = 4
+numAdcSamples = 224
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 36
+numChirpsPerEvent = 3
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 512
+    rngPhyBin = 107
+    doppPhyBin = -17
+    azimPhyBin = -10
+    elevPhyBin = 10
+sceneObj[1] = 
+    amplitude = 512
+    rngPhyBin = 104
+    doppPhyBin = 18
+    azimPhyBin = 3
+    elevPhyBin = -4
+sceneObj[2] = 
+    amplitude = 490
+    rngPhyBin = 70
+    doppPhyBin = -24
+    azimPhyBin = 19
+    elevPhyBin = -1
+sceneObj[3] = 
+    amplitude = 504
+    rngPhyBin = 182
+    doppPhyBin = -11
+    azimPhyBin = -14
+    elevPhyBin = 14
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  856	 104	  18	   3	  -4
+[ 1]:	  855	 182	 -11	 -14	  14
+[ 2]:	  853	  70	 -24	  19	  -1
+[ 3]:	  857	 107	 -17	 -10	  10
+
+Test PASSED!
+Feature: #143:TxA2 TxE1 Rx4 R224 D12 r: Passed
+Test #143 finished!
+
+Read Test #144 
+numRxAntennas = 4
+numAdcSamples = 224
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 96
+numChirpsPerEvent = 3
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 500
+    rngPhyBin = 7
+    doppPhyBin = -26
+    azimPhyBin = 2
+    elevPhyBin = 17
+sceneObj[1] = 
+    amplitude = 504
+    rngPhyBin = 114
+    doppPhyBin = 25
+    azimPhyBin = 9
+    elevPhyBin = -2
+sceneObj[2] = 
+    amplitude = 494
+    rngPhyBin = 4
+    doppPhyBin = 25
+    azimPhyBin = 17
+    elevPhyBin = 10
+sceneObj[3] = 
+    amplitude = 504
+    rngPhyBin = 131
+    doppPhyBin = -25
+    azimPhyBin = 18
+    elevPhyBin = -18
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  922	   7	 -26	   2	  17
+[ 1]:	  922	 131	 -25	  18	 -18
+[ 2]:	  921	   4	  25	  17	  10
+[ 3]:	  922	 114	  25	   9	  -2
+
+Test PASSED!
+Feature: #144:TxA2 TxE1 Rx4 R224 D32 r: Passed
+Test #144 finished!
+
+Number of antennas: Ntx=3, Nrx=4
+Number of antennas: Ntx=3, Nrx=4
+Number of antennas: Ntx=3, Nrx=4
+Number of antennas: Ntx=3, Nrx=4
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_COMMON_CFG
+DPC ObjDet Memory usage (SubFrameIndx = 0): L3: 679936 Bytes, L2: 15944 Bytes, L1: 7144 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 0
+DPC ObjDet Memory usage (SubFrameIndx = 1): L3: 425984 Bytes, L2: 20512 Bytes, L1: 9152 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 1
+DPC ObjDet Memory usage (SubFrameIndx = 2): L3: 638976 Bytes, L2: 20640 Bytes, L1: 9232 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 2
+DPC ObjDet Memory usage (SubFrameIndx = 3): L3: 655360 Bytes, L2: 36896 Bytes, L1: 13784 Bytes
+TEST: Sent to DPC: DPC_OBJDET_IOCTL__STATIC_PRE_START_CFG, subFrame 3
+running 10 frame for the test
+Read Test #145 
+numRxAntennas = 4
+numAdcSamples = 224
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 156
+numChirpsPerEvent = 3
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 502
+    rngPhyBin = 118
+    doppPhyBin = 77
+    azimPhyBin = -20
+    elevPhyBin = -20
+sceneObj[1] = 
+    amplitude = 501
+    rngPhyBin = 113
+    doppPhyBin = -1
+    azimPhyBin = 14
+    elevPhyBin = 14
+sceneObj[2] = 
+    amplitude = 498
+    rngPhyBin = 58
+    doppPhyBin = -48
+    azimPhyBin = -20
+    elevPhyBin = 8
+sceneObj[3] = 
+    amplitude = 496
+    rngPhyBin = 152
+    doppPhyBin = -59
+    azimPhyBin = 2
+    elevPhyBin = 18
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  953	 152	 -59	   2	  18
+[ 1]:	  954	 118	  77	 -20	 -20
+[ 2]:	  953	  58	 -48	 -20	   8
+[ 3]:	  954	 113	  -1	  14	  14
+
+Test PASSED!
+Feature: #145:TxA2 TxE1 Rx4 R224 D52 r: Passed
+Test #145 finished!
+
+Read Test #146 
+numRxAntennas = 4
+numAdcSamples = 448
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 48
+numChirpsPerEvent = 1
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 501
+    rngPhyBin = 234
+    doppPhyBin = -21
+    azimPhyBin = 2
+    elevPhyBin = 3
+sceneObj[1] = 
+    amplitude = 504
+    rngPhyBin = 131
+    doppPhyBin = -11
+    azimPhyBin = 11
+    elevPhyBin = -15
+sceneObj[2] = 
+    amplitude = 509
+    rngPhyBin = 64
+    doppPhyBin = 21
+    azimPhyBin = 2
+    elevPhyBin = -19
+sceneObj[3] = 
+    amplitude = 499
+    rngPhyBin = 326
+    doppPhyBin = 22
+    azimPhyBin = 20
+    elevPhyBin = -18
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  876	  64	  21	   2	 -19
+[ 1]:	  875	 131	 -11	  11	 -15
+[ 2]:	  874	 326	  22	  20	 -18
+[ 3]:	  875	 234	 -21	   2	   3
+
+Test PASSED!
+Feature: #146:TxA2 TxE1 Rx4 R448 D16 r: Passed
+Test #146 finished!
+
+Read Test #147 
+numRxAntennas = 4
+numAdcSamples = 448
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 72
+numChirpsPerEvent = 1
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 485
+    rngPhyBin = 244
+    doppPhyBin = 31
+    azimPhyBin = -16
+    elevPhyBin = 16
+sceneObj[1] = 
+    amplitude = 506
+    rngPhyBin = 142
+    doppPhyBin = -14
+    azimPhyBin = 2
+    elevPhyBin = 19
+sceneObj[2] = 
+    amplitude = 494
+    rngPhyBin = 18
+    doppPhyBin = -26
+    azimPhyBin = -6
+    elevPhyBin = 14
+sceneObj[3] = 
+    amplitude = 520
+    rngPhyBin = 339
+    doppPhyBin = 11
+    azimPhyBin = 16
+    elevPhyBin = 12
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  901	  18	 -26	  -6	  14
+[ 1]:	  906	 339	  11	  16	  12
+[ 2]:	  903	 142	 -14	   2	  19
+[ 3]:	  900	 244	  31	 -16	  16
+
+Test PASSED!
+Feature: #147:TxA2 TxE1 Rx4 R448 D24 r: Passed
+Test #147 finished!
+
+Read Test #148 
+numRxAntennas = 4
+numAdcSamples = 896
+numTxAntAzim = 2
+numTxAntElev = 1
+numAngleBins = 64
+numChirpsPerFrame = 36
+numChirpsPerEvent = 1
+numTargets = 4
+snrdB = 10
+sceneObj[0] = 
+    amplitude = 497
+    rngPhyBin = 426
+    doppPhyBin = 8
+    azimPhyBin = 5
+    elevPhyBin = -2
+sceneObj[1] = 
+    amplitude = 517
+    rngPhyBin = 117
+    doppPhyBin = 3
+    azimPhyBin = 3
+    elevPhyBin = 6
+sceneObj[2] = 
+    amplitude = 518
+    rngPhyBin = 786
+    doppPhyBin = 0
+    azimPhyBin = -10
+    elevPhyBin = -16
+sceneObj[3] = 
+    amplitude = 497
+    rngPhyBin = 267
+    doppPhyBin = 3
+    azimPhyBin = -8
+    elevPhyBin = -19
+Frame processing Done!! num obj: 4
+
+	Peak,	Range,	Doppler,Azimuth,Elevation
+[ 0]:	  901	 786	   0	 -10	 -16
+[ 1]:	  902	 117	   3	   3	   6
+[ 2]:	  898	 267	   3	  -8	 -19
+[ 3]:	  899	 426	   8	   5	  -2
+
+Test PASSED!
+Feature: #148:TxA2 TxE1 Rx4 R896 D12 r: Passed
+Test #148 finished!
+
+DPC ObjDet Maximum Memory usage: L3: 716800 Bytes (Test #25), L2: 37024 Bytes (Test #97), L1: 14424 Bytes (Test #33)
+All 148 Tests finished!
+
+All tests PASSED
+
+Value read from Global variable (MCPI_Result): 0
+Test Failure Signature: 0
+Test Log Messages: 
+Feature tested: #1:TxA1 TxE0 Rx1 R16 D56 m: Passed
+Feature tested: #2:TxA1 TxE0 Rx1 R16 D112 m: Passed
+Feature tested: #3:TxA1 TxE0 Rx1 R16 D224 m: Passed
+Feature tested: #4:TxA1 TxE0 Rx1 R16 D448 m: Passed
+Feature tested: #5:TxA1 TxE0 Rx1 R32 D56 r: Passed
+Feature tested: #6:TxA1 TxE0 Rx1 R32 D112 r: Passed
+Feature tested: #7:TxA1 TxE0 Rx1 R32 D224 r: Passed
+Feature tested: #8:TxA1 TxE0 Rx1 R32 D448 r: Passed
+Feature tested: #9:TxA1 TxE0 Rx1 R64 D12 r: Passed
+Feature tested: #10:TxA1 TxE0 Rx1 R64 D28 r: Passed
+Feature tested: #11:TxA1 TxE0 Rx1 R64 D56 r: Passed
+Feature tested: #12:TxA1 TxE0 Rx1 R64 D112 r: Passed
+Feature tested: #13:TxA1 TxE0 Rx1 R64 D224 r: Passed
+Feature tested: #14:TxA1 TxE0 Rx1 R64 D448 r: Passed
+Feature tested: #15:TxA1 TxE0 Rx1 R112 D12 r: Passed
+Feature tested: #16:TxA1 TxE0 Rx1 R112 D28 r: Passed
+Feature tested: #17:TxA1 TxE0 Rx1 R112 D56 r: Passed
+Feature tested: #18:TxA1 TxE0 Rx1 R112 D112 r: Passed
+Feature tested: #19:TxA1 TxE0 Rx1 R112 D224 r: Passed
+Feature tested: #20:TxA1 TxE0 Rx1 R112 D448 r: Passed
+Feature tested: #21:TxA1 TxE0 Rx1 R224 D12 r: Passed
+Feature tested: #22:TxA1 TxE0 Rx1 R224 D28 r: Passed
+Feature tested: #23:TxA1 TxE0 Rx1 R224 D56 r: Passed
+Feature tested: #24:TxA1 TxE0 Rx1 R224 D112 r: Passed
+Feature tested: #25:TxA1 TxE0 Rx1 R224 D224 r: Passed
+Feature tested: #26:TxA1 TxE0 Rx1 R224 D444 r: Passed
+Feature tested: #27:TxA1 TxE0 Rx1 R448 D12 r: Passed
+Feature tested: #28:TxA1 TxE0 Rx1 R448 D28 r: Passed
+Feature tested: #29:TxA1 TxE0 Rx1 R448 D56 r: Passed
+Feature tested: #30:TxA1 TxE0 Rx1 R448 D112 r: Passed
+Feature tested: #31:TxA1 TxE0 Rx1 R448 D220 r: Passed
+Feature tested: #32:TxA1 TxE0 Rx1 R896 D12 r: Passed
+Feature tested: #33:TxA1 TxE0 Rx1 R896 D28 r: Passed
+Feature tested: #34:TxA1 TxE0 Rx1 R896 D56 r: Passed
+Feature tested: #35:TxA1 TxE0 Rx1 R896 D108 r: Passed
+Feature tested: #36:TxA1 TxE0 Rx2 R16 D56 m: Passed
+Feature tested: #37:TxA1 TxE0 Rx2 R16 D112 m: Passed
+Feature tested: #38:TxA1 TxE0 Rx2 R16 D224 m: Passed
+Feature tested: #39:TxA1 TxE0 Rx2 R16 D448 m: Passed
+Feature tested: #40:TxA1 TxE0 Rx2 R32 D56 r: Passed
+Feature tested: #41:TxA1 TxE0 Rx2 R32 D112 r: Passed
+Feature tested: #42:TxA1 TxE0 Rx2 R32 D224 r: Passed
+Feature tested: #43:TxA1 TxE0 Rx2 R32 D448 r: Passed
+Feature tested: #44:TxA1 TxE0 Rx2 R64 D12 r: Passed
+Feature tested: #45:TxA1 TxE0 Rx2 R64 D28 r: Passed
+Feature tested: #46:TxA1 TxE0 Rx2 R64 D56 r: Passed
+Feature tested: #47:TxA1 TxE0 Rx2 R64 D112 r: Passed
+Feature tested: #48:TxA1 TxE0 Rx2 R64 D224 r: Passed
+Feature tested: #49:TxA1 TxE0 Rx2 R64 D448 r: Passed
+Feature tested: #50:TxA1 TxE0 Rx2 R112 D12 r: Passed
+Feature tested: #51:TxA1 TxE0 Rx2 R112 D28 r: Passed
+Feature tested: #52:TxA1 TxE0 Rx2 R112 D56 r: Passed
+Feature tested: #53:TxA1 TxE0 Rx2 R112 D112 r: Passed
+Feature tested: #54:TxA1 TxE0 Rx2 R112 D224 r: Passed
+Feature tested: #55:TxA1 TxE0 Rx2 R112 D512 r: Passed
+Feature tested: #56:TxA1 TxE0 Rx2 R224 D12 r: Passed
+Feature tested: #57:TxA1 TxE0 Rx2 R224 D28 r: Passed
+Feature tested: #58:TxA1 TxE0 Rx2 R224 D56 r: Passed
+Feature tested: #59:TxA1 TxE0 Rx2 R224 D112 r: Passed
+Feature tested: #60:TxA1 TxE0 Rx2 R224 D256 r: Passed
+Feature tested: #61:TxA1 TxE0 Rx2 R448 D12 r: Passed
+Feature tested: #62:TxA1 TxE0 Rx2 R448 D28 r: Passed
+Feature tested: #63:TxA1 TxE0 Rx2 R448 D56 r: Passed
+Feature tested: #64:TxA1 TxE0 Rx2 R448 D128 r: Passed
+Feature tested: #65:TxA1 TxE0 Rx2 R896 D12 r: Passed
+Feature tested: #66:TxA1 TxE0 Rx2 R896 D28 r: Passed
+Feature tested: #67:TxA1 TxE0 Rx2 R896 D64 r: Passed
+Feature tested: #68:TxA1 TxE0 Rx4 R16 D56 m: Passed
+Feature tested: #69:TxA1 TxE0 Rx4 R16 D112 m: Passed
+Feature tested: #70:TxA1 TxE0 Rx4 R16 D224 m: Passed
+Feature tested: #71:TxA1 TxE0 Rx4 R16 D448 m: Passed
+Feature tested: #72:TxA1 TxE0 Rx4 R32 D56 r: Passed
+Feature tested: #73:TxA1 TxE0 Rx4 R32 D112 r: Passed
+Feature tested: #74:TxA1 TxE0 Rx4 R32 D224 r: Passed
+Feature tested: #75:TxA1 TxE0 Rx4 R32 D448 r: Passed
+Feature tested: #76:TxA1 TxE0 Rx4 R64 D12 r: Passed
+Feature tested: #77:TxA1 TxE0 Rx4 R64 D28 r: Passed
+Feature tested: #78:TxA1 TxE0 Rx4 R64 D56 r: Passed
+Feature tested: #79:TxA1 TxE0 Rx4 R64 D112 r: Passed
+Feature tested: #80:TxA1 TxE0 Rx4 R64 D224 r: Passed
+Feature tested: #81:TxA1 TxE0 Rx4 R64 D512 r: Passed
+Feature tested: #82:TxA1 TxE0 Rx4 R112 D12 r: Passed
+Feature tested: #83:TxA1 TxE0 Rx4 R112 D28 r: Passed
+Feature tested: #84:TxA1 TxE0 Rx4 R112 D56 r: Passed
+Feature tested: #85:TxA1 TxE0 Rx4 R112 D112 r: Passed
+Feature tested: #86:TxA1 TxE0 Rx4 R112 D256 r: Passed
+Feature tested: #87:TxA1 TxE0 Rx4 R112 D284 r: Passed
+Feature tested: #88:TxA1 TxE0 Rx4 R224 D12 r: Passed
+Feature tested: #89:TxA1 TxE0 Rx4 R224 D28 r: Passed
+Feature tested: #90:TxA1 TxE0 Rx4 R224 D56 r: Passed
+Feature tested: #91:TxA1 TxE0 Rx4 R224 D128 r: Passed
+Feature tested: #92:TxA1 TxE0 Rx4 R224 D140 r: Passed
+Feature tested: #93:TxA1 TxE0 Rx4 R448 D12 r: Passed
+Feature tested: #94:TxA1 TxE0 Rx4 R448 D28 r: Passed
+Feature tested: #95:TxA1 TxE0 Rx4 R448 D64 r: Passed
+Feature tested: #96:TxA1 TxE0 Rx4 R448 D68 r: Passed
+Feature tested: #97:TxA1 TxE0 Rx4 R896 D12 r: Passed
+Feature tested: #98:TxA1 TxE0 Rx4 R896 D32 r: Passed
+Feature tested: #99:TxA2 TxE0 Rx4 R16 D56 m: Passed
+Feature tested: #100:TxA2 TxE0 Rx4 R16 D112 m: Passed
+Feature tested: #101:TxA2 TxE0 Rx4 R16 D224 m: Passed
+Feature tested: #102:TxA2 TxE0 Rx4 R16 D448 m: Passed
+Feature tested: #103:TxA2 TxE0 Rx4 R32 D56 r: Passed
+Feature tested: #104:TxA2 TxE0 Rx4 R32 D112 r: Passed
+Feature tested: #105:TxA2 TxE0 Rx4 R32 D224 r: Passed
+Feature tested: #106:TxA2 TxE0 Rx4 R32 D512 r: Passed
+Feature tested: #107:TxA2 TxE0 Rx4 R64 D12 r: Passed
+Feature tested: #108:TxA2 TxE0 Rx4 R64 D28 r: Passed
+Feature tested: #109:TxA2 TxE0 Rx4 R64 D56 r: Passed
+Feature tested: #110:TxA2 TxE0 Rx4 R64 D112 r: Passed
+Feature tested: #111:TxA2 TxE0 Rx4 R64 D256 r: Passed
+Feature tested: #112:TxA2 TxE0 Rx4 R64 D316 r: Passed
+Feature tested: #113:TxA2 TxE0 Rx4 R112 D12 r: Passed
+Feature tested: #114:TxA2 TxE0 Rx4 R112 D28 r: Passed
+Feature tested: #115:TxA2 TxE0 Rx4 R112 D56 r: Passed
+Feature tested: #116:TxA2 TxE0 Rx4 R112 D128 r: Passed
+Feature tested: #117:TxA2 TxE0 Rx4 R112 D156 r: Passed
+Feature tested: #118:TxA2 TxE0 Rx4 R224 D12 r: Passed
+Feature tested: #119:TxA2 TxE0 Rx4 R224 D28 r: Passed
+Feature tested: #120:TxA2 TxE0 Rx4 R224 D64 r: Passed
+Feature tested: #121:TxA2 TxE0 Rx4 R224 D76 r: Passed
+Feature tested: #122:TxA2 TxE0 Rx4 R448 D12 r: Passed
+Feature tested: #123:TxA2 TxE0 Rx4 R448 D32 r: Passed
+Feature tested: #124:TxA2 TxE0 Rx4 R448 D36 r: Passed
+Feature tested: #125:TxA2 TxE0 Rx4 R896 D16 r: Passed
+Feature tested: #126:TxA2 TxE1 Rx4 R16 D56 m: Passed
+Feature tested: #127:TxA2 TxE1 Rx4 R16 D112 m: Passed
+Feature tested: #128:TxA2 TxE1 Rx4 R16 D224 m: Passed
+Feature tested: #129:TxA2 TxE1 Rx4 R16 D512 m: Passed
+Feature tested: #130:TxA2 TxE1 Rx4 R32 D56 r: Passed
+Feature tested: #131:TxA2 TxE1 Rx4 R32 D112 r: Passed
+Feature tested: #132:TxA2 TxE1 Rx4 R32 D256 r: Passed
+Feature tested: #133:TxA2 TxE1 Rx4 R32 D444 r: Passed
+Feature tested: #134:TxA2 TxE1 Rx4 R64 D12 r: Passed
+Feature tested: #135:TxA2 TxE1 Rx4 R64 D28 r: Passed
+Feature tested: #136:TxA2 TxE1 Rx4 R64 D56 r: Passed
+Feature tested: #137:TxA2 TxE1 Rx4 R64 D128 r: Passed
+Feature tested: #138:TxA2 TxE1 Rx4 R64 D220 r: Passed
+Feature tested: #139:TxA2 TxE1 Rx4 R112 D12 r: Passed
+Feature tested: #140:TxA2 TxE1 Rx4 R112 D28 r: Passed
+Feature tested: #141:TxA2 TxE1 Rx4 R112 D64 r: Passed
+Feature tested: #142:TxA2 TxE1 Rx4 R112 D108 r: Passed
+Feature tested: #143:TxA2 TxE1 Rx4 R224 D12 r: Passed
+Feature tested: #144:TxA2 TxE1 Rx4 R224 D32 r: Passed
+Feature tested: #145:TxA2 TxE1 Rx4 R224 D52 r: Passed
+Feature tested: #146:TxA2 TxE1 Rx4 R448 D16 r: Passed
+Feature tested: #147:TxA2 TxE1 Rx4 R448 D24 r: Passed
+Feature tested: #148:TxA2 TxE1 Rx4 R896 D12 r: Passed
+
+
+shutting down py4j gw server.
+
+
+**************************************************
+Terminating the debug session and Shutting down gateway.
+**************************************************
+
+**************************************************
+Test case execution completed
+**************************************************
+
+**************************************************
+Testcase Result : PASS
+**************************************************

@@ -1,0 +1,200 @@
+mss in binary >>> xwr16xx_canfd_mss.xer4f
+eth008 Board details:
+IP address: 10.218.113.66
+Port: 17494
+
+connecting...
+Relay states 8->1 : 00000001
+1 off
+2 off
+3 off
+4 off
+5 off
+6 off
+7 off
+8 off
+Relay states 8->1 : 00000000
+1 on
+Relay states 8->1 : 00000001
+exit
+Disconnected
+Pre-Script returned: Success
+**************************************************
+Copying test case files from the Build server
+**************************************************Call to copy_testcase_binary:
+TCP: http://gtjenkins.itg.ti.com/nightly_builds/mmwave_sdk-dev/313-2020-09-23_16-37-34/artifacts/test/mmwave_sdk/packages/ti/drivers/canfd/test/xwr16xx; /home/lte_phy/ti/mcpi_tf/mcpi_testframework_1_50_00_01/test/temp/mmWave_SDK___xwr16xx_sdk03.05.00_CAN/CANFD_Test_Plan___mmwave-sdk-03-05-00-2020-09-23-19-02-18_2020_09_23_18_02_18
+
+Copying testcase binary file from http://gtjenkins.itg.ti.com/nightly_builds/mmwave_sdk-dev/313-2020-09-23_16-37-34/artifacts/test/mmwave_sdk/packages/ti/drivers/canfd/test/xwr16xx/xwr16xx_canfd_mss.xer4f to /home/lte_phy/ti/mcpi_tf/mcpi_testframework_1_50_00_01/test/temp/mmWave_SDK___xwr16xx_sdk03.05.00_CAN/CANFD_Test_Plan___mmwave-sdk-03-05-00-2020-09-23-19-02-18_2020_09_23_18_02_18 using command: 
+wget -e robots=off --no-proxy -N -T 30 -t 2 -P /home/lte_phy/ti/mcpi_tf/mcpi_testframework_1_50_00_01/test/temp/mmWave_SDK___xwr16xx_sdk03.05.00_CAN/CANFD_Test_Plan___mmwave-sdk-03-05-00-2020-09-23-19-02-18_2020_09_23_18_02_18 http://gtjenkins.itg.ti.com/nightly_builds/mmwave_sdk-dev/313-2020-09-23_16-37-34/artifacts/test/mmwave_sdk/packages/ti/drivers/canfd/test/xwr16xx/xwr16xx_canfd_mss.xer4f
+**************************************************
+Executing Testcase:/home/lte_phy/ti/mcpi_tf/mcpi_testframework_1_50_00_01/test/temp/mmWave_SDK___xwr16xx_sdk03.05.00_CAN/CANFD_Test_Plan___mmwave-sdk-03-05-00-2020-09-23-19-02-18_2020_09_23_18_02_18/xwr16xx_canfd_mss.xer4f
+**************************************************
+pcan test. 
+Loading R4, load params, run async.
+
+/home/lte_phy/ti/mcpi_tf/mcpi_testframework_1_50_00_01/config/iwr16_v9.ccxml
+Checking if Py4J Gateway server has started...
+Py4J Gateway Server is Started
+a path in cpuList is Texas Instruments XDS110 USB Debug Probe_0/DEBUGSSM_0
+a path in cpuList is Texas Instruments XDS110 USB Debug Probe_0/CS_DAP_0
+a path in cpuList is Texas Instruments XDS110 USB Debug Probe_0/Cortex_R4_0
+Loading binary to the DUT:/home/lte_phy/ti/mcpi_tf/mcpi_testframework_1_50_00_01/test/temp/mmWave_SDK___xwr16xx_sdk03.05.00_CAN/CANFD_Test_Plan___mmwave-sdk-03-05-00-2020-09-23-19-02-18_2020_09_23_18_02_18/xwr16xx_canfd_mss.xer4f
+
+**************************************************
+ Parameters found in the Binary arguments : 
+{'testSelection(32)': '4', 'testFrameType(32)': '0'}
+**************************************************
+Reading address of symbol: testSelection
+Address of symbol obtained: 0x80078f8
+Write value 4 to address 0x80078f8 
+Value updated successfully
+Reading address of symbol: testFrameType
+Address of symbol obtained: 0x8006e7c
+Write value 0 to address 0x8006e7c 
+Value updated successfully
+Done Loading R4, load params, run async.
+
+PCAN is /dev/pcan33
+
+PCAN Log File is ~/ti/mcpi_tf/mmwave_sdk_test/mcpitf_scripts/mmwave_sdk/pcan33.log
+
+CLI to PCAN:
+~/peak-linux-driver-8.10.0/test/pcanfdtst rx -n 9 -c 40M -b                 1M -d 5M /dev/pcan33  |                 tee ~/ti/mcpi_tf/mmwave_sdk_test/mcpitf_scripts/mmwave_sdk/pcan33.log
+
+JJJJJJJJJJJJJJJJJJJJ  33333333333 JJJJJJJJJJJJJJJJJJJJJJJJJJJ
+1600902570~660866 /dev/pcan33 > BUS_STATE=ACTIVE   [Rx:0 Tx:0]   - 
+1600902592.368881 /dev/pcan33 > 000000c1 .e...  8 - a1 1a ff ff c1 1c b1 1b 
+1600902592.369879 /dev/pcan33 > 000000c2 .e...  8 - a2 2a ff ff c2 2c b2 2b 
+1600902592.370877 /dev/pcan33 > 000000c3 .e...  8 - a3 3a ff ff c3 3c b3 3b 
+1600902592.371879 /dev/pcan33 > 000000c4 .e...  8 - a4 4a ff ff c4 4c b4 4b 
+1600902592.372877 /dev/pcan33 > 000000c5 .e...  8 - a5 5a ff ff c5 5c b5 5b 
+1600902592.373877 /dev/pcan33 > 000000c6 .e...  8 - a6 6a ff ff c6 6c b6 6b 
+1600902592.374878 /dev/pcan33 > 000000c7 .e...  8 - a7 7a ff ff c7 7c b7 7b 
+1600902592.375878 /dev/pcan33 > 000000c8 .e...  8 - a8 8a ff ff c8 8c b8 8b 
+1600902592.376878 /dev/pcan33 > 000000c9 .e...  8 - a1 1a ff ff c1 1c b1 1b 
+/dev/pcan33 > [packets=9 calls=10 bytes=72 seq_err=0 drv_ovr=0 ctr_ovr=0]
+received frames: 91600902592~400758 /dev/pcan33 > BUS_STATE=ACTIVE   [Rx:0 Tx:0]   - 
+1600902592~401863 /dev/pcan33 > 000000cf .e...  8 - a7 7a ff ff c7 7c b7 7b 
+1600902592~402907 /dev/pcan33 > 000000d0 .e...  8 - a8 8a ff ff c8 8c b8 8b 
+1600902592~405903 /dev/pcan33 > 000000c1 .e...  8 - a1 1a ff ff c1 1c b1 1b 
+1600902592~405904 /dev/pcan33 > 000000c2 .e...  8 - a2 2a ff ff c2 2c b2 2b 
+1600902592~407879 /dev/pcan33 > 000000c3 .e...  8 - a3 3a ff ff c3 3c b3 3b 
+1600902592~408909 /dev/pcan33 > 000000c4 .e...  8 - a4 4a ff ff c4 4c b4 4b 
+1600902592~408910 /dev/pcan33 > 000000c5 .e...  8 - a5 5a ff ff c5 5c b5 5b 
+1600902592~410881 /dev/pcan33 > 000000c6 .e...  8 - a6 6a ff ff c6 6c b6 6b 
+1600902592~411865 /dev/pcan33 > 000000c7 .e...  8 - a7 7a ff ff c7 7c b7 7b 
+/dev/pcan33 > [packets=9 calls=10 bytes=72 seq_err=0 drv_ovr=0 ctr_ovr=0]
+received frames: 91600902592~440883 /dev/pcan33 > BUS_STATE=ACTIVE   [Rx:0 Tx:0]   - 
+1600902592~440884 /dev/pcan33 > 000000c1 .e...  8 - a1 1a ff ff c1 1c b1 1b 
+1600902592~442863 /dev/pcan33 > 000000c2 .e...  8 - a2 2a ff ff c2 2c b2 2b 
+1600902592~443863 /dev/pcan33 > 000000c3 .e...  8 - a3 3a ff ff c3 3c b3 3b 
+1600902592~443864 /dev/pcan33 > 000000c4 .e...  8 - a4 4a ff ff c4 4c b4 4b 
+1600902592~445884 /dev/pcan33 > 000000c5 .e...  8 - a5 5a ff ff c5 5c b5 5b 
+1600902592~446912 /dev/pcan33 > 000000c6 .e...  8 - a6 6a ff ff c6 6c b6 6b 
+1600902592~446913 /dev/pcan33 > 000000c7 .e...  8 - a7 7a ff ff c7 7c b7 7b 
+1600902592~448853 /dev/pcan33 > 000000c8 .e...  8 - a8 8a ff ff c8 8c b8 8b 
+1600902592~448854 /dev/pcan33 > 000000c9 .e...  8 - a1 1a ff ff c1 1c b1 1b 
+/dev/pcan33 > [packets=9 calls=10 bytes=72 seq_err=0 drv_ovr=0 ctr_ovr=0]
+received frames: 91600902592~480867 /dev/pcan33 > BUS_STATE=ACTIVE   [Rx:0 Tx:0]   - 
+1600902592~480868 /dev/pcan33 > 000000c5 .e...  8 - a5 5a ff ff c5 5c b5 5b 
+1600902592~482857 /dev/pcan33 > 000000c6 .e...  8 - a6 6a ff ff c6 6c b6 6b 
+1600902592~483852 /dev/pcan33 > 000000c7 .e...  8 - a7 7a ff ff c7 7c b7 7b 
+1600902592~483852 /dev/pcan33 > 000000c8 .e...  8 - a8 8a ff ff c8 8c b8 8b 
+1600902592~485907 /dev/pcan33 > 000000c9 .e...  8 - a1 1a ff ff c1 1c b1 1b 
+1600902592~485907 /dev/pcan33 > 000000ca .e...  8 - a2 2a ff ff c2 2c b2 2b 
+1600902592~487908 /dev/pcan33 > 000000cb .e...  8 - a3 3a ff ff c3 3c b3 3b 
+1600902592~487908 /dev/pcan33 > 000000cc .e...  8 - a4 4a ff ff c4 4c b4 4b 
+1600902592~489865 /dev/pcan33 > 000000cd .e...  8 - a5 5a ff ff c5 5c b5 5b 
+/dev/pcan33 > [packets=9 calls=10 bytes=72 seq_err=0 drv_ovr=0 ctr_ovr=0]
+received frames: 91600902592~516868 /dev/pcan33 > BUS_STATE=ACTIVE   [Rx:0 Tx:0]   - 
+1600902592~517920 /dev/pcan33 > 000000c5 .e...  8 - a5 5a ff ff c5 5c b5 5b 
+1600902592~517921 /dev/pcan33 > 000000c6 .e...  8 - a6 6a ff ff c6 6c b6 6b 
+1600902592~519886 /dev/pcan33 > 000000c7 .e...  8 - a7 7a ff ff c7 7c b7 7b 
+1600902592~520870 /dev/pcan33 > 000000c8 .e...  8 - a8 8a ff ff c8 8c b8 8b 
+1600902592~520870 /dev/pcan33 > 000000c9 .e...  8 - a1 1a ff ff c1 1c b1 1b 
+1600902592~522853 /dev/pcan33 > 000000ca .e...  8 - a2 2a ff ff c2 2c b2 2b 
+1600902592~523853 /dev/pcan33 > 000000cb .e...  8 - a3 3a ff ff c3 3c b3 3b 
+1600902592~523853 /dev/pcan33 > 000000cc .e...  8 - a4 4a ff ff c4 4c b4 4b 
+1600902592~525876 /dev/pcan33 > 000000cd .e...  8 - a5 5a ff ff c5 5c b5 5b 
+/dev/pcan33 > [packets=9 calls=10 bytes=72 seq_err=0 drv_ovr=0 ctr_ovr=0]
+received frames: 91600902592~552866 /dev/pcan33 > BUS_STATE=ACTIVE   [Rx:0 Tx:0]   - 
+1600902592~553889 /dev/pcan33 > 000000c5 .e...  8 - a5 5a ff ff c5 5c b5 5b 
+1600902592~553890 /dev/pcan33 > 000000c6 .e...  8 - a6 6a ff ff c6 6c b6 6b 
+1600902592~555851 /dev/pcan33 > 000000c7 .e...  8 - a7 7a ff ff c7 7c b7 7b 
+1600902592~556852 /dev/pcan33 > 000000c8 .e...  8 - a8 8a ff ff c8 8c b8 8b 
+1600902592~556852 /dev/pcan33 > 000000c9 .e...  8 - a1 1a ff ff c1 1c b1 1b 
+1600902592~558855 /dev/pcan33 > 000000ca .e...  8 - a2 2a ff ff c2 2c b2 2b 
+1600902592~559850 /dev/pcan33 > 000000cb .e...  8 - a3 3a ff ff c3 3c b3 3b 
+1600902592~559850 /dev/pcan33 > 000000cc .e...  8 - a4 4a ff ff c4 4c b4 4b 
+1600902592~561890 /dev/pcan33 > 000000cd .e...  8 - a5 5a ff ff c5 5c b5 5b 
+/dev/pcan33 > [packets=9 calls=10 bytes=72 seq_err=0 drv_ovr=0 ctr_ovr=0]
+received frames: 91600902592~588870 /dev/pcan33 > BUS_STATE=ACTIVE   [Rx:0 Tx:0]   - 
+1600902592~588871 /dev/pcan33 > 000000c5 .e...  8 - a5 5a ff ff c5 5c b5 5b 
+1600902592~590855 /dev/pcan33 > 000000c6 .e...  8 - a6 6a ff ff c6 6c b6 6b 
+1600902592~590855 /dev/pcan33 > 000000c7 .e...  8 - a7 7a ff ff c7 7c b7 7b 
+1600902592~592882 /dev/pcan33 > 000000c8 .e...  8 - a8 8a ff ff c8 8c b8 8b 
+1600902592~593891 /dev/pcan33 > 000000c9 .e...  8 - a1 1a ff ff c1 1c b1 1b 
+1600902592~593892 /dev/pcan33 > 000000ca .e...  8 - a2 2a ff ff c2 2c b2 2b 
+1600902592~595879 /dev/pcan33 > 000000cb .e...  8 - a3 3a ff ff c3 3c b3 3b 
+1600902592~596852 /dev/pcan33 > 000000cc .e...  8 - a4 4a ff ff c4 4c b4 4b 
+1600902592~596853 /dev/pcan33 > 000000cd .e...  8 - a5 5a ff ff c5 5c b5 5b 
+/dev/pcan33 > [packets=9 calls=10 bytes=72 seq_err=0 drv_ovr=0 ctr_ovr=0]
+received frames: 91600902592~624867 /dev/pcan33 > BUS_STATE=ACTIVE   [Rx:0 Tx:0]   - 
+1600902592~624868 /dev/pcan33 > 000000c5 .e...  8 - a5 5a ff ff c5 5c b5 5b 
+1600902592~626852 /dev/pcan33 > 000000c6 .e...  8 - a6 6a ff ff c6 6c b6 6b 
+1600902592~627850 /dev/pcan33 > 000000c7 .e...  8 - a7 7a ff ff c7 7c b7 7b 
+1600902592~627851 /dev/pcan33 > 000000c8 .e...  8 - a8 8a ff ff c8 8c b8 8b 
+1600902592~629891 /dev/pcan33 > 000000c9 .e...  8 - a1 1a ff ff c1 1c b1 1b 
+1600902592~630883 /dev/pcan33 > 000000ca .e...  8 - a2 2a ff ff c2 2c b2 2b 
+1600902592~630884 /dev/pcan33 > 000000cb .e...  8 - a3 3a ff ff c3 3c b3 3b 
+1600902592~632890 /dev/pcan33 > 000000cc .e...  8 - a4 4a ff ff c4 4c b4 4b 
+1600902592~632890 /dev/pcan33 > 000000cd .e...  8 - a5 5a ff ff c5 5c b5 5b 
+/dev/pcan33 > [packets=9 calls=10 bytes=72 seq_err=0 drv_ovr=0 ctr_ovr=0]
+received frames: 91600902592~660855 /dev/pcan33 > BUS_STATE=ACTIVE   [Rx:0 Tx:0]   - 
+1600902592~660856 /dev/pcan33 > 000000c5 .e...  8 - a5 5a ff ff c5 5c b5 5b 
+1600902592~662910 /dev/pcan33 > 000000c6 .e...  8 - a6 6a ff ff c6 6c b6 6b 
+1600902592~663882 /dev/pcan33 > 000000c7 .e...  8 - a7 7a ff ff c7 7c b7 7b 
+1600902592~663882 /dev/pcan33 > 000000c8 .e...  8 - a8 8a ff ff c8 8c b8 8b 
+1600902592~665901 /dev/pcan33 > 000000c9 .e...  8 - a1 1a ff ff c1 1c b1 1b 
+1600902592~666863 /dev/pcan33 > 000000ca .e...  8 - a2 2a ff ff c2 2c b2 2b 
+1600902592~666864 /dev/pcan33 > 000000cb .e...  8 - a3 3a ff ff c3 3c b3 3b 
+1600902592~668867 /dev/pcan33 > 000000cc .e...  8 - a4 4a ff ff c4 4c b4 4b 
+1600902592~668868 /dev/pcan33 > 000000cd .e...  8 - a5 5a ff ff c5 5c b5 5b 
+/dev/pcan33 > [packets=9 calls=10 bytes=72 seq_err=0 drv_ovr=0 ctr_ovr=0]
+received frames: 91600902592~696866 /dev/pcan33 > BUS_STATE=ACTIVE   [Rx:0 Tx:0]   - 
+1600902592~696867 /dev/pcan33 > 000000c5 .e...  8 - a5 5a ff ff c5 5c b5 5b 
+1600902592~698863 /dev/pcan33 > 000000c6 .e...  8 - a6 6a ff ff c6 6c b6 6b 
+1600902592~698863 /dev/pcan33 > 000000c7 .e...  8 - a7 7a ff ff c7 7c b7 7b 
+1600902592~700858 /dev/pcan33 > 000000c8 .e...  8 - a8 8a ff ff c8 8c b8 8b 
+1600902592~701859 /dev/pcan33 > 000000c9 .e...  8 - a1 1a ff ff c1 1c b1 1b 
+1600902592~701860 /dev/pcan33 > 000000ca .e...  8 - a2 2a ff ff c2 2c b2 2b 
+1600902592~703852 /dev/pcan33 > 000000cb .e...  8 - a3 3a ff ff c3 3c b3 3b 
+1600902592~704861 /dev/pcan33 > 000000cc .e...  8 - a4 4a ff ff c4 4c b4 4b 
+1600902592~704861 /dev/pcan33 > 000000cd .e...  8 - a5 5a ff ff c5 5c b5 5b 
+/dev/pcan33 > [packets=9 calls=10 bytes=72 seq_err=0 drv_ovr=0 ctr_ovr=0]
+received frames: 9
+**************************************************
+a1 1a ff ff c1 1c b1 1b 
+ff ff c2 2c b2 2b a3 3a ff ff                
+c3 3c b3 3b a4 4a ff ff c4 4c
+b4 4b a5 5a ff ff c5 5c b5 5b                
+a6 6a ff ff c6 6c b6 6b a7 7a
+ff ff c7 7c b7 7b a8 8a ff ff
+c8 8c b8 8b                
+was successfully read 10 times
+
+**************************************************
+shutting down py4j gw server.
+
+
+**************************************************
+Terminating the debug session and Shutting down gateway.
+**************************************************
+
+**************************************************
+Test case execution completed
+**************************************************
+
+**************************************************
+Testcase Result : PASS
+**************************************************

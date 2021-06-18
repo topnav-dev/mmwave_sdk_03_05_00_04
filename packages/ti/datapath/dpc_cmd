@@ -1,0 +1,36 @@
+44:extern "C" {
+44:extern "C" {
+44:extern "C" {
+307:extern "C" {
+1090:extern DPM_ProcChainCfg  gDPC_ObjectDetectionCfg;
+75:extern "C" {
+232:extern void _DPC_Objdet_Assert(DPM_Handle handle, int32_t expression, const char *file, int32_t line);
+61:extern "C" {
+877:extern DPM_ProcChainCfg  gDPC_ObjectDetectionCfg;
+343:extern "C" {
+501:extern void _DPC_Objdet_Assert(DPM_Handle handle, int32_t expression, const char *file, int32_t line);
+181:extern "C" {
+569:extern DPM_ProcChainCfg  gDPC_ObjDetRangeHWACfg;
+75:extern "C" {
+179:extern void _DPC_Objdet_Assert(DPM_Handle handle, int32_t expression, const char *file, int32_t line);
+68:extern "C" {
+292:extern "C" {
+67:extern "C" {
+85:extern "C" {
+86:extern "C" {
+47:extern "C" {
+47:extern "C" {
+502:extern "C" {
+57:extern "C" {
+120:extern "C" {
+75:extern "C" {
+66:extern "C" {
+415:extern "C" {
+65:extern "C" {
+67:extern "C" {
+66:extern "C" {
+598:extern "C" {
+47:extern "C" {
+50:extern "C" {
+48:extern "C" {
+47:extern "C" {

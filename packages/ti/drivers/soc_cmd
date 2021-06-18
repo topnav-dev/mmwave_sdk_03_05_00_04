@@ -1,0 +1,96 @@
+45:extern "C" {
+122:extern int32_t SOC_enableHWA(SOC_Handle handle, int32_t* errCode);
+123:extern int32_t SOC_enableCSI(SOC_Handle handle, int32_t* errCode);
+51:extern "C" {
+45:extern "C" {
+130:extern int32_t SOC_enableHWA(SOC_Handle handle, int32_t* errCode);
+133:extern int32_t SOC_isMMWaveMSSOperational(SOC_Handle handle, int32_t* errCode);
+134:extern int32_t SOC_setMMWaveMSSLinkState(SOC_Handle handle, uint8_t state, int32_t* errCode);
+135:extern int32_t SOC_isMMWaveDSSOperational(SOC_Handle handle, int32_t* errCode);
+136:extern int32_t SOC_setMMWaveDSSLinkState(SOC_Handle handle, uint8_t state, int32_t* errCode);
+137:extern int32_t SOC_setMSSLinkState(SOC_Handle handle, uint8_t state, int32_t* errCode);
+138:extern int32_t SOC_isMSSOperational(SOC_Handle handle, int32_t* errCode);
+139:extern uint32_t SOC_getMSSVCLKFrequency(SOC_Handle handle, int32_t* errCode);
+141:extern int32_t SOC_setDSSLinkState(SOC_Handle handle, uint8_t state, int32_t* errCode);
+142:extern int32_t SOC_isDSSOperational(SOC_Handle handle, int32_t* errCode);
+145:extern int32_t SOC_triggerDSStoMSSsoftwareInterrupt(SOC_Handle handle,
+147:extern int32_t SOC_configureDSSESMMask(SOC_Handle handle, uint8_t errorNumber, uint8_t mask, int32_t *errCode);
+56:extern "C" {
+287: * Extern Definitions:
+289:extern void SOC_deviceInit (SOC_DriverMCB* ptrSOCDriverMCB, int32_t* errCode);
+290:extern void SOC_deviceDeinit(SOC_DriverMCB* ptrSOCDriverMCB, int32_t* errCode);
+291:extern void SOC_SystemISR (uintptr_t arg);
+292:extern SOC_TranslateAddr_LUT_Type SOC_getInAddr_LUTType(SOC_TranslateAddr_Dir direction);
+293:extern SOC_TranslateAddr_LUT_Type SOC_getOutAddr_LUTType(SOC_TranslateAddr_Dir direction);
+51:extern "C" {
+51:extern "C" {
+51:extern "C" {
+51:extern "C" {
+44:extern "C" {
+51:extern "C" {
+45:extern "C" {
+45:extern "C" {
+130:extern int32_t SOC_isMMWaveMSSOperational(SOC_Handle handle, int32_t* errCode);
+131:extern int32_t SOC_setMMWaveMSSLinkState(SOC_Handle handle, uint8_t state, int32_t* errCode);
+132:extern int32_t SOC_isMMWaveDSSOperational(SOC_Handle handle, int32_t* errCode);
+133:extern int32_t SOC_setMMWaveDSSLinkState(SOC_Handle handle, uint8_t state, int32_t* errCode);
+134:extern int32_t SOC_setMSSLinkState(SOC_Handle handle, uint8_t state, int32_t* errCode);
+135:extern int32_t SOC_isMSSOperational(SOC_Handle handle, int32_t* errCode);
+136:extern uint32_t SOC_getMSSVCLKFrequency(SOC_Handle handle, int32_t* errCode);
+138:extern int32_t SOC_setDSSLinkState(SOC_Handle handle, uint8_t state, int32_t* errCode);
+139:extern int32_t SOC_isDSSOperational(SOC_Handle handle, int32_t* errCode);
+142:extern int32_t SOC_triggerDSStoMSSsoftwareInterrupt(SOC_Handle handle,
+144:extern int32_t SOC_configureDSSESMMask(SOC_Handle handle, uint8_t errorNumber, uint8_t mask, int32_t *errCode);
+51:extern "C" {
+51:extern "C" {
+44:extern "C" {
+51:extern "C" {
+51:extern "C" {
+51:extern "C" {
+51:extern "C" {
+51:extern "C" {
+47:extern "C" {
+46:extern "C" {
+51:extern "C" {
+44:extern "C" {
+45:extern "C" {
+170:extern int32_t SOC_enableHWA(SOC_Handle handle, int32_t* errCode);
+173:extern int32_t SOC_isMMWaveMSSOperational(SOC_Handle handle, int32_t* errCode);
+174:extern int32_t SOC_setMMWaveMSSLinkState(SOC_Handle handle, uint8_t state, int32_t* errCode);
+175:extern int32_t SOC_isMMWaveDSSOperational(SOC_Handle handle, int32_t* errCode);
+176:extern int32_t SOC_setMMWaveDSSLinkState(SOC_Handle handle, uint8_t state, int32_t* errCode);
+177:extern int32_t SOC_setMSSLinkState(SOC_Handle handle, uint8_t state, int32_t* errCode);
+178:extern int32_t SOC_isMSSOperational(SOC_Handle handle, int32_t* errCode);
+179:extern uint32_t SOC_getMSSVCLKFrequency(SOC_Handle handle, int32_t* errCode);
+181:extern int32_t SOC_setDSSLinkState(SOC_Handle handle, uint8_t state, int32_t* errCode);
+182:extern int32_t SOC_isDSSOperational(SOC_Handle handle, int32_t* errCode);
+183:extern int32_t SOC_selectDMARequestMapping(SOC_Handle handle, SOC_ModuleId moduleId, int32_t* errCode);
+184:extern int32_t SOC_selectInterruptRequestMapping(SOC_Handle handle, SOC_ModuleId moduleId, int32_t* errCode);
+187:extern int32_t SOC_triggerDSStoMSSsoftwareInterrupt(SOC_Handle handle,
+189:extern int32_t SOC_configureDSSESMMask(SOC_Handle handle, uint8_t errorNumber, uint8_t mask, int32_t *errCode);
+76:extern "C" {
+152:extern SOC_Handle SOC_init(SOC_Cfg* ptrCfg, int32_t* errCode);
+153:extern int32_t SOC_ungateClock(SOC_Handle handle, SOC_ModuleId module, int32_t* errCode);
+154:extern int32_t SOC_gateClock(SOC_Handle handle, SOC_ModuleId module, int32_t* errCode);
+155:extern int32_t SOC_unhaltBSS(SOC_Handle handle, int32_t* errCode);
+156:extern int32_t SOC_haltBSS(SOC_Handle handle, int32_t* errCode);
+157:extern int32_t SOC_enableLVDS(SOC_Handle handle, int32_t* errCode);
+158:extern int32_t SOC_SPIOutputCtrl (SOC_Handle handle, uint8_t spiInst, uint8_t enable, int32_t* errCode);
+159:extern int32_t SOC_waitBSSPowerUp(SOC_Handle handle, int32_t* errCode);
+160:extern int32_t SOC_deinit(SOC_Handle handle, int32_t* errCode);
+161:extern SOC_SysIntListenerHandle SOC_registerSysIntListener(SOC_Handle handle, SOC_SysIntListenerCfg* ptrListenerCfg, int32_t* errCode);
+162:extern int32_t SOC_deregisterSysIntListener(SOC_Handle handle, uint32_t systemInterrupt, SOC_SysIntListenerHandle listenerHandle, int32_t* errCode);
+163:extern uint32_t SOC_translateAddress(uint32_t inAddr, SOC_TranslateAddr_Dir direction, int32_t* errCode);
+164:extern int32_t SOC_setPeripheralClock(   SOC_Handle handle, SOC_ModuleId module, SOC_PeripheralClkSource clkSource, uint8_t clkDivisor, int32_t* errCode);
+165:extern int32_t SOC_initPeripheralRam(SOC_Handle handle, SOC_ModuleId module, int32_t* errCode);
+166:extern void SOC_microDelay (uint32_t delayInMircoSecs);
+167:extern int32_t SOC_triggerWarmReset(SOC_Handle handle, SOC_WarmResetRequestType resetRequestType, int32_t* errCode);
+168:extern int32_t SOC_enableWatchdog(SOC_Handle handle, int32_t* errCode);
+169:extern int32_t SOC_disableWatchdog(SOC_Handle handle, int32_t* errCode);
+170:extern int32_t SOC_getDevicePartNumber(SOC_Handle handle, SOC_PartNumber *devicePartNum, int32_t* errCode);
+171:extern double SOC_getDeviceRFFreqScaleFactor(SOC_Handle handle, int32_t* errCode);
+172:extern int32_t SOC_softReset(SOC_Handle handle, int32_t* errCode);
+174:extern int32_t SOC_isSecureDevice(SOC_Handle handle, int32_t* errCode);
+175:extern int32_t SOC_hasDSPCore(SOC_Handle handle, int32_t* errCode);
+176:extern int32_t SOC_controlSecureFirewall(SOC_Handle handle, uint32_t firewallModulesBitmap, uint8_t control, int32_t* errCode);
+177:extern int32_t SOC_resetDMA(SOC_Handle handle, int32_t* errCode);

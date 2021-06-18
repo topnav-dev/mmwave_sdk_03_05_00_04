@@ -1,0 +1,52 @@
+143:extern "C" {
+1023:extern CBUFF_Handle CBUFF_init (CBUFF_InitCfg* ptrInitCfg, int32_t* errCode);
+1024:extern int32_t CBUFF_deinit (CBUFF_Handle cBuffHandle, int32_t* errCode);
+1025:extern int32_t CBUFF_control(CBUFF_Handle cBuffHandle, CBUFF_Command cmd, void* arg, uint32_t argLen, int32_t* errCode);
+1028:extern CBUFF_SessionHandle CBUFF_createSession (CBUFF_Handle cbuffHandle, CBUFF_SessionCfg* ptrSessionCfg, int32_t* errCode);
+1029:extern int32_t CBUFF_activateSession (CBUFF_SessionHandle sessionHandle, int32_t* errCode);
+1030:extern int32_t CBUFF_deactivateSession (CBUFF_SessionHandle sessionHandle, int32_t* errCode);
+1031:extern int32_t CBUFF_deleteSession (CBUFF_SessionHandle sessionHandle, int32_t* errCode);
+1034:extern bool CBUFF_isInterleavedDataFormatSupported(CBUFF_DataFmt dataFmt);
+1035:extern bool CBUFF_isNonInterleavedDataFormatSupported(CBUFF_DataFmt dataFmt);
+1036:extern bool CBUFF_isMultipleChirpNonInterleavedDataFormatSupported(CBUFF_DataFmt dataFmt);
+51:extern "C" {
+55:extern "C" {
+754:extern CBUFF_InterfaceFxn       gCBUFFInterfaceFxn[];
+755:extern CBUFF_Hw_Attrib          gCBUFFHwAttribute;
+756:extern CBUFF_setupTransferFxn   gInterleavedTransferFxn[];
+757:extern CBUFF_setupTransferFxn   gNonInterleavedTransferFxn[];
+758:extern CBUFF_setupTransferFxn   gMultipleChirpNonInterleavedTransferFxn[];
+765:extern int32_t CBUFF_initLVDS(CBUFF_DriverMCB* ptrDriverMCB, int32_t* errCode);
+766:extern int32_t CBUFF_deinitLVDS(CBUFF_DriverMCB* ptrDriverMCB, int32_t* errCode);
+767:extern int32_t CBUFF_openLVDS(CBUFF_Session* ptrSession, int32_t* errCode);
+768:extern int32_t CBUFF_closeLVDS(CBUFF_Session* ptrSession, int32_t* errCode);
+769:extern void    CBUFF_initLVDSLinkListParams(CBUFF_Session* ptrSession, CBUFF_LinkListParams* ptrLinkListParams);
+770:extern void    CBUFF_finalizeLVDSLinkListParams(CBUFF_Session* ptrSession, CBUFF_LinkListParams* ptrLinkListParams);
+773:extern int32_t CBUFF_initCSI(CBUFF_DriverMCB* ptrDriverMCB, int32_t* errCode);
+774:extern int32_t CBUFF_deinitCSI(CBUFF_DriverMCB* ptrDriverMCB, int32_t* errCode);
+775:extern int32_t CBUFF_openCSI(CBUFF_Session* ptrSession, int32_t* errCode);
+776:extern int32_t CBUFF_closeCSI(CBUFF_Session* ptrSession, int32_t* errCode);
+777:extern void    CBUFF_initCSILinkListParams(CBUFF_Session* ptrSession, CBUFF_LinkListParams* ptrLinkListParams);
+778:extern void    CBUFF_finalizeCSILinkListParams(CBUFF_Session* ptrSession, CBUFF_LinkListParams* ptrLinkListParams);
+781:extern void CBUFF_setVC (DSSCBUFFRegs* ptrCBUFFReg, uint8_t vc, uint8_t vcStart, uint8_t vcEnd);
+784:extern int32_t CBUFF_setupTransfer (CBUFF_Session* ptrSession, int32_t* errCode);
+785:extern int32_t CBUFF_shutdownTransfer (CBUFF_Session* ptrSession, int32_t* errCode);
+788:extern int32_t CBUFF_configEDMA(CBUFF_Session* ptrSession, uint32_t srcAddress, uint32_t transferSize, bool isLast);
+789:extern void CBUFF_closeEDMA(CBUFF_Session* ptrSession);
+794:extern int32_t CBUFF_setupInterleaved_ADC
+800:extern int32_t CBUFF_setupInterleaved_CP_ADC
+806:extern int32_t CBUFF_setupInterleaved_ADC_CP
+812:extern int32_t CBUFF_setupInterleaved_CP_ADC_CQ
+818:extern int32_t CBUFF_setupInterleaved_ADC_USER
+824:extern int32_t CBUFF_setupInterleaved_CP_ADC_CQ_USER
+834:extern int32_t CBUFF_setupNonInterleaved_ADC
+840:extern int32_t CBUFF_setupNonInterleaved_CP_ADC
+846:extern int32_t CBUFF_setupNonInterleaved_ADC_CP
+852:extern int32_t CBUFF_setupNonInterleaved_CP_ADC_CQ
+858:extern int32_t CBUFF_setupNonInterleaved_ADC_USER
+864:extern int32_t CBUFF_setupNonInterleaved_CP_ADC_CQ_USER
+874:extern int32_t CBUFF_setupNonInterleaved_MultiChirp_CP_ADC
+880:extern int32_t CBUFF_setupNonInterleaved_MultiChirp_ADC_CP
+886:extern int32_t CBUFF_setupNonInterleaved_MultiChirp_CP_ADC_CQ
+892:extern int32_t CBUFF_setupNonInterleaved_MultiChirp_CP_ADC_CQ_USER
+900:extern int32_t CBUFF_setup_USER (CBUFF_DriverMCB* ptrDriverMCB, CBUFF_Session* ptrSession, int32_t* errCode);

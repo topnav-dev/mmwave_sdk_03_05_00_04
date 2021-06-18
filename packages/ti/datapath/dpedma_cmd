@@ -1,0 +1,7 @@
+88:extern "C" {
+238:extern int32_t DPEDMA_configSyncAB
+250:extern int32_t DPEDMA_configSyncA_singleFrame
+263:extern int32_t DPEDMA_updateAddressAndTrigger
+49:extern "C" {
+59:extern "C" {
+62:extern int32_t DPEDMA_setup_shadow_link

@@ -1,0 +1,20 @@
+175:    extern "C" {
+710:extern void DMA_init(void);
+724:extern void DMA_Params_init(DMA_Params *params);
+753:extern DMA_Handle DMA_open(uint32_t  index, DMA_Params* params, int32_t* errCode);
+766:extern int32_t DMA_close(DMA_Handle handle);
+787: extern uint32_t DMA_assignChannel(DMA_Handle handle, uint32_t channel, uint32_t reqline, int32_t* errCode);
+806: extern int32_t DMA_freeChannel(DMA_Handle handle, uint32_t channel, uint32_t reqline);
+831: extern int32_t DMA_enableInterrupt(DMA_Handle handle, 
+853:extern int32_t DMA_disableInterrupt(DMA_Handle handle, uint32_t channel, DMA_IntType intType);
+871:extern int32_t DMA_setChannelParams(DMA_Handle handle, uint32_t channel, DMA_CtrlPktParams *ctrlPacket);
+886:extern int32_t DMA_enableChannel(DMA_Handle handle, uint32_t channel, DMA_ChTriggerType triggerType);
+901:extern int32_t DMA_disableChannel(DMA_Handle handle, uint32_t channel, DMA_ChTriggerType triggerType);
+916:extern int32_t DMA_setChannelPriority(DMA_Handle handle, uint32_t channel, DMA_ChPriority priority);
+932:extern int32_t DMA_getChannelStatus(DMA_Handle handle, uint32_t channel, DMA_ChannelStatus *pChanStatus);
+947:extern int32_t DMA_getStatus(DMA_Handle handle, uint32_t channel, DMA_Status *pDmaStatus);
+970:extern uint32_t DMA_getChannelInterruptFlag(DMA_Handle handle, uint32_t channel, DMA_IntType intType, int32_t* errCode);
+989:extern int32_t DMA_clearChannelInterruptFlag(DMA_Handle handle, uint32_t channel, DMA_IntType intType);
+51:extern "C" {
+51:extern "C" {
+57:    extern "C" {

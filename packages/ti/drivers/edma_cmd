@@ -1,0 +1,28 @@
+59:extern "C" {
+45:extern "C" {
+92:extern const EDMA_hwAttrs_t gEdmaHwAttrs[EDMA_NUM_CC];
+47:extern "C"
+46:extern "C"
+166:extern "C" {
+984:extern int32_t EDMA_configChannel(EDMA_Handle handle,
+1004:extern int32_t EDMA_enableChannel(EDMA_Handle handle,
+1024:extern int32_t EDMA_disableChannel(EDMA_Handle handle,
+1043:extern int32_t EDMA_chainChannels(EDMA_Handle handle,
+1061:extern int32_t EDMA_configParamSet(EDMA_Handle handle,
+1081:extern int32_t EDMA_linkParamSets(EDMA_Handle handle,
+1101:extern int32_t EDMA_startTransfer(EDMA_Handle handle,
+1119:extern int32_t EDMA_startDmaTransfer(EDMA_Handle handle, uint8_t channelId);
+1136:extern int32_t EDMA_startQdmaTransfer(EDMA_Handle handle, uint8_t channelId);
+1156:extern int32_t EDMA_startFinalQdmaTransfer(EDMA_Handle handle,
+1184:extern int32_t EDMA_isTransferComplete(EDMA_Handle handle,
+1205:extern int32_t EDMA_setDestinationAddress(EDMA_Handle handle,
+1226:extern int32_t EDMA_setSourceAddress(EDMA_Handle handle,
+1257:extern int32_t EDMA_configErrorMonitoring(EDMA_Handle handle,
+1284:extern int32_t EDMA_getErrorStatus(EDMA_Handle handle, bool *isAnyError,
+1314:extern int32_t EDMA_getTransferControllerErrorStatus(EDMA_Handle handle,
+1337:extern int32_t EDMA_getStatusInfo(EDMA_Handle handle,
+1357:extern int32_t EDMA_configPerformance(EDMA_Handle handle,
+1377:extern EDMA_Handle EDMA_open(uint8_t instanceId, int32_t *errorCode,
+1393:extern int32_t EDMA_close(EDMA_Handle handle);
+1402:extern uint8_t EDMA_getNumInstances(void);
+1420:extern int32_t EDMA_init(uint8_t instanceId);

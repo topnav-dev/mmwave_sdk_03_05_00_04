@@ -1,0 +1,27 @@
+extern "C" {
+extern MMWave_Handle MMWave_init (MMWave_InitCfg* ptrCtrlInitCfg, int32_t* errCode);
+extern int32_t MMWave_deinit (MMWave_Handle mmWaveHandle, int32_t* errCode);
+extern int32_t MMWave_open (MMWave_Handle mmWaveHandle, const MMWave_OpenCfg* ptrOpenCfg, MMWave_CalibrationData *ptrCalibrationData, int32_t* errCode);
+extern int32_t MMWave_close(MMWave_Handle mmWaveHandle, int32_t* errCode);
+extern int32_t MMWave_sync (MMWave_Handle mmWaveHandle, int32_t* errCode);
+extern int32_t MMWave_config (MMWave_Handle mmWaveHandle, MMWave_CtrlCfg* ptrControlCfg, int32_t* errCode);
+extern int32_t MMWave_start (MMWave_Handle mmWaveHandle, const MMWave_CalibrationCfg* ptrCalibrationCfg, int32_t* errCode);
+extern int32_t MMWave_stop (MMWave_Handle mmWaveHandle, int32_t* errCode);
+extern int32_t MMWave_execute (MMWave_Handle mmWaveHandle, int32_t* errCode);
+extern MMWave_ChirpHandle MMWave_addChirp (MMWave_ProfileHandle profileHandle, const rlChirpCfg_t* ptrChirpCfg, int32_t* errCode);
+extern int32_t MMWave_delChirp(MMWave_ProfileHandle profileHandle, MMWave_ChirpHandle chirpHandle, int32_t* errCode);
+extern int32_t MMWave_getChirpCfg(MMWave_ChirpHandle chirpHandle, rlChirpCfg_t* ptrChirpCfg,int32_t* errCode);
+extern MMWave_ProfileHandle MMWave_addProfile (MMWave_Handle mmWaveHandle, const rlProfileCfg_t* ptrProfileCfg, int32_t* errCode);
+extern int32_t MMWave_getNumProfiles(MMWave_Handle mmWaveHandle, uint32_t* numProfiles, int32_t* errCode);
+extern int32_t MMWave_getProfileHandle(MMWave_Handle mmWaveHandle,uint8_t profileId, MMWave_ProfileHandle* profileHandle,int32_t* errCode);
+extern int32_t MMWave_delProfile (MMWave_Handle mmWaveHandle,MMWave_ProfileHandle profileHandle, int32_t* errCode);
+extern int32_t MMWave_getProfileCfg (MMWave_ProfileHandle profileHandle, rlProfileCfg_t* ptrProfileCfg, int32_t* errCode);
+extern int32_t MMWave_getNumChirps(MMWave_ProfileHandle profileHandle, uint32_t* numChirps, int32_t* errCode);
+extern int32_t MMWave_getChirpHandle(MMWave_ProfileHandle profileHandle, uint32_t chirpIndex, MMWave_ChirpHandle* chirpHandle, int32_t* errCode);
+extern MMWave_BpmChirpHandle MMWave_addBpmChirp (MMWave_Handle mmWaveHandle, const rlBpmChirpCfg_t* ptrBpmChirp, int32_t* errCode);
+extern int32_t MMWave_getNumBpmChirp(MMWave_Handle mmWaveHandle, uint32_t* numBpmChirps, int32_t* errCode);
+extern int32_t MMWave_getBpmChirpHandle(MMWave_Handle mmWaveHandle,uint32_t bpmChirpIndex,MMWave_BpmChirpHandle* bpmChirpHandle,int32_t* errCode);
+extern int32_t MMWave_delBpmChirp (MMWave_Handle mmWaveHandle,MMWave_BpmChirpHandle bpmChirpHandle, int32_t* errCode);
+extern int32_t MMWave_getBpmChirpCfg (MMWave_BpmChirpHandle bpmChirpHandle, rlBpmChirpCfg_t* ptrBpmChirp, int32_t* errCode);
+extern int32_t MMWave_flushCfg(MMWave_Handle mmWaveHandle, int32_t* errCode);
+extern void MMWave_decodeError (int32_t errCode, MMWave_ErrorLevel* errorLevel, int16_t* mmWaveError, int16_t* subSysError);

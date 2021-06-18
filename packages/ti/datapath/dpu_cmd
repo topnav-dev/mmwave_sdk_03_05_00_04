@@ -1,0 +1,10 @@
+159:extern "C" {
+406:extern "C" {
+192:extern "C" {
+463:extern int32_t DPU_RangeProcDSP_config
+469:extern int32_t DPU_RangeProcDSP_process
+475:extern int32_t DPU_RangeProcDSP_control
+483:extern int32_t DPU_RangeProcDSP_deinit(DPU_RangeProcDSP_Handle handle);
+59:extern "C" {
+55:extern "C" {
+71:extern "C" {

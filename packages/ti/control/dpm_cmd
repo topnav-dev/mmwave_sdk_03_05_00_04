@@ -1,0 +1,11 @@
+extern "C" {
+extern DPM_Handle DPM_init (DPM_InitCfg* ptrInitCfg, int32_t* errCode);
+extern int32_t DPM_synch (DPM_Handle handle, int32_t* errCode);
+extern int32_t DPM_ioctl (DPM_Handle handle, uint32_t cmd, void* arg, uint32_t argLen);
+extern int32_t DPM_start (DPM_Handle handle);
+extern int32_t DPM_stop (DPM_Handle handle);
+extern int32_t DPM_execute (DPM_Handle handle, DPM_Buffer* ptrResult);
+extern int32_t DPM_sendResult (DPM_Handle handle, bool isAckNeeded, DPM_Buffer* ptrResult);
+extern int32_t DPM_relayResult (DPM_Handle handle, DPM_DPCHandle dpcHandle, DPM_Buffer* ptrResult);
+extern int32_t DPM_notifyExecute (DPM_Handle handle, DPM_DPCHandle dpcHandle, bool isrContext);
+extern int32_t DPM_deinit (DPM_Handle handle);

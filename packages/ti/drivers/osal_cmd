@@ -1,0 +1,34 @@
+63:extern "C" {
+94:extern void* MemoryP_ctrlAlloc(uint32_t size, uint8_t alignment);
+106:extern void  MemoryP_ctrlFree(void* ptr, uint32_t size);
+118:extern void* MemoryP_dataAlloc(uint32_t size, uint8_t alignment);
+130:extern void  MemoryP_dataFree(void* ptr, uint32_t size);
+141:extern void MemoryP_getStats(MemoryP_Stats *stats);
+42:extern "C" {
+53:extern "C" {
+65:extern void CycleprofilerP_init(void);
+74:extern uint32_t CycleprofilerP_getTimeStamp(void);
+64:extern "C" {
+137:extern void HwiP_clearInterrupt(int32_t interruptNum);
+154:extern HwiP_Handle HwiP_create(int32_t interruptNum, HwiP_Fxn hwiFxn,
+166:extern HwiP_Status HwiP_delete(HwiP_Handle handle);
+185:extern uintptr_t HwiP_disable(void);
+194:extern void HwiP_disableInterrupt(int32_t interruptNum);
+203:extern void HwiP_enableInterrupt(int32_t interruptNum);
+217:extern void HwiP_Params_init(HwiP_Params *params);
+226:extern void HwiP_restore(uintptr_t key);
+74:extern "C" {
+161:extern SemaphoreP_Handle SemaphoreP_create(uint32_t count,
+175:extern SemaphoreP_Status SemaphoreP_delete(SemaphoreP_Handle handle);
+188:extern void SemaphoreP_Params_init(SemaphoreP_Params *params);
+205:extern SemaphoreP_Status SemaphoreP_pend(SemaphoreP_Handle handle,
+219:extern SemaphoreP_Status SemaphoreP_post(SemaphoreP_Handle handle);
+232:extern SemaphoreP_Status SemaphoreP_postFromClock(SemaphoreP_Handle handle);
+245:extern SemaphoreP_Status SemaphoreP_postFromISR(SemaphoreP_Handle handle);
+76:extern "C" {
+123:extern void _DebugP_assert(int expression, const char *file, int line);
+143:extern void DebugP_log0(const char *format);
+160:extern void DebugP_log1(const char *format, uintptr_t p1);
+179:extern void DebugP_log2(const char *format, uintptr_t p1, uintptr_t p2);
+198:extern void DebugP_log3(const char *format, uintptr_t p1, uintptr_t p2, uintptr_t p3);
+218:extern void DebugP_log4(const char *format, uintptr_t p1, uintptr_t p2, uintptr_t p3, uintptr_t p4);

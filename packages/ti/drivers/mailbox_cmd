@@ -1,0 +1,12 @@
+51:extern "C" {
+43:extern "C" {
+260:extern "C" {
+729:extern int32_t Mailbox_close(Mbox_Handle handle);
+745:extern int32_t Mailbox_init(Mailbox_Type localEndpoint);
+773:extern Mbox_Handle Mailbox_open(Mailbox_Type remoteEndpoint, const Mailbox_Config *cfg,  int32_t* errCode);
+807:extern int32_t Mailbox_Config_init(Mailbox_Config *cfg);
+859:extern int32_t Mailbox_write(Mbox_Handle handle, const uint8_t *buffer, uint32_t size);
+922:extern int32_t Mailbox_read(Mbox_Handle handle, uint8_t *buffer, uint32_t size);
+944:extern int32_t Mailbox_readFlush(Mbox_Handle handle);
+974:extern int32_t Mailbox_writeReset(Mbox_Handle handle);
+993:extern int32_t Mailbox_getStats(Mbox_Handle handle, Mailbox_Stats * stats);

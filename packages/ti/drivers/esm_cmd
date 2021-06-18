@@ -1,0 +1,7 @@
+127:    extern "C" {
+231:extern ESM_Handle ESM_init(uint8_t bClearErrors);
+243:extern int32_t ESM_close(ESM_Handle handle);
+258:extern int32_t ESM_registerNotifier(ESM_Handle handle, ESM_NotifyParams* params, int32_t* errCode);
+273:extern int32_t ESM_deregisterNotifier(ESM_Handle handle, int32_t notifyIndex, int32_t* errCode);
+51:extern "C" {
+65:extern "C" {

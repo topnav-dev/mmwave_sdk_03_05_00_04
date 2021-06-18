@@ -47,7 +47,7 @@
 #include <stdlib.h>
 #include <ti/utils/testlogger/logger.h>
 
-/* MCPI => MCU Connectivety Product Initiative */
+/* MCPI => MCU Connectivity Product Initiative */
 /**************************************************************************
  *************************** MCPI Global Variables ************************
  **************************************************************************/

@@ -1,0 +1,42 @@
+44:extern "C" {
+72:extern void TestFmk_listAdd (TestFmk_ListNode **ptr_list, TestFmk_ListNode *ptr_node);
+73:extern TestFmk_ListNode* TestFmk_listRemove (TestFmk_ListNode **ptr_list);
+74:extern TestFmk_ListNode* TestFmk_listGetHead (TestFmk_ListNode** ptr_list);
+75:extern TestFmk_ListNode* TestFmk_listGetNext (TestFmk_ListNode* ptr_list);
+76:extern TestFmk_ListNode* TestFmk_listGetPrev (TestFmk_ListNode* ptr_list);
+77:extern int32_t TestFmk_listRemoveNode (TestFmk_ListNode** ptr_list, TestFmk_ListNode* ptr_remove);
+78:extern void TestFmk_listCat (TestFmk_ListNode **ptr_dst, TestFmk_ListNode** ptr_src);
+43:extern "C" {
+399:extern TestFmk_HWAttribute  gTestFmkHwAttrib;
+400:extern SemaphoreP_Handle    gTestFmkSemaphoreHandle;
+405:extern void    TestFmk_IPCMsgInit (TestFmk_Msg* ptrMessage, TestFmk_MessageType msgType);
+406:extern int32_t TestFmk_IPCInit (TestFmk_MCB* ptrTestFmk, int32_t* errCode);
+407:extern int32_t TestFmk_IPCSend (TestFmk_MCB* ptrTestFmk, TestFmk_Msg* ptrMessage, int32_t* errCode);
+408:extern int32_t TestFmk_IPCRecv (TestFmk_MCB* ptrTestFmk, int32_t* errCode);
+409:extern int32_t TestFmk_IPCDeinit (TestFmk_MCB* ptrTestFmk, int32_t* errCode);
+412:extern int32_t TestFmk_IPCRemoteRecv (TestFmk_MCB* ptrTestFmk, TestFmk_Msg* ptrMessage, int32_t* errCode);
+413:extern int32_t TestFmk_IPCRemoteSend (TestFmk_MCB* ptrTestFmk, TestFmk_Msg* ptrMessage, int32_t* errCode);
+414:extern int32_t TestFmk_IPCRemoteInit (TestFmk_MCB* ptrTestFmk, int32_t* errCode);
+415:extern int32_t TestFmk_IPCRemoteDeinit (TestFmk_MCB* ptrTestFmk, int32_t* errCode);
+418:extern int32_t TestFmk_IPCLocalRecv (TestFmk_MCB* ptrTestFmk, TestFmk_Msg* ptrMessage, int32_t* errCode);
+419:extern int32_t TestFmk_IPCLocalSend (TestFmk_MCB* ptrTestFmk, TestFmk_Msg* ptrMessage, int32_t* errCode);
+420:extern int32_t TestFmk_IPCLocalInit (TestFmk_MCB* ptrTestFmk, int32_t* errCode);
+421:extern int32_t TestFmk_IPCLocalDeinit (TestFmk_MCB* ptrTestFmk, int32_t* errCode);
+424:extern int32_t TestFmk_enableADC  (TestFmk_MCB* ptrTestFmk,TestFmk_Cfg* ptrTestFmkCfg, int32_t* errCode);
+425:extern int32_t TestFmk_disableADC (TestFmk_MCB* ptrTestFmk, int32_t* errCode);
+157:extern "C" {
+873:extern TestFmk_Handle TestFmk_init (TestFmk_InitCfg* ptrInitCfg, int32_t* errCode);
+874:extern int32_t TestFmk_synch (TestFmk_Handle fmkHandle, int32_t* errCode);
+875:extern int32_t TestFmk_loadProfile (TestFmk_Handle fmkHandle, TestFmk_ProfileCfg* ptrProfileCfg, int32_t* errCode);
+876:extern int32_t TestFmk_open (TestFmk_Handle handle, MMWave_OpenCfg* ptrOpenCfg, int32_t* errCode);
+877:extern int32_t TestFmk_ioctl (TestFmk_Handle handle, uint32_t cmd, void* arg, uint32_t argLen, int32_t* errCode);
+878:extern int32_t TestFmk_start (TestFmk_Handle handle, int32_t* errCode);
+879:extern int32_t TestFmk_stop (TestFmk_Handle handle, int32_t* errCode);
+880:extern int32_t TestFmk_execute (TestFmk_Handle handle, TestFmk_Result* ptrResult, int32_t* errCode);
+881:extern int32_t TestFmk_close (TestFmk_Handle fmkHandle, int32_t* errCode);
+882:extern int32_t TestFmk_unloadProfile (TestFmk_Handle handle, int32_t* errCode);
+883:extern int32_t TestFmk_deinit (TestFmk_Handle fmkHandle, int32_t* errCode);
+45:extern "C" {
+122:extern TestFmk_ProfileCfg       gCSIStreamProfileCfg;
+45:extern "C" {
+94:extern TestFmk_ProfileCfg       gCaptureProfileCfg;

@@ -1,0 +1,38 @@
+42:extern "C" {
+42:extern "C" {
+42:extern "C" {                                                                     
+42:extern "C" {
+42:extern "C" {                                                                     
+42:extern "C" {                                                                     
+117:extern "C" {
+1021:extern void HWA_init(void);
+1040:extern HWA_Handle HWA_open(uint32_t  index, SOC_Handle socHandle, int32_t* errCode);
+1053:extern int32_t HWA_close(HWA_Handle handle);
+1067:extern int32_t HWA_reset(HWA_Handle handle);
+1084:extern int32_t HWA_configCommon(HWA_Handle handle, HWA_CommonConfig *commonConfig);
+1105:extern int32_t HWA_configParamSet(HWA_Handle handle, uint8_t paramsetIdx, HWA_ParamConfig *paramConfig, HWA_SrcDMAConfig *dmaConfig);
+1130:extern int32_t HWA_getDMAconfig(HWA_Handle handle, uint8_t dmaTriggerSrc, HWA_SrcDMAConfig *dmaConfig);
+1146:extern int32_t HWA_getCfarPeakCntRegAddress(HWA_Handle handle, uint32_t *peakCntAddr);
+1167:extern int32_t HWA_configRam(HWA_Handle handle, uint8_t ramType, uint8_t *data, uint32_t dataSize, uint32_t startIdx);
+1186:extern int32_t HWA_enableParamSetInterrupt(HWA_Handle handle, uint8_t paramsetIdx, HWA_InterruptConfig *intrConfig);
+1203:extern int32_t HWA_enableDoneInterrupt(HWA_Handle handle, HWA_Done_IntHandlerFuncPTR callbackFn, void * callbackArg );
+1220:extern int32_t HWA_disableParamSetInterrupt(HWA_Handle handle, uint8_t paramsetIdx, uint8_t interruptTypeFlag);
+1233:extern int32_t HWA_disableDoneInterrupt(HWA_Handle handle);
+1249:extern int32_t HWA_enable(HWA_Handle handle, uint8_t flagEnDis);
+1262:extern int32_t HWA_setSoftwareTrigger(HWA_Handle handle);
+1278:extern int32_t HWA_setDMA2ACCManualTrig(HWA_Handle handle, uint16_t idx);
+1298:extern int32_t HWA_readClipStatus(HWA_Handle handle, uint8_t *pbuf, uint8_t size);
+1311:extern int32_t HWA_clearClipStatus(HWA_Handle handle);
+1331:extern int32_t HWA_readStatsReg(HWA_Handle handle, HWA_Stats *pStats, uint8_t numIter);
+1350:extern int32_t HWA_readCFARPeakCountReg(HWA_Handle handle, uint8_t *pbuf, uint8_t size);
+1366:extern int32_t HWA_readDebugReg(HWA_Handle handle, HWA_DebugStats *pStats);
+1381:extern int32_t HWA_clearDebugReg(HWA_Handle handle);
+1397:extern int32_t HWA_getHWAMemInfo(HWA_Handle handle, HWA_MemInfo *memInfo);
+1416:extern int32_t HWA_getDMAChanIndex(HWA_Handle handle, uint8_t edmaChanId, uint8_t *hwaDestChan);
+1433:extern int32_t HWA_getEDMAChanId(HWA_Handle handle, uint8_t hwaDMAdestChan);
+44:extern "C" {
+51:extern "C" {
+51:extern "C" {
+51:extern "C" {
+51:extern "C" {
+57:    extern "C" {

@@ -36,7 +36,7 @@ export MMWAVE_SECDEV_HSIMAGE_CFG=${MMWAVE_SECDEV_INSTALL_PATH}/hs_image_creator/
 # installation options are used)
 ###############################################################################
 
-export MMWAVE_SDK_TOOLS_INSTALL_PATH=__MMWAVE_SDK_TOOLS_INSTALL_PATH__
+export MMWAVE_SDK_TOOLS_INSTALL_PATH=/home/blake/ti
  
 # Common settings for all platforms
 # Path to <mmwave_sdk installation path>/packages folder

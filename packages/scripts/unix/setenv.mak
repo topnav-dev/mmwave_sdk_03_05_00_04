@@ -4,7 +4,7 @@
 export MMWAVE_SDK_DEVICE ?= awr16xx
 export DOWNLOAD_FROM_CCS = yes
 
-export MMWAVE_SDK_TOOLS_INSTALL_PATH=__MMWAVE_SDK_TOOLS_INSTALL_PATH__
+export MMWAVE_SDK_TOOLS_INSTALL_PATH=/home/blake/ti
  
 # Common settings for all platforms
 # Path to <mmwave_sdk installation path>/packages folder

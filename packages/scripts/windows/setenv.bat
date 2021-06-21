@@ -36,7 +36,7 @@ set MMWAVE_SECDEV_HSIMAGE_CFG=%MMWAVE_SECDEV_INSTALL_PATH%/hs_image_creator/hsim
 @REM # installation options are used)
 @REM ###############################################################################
  
-set MMWAVE_SDK_TOOLS_INSTALL_PATH=C:/ti
+set MMWAVE_SDK_TOOLS_INSTALL_PATH=__MMWAVE_SDK_TOOLS_INSTALL_PATH__
  
 @REM Common settings for all platforms
 @REM Path to <mmwave_sdk installation path>/packages folder

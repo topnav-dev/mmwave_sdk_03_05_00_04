@@ -43,5 +43,4 @@ For more details, including comparison pictures of AOP ES1.0 and ES2.0 antennas,
 -Nitin
 ```
 
-file:///C:/ti/mmwave_sdk_03_05_00_04/packages/ti/datapath/dpc/dpu/aoa2dproc/docs/doxygen/html/index.html
-
+file:///Volumes/Case/mmwave/ti/mmwave_sdk_03_05_00_04/packages/ti/datapath/dpc/dpu/aoa2dproc/docs/doxygen/html/index.html

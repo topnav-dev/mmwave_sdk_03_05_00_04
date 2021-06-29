@@ -58,6 +58,7 @@
  * A high level data flow is illustrated in figure below.
  *
  * @image html hwa_aoa2d_top_level.png "HWA-AOA using 2D angle FFT approach - high level data flow"
+ * @image latex hwa_aoa2d_top_level.pdf "HWA-AOA using 2D angle FFT approach - high level data flow"
  *
  * For each detected object the processing
  * consists of the following:
@@ -71,6 +72,7 @@
  * The below figure depicts detailed DPU implementation.
  *
  * @image html hwa_aoa2d.png "HWA-AOA 2D angle FFT implementation (for 3 Tx antennas)"
+ * @image latex hwa_aoa2d.pdf "HWA-AOA 2D angle FFT implementation (for 3 Tx antennas)"
  *
  * DPU processes data from the input CFAR detection list in a loop, two objects from the input list per loop.
  * The processing is done in ping/pong manner so that the HWA processing, the EDMA transfers and
@@ -114,6 +116,7 @@
  * The following figure shows the local core processing flow including two objects per loop.
  *
  * @image html hwa_aoa_flow_chart.png "Local core processing flow"
+ * @image latex hwa_aoa_flow_chart.png "Local core processing flow"
  *
  * The HWA runs in parallel with local core and EDMA transfers, processing data within its loop in the following order: ping path 2D-FFT, pong path 2D-FFT,
  * ping path 2D-azimuth/elevation FFT, pong path 2D-azimuth/elevation FFT.

@@ -1,12 +1,18 @@
 #!/bin/bash
-SDK_PATH=$(sh -c 'pwd -L')
-echo "SDK_PATH=$SDK_PATH"
-TEMP=$(sh -c 'mktemp xxtmp')
-RMTEMP=$(rm -rf $TEMP)
-# chmod +x $TEMP
-echo "TEMP=$TEMP"
 
-func_in_file_then_1to3() {
+# PWD
+SDK_PATH=`pwd -L`
+
+# TEMPFILE
+RMTEMP="rm -rf .temp"
+if test -f ".temp"; then
+    bash -c $RMTEMP
+    echo ".temp exists then remove."
+fi
+TEMP=`mktemp .temp`
+
+# FUNC
+func_in_FLODER_then_1to3() {
   select FLODER in $(find . -name $1 -type d)
   do
     # echo -e "FLODER=$FLODER"
@@ -21,22 +27,28 @@ func_in_file_then_1to3() {
     break
   done
 }
+## find . -name "docs" -exec grep '\@image\ html' {} \;
 
-func_in_FLODER_then()
+func_in_FLODER_then_1to2()
 for FLODER in $(find . -name $1 -type d)
   do
     # echo -e "FLODER=$FLODER"
     for FILE in `find $FLODER -name "*.$2" -maxdepth $3`;
       do
-        grep -A 1 '\@image\ html' $FILE
+        grep -A 1 '\@image\ html' $FILE >> .temp
       done
   done
 # find . -name "*.h" -exec grep '\@image\ html' {} \;
 
+# MAIN
 echo "1.####################################################################"
-# func_in_file_then_1to3 "docs" "png" "1" "pdf"
+func_in_FLODER_then_1to3 "docs" "png" "1" "pdf"
 echo "2.####################################################################"
-# func_in_FLODER_then "include" "h" "1"
-# echo -e "3.####################################################################"
-# eval $RMTEMP
-# $RMTEMP
+func_in_FLODER_then_1to2 "include" "h" "1"
+echo "####################################################################"
+echo "SDK_PATH=$SDK_PATH"
+echo "RMTEMP=$RMTEMP"
+echo "TEMP = $TEMP"
+echo "FLODER = $FLODER"
+cat .temp
+# bash -c $RMTEMP

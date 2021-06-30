@@ -1,6 +1,6 @@
-![Alt text](xWR6843AOP.JPG)
-![Alt text](xWR1843AOP.JPG)
-![Alt text](xWR6843ISK_xWR1843BOOST.JPG)
+![Alt text](xWR6843AOP.jpg)
+![Alt text](xWR1843AOP.jpg)
+![Alt text](xWR6843ISK_xWR1843BOOST.jpg)
 
 https://e2e.ti.com/support/sensors-group/sensors/f/sensors-forum/908009/ccs-iwr6843aop-oob-68xxhwa-ant-define-error-antenna_geometry-c
 

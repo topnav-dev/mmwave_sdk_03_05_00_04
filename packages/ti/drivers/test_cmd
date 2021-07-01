@@ -1,3 +1,7 @@
+45:extern "C" {
+94:extern TestFmk_ProfileCfg       gCaptureProfileCfg;
+45:extern "C" {
+122:extern TestFmk_ProfileCfg       gCSIStreamProfileCfg;
 44:extern "C" {
 72:extern void TestFmk_listAdd (TestFmk_ListNode **ptr_list, TestFmk_ListNode *ptr_node);
 73:extern TestFmk_ListNode* TestFmk_listRemove (TestFmk_ListNode **ptr_list);

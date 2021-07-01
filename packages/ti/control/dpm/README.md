@@ -50,24 +50,20 @@ dpm_pipe.c
 dpm_stubMailbox.c // depressed
 
 # platform is same as each other
-
 dpm_xwr16xx.c  
 dpm_xwr18xx.c  
 dpm_xwr68xx.c
 
-
-
 ---
 
-_INSTANCE_ID|_INSTANCEID
-
+# DPC_OBJDET\w+_INSTANCEID;
 - DPC_OBJDET_DSP_INSTANCEID=0xDEEDDEED
 - DPC_OBJDET_R4F_INSTANCEID=0xFEEDFEED
+
+# DPMTest_\wlReportFxn
 - LL_DPM_INSTANCE_ID=1111
 - ML_DPM_INSTANCE_ID=2222
 - HL_DPM_INSTANCE_ID=3333
-
-
 
 ---
 
@@ -87,21 +83,6 @@ _INSTANCE_ID|_INSTANCEID
 
   dpmInitCfg.argSize     = sizeof(DPC_ObjectDetection_InitParams);
 
-
-
----
-
-DPM_EINVAL 错误类型是无效的参数
-DPM_ENOMEM 错误类型是内存不足
-DPM_ENOTSUP 错误类型是不支持
-DPM_EPROFCFG 错误类型是处理链配置错误
-CPM_EINVCMD 错误类型是传递给处理链的IOCTL命令无效。如果配置期间的命令不再支持范围内，则处理链开发人员应将错误大面设置为此值
-————————————————
-版权声明：本文为CSDN博主「XXXXiaojie」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
-原文链接：https://blog.csdn.net/xiao_jie123/article/details/110236984
-
-
-
 ---
 
 # DPM_EXTERNAL_DEFINITIONS
@@ -118,3 +99,16 @@ CPM_EINVCMD 错误类型是传递给处理链的IOCTL命令无效。如果配置
 - DPM_CMD_DPC_ASSERT
 - DPM_CMD_DPC_INFO
 - DPM_CMD_DPC_START_INDEX
+
+# flow
+```
+DPC_Objdet_Assert(...)
+```
+
+```
+DPM_init -> DPM_synch -> DPM_start -> DPM_stop -> DPM_deinit
+```
+
+extern int32_t DPM_sendResult (DPM_Handle handle, bool isAckNeeded, DPM_Buffer* ptrResult);
+extern int32_t DPM_relayResult (DPM_Handle handle, DPM_DPCHandle dpcHandle, DPM_Buffer* ptrResult);
+<r>This function is only applicable for remote & distributed domains.</r>

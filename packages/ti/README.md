@@ -1,16 +1,24 @@
+<style>
+r { color: Red }
+o { color: Orange }
+g { color: Green }
+</style>
+
 # mmwave_sdk_03_05_00_04
 RSS 
     – RF/Analog Subsystem, Radar Subsystem
-BSS(RPRC) 
-    – Baseband Subsystem, Radar subsystem, – mmwave_sdk_XXXX/packages/ti/firmware
+    - <g>mmwave_sdk_XXXX/packages/ti/control/mmwavelink</g>
+BSS (RPRC)
+    – Baseband Subsystem
+    – <g>mmwave_sdk_XXXX/packages/ti/firmware</g>
 DSS 
     – DSP Subsystem, DSP C647x
-MSS 
-    – Master Subsystem, Cortex-R4F
+MSS ( model:<r>TM4C129ENCPDT</r> )
+    – Master Subsystem, Cortex-M4F
 Algorithm 
-    – mmwave_sdk_XXXX/packages/ti/alg
+    – <g>mmwave_sdk_XXXX/packages/ti/alg</g>
 Demo code 
-    – mmwave_sdk_XXXX/packages/ti/demo/
+    – <g>mmwave_sdk_XXXX/packages/ti/demo/</g>
 
 ---
 

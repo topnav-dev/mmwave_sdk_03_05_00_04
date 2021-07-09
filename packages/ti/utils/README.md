@@ -68,7 +68,8 @@ https://zhuanlan.zhihu.com/p/24318554
 Secondary Boot Loader (SBL)
 Software Design
 ```
-file:///C:/Users/opo20/iCloudDrive/iCloud~QReader~MarginStudy/MMWAVE/SBL_design.pdf
+
+SBL_design.pdf
 
 # testlogger
 ```

@@ -2,3 +2,7 @@
 GPATH
 GRTAGS
 GTAGS
+
+###
+.vscode
+hooks
